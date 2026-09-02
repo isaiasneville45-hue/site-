@@ -256,28 +256,156 @@
     font-size:15px;
   }
 
+  .catalogo-controls{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    margin-bottom:48px;
+  }
+
+  .busca-form{
+    position:relative;
+    max-width:420px;
+  }
+
+  .busca-form input[type="search"]{
+    width:100%;
+    padding:14px 44px 14px 18px;
+    border:1px solid var(--borda);
+    background:var(--branco);
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    font-weight:300;
+    color:var(--preto);
+  }
+
+  .busca-form input[type="search"]::placeholder{color:var(--cinza);}
+
+  .busca-form input[type="search"]:focus{
+    outline:none;
+    border-color:var(--oliva);
+  }
+
+  .busca-form input[type="search"]::-webkit-search-cancel-button{
+    -webkit-appearance:none;
+  }
+
+  .busca-icon{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    width:16px;
+    height:16px;
+    stroke:var(--cinza);
+    pointer-events:none;
+  }
+
+  .categorias{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  .cat-tab{
+    padding:9px 20px;
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    border:1px solid var(--borda);
+    background:transparent;
+    color:var(--preto);
+    cursor:pointer;
+  }
+
+  .cat-tab:hover{border-color:var(--oliva);}
+
+  .cat-tab.active{
+    border-color:var(--oliva);
+    color:var(--oliva-escuro);
+  }
+
   .grid{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
-    gap:2px;
+    gap:36px 24px;
   }
 
-  .grid figure{
+  .produto{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .produto[hidden]{display:none;}
+
+  .produto-img{
     aspect-ratio:3/4;
     overflow:hidden;
     background:#e4e2da;
   }
 
-  .grid img{
+  .produto-img img{
     width:100%;
     height:100%;
     object-fit:cover;
   }
 
-  .grid figure.tall{
-    aspect-ratio:3/4;
-    grid-row:span 1;
+  .produto-info{
+    padding-top:16px;
   }
+
+  .produto-cat{
+    display:block;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--oliva-escuro);
+    margin-bottom:6px;
+  }
+
+  .produto-nome{
+    font-family:'Cormorant Garamond', serif;
+    font-size:19px;
+    margin-bottom:6px;
+  }
+
+  .produto-preco{
+    font-size:14px;
+    color:var(--preto);
+    margin-bottom:14px;
+    font-variant-numeric:tabular-nums;
+  }
+
+  .produto-cta{
+    display:block;
+    width:100%;
+    padding:10px 0;
+    font-family:'Jost', sans-serif;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    text-align:center;
+    background:transparent;
+    border:1px solid var(--oliva);
+    color:var(--preto);
+    cursor:pointer;
+  }
+
+  .produto-cta:hover{
+    background:var(--oliva);
+    color:var(--branco);
+  }
+
+  .sem-resultado{
+    display:none;
+    text-align:center;
+    padding:60px 0;
+    color:var(--cinza);
+    font-size:15px;
+  }
+
+  .sem-resultado.ativo{display:block;}
 
   /* ---------- LOCALIZAÇÃO ---------- */
   .local .wrap{
@@ -445,7 +573,9 @@
     }
     .sobre-img{order:-1;aspect-ratio:16/10;}
 
-    .grid{grid-template-columns:repeat(2, 1fr);}
+    .grid{grid-template-columns:repeat(2, 1fr);gap:32px 16px;}
+    .categorias{gap:8px;}
+    .cat-tab{padding:8px 16px;}
 
     .footer-top{
       grid-template-columns:1fr;
@@ -486,7 +616,7 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <img class="hero-img" src="https://picsum.photos/id/1027/1600/1000" alt="Look da coleção OLIVA">
+    <img class="hero-img" src="https://loremflickr.com/1600/1000/fashion,elegant,woman?lock=101" alt="Look da coleção OLIVA">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <span class="eyebrow">Coleção atual</span>
@@ -499,7 +629,7 @@
   <!-- SOBRE -->
   <section class="sobre" id="sobre">
     <div class="wrap">
-      <img class="sobre-img" src="https://picsum.photos/id/1011/800/1000" alt="Ateliê OLIVA">
+      <img class="sobre-img" src="https://loremflickr.com/800/1000/clothing,boutique,rack?lock=102" alt="Araras de roupa no ateliê OLIVA">
       <div>
         <span class="eyebrow">A marca</span>
         <h2>Roupa boa é a que some do pensamento.</h2>
@@ -515,18 +645,150 @@
     <div class="wrap">
       <div class="galeria-head">
         <h2>Coleção</h2>
-        <p>Um recorte do que está na loja agora. As peças completas, com preço e tamanho, você vê pessoalmente ou pelo nosso WhatsApp.</p>
+        <p>Filtre por categoria ou busque a peça que você já tem em mente. Tamanho e disponibilidade a gente confirma pelo WhatsApp.</p>
       </div>
-      <div class="grid">
-        <figure><img src="https://picsum.photos/id/1025/600/800" alt="Look 01 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/1035/600/800" alt="Look 02 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/1041/600/800" alt="Look 03 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/1045/600/800" alt="Look 04 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/1050/600/800" alt="Look 05 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/1059/600/800" alt="Look 06 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/1060/600/800" alt="Look 07 da coleção OLIVA"></figure>
-        <figure><img src="https://picsum.photos/id/106/600/800" alt="Look 08 da coleção OLIVA"></figure>
+
+      <div class="catalogo-controls">
+        <form class="busca-form" role="search" onsubmit="return false">
+          <label class="sr-only" for="busca-peca" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Buscar peça</label>
+          <input type="search" id="busca-peca" placeholder="Buscar peça — ex: calça, vestido, saia...">
+          <svg class="busca-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.2" y2="16.2"></line></svg>
+        </form>
+
+        <div class="categorias" role="tablist" aria-label="Categorias de produto">
+          <button type="button" class="cat-tab active" data-categoria="todos">Todos</button>
+          <button type="button" class="cat-tab" data-categoria="vestidos">Vestidos</button>
+          <button type="button" class="cat-tab" data-categoria="calcas">Calças</button>
+          <button type="button" class="cat-tab" data-categoria="bermudas">Bermudas</button>
+          <button type="button" class="cat-tab" data-categoria="saias">Saias</button>
+          <button type="button" class="cat-tab" data-categoria="blusas">Blusas &amp; Camisetas</button>
+          <button type="button" class="cat-tab" data-categoria="conjuntos">Conjuntos</button>
+        </div>
       </div>
+
+      <div class="grid" id="grid-produtos">
+        <article class="produto" data-categoria="vestidos" data-nome="Vestido Midi Alfaiataria">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/dress,woman,elegant?lock=201" alt="Vestido Midi Alfaiataria OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Vestidos</span>
+            <h3 class="produto-nome">Vestido Midi Alfaiataria</h3>
+            <p class="produto-preco">R$ 259,90</p>
+            <button class="produto-cta" data-nome="Vestido Midi Alfaiataria">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="vestidos" data-nome="Vestido Longo Linho">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/dress,woman,linen?lock=202" alt="Vestido Longo Linho OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Vestidos</span>
+            <h3 class="produto-nome">Vestido Longo Linho</h3>
+            <p class="produto-preco">R$ 289,90</p>
+            <button class="produto-cta" data-nome="Vestido Longo Linho">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="calcas" data-nome="Calça Pantalona Alfaiataria">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/pants,woman,fashion?lock=203" alt="Calça Pantalona Alfaiataria OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Calças</span>
+            <h3 class="produto-nome">Calça Pantalona Alfaiataria</h3>
+            <p class="produto-preco">R$ 219,90</p>
+            <button class="produto-cta" data-nome="Calça Pantalona Alfaiataria">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="calcas" data-nome="Calça Wide Leg Bege">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/pants,woman,beige?lock=204" alt="Calça Wide Leg Bege OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Calças</span>
+            <h3 class="produto-nome">Calça Wide Leg Bege</h3>
+            <p class="produto-preco">R$ 229,90</p>
+            <button class="produto-cta" data-nome="Calça Wide Leg Bege">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="bermudas" data-nome="Bermuda Alfaiataria">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/shorts,woman,fashion?lock=205" alt="Bermuda Alfaiataria OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Bermudas</span>
+            <h3 class="produto-nome">Bermuda Alfaiataria</h3>
+            <p class="produto-preco">R$ 159,90</p>
+            <button class="produto-cta" data-nome="Bermuda Alfaiataria">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="bermudas" data-nome="Bermuda Cintura Alta Linho">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/shorts,woman,linen?lock=206" alt="Bermuda Cintura Alta Linho OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Bermudas</span>
+            <h3 class="produto-nome">Bermuda Cintura Alta Linho</h3>
+            <p class="produto-preco">R$ 149,90</p>
+            <button class="produto-cta" data-nome="Bermuda Cintura Alta Linho">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="saias" data-nome="Saia Midi Plissada">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/skirt,woman,pleated?lock=207" alt="Saia Midi Plissada OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Saias</span>
+            <h3 class="produto-nome">Saia Midi Plissada</h3>
+            <p class="produto-preco">R$ 179,90</p>
+            <button class="produto-cta" data-nome="Saia Midi Plissada">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="saias" data-nome="Saia Longa Linho">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/skirt,woman,linen?lock=208" alt="Saia Longa Linho OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Saias</span>
+            <h3 class="produto-nome">Saia Longa Linho</h3>
+            <p class="produto-preco">R$ 189,90</p>
+            <button class="produto-cta" data-nome="Saia Longa Linho">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="blusas" data-nome="Camisa Social Ampla">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/blouse,woman,shirt?lock=209" alt="Camisa Social Ampla OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Blusas &amp; Camisetas</span>
+            <h3 class="produto-nome">Camisa Social Ampla</h3>
+            <p class="produto-preco">R$ 169,90</p>
+            <button class="produto-cta" data-nome="Camisa Social Ampla">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="blusas" data-nome="Blusa Alças Cetim">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/blouse,woman,satin?lock=210" alt="Blusa Alças Cetim OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Blusas &amp; Camisetas</span>
+            <h3 class="produto-nome">Blusa Alças Cetim</h3>
+            <p class="produto-preco">R$ 129,90</p>
+            <button class="produto-cta" data-nome="Blusa Alças Cetim">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="conjuntos" data-nome="Conjunto Alfaiataria Completo">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/suit,woman,fashion?lock=211" alt="Conjunto Alfaiataria Completo OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Conjuntos</span>
+            <h3 class="produto-nome">Conjunto Alfaiataria Completo</h3>
+            <p class="produto-preco">R$ 349,90</p>
+            <button class="produto-cta" data-nome="Conjunto Alfaiataria Completo">Consultar no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="produto" data-categoria="blusas" data-nome="Body Canelado">
+          <div class="produto-img"><img src="https://loremflickr.com/600/800/top,woman,fashion?lock=212" alt="Body Canelado OLIVA"></div>
+          <div class="produto-info">
+            <span class="produto-cat">Blusas &amp; Camisetas</span>
+            <h3 class="produto-nome">Body Canelado</h3>
+            <p class="produto-preco">R$ 99,90</p>
+            <button class="produto-cta" data-nome="Body Canelado">Consultar no WhatsApp</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="sem-resultado" id="sem-resultado">Nenhuma peça encontrada com esse filtro. Tenta outra categoria ou termo de busca.</p>
     </div>
   </section>
 
@@ -614,6 +876,55 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function(){
+    var busca = document.getElementById('busca-peca');
+    var tabs = document.querySelectorAll('.cat-tab');
+    var produtos = document.querySelectorAll('.produto');
+    var semResultado = document.getElementById('sem-resultado');
+    var categoriaAtiva = 'todos';
+
+    function normalizar(texto){
+      return texto.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function aplicarFiltros(){
+      var termo = normalizar(busca.value.trim());
+      var visiveis = 0;
+
+      produtos.forEach(function(produto){
+        var categoria = produto.dataset.categoria;
+        var nome = normalizar(produto.dataset.nome);
+        var combinaCategoria = categoriaAtiva === 'todos' || categoria === categoriaAtiva;
+        var combinaBusca = termo === '' || nome.indexOf(termo) !== -1;
+        var visivel = combinaCategoria && combinaBusca;
+        produto.hidden = !visivel;
+        if (visivel) visiveis++;
+      });
+
+      semResultado.classList.toggle('ativo', visiveis === 0);
+    }
+
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        tabs.forEach(function(t){ t.classList.remove('active'); });
+        tab.classList.add('active');
+        categoriaAtiva = tab.dataset.categoria;
+        aplicarFiltros();
+      });
+    });
+
+    busca.addEventListener('input', aplicarFiltros);
+
+    document.querySelectorAll('.produto-cta').forEach(function(botao){
+      botao.addEventListener('click', function(){
+        var mensagem = 'Olá! Tenho interesse na peça: ' + botao.dataset.nome;
+        window.open('https://wa.me/5511999999999?text=' + encodeURIComponent(mensagem), '_blank');
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>
