@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLIVA — Roupas Femininas</title>
+<meta name="description" content="OLIVA — coleções enxutas de roupas femininas, cortes limpos e tecidos que duram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --preto:#161613;
+    --branco:#faf9f6;
+    --oliva:#6b7250;
+    --oliva-escuro:#565c40;
+    --cinza:#6f6d66;
+    --borda:#e4e2da;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--branco);
+    color:var(--preto);
+    font-family:'Jost', sans-serif;
+    font-weight:300;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    line-height:1.15;
+    letter-spacing:.01em;
+  }
+
+  a{color:inherit;text-decoration:none;}
+
+  img{display:block;max-width:100%;}
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  section{padding:120px 0;}
+
+  .eyebrow{
+    display:block;
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--oliva-escuro);
+    margin-bottom:18px;
+  }
+
+  /* ---------- NAV ---------- */
+  .navbar{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:100;
+    background:rgba(250,249,246,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--borda);
+  }
+
+  .navbar-inner{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .logo{
+    font-family:'Cormorant Garamond', serif;
+    font-size:26px;
+    letter-spacing:.12em;
+    font-weight:600;
+  }
+
+  .nav-links{
+    display:flex;
+    gap:40px;
+    list-style:none;
+  }
+
+  .nav-links a{
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--preto);
+    padding-bottom:4px;
+    border-bottom:1px solid transparent;
+  }
+
+  .nav-links a:hover{
+    border-bottom:1px solid var(--oliva);
+  }
+
+  .menu-toggle{display:none;}
+  .hamburger{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    width:26px;
+    height:20px;
+    cursor:pointer;
+  }
+  .hamburger span{
+    display:block;
+    height:1px;
+    width:100%;
+    background:var(--preto);
+    transition:transform .25s ease, opacity .25s ease;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-end;
+    color:var(--branco);
+    overflow:hidden;
+  }
+
+  .hero-img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(0deg, rgba(15,15,13,.72) 0%, rgba(15,15,13,.28) 45%, rgba(15,15,13,.15) 100%);
+  }
+
+  .hero-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    padding:0 32px 100px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  .hero-content .eyebrow{color:#cfd3bd;}
+
+  .hero h1{
+    font-size:clamp(38px, 6vw, 68px);
+    max-width:16ch;
+    margin-bottom:26px;
+  }
+
+  .hero p{
+    font-size:17px;
+    max-width:46ch;
+    color:#e9e8e2;
+    margin-bottom:40px;
+  }
+
+  .btn{
+    display:inline-block;
+    padding:15px 36px;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    border:1px solid var(--oliva);
+    color:var(--branco);
+    background:transparent;
+  }
+
+  .btn:hover{
+    background:var(--oliva);
+  }
+
+  .btn-dark{
+    border:1px solid var(--preto);
+    color:var(--preto);
+  }
+  .btn-dark:hover{
+    background:var(--preto);
+    color:var(--branco);
+  }
+
+  /* ---------- SOBRE ---------- */
+  .sobre .wrap{
+    display:grid;
+    grid-template-columns:0.95fr 1.05fr;
+    gap:80px;
+    align-items:center;
+  }
+
+  .sobre-img{
+    aspect-ratio:4/5;
+    width:100%;
+    object-fit:cover;
+  }
+
+  .sobre h2{
+    font-size:clamp(30px, 4vw, 44px);
+    margin-bottom:28px;
+  }
+
+  .sobre p{
+    color:#3c3b37;
+    font-size:16px;
+    max-width:52ch;
+    margin-bottom:20px;
+  }
+
+  .sobre p:last-of-type{margin-bottom:0;}
+
+  .assinatura{
+    margin-top:32px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    font-style:italic;
+    color:var(--oliva-escuro);
+  }
+
+  /* ---------- GALERIA ---------- */
+  .galeria{
+    background:#f3f2ec;
+  }
+
+  .galeria-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    margin-bottom:56px;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+
+  .galeria-head h2{
+    font-size:clamp(30px, 4vw, 44px);
+  }
+
+  .galeria-head p{
+    color:var(--cinza);
+    max-width:34ch;
+    font-size:15px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:2px;
+  }
+
+  .grid figure{
+    aspect-ratio:3/4;
+    overflow:hidden;
+    background:#e4e2da;
+  }
+
+  .grid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .grid figure.tall{
+    aspect-ratio:3/4;
+    grid-row:span 1;
+  }
+
+  /* ---------- LOCALIZAÇÃO ---------- */
+  .local .wrap{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:80px;
+  }
+
+  .local h2{
+    font-size:clamp(30px, 4vw, 44px);
+    margin-bottom:28px;
+  }
+
+  .local-info p{
+    font-size:15px;
+    color:#3c3b37;
+    margin-bottom:18px;
+  }
+
+  .local-info strong{
+    display:block;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--oliva-escuro);
+    margin-bottom:6px;
+    font-weight:500;
+  }
+
+  .local-item{margin-bottom:32px;}
+
+  .mapa{
+    width:100%;
+    aspect-ratio:4/3;
+    border:1px solid var(--borda);
+    filter:grayscale(40%) contrast(1.02);
+  }
+
+  /* ---------- CTA FAIXA ---------- */
+  .faixa{
+    background:var(--preto);
+    color:var(--branco);
+    text-align:center;
+    padding:90px 0;
+  }
+
+  .faixa h2{
+    font-size:clamp(28px, 4vw, 40px);
+    max-width:20ch;
+    margin:0 auto 32px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--branco);
+    padding:80px 0 40px;
+  }
+
+  .footer-top{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:60px;
+    padding-bottom:60px;
+    border-bottom:1px solid var(--borda);
+  }
+
+  .footer-logo{
+    font-family:'Cormorant Garamond', serif;
+    font-size:26px;
+    letter-spacing:.12em;
+    font-weight:600;
+    margin-bottom:16px;
+    display:inline-block;
+  }
+
+  .footer-top p{
+    font-size:14px;
+    color:var(--cinza);
+    max-width:34ch;
+  }
+
+  .footer-col h4{
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--oliva-escuro);
+    margin-bottom:18px;
+    font-weight:500;
+  }
+
+  .footer-col ul{list-style:none;}
+
+  .footer-col li{
+    margin-bottom:12px;
+    font-size:14px;
+    color:#3c3b37;
+  }
+
+  .socials{
+    display:flex;
+    gap:16px;
+    margin-top:20px;
+  }
+
+  .socials a{
+    width:36px;
+    height:36px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid var(--borda);
+  }
+
+  .socials a:hover{
+    border-color:var(--oliva);
+  }
+
+  .socials svg{width:16px;height:16px;stroke:var(--preto);}
+
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:32px;
+    font-size:12px;
+    color:var(--cinza);
+    letter-spacing:.02em;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  /* ---------- RESPONSIVO ---------- */
+  @media (max-width: 860px){
+    section{padding:80px 0;}
+    .wrap{padding:0 24px;}
+
+    .nav-links{
+      position:absolute;
+      top:76px;
+      left:0;
+      right:0;
+      background:var(--branco);
+      border-bottom:1px solid var(--borda);
+      flex-direction:column;
+      gap:0;
+      display:none;
+    }
+    .nav-links a{
+      padding:18px 24px;
+      width:100%;
+      display:block;
+      border-bottom:1px solid var(--borda);
+    }
+    .hamburger{display:flex;}
+
+    .menu-toggle:checked ~ .nav-links{display:flex;}
+    .menu-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+    .menu-toggle:checked ~ .hamburger span:nth-child(2){opacity:0;}
+    .menu-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+    .sobre .wrap,
+    .local .wrap{
+      grid-template-columns:1fr;
+      gap:40px;
+    }
+    .sobre-img{order:-1;aspect-ratio:16/10;}
+
+    .grid{grid-template-columns:repeat(2, 1fr);}
+
+    .footer-top{
+      grid-template-columns:1fr;
+      gap:36px;
+    }
+
+    .footer-bottom{flex-direction:column;align-items:flex-start;}
+  }
+
+  @media (max-width: 480px){
+    .grid{grid-template-columns:repeat(2, 1fr);}
+    .hero-content{padding-bottom:64px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="#inicio" class="logo">OLIVA</a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <img class="hero-img" src="https://picsum.photos/id/1027/1600/1000" alt="Look da coleção OLIVA">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Coleção atual</span>
+      <h1>Peças que ficam com você depois que a estação passa.</h1>
+      <p>Uma seleção enxuta de roupas femininas para o dia a dia com intenção — cortes limpos, tecidos que duram, nada em excesso.</p>
+      <a href="#colecao" class="btn">Ver Coleção</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <img class="sobre-img" src="https://picsum.photos/id/1011/800/1000" alt="Ateliê OLIVA">
+      <div>
+        <span class="eyebrow">A marca</span>
+        <h2>Roupa boa é a que some do pensamento.</h2>
+        <p>A OLIVA começou numa sala pequena, em 2019, com uma régua de corte e a teimosia de não colocar na loja nada que a gente mesma não vestiria. Isso não mudou. Cada coleção é curta de propósito — escolhemos poucas peças, mas escolhemos com calma.</p>
+        <p>Trabalhamos com tecidos naturais, fornecedores que conhecemos pelo nome e uma produção pequena o suficiente para corrigir o que não está bom antes de chegar até você.</p>
+        <p class="assinatura">— Equipe OLIVA</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="galeria" id="colecao">
+    <div class="wrap">
+      <div class="galeria-head">
+        <h2>Coleção</h2>
+        <p>Um recorte do que está na loja agora. As peças completas, com preço e tamanho, você vê pessoalmente ou pelo nosso WhatsApp.</p>
+      </div>
+      <div class="grid">
+        <figure><img src="https://picsum.photos/id/1025/600/800" alt="Look 01 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/1035/600/800" alt="Look 02 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/1041/600/800" alt="Look 03 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/1045/600/800" alt="Look 04 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/1050/600/800" alt="Look 05 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/1059/600/800" alt="Look 06 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/1060/600/800" alt="Look 07 da coleção OLIVA"></figure>
+        <figure><img src="https://picsum.photos/id/106/600/800" alt="Look 08 da coleção OLIVA"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA CTA -->
+  <section class="faixa">
+    <div class="wrap">
+      <h2>Prefere ver e experimentar de perto? A loja está de portas abertas.</h2>
+      <a href="#localizacao" class="btn">Como Chegar</a>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="local" id="localizacao">
+    <div class="wrap">
+      <div class="local-info">
+        <span class="eyebrow">Visite</span>
+        <h2>Loja física</h2>
+
+        <div class="local-item">
+          <strong>Endereço</strong>
+          <p>Rua Oscar Freire, 000 — Jardins<br>São Paulo, SP — 01426-000</p>
+        </div>
+
+        <div class="local-item">
+          <strong>Horário</strong>
+          <p>Segunda a sexta, 10h às 19h<br>Sábado, 10h às 16h</p>
+        </div>
+
+        <div class="local-item">
+          <strong>Estacionamento</strong>
+          <p>Vagas conveniadas no edifício ao lado, com desconto para clientes.</p>
+        </div>
+      </div>
+
+      <iframe
+        class="mapa"
+        src="https://www.google.com/maps?q=Rua+Oscar+Freire,+Jardins,+S%C3%A3o+Paulo+-+SP&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localização da loja OLIVA no mapa">
+      </iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contato">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#inicio" class="footer-logo">OLIVA</a>
+        <p>Roupas femininas para o dia a dia, feitas para durar mais que uma estação.</p>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da OLIVA">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp da OLIVA">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18l-1.5 3.5L8 20a8 8 0 1 0-3-3z"></path><path d="M9 9c0 3.5 2.5 6 6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>contato@oliva.com.br</li>
+          <li>(11) 99999-9999</li>
+          <li>@oliva.roupas</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horário</h4>
+        <ul>
+          <li>Seg a sex — 10h às 19h</li>
+          <li>Sábado — 10h às 16h</li>
+          <li>Domingo — fechado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OLIVA. Todos os direitos reservados.</span>
+      <span>Rua Oscar Freire, 000 — Jardins, São Paulo</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
