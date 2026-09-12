@@ -126,14 +126,29 @@ section {
 }
 
 .eyebrow {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
   font-size: 0.95rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 12px;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.eyebrow::before {
+  content: '';
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  background: var(--red);
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.eyebrow-light::before {
+  background: var(--white);
+  outline-color: var(--white);
 }
 
 .eyebrow-light {
@@ -558,15 +573,33 @@ section {
 .service-photo-05 { background-image: url('../assets/img/servico-05-hidrantes.jpg'), linear-gradient(150deg, #4a1113, #1a1a1a); }
 
 .service-number {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  display: block;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.service-number .index {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--white);
-  letter-spacing: 0.05em;
-  padding: 14px 0 0 18px;
+  line-height: 1;
+}
+
+.service-number .code {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: rgba(13, 13, 13, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 3px 6px;
+  line-height: 1;
 }
 
 .service-icon {
@@ -643,10 +676,6 @@ section {
   gap: 44px;
 }
 
-.diff-heading .eyebrow {
-  color: var(--red);
-}
-
 .diff-heading h2 {
   font-size: clamp(1.9rem, 5vw, 2.5rem);
   color: var(--white);
@@ -678,13 +707,18 @@ section {
 }
 
 .diff-index {
-  font-family: var(--font-heading);
-  font-weight: 900;
-  font-size: 2.2rem;
-  color: var(--red);
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
   flex-shrink: 0;
-  min-width: 60px;
+  border: 2px solid var(--red);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--white);
+  line-height: 1;
 }
 
 .diff-item h3 {
