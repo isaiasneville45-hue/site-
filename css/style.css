@@ -569,7 +569,10 @@ section {
 .service-photo-01 { background-image: url('../assets/img/servico-01-alarmes.jpg'), linear-gradient(150deg, #3a3a3a, #101010); }
 .service-photo-02 { background-image: url('../assets/img/servico-02-sinalizacao.jpg'), linear-gradient(150deg, #7a1418, #1a1a1a); }
 .service-photo-03 { background-image: url('../assets/img/servico-03-extintores.jpg'), linear-gradient(150deg, #B31C22, #2a2a2a); }
-.service-photo-04 { background-image: url('../assets/img/servico-04-iluminacao.jpg'), linear-gradient(150deg, #2b2b2b, #0d0d0d); }
+.service-photo-04 {
+  background-image: url('../assets/img/servico-04-iluminacao.svg'), linear-gradient(150deg, #2b2b2b, #0d0d0d);
+  background-size: cover, cover;
+}
 .service-photo-05 { background-image: url('../assets/img/servico-05-hidrantes.jpg'), linear-gradient(150deg, #4a1113, #1a1a1a); }
 
 .service-number {
