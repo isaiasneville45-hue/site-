@@ -25,8 +25,15 @@ export function Services() {
   const { requestService } = useServiceIntent()
 
   return (
-    <section id="servicos" aria-labelledby="servicos-title" className="relative overflow-hidden bg-apag-noir py-24 lg:py-32">
-      <div aria-hidden="true" className="absolute left-1/2 top-0 -z-0 h-80 w-[60rem] -translate-x-1/2 rounded-full bg-apag-crimson/15 blur-[120px]" />
+    <section
+      id="servicos"
+      aria-labelledby="servicos-title"
+      className="relative overflow-hidden bg-apag-noir py-24 lg:py-32"
+    >
+      <div
+        aria-hidden="true"
+        className="absolute left-1/2 top-0 -z-0 h-80 w-[60rem] -translate-x-1/2 rounded-full bg-apag-crimson/15 blur-[120px]"
+      />
 
       <div className="container relative">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">

@@ -102,7 +102,12 @@ function FormDescription({ className, ...props }: React.ComponentProps<'p'>) {
   const { formDescriptionId } = useFormField()
 
   return (
-    <p data-slot="form-description" id={formDescriptionId} className={cn('text-xs text-muted-foreground', className)} {...props} />
+    <p
+      data-slot="form-description"
+      id={formDescriptionId}
+      className={cn('text-xs text-muted-foreground', className)}
+      {...props}
+    />
   )
 }
 
@@ -115,7 +120,12 @@ function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
   }
 
   return (
-    <p data-slot="form-message" id={formMessageId} className={cn('text-sm font-medium text-apag-ember', className)} {...props}>
+    <p
+      data-slot="form-message"
+      id={formMessageId}
+      className={cn('text-sm font-medium text-apag-ember', className)}
+      {...props}
+    >
       {body}
     </p>
   )

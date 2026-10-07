@@ -17,7 +17,11 @@ export function Stats() {
 
         <dl className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 lg:grid-cols-4">
           {company.stats.map((stat, i) => (
-            <Reveal key={stat.label} delay={i * 0.08} className="flex flex-col items-center gap-3 bg-apag-black px-4 py-10 text-center sm:py-12">
+            <Reveal
+              key={stat.label}
+              delay={i * 0.08}
+              className="flex flex-col items-center gap-3 bg-apag-black px-4 py-10 text-center sm:py-12"
+            >
               <dt className="order-last max-w-[14rem] text-sm text-white/65 sm:text-base">{stat.label}</dt>
               <dd className="font-display text-[clamp(2rem,1.2rem+3vw,3.5rem)] leading-none tracking-tight">
                 <Counter stat={stat} />
@@ -37,11 +41,7 @@ function Counter({ stat }: { stat: Stat }) {
   const [display, setDisplay] = useState(0)
 
   useEffect(() => {
-    if (!inView || stat.value === null) return
-    if (reduce) {
-      setDisplay(stat.value)
-      return
-    }
+    if (!inView || stat.value === null || reduce) return
     // Contagem com easing (easeOutExpo) via requestAnimationFrame
     const target = stat.value
     const duration = 1800
@@ -71,7 +71,7 @@ function Counter({ stat }: { stat: Stat }) {
       <span className="sr-only">{final}</span>
       <span aria-hidden="true" className="tabular-nums">
         {stat.prefix}
-        {display.toLocaleString('pt-BR')}
+        {(reduce ? stat.value : display).toLocaleString('pt-BR')}
         <span className="text-apag-red">{stat.suffix}</span>
       </span>
     </span>

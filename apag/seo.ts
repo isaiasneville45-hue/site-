@@ -29,8 +29,7 @@ export function seoPlugin(): Plugin {
   }
 }
 
-const escapeAttr = (value: string) =>
-  value.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
+const escapeAttr = (value: string) => value.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
 
 function renderSeoTags(): string {
   const url = siteUrl()

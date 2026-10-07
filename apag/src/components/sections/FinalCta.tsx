@@ -18,14 +18,20 @@ export function FinalCta() {
               strokeWidth={1}
               className="absolute -bottom-16 -right-10 -z-10 size-80 rotate-12 text-white/[0.06] sm:size-[26rem]"
             />
-            <div aria-hidden="true" className="absolute -left-20 -top-24 -z-10 size-80 rounded-full bg-apag-red/40 blur-[100px]" />
+            <div
+              aria-hidden="true"
+              className="absolute -left-20 -top-24 -z-10 size-80 rounded-full bg-apag-red/40 blur-[100px]"
+            />
 
-            <h2 id="cta-title" className="font-display-title mx-auto max-w-4xl text-[clamp(1.2rem,0.7rem+2.6vw,2.6rem)] text-balance">
+            <h2
+              id="cta-title"
+              className="font-display-title mx-auto max-w-4xl text-[clamp(1.2rem,0.7rem+2.6vw,2.6rem)] text-balance"
+            >
               Seu imóvel está em dia com a segurança contra incêndio?
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/90 text-pretty sm:text-lg">
-              Fale com a nossa equipe e receba um orçamento para instalar, manter e regularizar os sistemas de
-              prevenção do seu imóvel.
+              Fale com a nossa equipe e receba um orçamento para instalar, manter e regularizar os sistemas de prevenção
+              do seu imóvel.
             </p>
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" variant="light">

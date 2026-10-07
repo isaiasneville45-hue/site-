@@ -31,8 +31,7 @@ const BUILD_DATE = typeof __BUILD_DATE__ === 'string' ? new Date(`${__BUILD_DATE
 export function yearsInBusiness(now: Date = BUILD_DATE): number {
   const [y, m, d] = FOUNDED_AT.split('-').map(Number)
   let years = now.getFullYear() - y
-  const beforeAnniversary =
-    now.getMonth() + 1 < m || (now.getMonth() + 1 === m && now.getDate() < d)
+  const beforeAnniversary = now.getMonth() + 1 < m || (now.getMonth() + 1 === m && now.getDate() < d)
   if (beforeAnniversary) years -= 1
   return years
 }
@@ -65,8 +64,7 @@ export const company = {
 
   // ── Textos institucionais ──────────────────────────────────────────
   tagline: 'Segurança contra incêndio do projeto à manutenção.',
-  shortAbout:
-    'Instalação e manutenção de sistemas de prevenção e combate a incêndio desde 1998.',
+  shortAbout: 'Instalação e manutenção de sistemas de prevenção e combate a incêndio desde 1998.',
   seoTitle: 'APAG | Prevenção e combate a incêndio desde 1998',
   seoDescription:
     'Instalação e manutenção de extintores, hidrantes, alarmes, sinalização e iluminação de emergência. Regularize seu imóvel junto ao Corpo de Bombeiros com a APAG, desde 1998.',

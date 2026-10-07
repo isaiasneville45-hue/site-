@@ -4,7 +4,7 @@
 
 /* ──────────────────────────────────────────────────────────────────────
    Mokoto: fonte dos títulos e da logo textual.
-   Coloque o arquivo em public/fonts/Mokoto.woff2. Enquanto ele não existir,
+   TODO: coloque o arquivo em public/fonts/Mokoto.woff2. Enquanto ele não existir,
    o navegador usa a Michroma (Google Fonts, empacotada via @fontsource).
    ────────────────────────────────────────────────────────────────────── */
 @font-face {

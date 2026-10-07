@@ -30,8 +30,10 @@ function TestimonialsCarousel() {
     setCanNext(emblaApi.canScrollNext())
   }, [emblaApi])
 
+  // Sincroniza o estado dos controles com a instância do Embla (sistema externo).
   useEffect(() => {
     if (!emblaApi) return
+    // oxlint-disable-next-line react/set-state-in-effect
     sync()
     emblaApi.on('select', sync).on('reInit', sync)
     return () => {
@@ -53,7 +55,10 @@ function TestimonialsCarousel() {
 
   return (
     <section aria-labelledby="depoimentos-title" className="relative overflow-hidden bg-apag-black py-24 lg:py-32">
-      <div aria-hidden="true" className="absolute right-0 top-0 size-[32rem] rounded-full bg-apag-red/10 blur-[140px]" />
+      <div
+        aria-hidden="true"
+        className="absolute right-0 top-0 size-[32rem] rounded-full bg-apag-red/10 blur-[140px]"
+      />
 
       <div className="container relative">
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
@@ -65,10 +70,22 @@ function TestimonialsCarousel() {
           />
           {hasControls ? (
             <div className="flex shrink-0 gap-3">
-              <Button variant="outline" size="icon" onClick={() => emblaApi?.scrollPrev()} disabled={!canPrev} aria-label="Depoimento anterior">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => emblaApi?.scrollPrev()}
+                disabled={!canPrev}
+                aria-label="Depoimento anterior"
+              >
                 <ChevronLeft aria-hidden="true" />
               </Button>
-              <Button variant="outline" size="icon" onClick={() => emblaApi?.scrollNext()} disabled={!canNext} aria-label="Próximo depoimento">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => emblaApi?.scrollNext()}
+                disabled={!canNext}
+                aria-label="Próximo depoimento"
+              >
                 <ChevronRight aria-hidden="true" />
               </Button>
             </div>
@@ -98,7 +115,9 @@ function TestimonialsCarousel() {
                     <span className="grid size-12 place-items-center rounded-2xl bg-apag-red-45 ring-1 ring-apag-red-65">
                       <Quote className="size-5 fill-white text-white" aria-hidden="true" />
                     </span>
-                    <blockquote className="mt-6 flex-1 text-lg leading-relaxed text-white/85">“{item.quote}”</blockquote>
+                    <blockquote className="mt-6 flex-1 text-lg leading-relaxed text-white/85">
+                      “{item.quote}”
+                    </blockquote>
                     <figcaption className="mt-8 border-t border-white/10 pt-5 text-sm font-semibold text-white">
                       {item.author}
                     </figcaption>

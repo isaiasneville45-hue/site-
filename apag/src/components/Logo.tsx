@@ -41,7 +41,11 @@ const textSizes = { sm: 'text-base', md: 'text-lg', lg: 'text-2xl' }
 const iconSizes = { sm: 'size-5', md: 'size-6', lg: 'size-8' }
 
 export function Logo({ className, size = 'md' }: LogoProps) {
-  const current = useSyncExternalStore(subscribe, () => status, () => 'loading' as Status)
+  const current = useSyncExternalStore(
+    subscribe,
+    () => status,
+    () => 'loading' as Status,
+  )
 
   if (current === 'loaded') {
     return <img src={company.logoSrc} alt={company.name} className={cn('w-auto', heights[size], className)} />

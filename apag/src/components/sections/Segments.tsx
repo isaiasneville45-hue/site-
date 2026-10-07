@@ -11,7 +11,12 @@ export function Segments() {
   const list = (hidden: boolean) => (
     <ul
       aria-hidden={hidden || undefined}
-      className={cn('flex shrink-0 items-center gap-4 pr-4', hidden && 'motion-reduce:hidden')}
+      className={cn(
+        'flex shrink-0 items-center gap-4 pr-4',
+        // sem animação: os segmentos quebram em linhas, centralizados
+        'motion-reduce:w-full motion-reduce:shrink motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:gap-3 motion-reduce:px-4',
+        hidden && 'motion-reduce:hidden',
+      )}
     >
       {segments.map(({ icon: Icon, label }) => (
         <li
@@ -39,7 +44,11 @@ export function Segments() {
           aria-pressed={paused}
           className="grid size-8 place-items-center rounded-full border border-white/10 text-white/60 transition-colors hover:border-white/25 hover:text-white motion-reduce:hidden"
         >
-          {paused ? <Play className="size-3.5" aria-hidden="true" /> : <Pause className="size-3.5" aria-hidden="true" />}
+          {paused ? (
+            <Play className="size-3.5" aria-hidden="true" />
+          ) : (
+            <Pause className="size-3.5" aria-hidden="true" />
+          )}
           <span className="sr-only">{paused ? 'Retomar animação dos segmentos' : 'Pausar animação dos segmentos'}</span>
         </button>
       </div>
@@ -47,7 +56,7 @@ export function Segments() {
       <div className="group mask-fade-x overflow-hidden motion-reduce:[mask-image:none]">
         <div
           className={cn(
-            'flex w-max animate-marquee group-hover:[animation-play-state:paused] motion-reduce:w-auto motion-reduce:animate-none motion-reduce:justify-center motion-reduce:[&>ul]:flex-wrap motion-reduce:[&>ul]:justify-center motion-reduce:[&>ul]:px-4',
+            'flex w-max animate-marquee group-hover:[animation-play-state:paused] motion-reduce:w-full motion-reduce:animate-none',
             paused && '[animation-play-state:paused]',
           )}
           style={{ ['--marquee-duration' as string]: '45s' }}

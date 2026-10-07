@@ -1,12 +1,4 @@
-import {
-  ClipboardCheck,
-  Droplets,
-  FireExtinguisher,
-  Lightbulb,
-  Signpost,
-  Siren,
-  type LucideIcon,
-} from 'lucide-react'
+import { ClipboardCheck, Droplets, FireExtinguisher, Lightbulb, Signpost, Siren, type LucideIcon } from 'lucide-react'
 
 export type Service = {
   /** Identificador usado no formulário de contato. */

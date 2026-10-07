@@ -80,7 +80,7 @@ export default function ContactForm() {
     const opened = window.open(url, '_blank')
     if (opened) opened.opener = null
     // Se o navegador bloquear a nova aba, abrimos na mesma.
-    else window.location.href = url
+    else window.location.assign(url)
     setSentUrl(url)
   }
 
@@ -97,14 +97,14 @@ export default function ContactForm() {
               </FormLabel>
               <FormControl>
                 <Input
-                      autoComplete="name"
-                      placeholder="Seu nome"
-                      {...field}
-                      ref={(element) => {
-                        field.ref(element)
-                        nameInput.current = element
-                      }}
-                    />
+                  autoComplete="name"
+                  placeholder="Seu nome"
+                  {...field}
+                  ref={(element) => {
+                    field.ref(element)
+                    nameInput.current = element
+                  }}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -156,7 +156,13 @@ export default function ContactForm() {
                 E-mail <Required />
               </FormLabel>
               <FormControl>
-                <Input type="email" inputMode="email" autoComplete="email" placeholder="voce@empresa.com.br" {...field} />
+                <Input
+                  type="email"
+                  inputMode="email"
+                  autoComplete="email"
+                  placeholder="voce@empresa.com.br"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -226,7 +232,12 @@ export default function ContactForm() {
               <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-apag-ember" aria-hidden="true" />
               <span>
                 Abrimos o WhatsApp com a sua mensagem. Se nada aconteceu,{' '}
-                <a href={sentUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-apag-ember underline underline-offset-4">
+                <a
+                  href={sentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-apag-ember underline underline-offset-4"
+                >
                   clique aqui para enviar
                 </a>
                 .

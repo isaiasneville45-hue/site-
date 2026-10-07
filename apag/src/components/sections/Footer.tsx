@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useSyncExternalStore, type ReactNode } from 'react'
 import { ArrowUp } from 'lucide-react'
 
 import { Logo } from '@/components/Logo'
@@ -8,14 +8,20 @@ import { navigation } from '@/config/content'
 import { services } from '@/config/services'
 import { mailHref, phoneHref, whatsappUrl } from '@/lib/contact'
 
+const subscribeNothing = () => () => {}
+const currentYear = () => new Date().getFullYear()
+const buildYear = () => __BUILD_YEAR__
+
 export function Footer() {
   // Ano do build no HTML pré-renderizado; no navegador, o ano atual.
-  const [year, setYear] = useState(__BUILD_YEAR__)
-  useEffect(() => setYear(new Date().getFullYear()), [])
+  const year = useSyncExternalStore(subscribeNothing, currentYear, buildYear)
 
   return (
     <footer className="relative overflow-hidden border-t border-white/[0.07] bg-apag-black pt-20">
-      <div aria-hidden="true" className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-apag-red to-transparent" />
+      <div
+        aria-hidden="true"
+        className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-apag-red to-transparent"
+      />
 
       <div className="container grid gap-12 pb-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr] lg:gap-10">
         <div className="max-w-sm">
@@ -76,7 +82,10 @@ export function Footer() {
           <p>
             © {year} {company.legalName} · CNPJ {company.cnpj}
           </p>
-          <a href="#inicio" className="inline-flex items-center gap-2 self-start font-semibold text-white/70 transition-colors hover:text-white sm:self-auto">
+          <a
+            href="#inicio"
+            className="inline-flex items-center gap-2 self-start font-semibold text-white/70 transition-colors hover:text-white sm:self-auto"
+          >
             Voltar ao topo
             <ArrowUp className="size-4" aria-hidden="true" />
           </a>

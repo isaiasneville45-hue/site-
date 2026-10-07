@@ -54,7 +54,8 @@ export const differentials: IconItem[] = [
   {
     icon: HardHat,
     title: 'Atendimento técnico especializado',
-    description: 'Cada visita, instalação e manutenção é conduzida por quem entende de sistemas de segurança contra incêndio.',
+    description:
+      'Cada visita, instalação e manutenção é conduzida por quem entende de sistemas de segurança contra incêndio.',
   },
   {
     icon: ShieldCheck,
@@ -64,7 +65,8 @@ export const differentials: IconItem[] = [
   {
     icon: Layers,
     title: 'Solução completa, um só fornecedor',
-    description: 'Extintores, hidrantes, alarme, sinalização, iluminação de emergência e adequação ao PPCI com um único parceiro.',
+    description:
+      'Extintores, hidrantes, alarme, sinalização, iluminação de emergência e adequação ao PPCI com um único parceiro.',
   },
 ]
 
@@ -73,7 +75,8 @@ export const processSteps: IconItem[] = [
   {
     icon: PhoneCall,
     title: 'Contato e visita técnica',
-    description: 'Você fala com a gente e, quando necessário, agendamos uma visita para avaliar o imóvel e os sistemas existentes.',
+    description:
+      'Você fala com a gente e, quando necessário, agendamos uma visita para avaliar o imóvel e os sistemas existentes.',
   },
   {
     icon: FileText,

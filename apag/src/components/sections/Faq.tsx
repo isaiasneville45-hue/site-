@@ -10,7 +10,11 @@ import { whatsappUrl } from '@/lib/contact'
 
 export function Faq() {
   return (
-    <section id="faq" aria-labelledby="faq-title" className="relative border-t border-white/[0.06] bg-apag-noir py-24 lg:py-32">
+    <section
+      id="faq"
+      aria-labelledby="faq-title"
+      className="relative border-t border-white/[0.06] bg-apag-noir py-24 lg:py-32"
+    >
       <div className="container grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <SectionHeading
@@ -21,7 +25,11 @@ export function Faq() {
           />
           <Reveal delay={0.1} className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild variant="outline">
-              <a href={whatsappUrl('Olá! Tenho uma dúvida sobre os serviços.')} target="_blank" rel="noopener noreferrer">
+              <a
+                href={whatsappUrl('Olá! Tenho uma dúvida sobre os serviços.')}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <WhatsAppIcon />
                 Perguntar no WhatsApp
               </a>

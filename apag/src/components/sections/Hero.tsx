@@ -30,8 +30,14 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_70%_60%_at_15%_35%,rgb(2_6_14/0.85),transparent_70%)]"
       />
-      <div aria-hidden="true" className="absolute -right-40 top-1/4 -z-10 size-[42rem] rounded-full bg-apag-red/25 blur-[140px]" />
-      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-b from-transparent to-apag-black" />
+      <div
+        aria-hidden="true"
+        className="absolute -right-40 top-1/4 -z-10 size-[42rem] rounded-full bg-apag-red/25 blur-[140px]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-b from-transparent to-apag-black"
+      />
 
       <div className="container grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
         <div className="max-w-2xl">
@@ -139,7 +145,11 @@ function HeroCards() {
       <div className="absolute inset-[12%] rounded-full bg-apag-red/35 blur-[90px]" />
 
       {backCards.map((card, i) => (
-        <div key={card.title} className={cn('absolute w-[76%] animate-rise-in', card.position)} style={delay(250 + i * 120)}>
+        <div
+          key={card.title}
+          className={cn('absolute w-[76%] animate-rise-in', card.position)}
+          style={delay(250 + i * 120)}
+        >
           <div className="animate-float" style={card.float}>
             <div
               className={cn(
@@ -154,14 +164,19 @@ function HeroCards() {
       ))}
 
       {/* card da frente: vermelho 100% */}
-      <div className="absolute left-[17%] top-[38%] w-[78%] rotate-[2.5deg] animate-rise-in sm:top-[42%]" style={delay(490)}>
+      <div
+        className="absolute left-[17%] top-[38%] w-[78%] rotate-[2.5deg] animate-rise-in sm:top-[42%]"
+        style={delay(490)}
+      >
         <div className="animate-float" style={{ animationDuration: '6s' }}>
           <div className="relative aspect-[1.58] overflow-hidden rounded-[1.5rem] border border-white/25 bg-[linear-gradient(140deg,#F2414C_0%,var(--apag-red)_40%,var(--apag-crimson)_100%)] p-4 shadow-[inset_0_1px_0_rgb(255_255_255/0.45),inset_0_-12px_30px_rgb(0_0_0/0.2),0_40px_80px_-30px_rgb(197_3_55/0.9)] sm:rounded-[1.75rem] sm:p-6">
             <div className="absolute -right-16 -top-20 size-56 rounded-full bg-white/15 blur-2xl" />
             <div className="absolute inset-0 bg-grid opacity-40" />
             <div className="relative flex h-full flex-col">
               <CardTop icon={FireExtinguisher} index="01" title="Extintores" />
-              <p className="mt-2 text-[0.7rem] text-white/90 sm:mt-3 sm:text-sm">Recarga · Manutenção · Teste hidrostático</p>
+              <p className="mt-2 text-[0.7rem] text-white/90 sm:mt-3 sm:text-sm">
+                Recarga · Manutenção · Teste hidrostático
+              </p>
               <div className="mt-auto flex items-end justify-between gap-3">
                 <span className="font-display text-[0.6rem] uppercase tracking-wide text-white/75 sm:hidden">
                   Desde {company.foundedYear}
@@ -190,8 +205,8 @@ function HeroCards() {
             <ShieldCheck className="size-5" />
           </span>
           <span className="text-xs leading-tight text-white/75 sm:text-sm">
-            <strong className="block font-semibold text-white">Conforme as normas</strong>
-            e exigências do Corpo de Bombeiros
+            <strong className="block font-semibold text-white">Conforme as normas</strong>e exigências do Corpo de
+            Bombeiros
           </span>
         </div>
       </div>

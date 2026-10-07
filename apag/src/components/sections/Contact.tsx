@@ -21,8 +21,15 @@ export function Contact() {
   }, [])
 
   return (
-    <section id="contato" aria-labelledby="contato-title" className="relative overflow-hidden bg-apag-noir py-24 lg:py-32">
-      <div aria-hidden="true" className="absolute -right-40 top-20 size-[34rem] rounded-full bg-apag-crimson/15 blur-[140px]" />
+    <section
+      id="contato"
+      aria-labelledby="contato-title"
+      className="relative overflow-hidden bg-apag-noir py-24 lg:py-32"
+    >
+      <div
+        aria-hidden="true"
+        className="absolute -right-40 top-20 size-[34rem] rounded-full bg-apag-crimson/15 blur-[140px]"
+      />
 
       <div className="container relative">
         <SectionHeading

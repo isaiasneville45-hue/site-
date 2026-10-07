@@ -9,7 +9,11 @@ import { differentials } from '@/config/content'
 /** Seção clara (branca) — quebra o ritmo do tema escuro. */
 export function WhyApag() {
   return (
-    <section id="sobre" aria-labelledby="sobre-title" className="theme-light relative overflow-hidden bg-apag-white py-24 text-apag-black lg:py-32">
+    <section
+      id="sobre"
+      aria-labelledby="sobre-title"
+      className="theme-light relative overflow-hidden bg-apag-white py-24 text-apag-black lg:py-32"
+    >
       <div className="container grid gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
         <div>
           <SectionHeading
@@ -22,8 +26,14 @@ export function WhyApag() {
 
           {/* Ficha da empresa — cards empilhados em camadas de vermelho */}
           <Reveal delay={0.1} className="relative mt-14 max-w-md pb-6 pl-6 sm:pl-0">
-            <div aria-hidden="true" className="absolute -bottom-0 left-0 h-[88%] w-[92%] -rotate-[5deg] rounded-3xl bg-apag-red-45 sm:-left-6" />
-            <div aria-hidden="true" className="absolute bottom-2 left-2 h-[90%] w-[94%] -rotate-[2.5deg] rounded-3xl bg-apag-red-65 sm:-left-3" />
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-0 left-0 h-[88%] w-[92%] -rotate-[5deg] rounded-3xl bg-apag-red-45 sm:-left-6"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute bottom-2 left-2 h-[90%] w-[94%] -rotate-[2.5deg] rounded-3xl bg-apag-red-65 sm:-left-3"
+            />
             <div className="relative overflow-hidden rounded-3xl bg-crimson-noir p-7 text-white shadow-[0_30px_60px_-25px_rgb(197_3_55/0.6)] sm:p-8">
               <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-40" />
               <div className="relative">
