@@ -1,0 +1,179 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@config '../tailwind.config.ts';
+
+/* ──────────────────────────────────────────────────────────────────────
+   Mokoto: fonte dos títulos e da logo textual.
+   Coloque o arquivo em public/fonts/Mokoto.woff2. Enquanto ele não existir,
+   o navegador usa a Michroma (Google Fonts, empacotada via @fontsource).
+   ────────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Mokoto';
+  src: url('/fonts/Mokoto.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Paleta APAG */
+  --apag-red: #df2531;
+  --apag-red-65: rgb(223 37 49 / 0.65);
+  --apag-red-45: rgb(223 37 49 / 0.45);
+  --apag-crimson: #c50337;
+  --apag-noir: #02060e;
+  --apag-black: #000000;
+  --apag-white: #ffffff;
+  --apag-ember: #ff5a65;
+
+  /* Tipografia: Mokoto (títulos, com Michroma de fallback) e Open Sans (textos) */
+  --font-stack-display: 'Mokoto', 'Michroma', ui-sans-serif, system-ui, sans-serif;
+  --font-stack-sans: 'Open Sans Variable', 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Gradiente assinatura "Crimson Noir" */
+  --gradient-crimson-noir: linear-gradient(160deg, var(--apag-noir) 0%, var(--apag-crimson) 100%);
+  --gradient-noir-crimson: linear-gradient(160deg, var(--apag-crimson) 0%, var(--apag-noir) 100%);
+
+  /* Tokens semânticos (shadcn/ui) — tema escuro padrão */
+  --background: var(--apag-noir);
+  --foreground: var(--apag-white);
+  --card: rgb(255 255 255 / 0.03);
+  --card-foreground: var(--apag-white);
+  --popover: #0b111c;
+  --popover-foreground: var(--apag-white);
+  --primary: var(--apag-red);
+  --primary-foreground: var(--apag-white);
+  --secondary: rgb(255 255 255 / 0.06);
+  --secondary-foreground: var(--apag-white);
+  --muted: rgb(255 255 255 / 0.06);
+  --muted-foreground: rgb(255 255 255 / 0.7);
+  --accent: rgb(255 255 255 / 0.08);
+  --accent-foreground: var(--apag-white);
+  --destructive: var(--apag-ember);
+  --destructive-foreground: var(--apag-white);
+  --border: rgb(255 255 255 / 0.1);
+  --input: rgb(255 255 255 / 0.14);
+  --ring: var(--apag-ember);
+  --radius: 1rem;
+}
+
+/* Seção clara (fundo branco, texto preto) */
+.theme-light {
+  --background: var(--apag-white);
+  --foreground: var(--apag-black);
+  --card: rgb(2 6 14 / 0.03);
+  --card-foreground: var(--apag-black);
+  --muted: rgb(2 6 14 / 0.05);
+  --muted-foreground: rgb(2 6 14 / 0.68);
+  --border: rgb(2 6 14 / 0.1);
+  --input: rgb(2 6 14 / 0.16);
+  --ring: var(--apag-red);
+  --destructive: #b3121d;
+}
+
+/* Blocos sobre vermelho/crimson: anel de foco branco para manter contraste */
+.on-red {
+  --ring: var(--apag-white);
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-stack-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--apag-red);
+    color: var(--apag-white);
+  }
+
+  /* Foco visível em todo o site (anel vermelho) */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 80rem;
+
+  @variant sm {
+    padding-inline: 1.5rem;
+  }
+  @variant lg {
+    padding-inline: 2rem;
+  }
+}
+
+/* Títulos: Mokoto/Michroma em maiúsculas, tracking apertado */
+@utility font-display-title {
+  font-family: var(--font-stack-display);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+/* Textura de grade com fade radial */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 80%);
+}
+
+/* Ruído sutil (SVG inline, sem requisição extra) */
+@utility bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+/* Fade nas bordas laterais (marquee) */
+@utility mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+/* Respeita quem prefere menos movimento: desliga animações e transições */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
