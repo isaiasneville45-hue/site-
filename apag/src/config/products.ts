@@ -29,6 +29,8 @@ export type Product = {
 export type ProductCategory = {
   id: ProductCategoryId
   title: string
+  /** nome curto usado na aba */
+  tabLabel: string
   /** texto curto explicando a categoria */
   intro: string
   /** foto "humanizada" da categoria: o maior arquivo, '/fotos/{id}-{largura}.webp' ('' = só o gradiente) */
@@ -44,6 +46,7 @@ export const productCategories: ProductCategory[] = [
   {
     id: 'sinalizacao',
     title: 'Sinalização de emergência',
+    tabLabel: 'Sinalização',
     intro:
       'Placas e fitas que mostram o caminho até a saída e indicam onde estão os equipamentos de combate a incêndio, conforme a ABNT NBR 16820 e as Instruções Normativas do Corpo de Bombeiros de SC (IN 13).',
     cover: '/fotos/capa-sinalizacao-1600.webp',
@@ -311,6 +314,7 @@ export const productCategories: ProductCategory[] = [
   {
     id: 'alarme',
     title: 'Alarme de incêndio',
+    tabLabel: 'Alarme',
     intro:
       'Centrais, detectores, acionadores e sirenes que identificam um princípio de incêndio e avisam todo o prédio rapidamente, em versões convencionais, endereçáveis e analógicas.',
     cover: '/fotos/capa-alarme-1024.webp',
@@ -556,6 +560,7 @@ export const productCategories: ProductCategory[] = [
   {
     id: 'hidrantes',
     title: 'Hidrantes e mangotinhos',
+    tabLabel: 'Hidrantes',
     intro:
       'Mangueiras, esguichos, conexões e abrigos para a rede de hidrantes do seu imóvel, além do teste hidrostático das mangueiras e da manutenção da rede.',
     cover: '/fotos/capa-hidrantes-1600.webp',
@@ -663,6 +668,7 @@ export const productCategories: ProductCategory[] = [
   {
     id: 'iluminacao',
     title: 'Iluminação de emergência',
+    tabLabel: 'Iluminação',
     intro:
       'Luminárias e blocos autônomos que acendem sozinhos na falta de energia e mantêm as rotas de fuga iluminadas, inclusive em áreas externas, úmidas e industriais.',
     cover: '/fotos/capa-iluminacao-1600.webp',
@@ -805,6 +811,7 @@ export const productCategories: ProductCategory[] = [
   {
     id: 'extintores',
     title: 'Extintores',
+    tabLabel: 'Extintores',
     intro:
       'Extintores para cada classe de incêndio, com suportes e acessórios para a instalação, além dos serviços de recarga, manutenção e teste hidrostático.',
     cover: '/fotos/capa-extintores-1024.webp',

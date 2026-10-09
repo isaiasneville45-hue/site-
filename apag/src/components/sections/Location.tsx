@@ -91,14 +91,15 @@ export function Location() {
 
 function InfoRow({ icon: Icon, label, children }: { icon: LucideIcon; label: string; children: ReactNode }) {
   return (
-    <div className="flex items-start gap-4 rounded-3xl border border-white/10 bg-white/[0.03] p-4 pr-5 sm:p-5">
-      <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-apag-red-45 ring-1 ring-apag-red-65">
-        <Icon className="size-5 text-white" aria-hidden="true" />
-      </span>
-      <div className="min-w-0">
-        <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">{label}</dt>
-        <dd className="mt-1 font-semibold leading-snug text-white">{children}</dd>
-      </div>
+    // dt e dd são filhos diretos do grupo (estrutura válida de <dl>); o ícone fica dentro do dt.
+    <div className="relative min-h-20 rounded-3xl border border-white/10 bg-white/[0.03] py-4 pl-20 pr-5 sm:min-h-22 sm:py-5 sm:pl-21">
+      <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
+        <span className="absolute left-4 top-4 grid size-12 place-items-center rounded-2xl bg-apag-red-45 ring-1 ring-apag-red-65 sm:left-5 sm:top-5">
+          <Icon className="size-5 text-white" aria-hidden="true" />
+        </span>
+        {label}
+      </dt>
+      <dd className="mt-1 min-w-0 font-semibold leading-snug text-white">{children}</dd>
     </div>
   )
 }

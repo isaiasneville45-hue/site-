@@ -1,3 +1,5 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import type { Plugin } from 'vite'
 import { company } from './src/config/company.ts'
 import { services } from './src/config/services.ts'
@@ -44,7 +46,10 @@ function renderSeoTags(): string {
     legalName: company.legalName,
     description: company.seoDescription,
     url,
-    logo: `${url}/logo-apag.svg`,
+    // Logo oficial quando existir em public/; até lá, o ícone da chama.
+    logo: fs.existsSync(path.resolve(import.meta.dirname, 'public/logo-apag.svg'))
+      ? `${url}/logo-apag.svg`
+      : `${url}/apple-touch-icon.png`,
     image: ogImage,
     taxID: company.cnpj,
     foundingDate: company.foundedAt,

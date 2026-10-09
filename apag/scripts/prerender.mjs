@@ -34,7 +34,7 @@ const html = template
 
 // Toda imagem local referenciada na página (src/srcset) precisa existir em dist/.
 const localImages = new Set(
-  [...html.matchAll(/(?:src|srcset)="([^"]+)"/g)]
+  [...html.matchAll(/\b(?:src|srcset|imagesrcset)="([^"]+)"/gi)]
     .flatMap(([, value]) => value.split(',').map((part) => part.trim().split(/\s+/)[0]))
     .filter((url) => url.startsWith('/') && !url.startsWith('//') && /\.(webp|png|jpe?g|svg|avif)$/i.test(url)),
 )

@@ -16,6 +16,7 @@ Uso local (precisa de internet e de `pip install pillow`; poppler para PDFs):
 import io
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -194,11 +195,36 @@ def main():
         json.dump(report, f, ensure_ascii=False, indent=1)
     failed = [p for p in report["products"] + report["photos"] if not p["ok"]]
     print(f"\n{len(report['products'])} produtos, {len(report['photos'])} fotos, {len(failed)} falhas")
+    return 1 if failed else 0
 
 
-def write_credits(manifest, report):
-    ok_products = {(p["category"], p["id"]) for p in report["products"] if p["ok"]}
-    ok_photos = {p["id"] for p in report["photos"] if p["ok"]}
+LICENSE_URLS = {"by": "https://creativecommons.org/licenses/by/{v}/", "by-sa": "https://creativecommons.org/licenses/by-sa/{v}/"}
+
+
+def license_md(name):
+    """Nome da licença com link para o texto dela (as licenças CC pedem o link)."""
+    m = re.match(r"CC (BY(?:-SA)?) (\d\.\d)", name or "")
+    if m:
+        return f"[{name}]({LICENSE_URLS[m.group(1).lower()].format(v=m.group(2))})"
+    if (name or "").startswith("CC0"):
+        return f"[{name}](https://creativecommons.org/publicdomain/zero/1.0/)"
+    return name
+
+
+def write_credits(manifest, report=None):
+    # Crédito de toda imagem que está em public/, mesmo que o download desta rodada
+    # tenha falhado (o arquivo anterior continua no site e precisa da atribuição).
+    del report
+    ok_products = {
+        (p["category"], p["id"])
+        for p in manifest.get("products", [])
+        if os.path.exists(os.path.join(PUBLIC, "produtos", p["category"], f"{p['id']}.webp"))
+    }
+    ok_photos = {
+        p["id"]
+        for p in manifest.get("photos", [])
+        if all(os.path.exists(os.path.join(PUBLIC, "fotos", f"{p['id']}-{w}.webp")) for w in p.get("widths", [800, 1600]))
+    }
     lines = [
         "# Créditos das imagens",
         "",
@@ -220,7 +246,7 @@ def write_credits(manifest, report):
             continue
         origin = item.get("pdf") or item.get("page") or item.get("url")
         extra = f" (pág. {item['pdf_page']} do catálogo)" if item.get("pdf_page") else ""
-        license_ = " — ".join(x for x in (item.get("author", ""), item.get("license", "")) if x) or "imagem do fabricante"
+        license_ = " — ".join(x for x in (item.get("author", ""), license_md(item.get("license", ""))) if x) or "imagem do fabricante"
         lines.append(f"| `produtos/{item['category']}/{item['id']}.webp` | {item.get('name', item['id'])} | {item.get('brand', '')} | {origin}{extra} | {license_} |")
     lines += [
         "",
@@ -235,7 +261,7 @@ def write_credits(manifest, report):
         if item["id"] not in ok_photos:
             continue
         files = ", ".join(f"`fotos/{item['id']}-{w}.webp`" for w in item.get("widths", [800, 1600]))
-        lines.append(f"| {files} | {item.get('usage', '')} | {item.get('author', '')} | {item.get('page', item['url'])} | {item.get('license', 'Unsplash License (https://unsplash.com/license)')} |")
+        lines.append(f"| {files} | {item.get('usage', '')} | {item['author']} | {item.get('page', item['url'])} | {license_md(item['license'])} |")
     lines.append("")
     dest = os.path.join(PUBLIC, "produtos", "CREDITOS.md")
     os.makedirs(os.path.dirname(dest), exist_ok=True)

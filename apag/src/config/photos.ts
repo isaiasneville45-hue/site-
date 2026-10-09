@@ -23,8 +23,8 @@ export const photos: { hero: PhotoAsset | null; why: PhotoAsset | null } = {
   },
   why: {
     id: 'por-que-apag',
-    alt: 'Agente de segurança, de perfil, inspeciona extintores de incêndio vermelhos durante uma vistoria técnica',
+    alt: 'Extintor de incêndio vermelho em suporte de piso amarelo com placa de identificação, instalado em uma área industrial com tubulações e andaimes',
     widths: [800, 1200],
-    position: '45% 50%',
+    position: '40% 50%',
   },
 }

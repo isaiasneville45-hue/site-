@@ -112,7 +112,7 @@ function HeroFact({ label, value }: { label: string; value: string }) {
     <li className="flex items-center gap-2.5">
       <span aria-hidden="true" className="size-1.5 rounded-full bg-apag-red shadow-[0_0_8px_var(--apag-red)]" />
       <span className="font-semibold text-white">
-        {value} <span className="font-normal text-white/65">{label}</span>
+        {value} <span className="font-normal text-white/75">{label}</span>
       </span>
     </li>
   )

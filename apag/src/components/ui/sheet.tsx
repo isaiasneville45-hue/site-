@@ -23,7 +23,7 @@ function SheetContent({ className, children, ...props }: React.ComponentProps<ty
       <SheetPrimitive.Content
         data-slot="sheet-content"
         className={cn(
-          'fixed inset-y-0 right-0 z-50 flex h-full w-[86%] max-w-sm flex-col gap-6 border-l border-white/10 bg-apag-noir p-6 shadow-2xl transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-400 data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right',
+          'fixed inset-y-0 right-0 z-50 flex h-full w-[86%] max-w-sm flex-col gap-6 overflow-y-auto overscroll-contain border-l border-white/10 bg-apag-noir p-6 shadow-2xl transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-400 data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right',
           className,
         )}
         {...props}

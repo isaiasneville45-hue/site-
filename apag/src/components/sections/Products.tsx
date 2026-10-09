@@ -33,7 +33,11 @@ export function Products() {
     const list = listRef.current
     const trigger = list?.querySelector<HTMLElement>(`[data-value="${value}"]`)
     if (list && trigger && list.scrollWidth > list.clientWidth) {
-      list.scrollTo({ left: trigger.offsetLeft - (list.clientWidth - trigger.offsetWidth) / 2, behavior: 'smooth' })
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      list.scrollTo({
+        left: trigger.offsetLeft - (list.clientWidth - trigger.offsetWidth) / 2,
+        behavior: reduceMotion ? 'auto' : 'smooth',
+      })
     }
   }
 
@@ -66,11 +70,17 @@ export function Products() {
               {productCategories.map((category) => {
                 const Icon = categoryIcons[category.id]
                 return (
-                  <TabsTrigger key={category.id} value={category.id} data-value={category.id} className="snap-start">
+                  <TabsTrigger
+                    key={category.id}
+                    value={category.id}
+                    data-value={category.id}
+                    className="snap-start data-[state=active]:[&>span]:bg-black/25"
+                  >
                     <Icon aria-hidden="true" />
-                    {category.title}
+                    {category.tabLabel}
                     <span className="rounded-full bg-white/10 px-2 py-0.5 text-[0.7rem] font-semibold tabular-nums">
                       {category.products.length}
+                      <span className="sr-only"> produtos</span>
                     </span>
                   </TabsTrigger>
                 )
@@ -203,6 +213,12 @@ function ProductCard({
                 product.imageFit === 'cover' ? 'object-cover' : 'object-contain p-4',
               )}
             />
+            {product.brand ? null : (
+              // Sem fabricante definido, a foto é de banco de imagem: só ilustra o tipo de produto.
+              <span className="absolute bottom-3 left-3 rounded-full bg-apag-noir/75 px-2.5 py-1 text-[0.7rem] font-semibold text-white backdrop-blur">
+                Imagem ilustrativa
+              </span>
+            )}
           </div>
         ) : (
           // Placeholder enquanto a foto do produto não chega
