@@ -27,7 +27,8 @@ SCALE = 1025 / 713  # página a 90 dpi → imagem original do PDF
 # Opções: "trim" (corta pelo fundo, padrão True), "debadge" (apaga o selo azul e o
 # contorno cinza da chapa) e "donor": (página, janela, transformação) — o canto
 # coberto pelo selo é copiado de outra placa espelhada ("mirror") ou girada
-# ("rot180"); página None usa a própria placa (símbolos simétricos).
+# ("rot180"); página None usa a própria placa (símbolos simétricos). "inset" corta
+# alguns pixels da borda da placa.
 CROPS = {
     # Orientação e salvamento (rota de fuga)
     "saida": (5, (585, 474, 685, 528), None, {}),
@@ -56,10 +57,10 @@ CROPS = {
     "proibido-fumar": (7, (35, 728, 97, 808), None, {"debadge": True}),
     "proibido-produzir-chama": (7, (185, 728, 247, 813), None, {"debadge": True}),
     "proibido-elevador": (7, (481, 728, 548, 810), None, {"debadge": True}),
-    "proibido-obstruir": (7, (639, 728, 698, 809), None, {"debadge": True}),
+    "proibido-obstruir": (7, (636, 728, 698, 809), None, {"debadge": True}),
     # Sinalização complementar e continuada
     "fita-antiderrapante": (4, (48, 84, 668, 318), None, {"trim": False}),
-    "demarcacao-de-solo": (9, (469, 312, 664, 509), (460, 304, 500, 336), {}),
+    "demarcacao-de-solo": (9, (469, 312, 664, 509), (460, 304, 500, 336), {"inset": 5}),
     "plano-de-fuga": (9, (309, 650, 698, 980), None, {}),
 }
 
@@ -151,12 +152,11 @@ def patch_badge(arr, badge):
     sign = arr[y0:y1, x0:x1].copy()
     h, w, _ = sign.shape
     a = sign.astype(int)
-    frame = np.median(sign[h - 2 :, w // 4 : 3 * w // 4].reshape(-1, 3), axis=0)
+    frame = np.median(sign[h - 4 : h - 1, w // 4 : 3 * w // 4].reshape(-1, 3), axis=0)
     mid = w * 3 // 4
-    band = 0
+    band = 2  # a última linha costuma vir misturada com o fundo
     while band < h // 2 and np.abs(a[h - 1 - band, mid] - frame).sum() < 70:
         band += 1
-    band = max(2, band)
     quad = sign[h // 2 : h - band, w // 2 : w - band].reshape(-1, 3)
     inner = dominant(quad)
     inner_is_cream = inner[0] > 200 and inner[1] > 180 and inner[2] < inner[1] - 25
@@ -172,6 +172,11 @@ def patch_badge(arr, badge):
                 continue  # símbolo creme da placa: mantém
             else:
                 sign[y, x] = inner
+    if band > 8:  # moldura larga (demarcação): apaga traços do catálogo sobre ela
+        edge = np.zeros((h, w), bool)
+        edge[:band, :] = edge[-band:, :] = edge[:, :band] = edge[:, -band:] = True
+        far = np.abs(sign.astype(int) - frame).sum(axis=2) > 60
+        sign[edge & far] = frame
     return sign
 
 
@@ -225,6 +230,9 @@ def main(pdf, out_dir):
                 arr = composite(arr, local, donor_arr, transform)
             else:
                 arr = patch_badge(arr, local)
+            k = opts.get("inset", 0)  # descarta traços do catálogo encostados na borda
+            if k:
+                arr = arr[k:-k, k:-k]
             finish(Image.fromarray(arr), os.path.join(out_dir, f"{pid}.webp"))
             print("ok", pid)
             continue
@@ -232,7 +240,8 @@ def main(pdf, out_dir):
             # selo do catálogo (azul) e contorno cinza da chapa viram branco
             a = arr.astype(int)
             gray = (a.min(axis=2) > 165) & (a.max(axis=2) - a.min(axis=2) < 25)
-            arr[bluish(arr) | gray] = 255
+            cyan = a[:, :, 2] > a[:, :, 0] + 15  # estas placas não têm azul
+            arr[bluish(arr) | cyan | gray] = 255
             bg = np.array([255, 255, 255])
         if opts.get("trim", True):
             x0, y0, x1, y1 = content_bbox(arr, bg)
