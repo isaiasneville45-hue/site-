@@ -569,10 +569,8 @@
    "id": "luxpryme-slim-lsc-ip67",
    "name": "Luminária Slim 12/24 V LSC (IP-67)",
    "brand": "Luxpryme",
-   "url": "https://www.luxpryme.com.br/admin/image/produto/56/189md.png",
-   "fallbacks": [
-    "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png"
-   ],
+   "url": "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png",
+   "fallbacks": [],
    "page": "https://www.luxpryme.com.br/produto/luminaria-slim-1224vcc-"
   },
   {
@@ -730,10 +728,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
    "author": "Nzandozextinguishers1",
    "license": "CC0",
-   "cover": [
-    0.5,
-    0.55
-   ]
+   "trim": false
   },
   {
    "category": "extintores",
@@ -747,10 +742,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
    "author": "Nzandozextinguishers1",
    "license": "CC0",
-   "cover": [
-    0.5,
-    0.5
-   ]
+   "trim": false
   },
   {
    "category": "extintores",
@@ -764,10 +756,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher,_3KG_Carbon_Die_Oxide_2014.jpg",
    "author": "Aashaa",
    "license": "CC BY-SA 3.0",
-   "cover": [
-    0.5,
-    0.55
-   ]
+   "trim": false
   },
   {
    "category": "extintores",
@@ -781,10 +770,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher_01.jpg",
    "author": "Ganesh Mohan T",
    "license": "CC BY-SA 4.0",
-   "cover": [
-    0.5,
-    0.6
-   ]
+   "trim": false
   },
   {
    "category": "extintores",
@@ -798,10 +784,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Fire_foam_extinguisher_(h%C3%A5ndslokker,_brannslukningsapparat,_pulverapparat,_skumapparat,_type_VIKING)_on_wall_in_a_primary_school_in_Fusa,_Hordaland,_Norway._2018-03-23_A.jpg",
    "author": "Wolfmann",
    "license": "CC BY-SA 4.0",
-   "cover": [
-    0.53,
-    0.55
-   ]
+   "trim": false
   },
   {
    "category": "extintores",
@@ -815,10 +798,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Wet_chemical_fire_extinguisher.jpg",
    "author": "Firetech117",
    "license": "CC BY-SA 4.0",
-   "cover": [
-    0.5,
-    0.62
-   ]
+   "trim": false
   },
   {
    "category": "extintores",

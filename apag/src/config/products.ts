@@ -812,7 +812,6 @@ export const productCategories: ProductCategory[] = [
         image: '/produtos/extintores/extintor-po-abc.webp',
         imageAlt:
           'Extintor de pó químico vermelho com mangueira preta e manômetro, apoiado no chão junto a uma parede branca',
-        imageFit: 'cover',
       },
       {
         id: 'extintor-po-bc',
@@ -822,7 +821,6 @@ export const productCategories: ProductCategory[] = [
         image: '/produtos/extintores/extintor-po-bc.webp',
         imageAlt:
           'Extintor de pó químico vermelho com gatilho preto e mangueira longa bege, apoiado no chão em frente a uma parede clara',
-        imageFit: 'cover',
       },
       {
         id: 'extintor-co2',
@@ -831,7 +829,6 @@ export const productCategories: ProductCategory[] = [
           'Apaga por abafamento sem deixar resíduos. Indicado para fogos classe B e C, como painéis elétricos, salas de TI e laboratórios.',
         image: '/produtos/extintores/extintor-co2.webp',
         imageAlt: 'Extintor de CO2 vermelho com mangueira e difusor preto, fixado na parede',
-        imageFit: 'cover',
       },
       {
         id: 'extintor-agua-pressurizada',
@@ -840,7 +837,6 @@ export const productCategories: ProductCategory[] = [
           'Para fogos classe A (madeira, papel, tecidos), age por resfriamento. Não deve ser usado em equipamentos elétricos energizados.',
         image: '/produtos/extintores/extintor-agua-pressurizada.webp',
         imageAlt: 'Extintor de água pressurizada vermelho, com a palavra WATER no rótulo, pendurado na parede',
-        imageFit: 'cover',
       },
       {
         id: 'extintor-espuma-mecanica',
@@ -850,7 +846,6 @@ export const productCategories: ProductCategory[] = [
         image: '/produtos/extintores/extintor-espuma-mecanica.webp',
         imageAlt:
           'Extintor de espuma mecânica vermelho com mangueira azul-escura e ponteira verde, fixado na parede branca',
-        imageFit: 'cover',
       },
       {
         id: 'extintor-classe-k',
@@ -859,7 +854,6 @@ export const productCategories: ProductCategory[] = [
           'Feito para fogo em óleo e gordura de cozinha. Indicado para cozinhas industriais, restaurantes e lanchonetes.',
         image: '/produtos/extintores/extintor-classe-k.webp',
         imageAlt: 'Extintor classe K de aço inox com mangueira preta e rótulo de instruções, sobre fundo branco',
-        imageFit: 'cover',
       },
       {
         id: 'extintor-sobre-rodas',
