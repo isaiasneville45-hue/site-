@@ -604,6 +604,15 @@ def main():
         save("unsplash-html.json", unsplash_html())
     if "openverse" in only:
         save("openverse.json", openverse())
+    for arg in only:
+        # buscas extras: "openverse:<nome>" / "commons:<nome>" lêem research/queries-<nome>.txt
+        if arg.startswith(("openverse:", "commons:")):
+            kind, name = arg.split(":", 1)
+            queries = [l.strip() for l in open(os.path.join(OUT, f"queries-{name}.txt")) if l.strip()]
+            if kind == "openverse":
+                save(f"openverse-{name}.json", openverse(queries))
+            else:
+                save(f"commons-{name}.json", commons_sheets(commons(queries)))
     if "commons_retry" in only:
         prev = {}
         path = os.path.join(OUT, "commons.json")
