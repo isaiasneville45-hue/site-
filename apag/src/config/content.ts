@@ -26,10 +26,12 @@ type IconItem = { icon: LucideIcon; title: string; description: string }
 export const navigation = [
   { label: 'Início', href: '#inicio' },
   { label: 'Serviços', href: '#servicos' },
+  { label: 'Produtos', href: '#produtos' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Como Trabalhamos', href: '#como-trabalhamos' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contato', href: '#contato' },
+  { label: 'Localização', href: '#localizacao' },
 ]
 
 /** Segmentos atendidos (faixa infinita). */

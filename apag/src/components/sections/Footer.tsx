@@ -1,5 +1,5 @@
 import { useSyncExternalStore, type ReactNode } from 'react'
-import { ArrowUp } from 'lucide-react'
+import { ArrowUp, MapPin } from 'lucide-react'
 
 import { Logo } from '@/components/Logo'
 import { InstagramIcon, WhatsAppIcon } from '@/components/icons'
@@ -72,7 +72,22 @@ export function Footer() {
               {company.email}
             </a>
           </li>
-          <li className="text-white/65">{company.address}</li>
+          <li className="text-white/65">
+            <address className="not-italic">
+              {company.address.street} – {company.address.district}
+              <br />
+              {company.address.city}/{company.address.state} – CEP {company.address.zip}
+            </address>
+            <a
+              href={company.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-1.5 font-semibold text-apag-ember transition-colors hover:text-white"
+            >
+              <MapPin className="size-4" aria-hidden="true" />
+              Ver no mapa
+            </a>
+          </li>
           <li className="text-white/65">{company.hours}</li>
         </FooterColumn>
       </div>

@@ -56,7 +56,7 @@ export function Navbar() {
           <Logo />
         </a>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center gap-0.5 xl:flex">
           {navigation.map((item) => {
             const isActive = active === item.href.slice(1)
             return (
@@ -65,7 +65,7 @@ export function Navbar() {
                   href={item.href}
                   aria-current={isActive ? 'location' : undefined}
                   className={cn(
-                    'rounded-full px-3.5 py-2 text-sm font-medium transition-colors',
+                    'rounded-full px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors',
                     isActive ? 'bg-white/[0.07] text-white' : 'text-white/70 hover:text-white',
                   )}
                 >
@@ -86,7 +86,7 @@ export function Navbar() {
 
           <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="lg:hidden" aria-label="Abrir menu">
+              <Button variant="outline" size="icon" className="xl:hidden" aria-label="Abrir menu">
                 <Menu aria-hidden="true" />
               </Button>
             </SheetTrigger>

@@ -34,7 +34,7 @@ const escapeAttr = (value: string) => value.replace(/&/g, '&amp;').replace(/"/g,
 function renderSeoTags(): string {
   const url = siteUrl()
   const ogImage = `${url}/og-image.jpg`
-  const phoneDigits = company.phone.replace(/\D/g, '')
+  const { address } = company
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -48,13 +48,18 @@ function renderSeoTags(): string {
     image: ogImage,
     taxID: company.cnpj,
     foundingDate: company.foundedAt,
-    telephone: phoneDigits ? `+55${phoneDigits}` : undefined,
-    email: company.email || undefined,
+    telephone: company.phoneHref.replace(/^tel:/, ''),
+    email: company.email,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: company.address,
+      streetAddress: `${address.street} – ${address.district}`,
+      addressLocality: address.city,
+      addressRegion: address.state,
+      postalCode: address.zip,
       addressCountry: 'BR',
     },
+    geo: company.geo ? { '@type': 'GeoCoordinates', ...company.geo } : undefined,
+    hasMap: company.mapsUrl,
     areaServed: company.serviceArea,
     openingHours: company.openingHoursSchema,
     sameAs: [company.instagram].filter(Boolean),
@@ -125,7 +130,7 @@ function renderLlmsTxt(): string {
 - Região atendida: ${company.serviceArea}
 - Telefone: ${company.phone}
 - E-mail: ${company.email}
-- Endereço: ${company.address}
+- Endereço: ${company.addressLine} ([mapa](${company.mapsUrl}))
 - Horário: ${company.hours}
 
 ## Serviços

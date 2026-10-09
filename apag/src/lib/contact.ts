@@ -6,19 +6,13 @@ export function whatsappUrl(message: string = company.whatsappMessage) {
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`
 }
 
-/** Link tel: a partir do telefone exibido, ex. "(48) 3333-0000" → "tel:+554833330000". */
-export function phoneHref(phone: string = company.phone) {
-  const digits = phone.replace(/\D/g, '')
-  return `tel:+55${digits}`
+/** Link tel: do telefone da empresa. */
+export function phoneHref() {
+  return company.phoneHref
 }
 
 export function mailHref(email: string = company.email) {
   return `mailto:${email}`
-}
-
-/** Link do Google Maps para o endereço (usado quando não há mapa incorporado). */
-export function mapsSearchUrl(address: string = company.address) {
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
 }
 
 /** Máscara de telefone brasileiro: (00) 0000-0000 ou (00) 00000-0000. */

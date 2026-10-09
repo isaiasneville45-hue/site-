@@ -6,7 +6,7 @@ import { company, type Stat } from '@/config/company'
 
 export function Stats() {
   return (
-    <section aria-labelledby="numeros-title" className="relative overflow-hidden bg-apag-black py-20 lg:py-24">
+    <section aria-labelledby="numeros-title" className="relative overflow-hidden bg-apag-noir py-20 lg:py-24">
       <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-50" />
       <div className="container relative">
         <Reveal className="mx-auto max-w-2xl text-center">
@@ -20,7 +20,7 @@ export function Stats() {
             <Reveal
               key={stat.label}
               delay={i * 0.08}
-              className="flex flex-col items-center gap-3 bg-apag-black px-4 py-10 text-center sm:py-12"
+              className="flex flex-col items-center gap-3 bg-apag-noir px-4 py-10 text-center sm:py-12"
             >
               <dt className="order-last max-w-[14rem] text-sm text-white/65 sm:text-base">{stat.label}</dt>
               <dd className="font-display text-[clamp(2rem,1.2rem+3vw,3.5rem)] leading-none tracking-tight">

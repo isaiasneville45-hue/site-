@@ -1,10 +1,12 @@
 import type { CSSProperties } from 'react'
 import { ArrowRight, Droplets, FireExtinguisher, ShieldCheck, Siren, type LucideIcon } from 'lucide-react'
 
+import { Photo } from '@/components/Photo'
 import { Eyebrow } from '@/components/SectionHeading'
 import { WhatsAppIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { company, yearsInBusiness } from '@/config/company'
+import { photos } from '@/config/photos'
 import { services } from '@/config/services'
 import { whatsappUrl } from '@/lib/contact'
 import { cn } from '@/lib/utils'
@@ -23,6 +25,14 @@ export function Hero() {
       aria-labelledby="hero-title"
       className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-crimson-noir pb-20 pt-28 sm:pt-32 lg:pb-24 lg:pt-36"
     >
+      {/* Foto real com o gradiente Crimson Noir por cima (~70%) */}
+      {photos.hero ? (
+        <>
+          <Photo photo={photos.hero} sizes="100vw" priority className="absolute inset-0 -z-20 size-full" />
+          <div aria-hidden="true" className="absolute inset-0 -z-10 bg-crimson-noir opacity-70" />
+        </>
+      ) : null}
+
       {/* Texturas e luzes */}
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-grid" />
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-noise opacity-[0.06] mix-blend-overlay" />

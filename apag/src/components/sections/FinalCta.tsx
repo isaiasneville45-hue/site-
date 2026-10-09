@@ -7,7 +7,7 @@ import { whatsappUrl } from '@/lib/contact'
 
 export function FinalCta() {
   return (
-    <section aria-labelledby="cta-title" className="bg-apag-black py-20 lg:py-28">
+    <section aria-labelledby="cta-title" className="bg-apag-noir py-20 lg:py-28">
       <div className="container">
         <Reveal>
           <div className="on-red relative isolate overflow-hidden rounded-[2rem] bg-noir-crimson px-6 py-16 text-center shadow-glow-lg sm:rounded-[2.5rem] sm:px-12 lg:px-20 lg:py-24">

@@ -65,23 +65,42 @@ export const company = {
   // ── Textos institucionais ──────────────────────────────────────────
   tagline: 'Segurança contra incêndio do projeto à manutenção.',
   shortAbout: 'Instalação e manutenção de sistemas de prevenção e combate a incêndio desde 1998.',
-  seoTitle: 'APAG | Prevenção e combate a incêndio desde 1998',
+  seoTitle: 'APAG | Extintores, Alarme, Hidrantes e Sinalização de Incêndio em Joinville/SC',
   seoDescription:
-    'Instalação e manutenção de extintores, hidrantes, alarmes, sinalização e iluminação de emergência. Regularize seu imóvel junto ao Corpo de Bombeiros com a APAG, desde 1998.',
+    'Extintores, hidrantes, alarme de incêndio, sinalização e iluminação de emergência em Joinville/SC. Produtos, instalação e manutenção com a APAG, desde 1998.',
 
   // ── Contato ────────────────────────────────────────────────────────
-  phone: '(00) 0000-0000', // TODO
-  whatsapp: '5500000000000', // TODO (só números, com DDI)
-  whatsappMessage: 'Olá, APAG! Gostaria de solicitar um orçamento.',
-  email: 'contato@apag.com.br', // TODO
-  address: 'Rua Exemplo, 000 – Bairro, Cidade/SC', // TODO
-  hours: 'Seg a Sex, 8h às 18h', // TODO
+  phone: '(47) 3425-8735',
+  phoneHref: 'tel:+554734258735',
+  /** Só números, com DDI 55 → https://wa.me/554734258735 */
+  whatsapp: '554734258735',
+  whatsappMessage: 'Olá, APAG! Vim pelo site e gostaria de solicitar um orçamento.',
+  email: 'apag@apag.com.br',
+  hours: 'Seg a Sex, 8h às 18h', // TODO confirmar o horário de atendimento
   instagram: '', // TODO (URL completa, ex.: https://www.instagram.com/apag)
-  mapsEmbedUrl: '', // TODO (Google Maps → Compartilhar → Incorporar um mapa → copie só o valor de src)
+
+  // ── Endereço e mapa ────────────────────────────────────────────────
+  address: {
+    street: 'Rua Guilherme, 1300',
+    district: 'Costa e Silva',
+    city: 'Joinville',
+    state: 'SC',
+    zip: '89218-500',
+    country: 'Brasil',
+  },
+  addressLine: 'Rua Guilherme, 1300 – Costa e Silva, Joinville/SC – CEP 89218-500',
+  mapsEmbedUrl:
+    'https://www.google.com/maps?q=Rua+Guilherme,+1300,+Costa+e+Silva,+Joinville+-+SC,+89218-500&output=embed',
+  mapsDirectionsUrl:
+    'https://www.google.com/maps/dir/?api=1&destination=Rua+Guilherme,+1300,+Costa+e+Silva,+Joinville+-+SC,+89218-500',
+  mapsUrl:
+    'https://www.google.com/maps/search/?api=1&query=Rua+Guilherme,+1300,+Costa+e+Silva,+Joinville+-+SC,+89218-500',
+  /** Coordenadas para o JSON-LD (schema.org GeoCoordinates). */
+  geo: null as { latitude: number; longitude: number } | null, // TODO preencher as coordenadas
 
   // ── Extras usados no site ──────────────────────────────────────────
-  /** Região atendida, citada no FAQ. */
-  serviceArea: 'Cidade/SC e região', // TODO
+  /** Região atendida (FAQ e JSON-LD). */
+  serviceArea: 'Joinville e região',
   /** Domínio final do site (sem barra no fim). Usado em canonical, Open Graph e JSON-LD. */
   siteUrl: 'https://www.apag.com.br', // TODO
   /** Horário no formato schema.org para o JSON-LD (ex.: "Mo-Fr 08:00-18:00"). */

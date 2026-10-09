@@ -10,11 +10,7 @@ import { whatsappUrl } from '@/lib/contact'
 
 export function Faq() {
   return (
-    <section
-      id="faq"
-      aria-labelledby="faq-title"
-      className="relative border-t border-white/[0.06] bg-apag-noir py-24 lg:py-32"
-    >
+    <section id="faq" aria-labelledby="faq-title" className="relative bg-apag-black py-24 lg:py-32">
       <div className="container grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <SectionHeading

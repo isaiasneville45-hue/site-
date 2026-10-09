@@ -5,7 +5,7 @@ import { Reveal } from '@/components/motion'
 import { SectionHeading } from '@/components/SectionHeading'
 import { InstagramIcon, WhatsAppIcon } from '@/components/icons'
 import { company } from '@/config/company'
-import { mailHref, mapsSearchUrl, phoneHref, whatsappUrl } from '@/lib/contact'
+import { mailHref, phoneHref, whatsappUrl } from '@/lib/contact'
 
 export function Contact() {
   // O formulário (React Hook Form + Zod + Select) fica num chunk separado, carregado
@@ -24,7 +24,7 @@ export function Contact() {
     <section
       id="contato"
       aria-labelledby="contato-title"
-      className="relative overflow-hidden bg-apag-noir py-24 lg:py-32"
+      className="relative overflow-hidden bg-apag-black py-24 lg:py-32"
     >
       <div
         aria-hidden="true"
@@ -57,8 +57,8 @@ export function Contact() {
               <ContactItem icon={Mail} label="E-mail" href={mailHref()}>
                 {company.email}
               </ContactItem>
-              <ContactItem icon={MapPin} label="Endereço" href={mapsSearchUrl()} external>
-                {company.address}
+              <ContactItem icon={MapPin} label="Endereço" href="#localizacao">
+                {company.addressLine}
               </ContactItem>
               <ContactItem icon={Clock} label="Horário de atendimento">
                 {company.hours}
@@ -69,18 +69,6 @@ export function Contact() {
                 </ContactItem>
               ) : null}
             </ul>
-
-            {company.mapsEmbedUrl ? (
-              <div className="overflow-hidden rounded-3xl border border-white/10">
-                <iframe
-                  src={company.mapsEmbedUrl}
-                  title={`Mapa com a localização da ${company.name}`}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="block h-72 w-full grayscale-[0.4] invert-[0.92] hue-rotate-180"
-                />
-              </div>
-            ) : null}
           </Reveal>
         </div>
       </div>
