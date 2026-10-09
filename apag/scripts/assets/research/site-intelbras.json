@@ -1,0 +1,6008 @@
+{
+ "site": "intelbras",
+ "start": [
+  "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio"
+ ],
+ "sitemap": [],
+ "pages": [
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio",
+   "title": "Detector de Incêndio | Intelbras",
+   "h1": [
+    "Incêndio"
+   ],
+   "h2": [
+    "Acionador",
+    "Central de incêndio",
+    "Detector de fumaça",
+    "Fonte de alimentação",
+    "Sinalizador de emergência",
+    "Repetidor",
+    "Você também pode precisar desses produtos",
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Fechaduras de Segurança Eletrônica da Intelbras e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/front_8.png?itok=LSAuRkep",
+     "alt": ""
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sinalizadores-de-emergencia",
+   "title": "Sinalizadores de Incêndio | Intelbras",
+   "h1": [
+    "Sinalizadores de emergência"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Sinalizadores de Incêndio da Intelbras e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Sinalizadores de emergência"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2023-04/BLA_2202_frontal_led_0.png",
+     "alt": "BLA_2202_frontal_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2023-04/BLA_1202_frontal_led_1.png",
+     "alt": "BLA_1202_frontal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/acionadores",
+   "title": "Acionadores de Incêndio | Intelbras",
+   "h1": [
+    "Acionadores"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Acionadores de Incêndio da Intelbras e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Acionadores"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2026-07/amb-3203-01.png",
+     "alt": "amb-3203-01.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-12/ame-566-front.png",
+     "alt": "ame-566-front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/allproducts",
+   "title": "Detector de Incêndio | Intelbras",
+   "h1": [
+    "Incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Fechaduras de Segurança Eletrônica da Intelbras e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2026-02/pde-1000-frontal_0.png",
+     "alt": "pde-1000-frontal.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-algoritmica-ma-2000",
+   "title": "Central de alarme de incêndio algorítmica MA 2000 | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio algorítmica"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Sistema algorítmico que gerencia até 396 dispositivos endereçáveis, controlando todo o sistema de detecção e alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2024-12/central-de-alarme-de-incendio-algoritmica-ma-2000.jpg",
+     "alt": "ma-2000-02.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-algoritmica-ma-8000",
+   "title": "Central de alarme de incêndio algorítmica MA 8000 | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio algorítmica"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Sistema algorítmico que gerencia até 1.584 dispositivos endereçáveis, garantindo controle eficaz na detecção e alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2024-12/central-de-alarme-de-incendio-algoritmica-ma-8000.jpg",
+     "alt": "ma-8000-03.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/detectores",
+   "title": "Detectores de Fumaça | Intelbras",
+   "h1": [
+    "Detectores"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Detectores de Fumaça da Intelbras e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Detectores"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-11/dgc-423-front.png",
+     "alt": "dgc-423-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dfe-523-front.png",
+     "alt": "dfe-523-front.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/fontes-de-alimentacao",
+   "title": "Fontes de Alimentação para Sistema de Incêndio | Intelbras",
+   "h1": [
+    "Fontes de alimentação"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Fontes de Alimentação para Sistema de Incêndio e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Fontes de alimentação"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/fna_520_front.png",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/iluminacao-de-emergencia",
+   "title": "Iluminação de emergência | Intelbras",
+   "h1": [
+    "Iluminação de emergência"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Iluminação de emergência"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/detectores",
+   "title": "Detectores de humo | Intelbras",
+   "h1": [
+    "Detectores"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Consulte la línea de detectores de humo Intelbras y garantice la seguridad para mantener todo lo que más importa siempre protegido. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Detectores"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-11/dfe-521-frontal-inclinada-led-on_0.png",
+     "alt": "dfe-521-frontal-inclinada-led-on"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-11/dgc-423-front.png",
+     "alt": "dgc-423-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dfe-523-front.png",
+     "alt": "dfe-523-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dte-523-front.png",
+     "alt": "dte-523-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-04/01%20Frontal_0.png",
+     "alt": "01 Frontal_0.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-12/dfl-3100-10_0.png",
+     "alt": "dfl-3100-10"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-08/DTE-521.jpg",
+     "alt": "dte-521-imagem-principal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-06/dtc_421_un-04.png",
+     "alt": "dtc_421_un-04"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/senalizadores-de-emergencia",
+   "title": "Bengalas de fuego | Intelbras",
+   "h1": [
+    "Señalizadores de emergencia"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Eche un vistazo a la línea Intelbras Fire Signal y garantice la seguridad para mantener todo lo más importante protegido en todo momento. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Señalizadores de emergencia"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-11/Imagens_FlyerDigital_SAV_521E_03_0.jpg",
+     "alt": "SAV 521E"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/sav_520_front_0.png",
+     "alt": "SAV 520E - Sinalizador audiovisual endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
+     "alt": ""
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-convencional-com-sirene-amc-422",
+   "title": "Acionador manual convencional com sirene AMC 422 | Intelbras",
+   "h1": [
+    "Acionador manual convencional com sirene"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Com a função 2 em 1, o acionador comunica o sinistro na central e ainda dispara a sirene.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-06/foto_principal_AMC_422_700x480px.jpg",
+     "alt": "AMC_422_frontal_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-convencional-sem-sirene-amc-421",
+   "title": "Acionador manual convencional sem sirene AMC 421 | Intelbras",
+   "h1": [
+    "Acionador manual convencional sem sirene"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Ao ser acionado em uma emergência, envia um sinal para a central de alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-06/AMC_421_frontal_led.png",
+     "alt": "AMC_421_frontal_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-enderecavel-com-sirene-ame-522",
+   "title": "Acionador manual endereçável com sirene AME 522 | Intelbras",
+   "h1": [
+    "Acionador manual endereçável com sirene"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Possui a função 2 em 1, além de permitir o acionamento no modo manual o produto possui uma sirene para alertar o sinistro.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-06/Flyer_digital_AME_522_03.jpg",
+     "alt": "AME_522_frontal_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521",
+   "title": "Acionador manual endereçável sem sirene AME 521 | Intelbras",
+   "h1": [
+    "Acionador manual endereçável sem sirene"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Ao ser acionado em uma emergência, envia um sinal para a central de alarme de incêndio, indicando o ponto exato do ocorrido através do seu endereço definido.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-06/Flyer_digital_AME_521_03.jpg",
+     "alt": "AME_521_frontal_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/bloco-de-iluminacao-de-emergencia-1202-lumens-bla-1202",
+   "title": "Bloco de Iluminação de Emergência 1202 Lumens BLA 1202 | Intelbras",
+   "h1": [
+    "Bloco de Iluminação de Emergência 1202 Lumens"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O BLA 1202 oferece iluminação de alto desempenho com ângulo de abertura de 120°, em ambientes de até 250 m².",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-03/Bloco-de-iluminacao-de-emergencia-1200-Lumens_0.png",
+     "alt": "BLA_1202_frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/bloco-de-iluminacao-de-emergencia-2202-lumens-bla-2202",
+   "title": "Bloco de Iluminação de Emergência 2202 Lumens BLA 2202 | Intelbras",
+   "h1": [
+    "Bloco de Iluminação de Emergência 2202 Lumens"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O BLA 2202 oferece iluminação com alto desempenho em ambientes de até 450 m² e um ângulo de abertura de 120°.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-03/bloco-de-ilumina%C3%A7%C3%A3o-de-emergencia-2200-lumens_0.png",
+     "alt": "BLA_2202_frontal_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/bloco-de-iluminacao-de-emergencia-3000-lumens-bla-3000",
+   "title": "Bloco de Iluminação de Emergência 3000 Lumens BLA 3000 | Intelbras",
+   "h1": [
+    "Bloco de Iluminação de Emergência 3000 Lumens"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O BLA 3000 oferece iluminação com alto desempenho em ambientes de até 600 m² e com ângulo de abertura de até 120°.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2024-03/bloco-de-iluminacao-de-emergencia-3000-lumens-bla-3000.png",
+     "alt": "bla-3000-persp-dir.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/luminaria-de-emergencia-autonoma-lea-31",
+   "title": "Luminária de emergência autônoma LEA 31 | Intelbras",
+   "h1": [
+    "Luminária de emergência autônoma"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Tenha segurança e conforto nas quedas de energia elétrica e situações de emergência, com acendimento automático e sistema antifurto.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-05/LEA_31.png",
+     "alt": "LEA-31Persp-Dir"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-convencional-sav-420c",
+   "title": "Sinalizador audiovisual convencional SAV 420C | Intelbras",
+   "h1": [
+    "Sinalizador audiovisual convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O sinalizador audiovisual foi desenvolvido para gerar dois sinais em um único dispositivo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-enderecavel-sav-520e",
+   "title": "Sinalizador audiovisual endereçável SAV 520E | Intelbras",
+   "h1": [
+    "Sinalizador audiovisual endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O sinalizador audiovisual foi desenvolvido para gerar dois sinais em um único dispositivo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/sav_520_front_0.png",
+     "alt": "SAV 520E - Sinalizador audiovisual endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-enderecavel-sav-521e",
+   "title": "Sinalizador audiovisual endereçável SAV 521E | Intelbras",
+   "h1": [
+    "Sinalizador audiovisual endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O sinalizador audiovisual foi desenvolvido para gerar dois sinais em um único dispositivo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-11/Imagens_FlyerDigital_SAV_521E_03.jpg",
+     "alt": "SAV 521E"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio",
+   "title": "Detector de incendios | Intelbras",
+   "h1": [
+    "Incendio"
+   ],
+   "h2": [
+    "Actuador",
+    "Central de incendio",
+    "Detector de humo",
+    "Fuente de alimentación",
+    "Señalizador de emergencia",
+    "Repetidor",
+    "Usted también puede necesitar de estos productos",
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Consulte la línea de cerraduras de seguridad electrónica de Intelbras y garantice la seguridad para mantener todo lo que importa más siempre protegido. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/fna_520_front.png?itok=aCUTYviQ",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/amc_420_front.png?itok=6yHJZRb1",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/front_8.png?itok=LSAuRkep",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/dfe_520_frontal.png?itok=KXfRlzVR",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/fna_520_front.png?itok=aCUTYviQ",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/amc_420_front.png?itok=6yHJZRb1",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/front_8.png?itok=LSAuRkep",
+     "alt": ""
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/allproducts",
+   "title": "Detector de incendios | Intelbras",
+   "h1": [
+    "Incendio"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Consulte la línea de cerraduras de seguridad electrónica de Intelbras y garantice la seguridad para mantener todo lo que importa más siempre protegido. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-02/intelbras_detectorincendio-banner_1200x400_0.jpg",
+     "alt": "banner incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-11/dfe-521-frontal-inclinada-led-on_0.png",
+     "alt": "dfe-521-frontal-inclinada-led-on"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2026-02/pde-1000-frontal_0.png",
+     "alt": "pde-1000-frontal.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-11/dgc-423-front.png",
+     "alt": "dgc-423-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dfe-523-front.png",
+     "alt": "dfe-523-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dte-523-front.png",
+     "alt": "dte-523-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-04/01%20Frontal_0.png",
+     "alt": "01 Frontal_0.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-01/cas-7100-cas-7200-persp-sup-dir-1.png",
+     "alt": "cas-7100-cas-7200-persp-sup-dir-1.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/centrales-de-incendio",
+   "title": "Centrales de alarma contra incendios | Intelbras",
+   "h1": [
+    "Centrales de incendio"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Consulte la línea de control de alarmas contra incendios de Intelbras y garantice la seguridad para mantener todo lo más importante protegido en todo momento. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Centrales de incendio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-01/cas-7100-cas-7200-persp-sup-dir-1.png",
+     "alt": "cas-7100-cas-7200-persp-sup-dir-1.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2023-02/01%20Frontal_001_led.png",
+     "alt": "CIE 1060"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-07/front.png",
+     "alt": "front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-06/cic_06_l_front_led_3.png",
+     "alt": "cic_06_l_front_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-06/cic_06_l_front_led_1.png",
+     "alt": "cic_06_l_front_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2023-09/cie-2500-front.png",
+     "alt": "cie-2500-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/front_6.png",
+     "alt": "CIC 24L - Central de alarme de incêndio convencional"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/central-de-alarma-contra-incendios-convencional-con-bateria-cic-06l-com-bateria",
+   "title": "Central de alarma contra incendios convencional con batería CIC 06L com bateria | Intelbras",
+   "h1": [
+    "Central de alarma contra incendios convencional con batería"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Ambiente protegido con detección y alarma de incendios.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_CIC_06_L_com_bateria_700x480px_0.jpg",
+     "alt": "cic_06_l_front_led"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/central-de-alarma-contra-incendios-convencional-sin-bateria-cic-06l-sem-bateria",
+   "title": "Central de alarma contra incendios convencional sin batería CIC 06L sem bateria | Intelbras",
+   "h1": [
+    "Central de alarma contra incendios convencional sin batería"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Ambiente protegido con detección y alarma contra incendios..",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_CIC_06_L_com_bateria_700x480px_2.jpg",
+     "alt": "cic_06_l_front_led"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/central-de-alarma-contra-incendios-cie-2500",
+   "title": "Central de alarma contra incendios CIE 2500 | Intelbras",
+   "h1": [
+    "Central de alarma contra incendios"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Admite hasta 500 dispositivos direccionables en su lazo y es responsable de gestionar todo el sistema de detección y alarma de incendios.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-09/central-de-alarma-contra-incendios-cie-2500.png",
+     "alt": "cie-2500-front.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/central-de-alarma-contra-incendios-convencional-cic-24l",
+   "title": "Central de alarma contra incendios convencional CIC 24L | Intelbras",
+   "h1": [
+    "Central de alarma contra incendios convencional"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "La central de alarma contra incendios CIC 24L es un modelo convencional, ideal para entornos pequeños y medianos.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/front_6.png",
+     "alt": "CIC 24L - Central de alarme de incêndio convencional"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/central-de-alarma-de-incendio-cie-1060",
+   "title": "Central de Alarma de Incendio CIE 1060 | Intelbras",
+   "h1": [
+    "Central de Alarma de Incendio"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Eficiencia para gestionar el sistema de detección y alarma de incendio, con capacidad para hasta 60 dispositivos direccionables.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-09/central-de-alarma-de-incendio-cie-1060_0.png",
+     "alt": "CIE 1060"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/luminaria-de-emergencia-autonoma-lea-31-lea-31",
+   "title": "Luminaria de emergencia autónoma LEA 31 LEA 31 | Intelbras",
+   "h1": [
+    "Luminaria de emergencia autónoma LEA 31"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Tenga seguridad y confort en caídas de energía eléctrica y situaciones de emergencia, con encendido automático y sistema antirrobo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-05/LEA_31_0.png",
+     "alt": "LEA-31-Imagem-principal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-523",
+   "title": "Detector de fumaça endereçável DFE 523 | Intelbras",
+   "h1": [
+    "Detector de fumaça endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O detector DFE 523 é projetado para disparar em caso de detecção de fumaça no ambiente onde está instalado. *Consulte o time comercial",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-07/detector-de-fumaca-enderecavel-dfe-523_0.png",
+     "alt": "dfe-523-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-gas-convencional-dgc-423",
+   "title": "Detector de gás convencional DGC 423 | Intelbras",
+   "h1": [
+    "Detector de gás convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Proteja-se contra vazamentos de gás com o detector DGC 423, que une alta tecnologia a um design moderno e uma instalação simplificada, assegurando máxima eficiência e segurança.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-11/detector-de-gas-convencional-dgc-423.jpg",
+     "alt": "dgc-423-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-temperatura-enderecavel-dte-523",
+   "title": "Detector de temperatura endereçável DTE 523 | Intelbras",
+   "h1": [
+    "Detector de temperatura endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Projetado para disparar quando a temperatura de alarme for atingida ou em caso de uma variação brusca de temperatura. *Consulte o time comercial",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-07/detector-de-temperatura-enderecavel-dte-523.png",
+     "alt": "dte-523-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/acessorios",
+   "title": "Acessórios | Intelbras",
+   "h1": [
+    "Acessórios"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Acessórios"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/centrais-de-incendio",
+   "title": "Centrais de Alarme de Incêndio | Intelbras",
+   "h1": [
+    "Centrais de incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Centrais de Alarme de Incêndio da Intelbras e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Centrais de incêndio"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-12/ma-8000-03.png",
+     "alt": "ma-8000-03.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-12/ma-2000-02.png",
+     "alt": "ma-2000-02.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-convencional-com-bateria-cic-06l-com-bateria",
+   "title": "Central de alarme de incêndio convencional com bateria CIC 06L com bateria | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio convencional com bateria"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Ambiente protegido com detecção e alarme de incêndio",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_CIC_06_L_com_bateria_700x480px_0.jpg",
+     "alt": "cic_06_l_front_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-convencional-sem-bateria-cic-06l-sem-bateria",
+   "title": "Central de alarme de incêndio convencional sem bateria CIC 06L sem bateria | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio convencional sem bateria"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Ambiente protegido com detecção e alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_CIC_06_L_com_bateria_700x480px_2.jpg",
+     "alt": "cic_06_l_front_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1060",
+   "title": "Central de Alarme de Incêndio CIE 1060 | Intelbras",
+   "h1": [
+    "Central de Alarme de Incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Eficiência para gerenciar o sistema de detecção e alarme de incêndio, com capacidade para ate 60 dispositivos endereçáveis e configuração pelo aplicativo Programador CIE via Wi-Fi.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2022-04/central-de-alarme-de-incendio-cie-1060.jpg",
+     "alt": "cie-1060-front-led.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1125",
+   "title": "Central de alarme de incêndio CIE 1125 | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Comporta até 125 dispositivos endereçáveis em seu laço e é responsável por gerenciar todo o sistema de detecção e alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-08/central-de-alarme-de-incendio-cie-1125.jpg",
+     "alt": "CIE 1125 - Central de alarme de incêndio endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1250",
+   "title": "Central de alarme de incêndio CIE 1250 | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Comporta até 250 dispositivos endereçáveis em seu laço e é responsável por gerenciar todo o sistema de detecção e alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-08/central-de-alarme-de-incendio-cie-1250.jpg",
+     "alt": "CIE 1250 - Central de alarme de incêndio endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-2500",
+   "title": "Central de alarme de incêndio CIE 2500 | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Comporta até 500 dispositivos endereçáveis em seu laço e é responsável por gerenciar todo o sistema de detecção e alarme de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-08/central-de-alarme-de-incendio-cie-2500.jpg",
+     "alt": "CIE 2500 - Central de alarme de incêndio endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-convencional-cic-24l",
+   "title": "Central de alarme de incêndio convencional CIC 24L | Intelbras",
+   "h1": [
+    "Central de alarme de incêndio convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "A central de alarme de incêndio CIC 24L é de modelo convencional e ideal para pequenos e médios ambientes.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/front_6.png",
+     "alt": "CIC 24L - Central de alarme de incêndio convencional"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/central-de-alarme-convencional-cic-12l",
+   "title": "Central de alarme convencional CIC 12L | Intelbras",
+   "h1": [
+    "Central de alarme convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Solução eficiente para quem busca segurança! Ideal para pequenos e médios ambientes",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-07/foto_principal_CIC_12_L_700x480px.jpg",
+     "alt": "front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/repetidores",
+   "title": "Repetidores para Central de Alarme de Incêndio | Intelbras",
+   "h1": [
+    "Repetidores"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Conheça a linha de Repetidores para Central de Alarme de Incêndio e garanta segurança para manter tudo o que mais importa sempre protegido. Saiba mais!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Repetidores"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/rp_520_front.png",
+     "alt": "Repetidora para central endereçável RP 520 - frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/repetidora-para-central-de-alarme-de-incendio-rp-520",
+   "title": "Repetidora para central de alarme de incêndio RP 520 | Intelbras",
+   "h1": [
+    "Repetidora para central de alarme de incêndio"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "A repetidora descentraliza a informação dos eventos registrados pela central em grandes locais, principalmente onde há mais de uma portaria.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/rp_520_front.png",
+     "alt": "Repetidora para central endereçável RP 520 - frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sistema-convencional",
+   "title": "Sistema convencional | Intelbras",
+   "h1": [
+    "Sistema convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Sistema convencional"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sistema-enderecavel",
+   "title": "Sistema endereçável | Intelbras",
+   "h1": [
+    "Sistema endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Sistema endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2026-02/pde-1000-frontal_0.png",
+     "alt": "pde-1000-frontal.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2022-04/cie-1060-front-led.png",
+     "alt": "cie-1060-front-led.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/electronic-safety/fire/detectors",
+   "title": "Smoke Detectors | Intelbras",
+   "h1": [
+    "Detectors"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "Check out the Intelbras Smoke Detectors line and ensure safety to keep everything that matters most always protected. Know more!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Detectors"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-11/dfe-521-frontal-inclinada-led-on_0.png",
+     "alt": "dfe-521-frontal-inclinada-led-on"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-11/dgc-423-front.png",
+     "alt": "dgc-423-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dfe-523-front.png",
+     "alt": "dfe-523-front.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-07/dte-523-front.png",
+     "alt": "dte-523-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-04/01%20Frontal_0.png",
+     "alt": "01 Frontal_0.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-12/dfl-3100-10_0.png",
+     "alt": "dfl-3100-10"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-08/DTE-521.jpg",
+     "alt": "dte-521-imagem-principal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-06/dtc_421_un-04.png",
+     "alt": "dtc_421_un-04"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/accesorios",
+   "title": "Accesorios | Intelbras",
+   "h1": [
+    "Accesorios"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Accesorios"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2026-02/pde-1000-frontal_0.png",
+     "alt": "pde-1000-frontal.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-12/idl-521-frontal_0.jpg",
+     "alt": "idl-521-frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2022-01/gw-521-frontal_0.png",
+     "alt": "gw-521-frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2021-10/mio-521-frontal_0.png",
+     "alt": "mio-521-frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/rp_520_front.png",
+     "alt": "Repetidora para central endereçável RP 520 - frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/idl520_front.png",
+     "alt": "IDL - Isolador de laço"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/mdi520_om_515_persp_esq.png",
+     "alt": "MDI 520 - Módulo de entrada"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/mio520_front.png",
+     "alt": "MIO 520 - Módulo de entrada ou saída"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/repetidor-para-la-centralita-de-alarma-contra-incendios-rp-520",
+   "title": "Repetidor para la centralita de alarma contra incendios RP 520 | Intelbras",
+   "h1": [
+    "Repetidor para la centralita de alarma contra incendios"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El repetidor descentraliza la información de los eventos registrados por la centralita en lugares grandes, especialmente donde hay más de una portería.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/rp_520_front.png",
+     "alt": "Repetidora para central endereçável RP 520 - frontal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/actuadores",
+   "title": "Arrancadores de fuego | Intelbras",
+   "h1": [
+    "Actuadores"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Eche un vistazo a la línea Intelbras Fire Starters y garantice la seguridad para mantener todo lo más importante protegido en todo momento. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Actuadores"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2026-07/amb-3203-01.png",
+     "alt": "amb-3203-01.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-12/ame-566-front.png",
+     "alt": "ame-566-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-12/AMC_466_frontal.png",
+     "alt": "AMC_466_frontal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-08/FlyerDigital_AMB_3202_03_0.png",
+     "alt": "AMB 3202"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-08/FlyerDigital_AMB_3201_03_0.png",
+     "alt": "AMB-3201"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-06/AME_522_frontal_led_0.png",
+     "alt": "AME_522_frontal_led_0"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-06/AME_521_frontal_led_0.png",
+     "alt": "AME_521_frontal_led_0"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2020-06/AMC_422_frontal_led.png",
+     "alt": "AMC_422_frontal_led"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/fuentes-de-alimentacion",
+   "title": "Fuentes de alimentación del sistema contra incendios | Intelbras",
+   "h1": [
+    "Fuentes de alimentación"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Descubra la línea de suministro de energía del sistema contra incendios y garantice la seguridad para mantener todo lo más importante protegido en todo momento. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Fuentes de alimentación"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/fna_520_front.png",
+     "alt": ""
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/seguridad-electronica/incendio/repetidores",
+   "title": "Repetidores para Central de alarmas contra incendios | Intelbras",
+   "h1": [
+    "Repetidores"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Descubra la línea de repetidores de alarmas contra incendios y garantice la seguridad para mantener todo lo más importante protegido en todo momento. ¡Sepa mas!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Repetidores"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/rp_520_front.png",
+     "alt": "Repetidora para central endereçável RP 520 - frontal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-convencional-amc-466",
+   "title": "Acionador manual convencional AMC 466 | Intelbras",
+   "h1": [
+    "Acionador manual convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O novo acionador manual convencional possui grau de proteção IP66 e foi desenvolvido para instalação em ambientes externos.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-12/FlyerDigital_AMC_466_03.jpg",
+     "alt": "AMC_466"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-de-bomba-amb-3202",
+   "title": "Acionador manual de bomba AMB 3202 | Intelbras",
+   "h1": [
+    "Acionador manual de bomba"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Os acionadores foram desenvolvidos para atuar com painéis elétricos de acionadores de bomba d’água.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-08/FlyerDigital_AMB_3202_03_0.png",
+     "alt": "AMB 3202"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-de-bomba-dagua-amb-3203",
+   "title": "Acionador manual de bomba d’agua AMB 3203 | Intelbras",
+   "h1": [
+    "Acionador manual de bomba d’agua"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Dispositivo para acionamento manual de bombas de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2026-07/acionador-manual-de-bomba-de-agua-amb-3203.jpg",
+     "alt": "amb-3203-01.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/acionador-manual-enderecavel-ame-566",
+   "title": "Acionador manual endereçável AME 566 | Intelbras",
+   "h1": [
+    "Acionador manual endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O novo acionador manual endereçável possui grau de proteção IP66 e foi desenvolvido para instalação em ambientes externos.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-12/acionador-manual-enderecavel-de-incendio-ame-566.jpg",
+     "alt": "ame-566-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-autonomo-dfa-620",
+   "title": "Detector de fumaça autônomo DFA 620 | Intelbras",
+   "h1": [
+    "Detector de fumaça autônomo"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Ele identifica um princípio de incêndio e dispara um alarme, garantindo segurança extra em ambientes residenciais e comerciais",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-05/foto_principal_DFA_620_700x480px.jpg",
+     "alt": "dfa_620-Front_0"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-autonomo-dfa-623",
+   "title": "Detector de Fumaça Autônomo DFA 623 | Intelbras",
+   "h1": [
+    "Detector de Fumaça Autônomo"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Com o detector de fumaça autônomo, você consegue identificar princípios de incêndio, acionando um alarme após detectar fumaça no ambiente, garantindo mais segurança para sua casa.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-04/detector-de-fuma%C3%A7a-autonomo-dfa-623.jpg",
+     "alt": "01 Frontal.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-convencional-dfc-420-un",
+   "title": "Detector de fumaça convencional DFC 420 UN | Intelbras",
+   "h1": [
+    "Detector de fumaça convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O detector de fumaça convencional DFC 420 UN foi projetado para disparar em caso de detecção de fumaça no ambiente onde está instalado.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-01/dfc_420_front_.png",
+     "alt": "dfc_420_front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-convencional-dfc-421-un",
+   "title": "Detector de fumaça convencional DFC 421 UN | Intelbras",
+   "h1": [
+    "Detector de fumaça convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Ele dispara em caso de fumaça e envia um sinal para a central de alarme de incêndio. É mais segurança para seus ambientes",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DFC_421_UN_700x480px.jpg",
+     "alt": "dfc_421_un-front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-521",
+   "title": "Detector de fumaça endereçável DFE 521 | Intelbras",
+   "h1": [
+    "Detector de fumaça endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O detector DFE 521 é projetado para disparar em caso de detecção de fumaça no ambiente onde está instalado.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-fumaca-enderecavel-dfe-521.jpg",
+     "alt": "dfe-521-frontal-inclinada-led-on"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3100",
+   "title": "Detector de fumaça linear DFL 3100 | Intelbras",
+   "h1": [
+    "Detector de fumaça linear"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Detecta partículas de fumaça de uma ampla gama de fontes de combustão e é ideal para espaços de 8 a 100 m de comprimento.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-12/detector-de-fumaca-linear-dfl-3100.jpg",
+     "alt": "dfl-3100-10"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3101",
+   "title": "Detector de fumaça linear DFL 3101 | Intelbras",
+   "h1": [
+    "Detector de fumaça linear"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Detecta partículas de fumaça de uma ampla gama de fontes de combustão. Ideal para locais de 20m a 40m de comprimento.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-12/foto_principal_DFL%203101_700x480px.jpg",
+     "alt": "detector de fumaça linear"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3102",
+   "title": "Detector de fumaça linear DFL 3102 | Intelbras",
+   "h1": [
+    "Detector de fumaça linear"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Detecta partículas de fumaça de uma ampla gama de fontes de combustão. Ideal para locais de 40m a 70m de comprimento.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-02/foto_principal_DFL%203101_700x480px_0.jpg",
+     "alt": "foto_principal_DFL 3101_700x480px"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-fumaca-smart-idf-620",
+   "title": "Detector de fumaça Smart IDF 620 | Intelbras",
+   "h1": [
+    "Detector de fumaça Smart"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O detector de fumaça Smart detecta princípios de incêndio, emitindo um sinal sonoro e outro via app para tablet e celular.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-02/IDF_620%20Detector%20de%20Fuma%C3%A7a%20Smart.jpg",
+     "alt": "idf_620_5"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-temperatura-convencional-dtc-421-un",
+   "title": "Detector de temperatura convencional DTC 421 UN | Intelbras",
+   "h1": [
+    "Detector de temperatura convencional"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Com ele, seus ambientes ficam mais seguros ao indicar as variações de temperatura e comunicar à central de incêndio",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DTC_421_UN_700x480px.jpg",
+     "alt": "dtc_421_un-04"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/detector-de-temperatura-enderecavel-dte-521",
+   "title": "Detector de temperatura endereçável DTE 521 | Intelbras",
+   "h1": [
+    "Detector de temperatura endereçável"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "Projetado para disparar quando a temperatura de alarme for atingida ou em caso de uma variação brusca de temperatura.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-08/DTE-521.jpg",
+     "alt": "dte-521-imagem-principal"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/fonte-auxiliar-fna-520",
+   "title": "Fonte auxiliar FNA 520 | Intelbras",
+   "h1": [
+    "Fonte auxiliar"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "A fonte de alimentação FNA 520 foi desenvolvida para aumentar a autonomia dos sistemas de alarme e detecção de incêndio.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/fna_520_front.png",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/pt-br/para-centrais-de-incendio-enderecaveis-programador-cie-software-programador-das-centrais-de",
+   "title": "Para centrais de incêndio endereçáveis Programador CIE - Software programador das centrais de incêndio | Intelbras",
+   "h1": [
+    "Para centrais de incêndio endereçáveis"
+   ],
+   "h2": [
+    "Você precisa de ajuda?"
+   ],
+   "description": "O programador é um software exclusivo e gratuito que facilita a configuração das centrais endereçáveis CIE 1125, CIE 1250 e CIE 2500.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-5G.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-casa-inteligente.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-energia-solar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/banner-nav-simulador-recarga.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav--onde-encontrar.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/img-banner-nav-onde-encontrar-assistência-técnica.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/emkt_lancamento_linha_incendio_end_dispositivos_menor.png",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner-bndes.gif",
+     "alt": "Banner BNDES"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-08/banner_finep.jpg",
+     "alt": "Banner Finep"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/addressable-heat-detector-dte-523",
+   "title": "Addressable Heat Detector DTE 523 | Intelbras",
+   "h1": [
+    "Addressable Heat Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "Designed to trigger when the alarm temperature is reached or in case of a sudden temperature variation. *Consult the commercial team",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-07/addressable-heat-detector-dte-523.png",
+     "alt": "dte-523-front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/addressable-smoke-detector-dfe-521",
+   "title": "Addressable smoke detector DFE 521 | Intelbras",
+   "h1": [
+    "Addressable smoke detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "The DFE 521 detector is designed to trigger the alarm if smoke is detected in the environment where it is installed.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-11/addressable-smoke-detector-dfe-521.jpg",
+     "alt": "dfe-521-frontal-inclinada-led-on"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/addressable-smoke-detector-dfe-523",
+   "title": "Addressable smoke detector DFE 523 | Intelbras",
+   "h1": [
+    "Addressable smoke detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "The DFE 523 detector is designed to activate when smoke is detected in the area where it is installed. *Consult the commercial team",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-07/addressable-smoke-detector-dfe-523.png",
+     "alt": "dfe-523-front.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/addressable-temperature-detector-dte-520",
+   "title": "Addressable Temperature Detector DTE 520 | Intelbras",
+   "h1": [
+    "Addressable Temperature Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "The DTE 520 detector is indicated for locations with the presence of dust, steam or gases suspended in the air, where smoke detectors are not recommended.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-01/dte_520_frente_com_sombra.png",
+     "alt": "DTE 520 - Detector de temperatura endereçável"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/addressable-temperature-detector-dte-521",
+   "title": "Addressable temperature detector DTE 521 | Intelbras",
+   "h1": [
+    "Addressable temperature detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "Designed to trigger when the alarm temperature is reached or in the event of a sudden temperature change.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-08/DTE-521.jpg",
+     "alt": "dte-521-imagem-principal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/autonomous-smoke-detector-dfa-620",
+   "title": "Autonomous Smoke Detector DFA 620 | Intelbras",
+   "h1": [
+    "Autonomous Smoke Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "It identifies the beginning of a fire and triggers an alarm, ensuring extra safety in residential and commercial environments",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-05/foto_principal_DFA_620_700x480px.jpg",
+     "alt": "dfa_620-Front_0"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/conventional-smoke-detector-dfc-420-un",
+   "title": "Conventional Smoke Detector DFC 420 UN | Intelbras",
+   "h1": [
+    "Conventional Smoke Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "The conventional smoke detector DFC 420 UN is designed to fire in case of smoke detection in the environment where it is installed.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-01/dfc_420_front_.png",
+     "alt": "dfc_420_front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/conventional-smoke-detector-dfc-421-un",
+   "title": "Conventional Smoke Detector DFC 421 UN | Intelbras",
+   "h1": [
+    "Conventional Smoke Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "It triggers in case of smoke and sends a signal to the fire alarm center. It's more security for your environments",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DFC_421_UN_700x480px.jpg",
+     "alt": "dfc_421_un-front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/conventional-temperature-detector-dtc-421-un",
+   "title": "Conventional Temperature Detector DTC 421 UN | Intelbras",
+   "h1": [
+    "Conventional Temperature Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "With this, your environments are safer by indicating temperature variations and communicating to the fire plant",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DTC_421_UN_700x480px.jpg",
+     "alt": "dtc_421_un-04"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/electronic-safety/fire/fire-centrals",
+   "title": "Fire Alarm Centrals | Intelbras",
+   "h1": [
+    "Fire centrals"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "Check out Intelbras' Fire Alarm Control line and ensure security to keep everything that matters most protected at all times. Know more!",
+   "og_image": "https://backend.intelbras.com/sites/default/files/2026-02/logo-intelbras-novo.png",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/banner/header-bg-gray1.png",
+     "alt": "Fire centrals"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2025-01/cas-7100-cas-7200-persp-sup-dir-1.png",
+     "alt": "cas-7100-cas-7200-persp-sup-dir-1.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2022-04/cie-1060-front-led.png",
+     "alt": "cie-1060-front-led.png"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-07/front.png",
+     "alt": "front"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-06/cic_06_l_front_led_3.png",
+     "alt": "cic_06_l_front_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/2019-06/cic_06_l_front_led_1.png",
+     "alt": "cic_06_l_front_led"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/front_8.png",
+     "alt": "CIE 2500 - Central de alarme de incêndio endereçável"
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/styles/medium/public/integration/front_6.png",
+     "alt": "CIC 24L - Central de alarme de incêndio convencional"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/linear-smoke-detector-dfl-3100",
+   "title": "Linear smoke detector DFL 3100 | Intelbras",
+   "h1": [
+    "Linear smoke detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "It detects smoke particles from a wide range of combustion sources and is ideal for spaces from 8 to 100 m in length.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-12/linear-smoke-detector-dfl-3100.jpg",
+     "alt": "dfl-3100-10"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/standalone-smoke-detector-dfa-623",
+   "title": "Standalone Smoke Detector DFA 623 | Intelbras",
+   "h1": [
+    "Standalone Smoke Detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "With the standalone smoke detector, you can become aware of a potential fire, since whenever smoke is detected in the environment the alarm will be triggered, ensuring greater safety for your home.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-04/detector-de-fuma%C3%A7a-autonomo-dfa-623.jpg",
+     "alt": "01 Frontal_0.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/en/standard-gas-detector-dgc-423",
+   "title": "Standard gas detector DGC 423 | Intelbras",
+   "h1": [
+    "Standard gas detector"
+   ],
+   "h2": [
+    "Do you need help?"
+   ],
+   "description": "Protect yourself against gas leaks with the DGC 423 detector, which combines high technology, modern design and simplified installation, ensuring maximum efficiency and safety.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-11/standard-gas-detector-dgc-423.jpg",
+     "alt": "dgc-423-front.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/baliza-audiovisual-convencional-sav-420c",
+   "title": "Baliza audiovisual convencional SAV 420C | Intelbras",
+   "h1": [
+    "Baliza audiovisual convencional"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "La baliza audiovisual se desarrolló para generar dos señales en un solo dispositivo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
+     "alt": ""
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/baliza-audiovisual-direccionable-sav-520e",
+   "title": "Baliza audiovisual direccionable SAV 520E | Intelbras",
+   "h1": [
+    "Baliza audiovisual direccionable"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "La baliza audiovisual se desarrolló para generar dos señales en un solo dispositivo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/sav_520_front_0.png",
+     "alt": "SAV 520E - Sinalizador audiovisual endereçável"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/bloque-de-iluminacion-de-emergencia-1202-lumens-bla-1202",
+   "title": "Bloque de Iluminación de Emergencia 1202 Lumens BLA 1202 | Intelbras",
+   "h1": [
+    "Bloque de Iluminación de Emergencia 1202 Lumens"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "BLA 1202 ofrece iluminación de alto desempeño con ángulo de apertura de 120°, en ambientes de hasta 250 m².",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-03/Bloque_de_iluminaci%C3%B3n_de_emergencia_1200_lumens.png",
+     "alt": "BLA_1202_frontal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/bloque-de-iluminacion-de-emergencia-2202-lumens-bla-2202",
+   "title": "Bloque de Iluminación de Emergencia 2202 Lumens BLA 2202 | Intelbras",
+   "h1": [
+    "Bloque de Iluminación de Emergencia 2202 Lumens"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "BLA 2202 ofrece iluminación con alto desempeño en ambientes de hasta 450 m² y un ángulo de apertura de 120°.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-03/Bloque_de_iluminaci%C3%B3n_de_mergencia_2200_lumens_0.png",
+     "alt": "BLA_2202_frontal_led"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/central-de-alarma-convencional-cic-12l",
+   "title": "Central de alarma convencional CIC 12L | Intelbras",
+   "h1": [
+    "Central de alarma convencional"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "¡Una solución eficaz para quienes buscan seguridad! Ideal para ambientes pequeños y medianos.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-07/foto_principal_CIC_12_L_700x480px.jpg",
+     "alt": "front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/centrales-de-aspiracion-cas-7100-y-cas-7200",
+   "title": "Centrales de aspiración CAS 7100 y CAS 7200 | Intelbras",
+   "h1": [
+    "Centrales de aspiración"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Ideales para detección precoz de incendio, las centrales ofrecen tecnología activa de identificación de humo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-01/centrales-de-aspiracion-cas-7100-cas-7200_0.jpg",
+     "alt": "cas-7100-cas-7200-persp-sup-dir-1.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-gas-convencional-dgc-423",
+   "title": "Detector de gas convencional DGC 423 | Intelbras",
+   "h1": [
+    "Detector de gas convencional"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Protéjase de fugas de gas con el detector DGC 423, que une alta tecnología a un diseño moderno y una instalación simplificada, asegurando máxima eficiencia y seguridad.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-11/detector-de-gas-convencional-dgc-423_0.jpg",
+     "alt": "dgc-423-front.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-humo-autonomo-dfa-623",
+   "title": "Detector de Humo Autónomo DFA 623 | Intelbras",
+   "h1": [
+    "Detector de Humo Autónomo"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Con el detector de humo autónomo, usted puede identificar principios de incendio, accionando una alarma tras detectar humo en el ambiente, garantizando más seguridad para su casa.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-04/detector-de-fuma%C3%A7a-autonomo-dfa-623.jpg",
+     "alt": "01 Frontal_0.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-humo-convencional-dfc-420-un",
+   "title": "Detector de humo convencional DFC 420 UN | Intelbras",
+   "h1": [
+    "Detector de humo convencional"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El detector de humo convencional DFC 420 UN está diseñado para activarse en caso de detección de humo en el entorno donde está instalado.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-01/dfc_420_front_.png",
+     "alt": "dfc_420_front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-humo-direccionable-dfe-521",
+   "title": "Detector de humo direccionable DFE 521 | Intelbras",
+   "h1": [
+    "Detector de humo direccionable"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El detector DFE 521 está diseñado para disparar si se detecta humo en el entorno donde está instalado.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-humo-direccionable-dfe-521.jpg",
+     "alt": "dfe-521-frontal-inclinada-led-on"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-humo-direccionable-dfe-523",
+   "title": "Detector de humo direccionable DFE 523 | Intelbras",
+   "h1": [
+    "Detector de humo direccionable"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El detector DFE 523 está diseñado para activarse en caso de detectar humo en el ambiente donde está instalado. *Consulte al equipo comercial",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-07/detector-de-humo-direccionable-dfe-523.png",
+     "alt": "dfe-523-front.png"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-humo-independiente-dfa-620",
+   "title": "Detector de humo independiente DFA 620 | Intelbras",
+   "h1": [
+    "Detector de humo independiente"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Identifica un principio de incendio y acciona una alarma, lo que garantiza seguridad extra en entornos residenciales y comerciales.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-05/foto_principal_DFA_620_700x480px.jpg",
+     "alt": "dfa_620-Front_0"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-temperatura-direccionable-dte-520",
+   "title": "Detector de temperatura direccionable DTE 520 | Intelbras",
+   "h1": [
+    "Detector de temperatura direccionable"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El detector DTE 520 está diseñado para lugares donde hay polvo, vapor o gases en el aire, donde no se recomiendan detectores de humo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2019-01/dte_520_frente_com_sombra.png",
+     "alt": "DTE 520 - Detector de temperatura endereçável"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/detector-de-temperatura-direccionable-dte-523",
+   "title": "Detector de temperatura direccionable DTE 523 | Intelbras",
+   "h1": [
+    "Detector de temperatura direccionable"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Diseñado para dispararse al alcanzar la temperatura de alarma o en caso de una variación brusca de temperatura. *Consulte al equipo comercial",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2025-07/detector-de-temperatura-direccionable-dte-523.png",
+     "alt": "dte-523-front"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/modulo-de-entrada-o-salida-mio-521",
+   "title": "Módulo de entrada o salida MIO 521 | Intelbras",
+   "h1": [
+    "Módulo de entrada o salida"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El módulo de entrada o salida se utiliza para monitorear cualquier señal de contacto seco de los dispositivos de campo cuando se dispara o se activa.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2023-03/210718_FlyerDigital_MIO_521_Imagem-topo_2.jpg",
+     "alt": "mio-521-frontal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/modulo-de-entrada-y-salida-mio-520",
+   "title": "Módulo de entrada y salida MIO 520 | Intelbras",
+   "h1": [
+    "Módulo de entrada y salida"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "Se usa el módulo de entrada o salida para monitorear cualquier señal de contacto seco de los dispositivos de campo cuando se disparan o activan.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/integration/mio520_front.png",
+     "alt": "MIO 520 - Módulo de entrada ou saída"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/modulo-gateway-gw-521",
+   "title": "Módulo Gateway GW 521 | Intelbras",
+   "h1": [
+    "Módulo Gateway"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El módulo Gateway GW 521 permite la integración de las centrales contra incendios direccionables modelos CIE 1125, CIE 1250 y CIE 2500 en softwares de mercado.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2022-01/modulo-gateway-gw-521.jpg",
+     "alt": "gw-521-frontal"
+    }
+   ],
+   "pdfs": []
+  },
+  {
+   "url": "https://www.intelbras.com/es/senalizador-audiovisual-direccionable-sav-521e",
+   "title": "Señalizador audiovisual direccionable SAV 521E | Intelbras",
+   "h1": [
+    "Señalizador audiovisual direccionable"
+   ],
+   "h2": [
+    "¿Usted necesita de ayuda?"
+   ],
+   "description": "El señalizador audiovisual fue desarrollado para generar dos señales en un único dispositivo.",
+   "og_image": "",
+   "images": [
+    {
+     "src": "https://www.intelbras.com/assets/images/header/3-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/new-twibi.png",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/6-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/4-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://www.intelbras.com/assets/images/header/2-590x300.jpg",
+     "alt": ""
+    },
+    {
+     "src": "https://backend.intelbras.com/sites/default/files/2020-11/Imagens_FlyerDigital_SAV_521E_03_0.jpg",
+     "alt": "SAV 521E"
+    }
+   ],
+   "pdfs": []
+  }
+ ],
+ "errors": [
+  "https://www.intelbras.com/seguranca-eletronica/incendio/detectores-de-fumaca: The read operation timed out",
+  "https://www.intelbras.com/pt-br/acionador-manual-de-bomba-amb-3201: The read operation timed out",
+  "https://www.intelbras.com/seguridad-electronica/incendio/accionadores: The read operation timed out",
+  "https://www.intelbras.com/es/detector-de-humo-convencional-dfc-421-un: The read operation timed out",
+  "https://www.intelbras.com/es/detector-de-humo-linear-dfl-3100: The read operation timed out",
+  "https://www.intelbras.com/es/detector-de-temperatura-convencional-dtc-421-un: The read operation timed out",
+  "https://www.intelbras.com/es/detector-de-temperatura-direccionable-dte-521: The read operation timed out",
+  "https://www.intelbras.com/es/modulo-de-entrada-mdi-520: The read operation timed out",
+  "https://www.intelbras.com/es/seguridad-electronica/incendio/Missing translationId: header.top.Investors.link for language: es: URL can't contain control characters. '/es/seguridad-electronica/incendio/Missing translationId: header.top.Investors.link for language: es' (found at least ' ')"
+ ]
+}
