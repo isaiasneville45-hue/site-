@@ -2,6 +2,8 @@
 # O ambiente de desenvolvimento não acessa os sites dos fornecedores, então este
 # job (que tem internet) roda os scripts de apag/scripts/assets e devolve o
 # resultado como commit na própria branch. Será removido ao fim do trabalho.
+#
+# Cada linha de apag/scripts/assets/RUN vira um job paralelo: "<modo> [args...]".
 name: APAG assets (temporário)
 
 on:
@@ -19,9 +21,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      groups: ${{ steps.plan.outputs.groups }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        run: |
+          python3 -c "import json; print('groups=' + json.dumps([l.strip() for l in open('apag/scripts/assets/RUN') if l.strip()]))" >> "$GITHUB_OUTPUT"
+
   assets:
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJson(needs.plan.outputs.groups) }}
+    env:
+      GROUP: ${{ matrix.group }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,21 +54,25 @@ jobs:
 
       - name: Executar
         run: |
-          read -r MODE ARGS < apag/scripts/assets/RUN
+          read -r MODE ARGS <<< "$GROUP"
           echo "modo: $MODE $ARGS"
           case "$MODE" in
             discover) python3 apag/scripts/assets/discover.py $ARGS ;;
             download) python3 apag/scripts/assets/download.py $ARGS ;;
             *) echo "modo desconhecido: $MODE"; exit 1 ;;
           esac
-          echo "MODE=$MODE" >> "$GITHUB_ENV"
 
       - name: Commit do resultado
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A apag/scripts/assets/research apag/public/produtos apag/public/fotos 2>/dev/null || true
+          for dir in apag/scripts/assets/research apag/public/produtos apag/public/fotos; do
+            [ -d "$dir" ] && git add -A "$dir"
+          done
           if git diff --cached --quiet; then echo "nada para commitar"; exit 0; fi
-          git commit -q -m "chore(assets): resultado da execução ($MODE)"
-          git pull -q --rebase origin "$GITHUB_REF_NAME"
-          git push -q origin "HEAD:$GITHUB_REF_NAME"
+          git commit -q -m "chore(assets): resultado de '$GROUP'"
+          for attempt in 1 2 3 4 5 6; do
+            git pull -q --rebase origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((attempt * 7))
+          done
+          echo "não consegui enviar o commit"; exit 1

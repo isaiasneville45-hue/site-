@@ -380,8 +380,9 @@ def main():
         save("unsplash.json", unsplash())
     if "scala_pdf" in only:
         save("scala-catalogs.json", scala_catalogs())
-    if "sites" in only:
-        for name, starts in SITES.items():
+    names = list(SITES) if "sites" in only else [a.split(":", 1)[1] for a in only if a.startswith("site:")]
+    if names:
+        for name, starts in ((n, SITES[n]) for n in names):
             flt = INTELBRAS_FILTER if name == "intelbras" else None
             data = crawl(name, starts, max_pages=260 if name == "intelbras" else 200, url_filter=flt)
             save(f"site-{name}.json", data)
