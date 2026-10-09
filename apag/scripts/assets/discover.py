@@ -289,21 +289,26 @@ COMMONS_QUERIES = [
 ]
 
 
-def commons():
+def commons(queries=None):
     """Busca no Wikimedia Commons (licenças livres, com autor e licença de cada arquivo)."""
     out = {}
-    for q in COMMONS_QUERIES:
+    for q in queries or COMMONS_QUERIES:
         url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
             "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
             "gsrsearch": f"{q} filetype:bitmap", "gsrlimit": 15, "prop": "imageinfo",
             "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 800,
         })
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "apag-site-build/1.0 (github.com/isaiasneville45-hue/site-)"})
-            with urllib.request.urlopen(req, timeout=40) as r:
-                data = json.loads(r.read().decode("utf-8"))
-        except Exception as e:  # noqa: BLE001
-            out[q] = {"error": str(e)}
+        data = None
+        for attempt in range(5):
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "apag-site-build/1.0 (github.com/isaiasneville45-hue/site-)"})
+                with urllib.request.urlopen(req, timeout=40) as r:
+                    data = json.loads(r.read().decode("utf-8"))
+                break
+            except Exception as e:  # noqa: BLE001
+                out[q] = {"error": str(e)}
+                time.sleep(10 * (attempt + 1))
+        if data is None:
             continue
         items = []
         for page in sorted((data.get("query") or {}).get("pages", {}).values(), key=lambda p: p.get("index", 0)):
@@ -324,7 +329,7 @@ def commons():
                 "description": val("ImageDescription")[:200],
             })
         out[q] = items
-        time.sleep(0.4)
+        time.sleep(3)
     return out
 
 
@@ -354,6 +359,166 @@ def geocode():
 
 INTELBRAS_FILTER = r"incendio|alarme|detector|sirene|acionador|central|modulo|isolador|repetidor|fonte|bateria|cabo|sinaliz|emergencia|fumaca|termo|audiovisual"
 
+# ── Rodada 3: catálogo Scala em imagens, Unsplash (HTML), Openverse e folhas de contato ──
+
+def contact_sheet(name, items, thumb_key="thumb", label_key="label", cols=4, cell=300):
+    """Monta uma grade numerada de miniaturas (para escolher fotos olhando)."""
+    from PIL import Image, ImageDraw
+    os.makedirs(os.path.join(OUT, "sheets"), exist_ok=True)
+    thumbs = []
+    for i, it in enumerate(items):
+        try:
+            data, _, _ = fetch(it[thumb_key], binary=True, timeout=40, accept="image/*")
+            im = Image.open(__import__("io").BytesIO(data)).convert("RGB")
+            im.thumbnail((cell, cell))
+            thumbs.append((i, im, it.get(label_key, "")))
+        except Exception as e:  # noqa: BLE001
+            thumbs.append((i, None, f"erro: {e}"))
+        time.sleep(0.2)
+    if not thumbs:
+        return None
+    rows = (len(thumbs) + cols - 1) // cols
+    sheet = Image.new("RGB", (cols * cell, rows * (cell + 34)), (30, 30, 30))
+    d = ImageDraw.Draw(sheet)
+    for n, (i, im, label) in enumerate(thumbs):
+        x, y = (n % cols) * cell, (n // cols) * (cell + 34)
+        if im:
+            sheet.paste(im, (x + (cell - im.width) // 2, y + (cell - im.height) // 2))
+        d.rectangle((x, y + cell, x + cell, y + cell + 34), fill=(0, 0, 0))
+        d.text((x + 6, y + cell + 4), f"#{i} {str(label)[:44]}", fill=(255, 255, 255))
+    path = os.path.join(OUT, "sheets", f"{name}.jpg")
+    sheet.save(path, "JPEG", quality=70)
+    return os.path.relpath(path, OUT)
+
+
+def slugify(text):
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def scala_pdf_pages():
+    """Renderiza as páginas do catálogo da Scala e extrai imagens embutidas e links."""
+    url = "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf"
+    out = {"pdf": url}
+    data, _, _ = fetch(url, binary=True, timeout=180, accept="application/pdf,*/*")
+    tmp = "/tmp/scala.pdf"
+    with open(tmp, "wb") as f:
+        f.write(data)
+    pages_dir = os.path.join(OUT, "scala-pages")
+    os.makedirs(pages_dir, exist_ok=True)
+    subprocess.run(["pdftoppm", "-r", "90", "-jpeg", "-jpegopt", "quality=65", tmp, os.path.join(pages_dir, "p")], check=True)
+    out["pages"] = sorted(os.listdir(pages_dir))
+    out["urls"] = subprocess.run(["pdfinfo", "-url", tmp], capture_output=True, text=True).stdout
+    out["images_list"] = subprocess.run(["pdfimages", "-list", tmp], capture_output=True, text=True).stdout
+    img_dir = os.path.join(OUT, "scala-images")
+    os.makedirs(img_dir, exist_ok=True)
+    subprocess.run(["pdfimages", "-j", "-p", tmp, os.path.join(img_dir, "img")], check=True)
+    # converte tudo para JPEG pequeno (para revisão)
+    from PIL import Image
+    for name in sorted(os.listdir(img_dir)):
+        path = os.path.join(img_dir, name)
+        try:
+            im = Image.open(path).convert("RGB")
+            if im.width < 60 or im.height < 60:
+                os.remove(path)
+                continue
+            im.thumbnail((700, 700))
+            new = os.path.splitext(path)[0] + ".jpg"
+            im.save(new, "JPEG", quality=70)
+            if new != path:
+                os.remove(path)
+        except Exception:  # noqa: BLE001
+            os.remove(path)
+    out["images"] = sorted(os.listdir(img_dir))
+    # texto via OCR? (não disponível) — guarda também o texto bruto por página
+    out["text"] = subprocess.run(["pdftotext", "-raw", tmp, "-"], capture_output=True, text=True).stdout[:4000]
+    return out
+
+
+UNSPLASH_HTML_QUERIES = [
+    "fire-extinguisher", "fire-extinguisher-wall", "fire-safety", "firefighter-equipment", "fire-hose",
+    "fire-hydrant-cabinet", "fire-alarm", "smoke-detector", "emergency-exit", "exit-sign", "emergency-light",
+    "technician", "maintenance-technician", "engineer-inspection", "safety-inspection", "industrial-warehouse",
+    "warehouse", "office-building", "commercial-building", "apartment-building", "corridor", "stairwell",
+    "factory-workers", "construction-safety",
+]
+
+
+def unsplash_html(queries=None):
+    """Busca pela página pública do Unsplash (só fotos gratuitas: images.unsplash.com/photo-...)."""
+    out = {}
+    for q in queries or UNSPLASH_HTML_QUERIES:
+        url = f"https://unsplash.com/s/photos/{q}?license=free"
+        try:
+            text, _, _ = fetch(url)
+        except Exception as e:  # noqa: BLE001
+            out[q] = {"error": str(e)}
+            continue
+        items, seen = [], set()
+        # <img ... alt="..." ... src="https://images.unsplash.com/photo-XXXX?..."
+        for m in re.finditer(r"<img[^>]+>", text):
+            tag = m.group(0)
+            src = re.search(r'src="(https://images\.unsplash\.com/photo-[^"?]+)', tag)
+            if not src or "plus.unsplash.com" in tag:
+                continue
+            base = html.unescape(src.group(1))
+            if base in seen:
+                continue
+            seen.add(base)
+            alt = re.search(r'alt="([^"]*)"', tag)
+            items.append({"url": base, "alt": html.unescape(alt.group(1)) if alt else "", "thumb": base + "?w=400&q=60&fm=jpg"})
+        # tenta também extrair autor/slug da página (links /photos/<slug>)
+        out[q] = {"photo_pages": sorted(set(re.findall(r'href="(/photos/[a-zA-Z0-9_-]+)"', text)))[:40], "items": items[:16]}
+        for it in out[q]["items"]:
+            it["label"] = it["alt"]
+        out[q]["sheet"] = contact_sheet(f"unsplash-{q}", out[q]["items"])
+        time.sleep(1.5)
+    return out
+
+
+OPENVERSE_QUERIES = [
+    "fire extinguisher", "fire extinguisher wall", "fire hose", "fire hose cabinet", "fire hose nozzle",
+    "storz coupling", "fire alarm", "smoke detector", "fire alarm panel", "emergency exit sign",
+    "emergency light", "technician maintenance", "safety inspection", "warehouse interior", "office corridor",
+]
+
+
+def openverse(queries=None):
+    """Openverse (fotos com licença Creative Commons, com autor e licença)."""
+    out = {}
+    for q in queries or OPENVERSE_QUERIES:
+        url = "https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({
+            "q": q, "license_type": "commercial,modification", "page_size": 16, "mature": "false"})
+        try:
+            text, _, _ = fetch(url, accept="application/json")
+            data = json.loads(text)
+        except Exception as e:  # noqa: BLE001
+            out[q] = {"error": str(e)}
+            time.sleep(5)
+            continue
+        items = []
+        for r in data.get("results", []):
+            items.append({
+                "id": r.get("id"), "title": r.get("title"), "url": r.get("url"), "thumb": r.get("thumbnail") or r.get("url"),
+                "page": r.get("foreign_landing_url"), "creator": r.get("creator"), "license": r.get("license"),
+                "license_version": r.get("license_version"), "license_url": r.get("license_url"),
+                "source": r.get("source"), "width": r.get("width"), "height": r.get("height"),
+                "label": f"{r.get('license')} {r.get('title') or ''}",
+            })
+        out[q] = {"items": items, "sheet": contact_sheet(f"openverse-{slugify(q)}", items)}
+        time.sleep(2)
+    return out
+
+
+def commons_sheets(data):
+    """Folhas de contato para os resultados do Commons já levantados."""
+    for q, items in data.items():
+        if isinstance(items, list) and items:
+            for it in items:
+                it["label"] = f"{it.get('license', '')} {it.get('title', '')[5:]}"
+            data[q] = {"items": items, "sheet": contact_sheet(f"commons-{slugify(q)}", items[:12])}
+    return data
+
+
 SITES = {
     "scala": ["https://gruposcala.com.br/", "https://gruposcala.com.br/catalogo/"],
     "intelbras": ["https://www.intelbras.com/pt-br/seguranca-eletronica/incendio"],
@@ -370,6 +535,20 @@ def save(name, data):
 
 def main():
     only = sys.argv[1:] or ["sites", "scala_pdf", "unsplash", "geocode"]
+    if "scala_pages" in only:
+        save("scala-pages.json", scala_pdf_pages())
+    if "unsplash_html" in only:
+        save("unsplash-html.json", unsplash_html())
+    if "openverse" in only:
+        save("openverse.json", openverse())
+    if "commons_retry" in only:
+        prev = {}
+        path = os.path.join(OUT, "commons.json")
+        if os.path.exists(path):
+            prev = json.load(open(path))
+        todo = [q for q in COMMONS_QUERIES if not isinstance(prev.get(q), list)]
+        prev.update(commons(todo))
+        save("commons.json", commons_sheets(prev))
     if "commons" in only:
         save("commons.json", commons())
     if "unsplash_extra" in only:

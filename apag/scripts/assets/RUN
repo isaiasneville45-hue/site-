@@ -1,6 +1,4 @@
-discover site:scala
-discover site:intelbras
-discover site:tecnohold
-discover site:ilumac
-discover site:luxpryme
-discover scala_pdf unsplash geocode commons unsplash_extra
+discover scala_pages
+discover unsplash_html
+discover openverse
+discover commons_retry
