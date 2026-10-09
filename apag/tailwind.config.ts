@@ -16,7 +16,7 @@ export default {
           'red-45': 'var(--apag-red-45)', // #DF2531 a 45%
           crimson: 'var(--apag-crimson)', // #C50337
           noir: 'var(--apag-noir)', // #02060E
-          black: 'var(--apag-black)', // #000000
+          black: 'var(--apag-black)', // #000
           white: 'var(--apag-white)', // #FFFFFF
           // Tom mais claro do vermelho, só para textos pequenos sobre fundo escuro
           // (#DF2531 sobre #02060E tem contraste 4,3:1, abaixo do AA para texto pequeno).

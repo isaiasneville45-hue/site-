@@ -138,7 +138,7 @@ export default function ContactForm() {
                   type="tel"
                   inputMode="tel"
                   autoComplete="tel-national"
-                  placeholder="(00) 00000-0000"
+                  placeholder="(47) 99999-9999"
                   {...field}
                   onChange={(event) => field.onChange(formatPhoneBR(event.target.value))}
                 />

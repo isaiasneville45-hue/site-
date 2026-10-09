@@ -4,16 +4,10 @@
 
 /* ──────────────────────────────────────────────────────────────────────
    Mokoto: fonte dos títulos e da logo textual.
-   TODO: coloque o arquivo em public/fonts/Mokoto.woff2. Enquanto ele não existir,
-   o navegador usa a Michroma (Google Fonts, empacotada via @fontsource).
+   TODO: coloque o arquivo em public/fonts/Mokoto.woff2. O @font-face é incluído
+   no index.html pelo vite.config.ts só quando o arquivo existe; enquanto isso, os
+   títulos usam a Michroma (Google Fonts, empacotada via @fontsource).
    ────────────────────────────────────────────────────────────────────── */
-@font-face {
-  font-family: 'Mokoto';
-  src: url('/fonts/Mokoto.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   /* Paleta APAG */
@@ -22,7 +16,7 @@
   --apag-red-45: rgb(223 37 49 / 0.45);
   --apag-crimson: #c50337;
   --apag-noir: #02060e;
-  --apag-black: #000000;
+  --apag-black: #000;
   --apag-white: #ffffff;
   --apag-ember: #ff5a65;
 

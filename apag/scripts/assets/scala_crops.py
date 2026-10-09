@@ -11,7 +11,11 @@ na imagem original. Depois:
     placa, reconstrói esse canto com as cores da própria placa;
   - amplia 2× com nitidez e centraliza numa tela branca 4:3 (máx. 800×600).
 
-Uso: python3 scala_crops.py caminho/do/catalogo.pdf pasta/de/saida
+Uso: python3 scala_crops.py caminho/do/catalogo.pdf public/produtos/sinalizacao
+
+O PDF é o catálogo público da Scala:
+https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf
+Precisa de poppler-utils (pdfimages), Pillow e numpy.
 """
 import os
 import subprocess
@@ -134,7 +138,7 @@ def sign_rect(arr):
 def dominant(pixels):
     """Cor mais frequente (quantizada) de um conjunto de pixels."""
     q = (pixels // 24).astype(int)
-    keys = q[:, 0] * 10000 + q[:, 1] * 100 + q[:, 2]
+    keys = q[:, 0] * 10_000 + q[:, 1] * 100 + q[:, 2]
     vals, counts = np.unique(keys, return_counts=True)
     top = vals[counts.argmax()]
     return pixels[keys == top].mean(axis=0)

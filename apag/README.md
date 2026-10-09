@@ -51,6 +51,11 @@ O `company.ts` também alimenta, no build, as meta tags, o Open Graph, o JSON-LD
       "Trabalhamos com" fica oculto e as fotos são de bancos de imagem livres (com crédito).
 - [ ] Extintores: informar o fornecedor, se quiser exibir "Trabalhamos com" (mesma situação das fotos).
 - [ ] Revisar a lista de produtos de cada aba (o que a APAG realmente vende) e as descrições.
+- [ ] Fotos que faltam (hoje aparece o placeholder com ícone): chave de mangueira (Storz), registro globo
+      angular 45°, hidrante de recalque e suporte de parede para extintor. Basta salvar
+      `public/produtos/{categoria}/{id}.webp` e preencher o campo `image` do produto.
+- [ ] Opcional: trocar as fotos de banco de imagem (Hero, "Por que a APAG", capas, hidrantes e extintores) por
+      fotos próprias da APAG — atualize também o `CREDITOS.md`.
 
 **Arquivos**
 
@@ -74,7 +79,8 @@ O `company.ts` também alimenta, no build, as meta tags, o Open Graph, o JSON-LD
   substituir o arquivo (mesmo nome).
 - **Fotos humanizadas:** `public/fotos/{id}-800.webp` e `{id}-1600.webp` (Hero, "Por que a APAG" e capas das abas).
 - **Créditos:** `public/produtos/CREDITOS.md` lista a origem de cada imagem (fabricante, ou autor e licença).
-- **Como foram obtidas:** `scripts/assets/download.py` baixa e otimiza o que está em `scripts/assets/manifest.json`;
+- **Como foram obtidas:** `scripts/assets/download.py` baixa e otimiza o que está em `scripts/assets/manifest.json`
+  e gera o `CREDITOS.md` (`python3 scripts/assets/download.py photos` refaz só as fotos humanizadas);
   `scripts/assets/scala_crops.py` recorta as placas do catálogo em PDF da Scala (o PDF só tem imagens). Os sites
   de banco de imagem Unsplash e Pexels bloquearam o acesso automatizado; por isso as fotos humanizadas e as de
   hidrantes e extintores vieram do Wikimedia Commons e do Openverse, com licenças livres (CC0, CC BY, CC BY-SA)

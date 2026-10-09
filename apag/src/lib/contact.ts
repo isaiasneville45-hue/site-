@@ -15,7 +15,7 @@ export function mailHref(email: string = company.email) {
   return `mailto:${email}`
 }
 
-/** Máscara de telefone brasileiro: (00) 0000-0000 ou (00) 00000-0000. */
+/** Máscara de telefone brasileiro: (DD) NNNN-NNNN ou (DD) NNNNN-NNNN. */
 export function formatPhoneBR(value: string) {
   const d = value.replace(/\D/g, '').slice(0, 11)
   if (d.length <= 2) return d.length ? `(${d}` : ''
