@@ -31,7 +31,7 @@ export type ProductCategory = {
   title: string
   /** texto curto explicando a categoria */
   intro: string
-  /** foto "humanizada" da categoria: '/fotos/{id}-1600.webp' ('' = só o gradiente) */
+  /** foto "humanizada" da categoria: o maior arquivo, '/fotos/{id}-{largura}.webp' ('' = só o gradiente) */
   cover: string
   coverAlt: string
   /** object-position da capa, para enquadrar o assunto (ex.: "70% 50%") */
@@ -46,8 +46,10 @@ export const productCategories: ProductCategory[] = [
     title: 'Sinalização de emergência',
     intro:
       'Placas e fitas que mostram o caminho até a saída e indicam onde estão os equipamentos de combate a incêndio, conforme a ABNT NBR 16820 e as Instruções Normativas do Corpo de Bombeiros de SC (IN 13).',
-    cover: '',
-    coverAlt: 'Corredor com placa de saída de emergência iluminada',
+    cover: '/fotos/capa-sinalizacao-1600.webp',
+    coverAlt:
+      'Corredor envidraçado de um prédio de escritórios, com a placa de saída de emergência no teto indicando a rota de fuga',
+    coverPosition: '55% 38%',
     suppliers: [{ name: 'Grupo Scala', url: 'https://gruposcala.com.br' }],
     products: [
       {
@@ -311,8 +313,9 @@ export const productCategories: ProductCategory[] = [
     title: 'Alarme de incêndio',
     intro:
       'Centrais, detectores, acionadores e sirenes que identificam um princípio de incêndio e avisam todo o prédio rapidamente, em versões convencionais, endereçáveis e analógicas.',
-    cover: '',
-    coverAlt: 'Detector de fumaça instalado no teto de um ambiente',
+    cover: '/fotos/capa-alarme-1024.webp',
+    coverAlt: 'Detector de fumaça aberto no teto durante a manutenção, pendurado pela fiação',
+    coverPosition: '70% 50%',
     suppliers: [
       { name: 'Intelbras', url: 'https://www.intelbras.com/pt-br/seguranca-eletronica/incendio' },
       { name: 'Tecnohold', url: 'https://www.tecnohold.com.br' },
@@ -555,8 +558,10 @@ export const productCategories: ProductCategory[] = [
     title: 'Hidrantes e mangotinhos',
     intro:
       'Mangueiras, esguichos, conexões e abrigos para a rede de hidrantes do seu imóvel, além do teste hidrostático das mangueiras e da manutenção da rede.',
-    cover: '',
-    coverAlt: 'Mangueira de incêndio enrolada dentro do abrigo de hidrante',
+    cover: '/fotos/capa-hidrantes-1600.webp',
+    coverAlt:
+      'Hidrante com registro de volante e abrigo vermelho de mangueiras com visores, com as mangueiras brancas enroladas, em área externa com jardim',
+    coverPosition: '60% 54%',
     suppliers: [], // TODO: informar fornecedor
     products: [
       {
@@ -660,8 +665,10 @@ export const productCategories: ProductCategory[] = [
     title: 'Iluminação de emergência',
     intro:
       'Luminárias e blocos autônomos que acendem sozinhos na falta de energia e mantêm as rotas de fuga iluminadas, inclusive em áreas externas, úmidas e industriais.',
-    cover: '',
-    coverAlt: 'Placa de saída iluminada em um corredor escuro',
+    cover: '/fotos/capa-iluminacao-1600.webp',
+    coverAlt:
+      'Luminária de sinalização de saída de emergência acesa, com pictograma verde de pessoa correndo e seta para a direita, fixada no alto de uma passagem em um edifício à noite',
+    coverPosition: '85% 18%',
     suppliers: [{ name: 'Luxpryme', url: 'https://www.luxpryme.com.br' }],
     products: [
       {
@@ -800,8 +807,10 @@ export const productCategories: ProductCategory[] = [
     title: 'Extintores',
     intro:
       'Extintores para cada classe de incêndio, com suportes e acessórios para a instalação, além dos serviços de recarga, manutenção e teste hidrostático.',
-    cover: '',
-    coverAlt: 'Extintores de incêndio vermelhos instalados na parede',
+    cover: '/fotos/capa-extintores-1024.webp',
+    coverAlt:
+      'Trabalhador de capacete e colete refletivo usa um extintor para apagar o fogo em uma bandeja durante um treinamento',
+    coverPosition: '55% 35%',
     suppliers: [],
     products: [
       {

@@ -15,6 +15,16 @@ export type PhotoAsset = {
 }
 
 export const photos: { hero: PhotoAsset | null; why: PhotoAsset | null } = {
-  hero: null,
-  why: null,
+  hero: {
+    id: 'hero',
+    alt: 'Técnico caminha por um amplo galpão durante o teste do sistema de chuveiros automáticos, com névoa de água no ar e reflexos das luzes no piso molhado',
+    widths: [800, 1600, 2400],
+    position: '60% 50%',
+  },
+  why: {
+    id: 'por-que-apag',
+    alt: 'Agente de segurança, de perfil, inspeciona extintores de incêndio vermelhos durante uma vistoria técnica',
+    widths: [800, 1200],
+    position: '45% 50%',
+  },
 }

@@ -246,11 +246,12 @@ function ProductCard({
 
 /**
  * Capas em public/fotos/{id}-{largura}.webp: a partir do arquivo maior
- * ("...-1600.webp"), monta o srcset com a versão de 800 px.
+ * (ex.: "...-1600.webp"), monta o srcset com a versão de 800 px.
  */
 function coverSrcSet(cover: string) {
-  const match = /^(.*)-1600\.webp$/.exec(cover)
-  return match ? `${match[1]}-800.webp 800w, ${cover} 1600w` : undefined
+  const match = /^(.*)-(\d+)\.webp$/.exec(cover)
+  if (!match || Number(match[2]) <= 800) return undefined
+  return `${match[1]}-800.webp 800w, ${cover} ${match[2]}w`
 }
 
 /** Agrupa os produtos pelo campo `group`, mantendo a ordem em que aparecem. */
