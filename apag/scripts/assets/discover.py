@@ -373,7 +373,7 @@ def contact_sheet(name, items, thumb_key="thumb", label_key="label", cols=4, cel
     thumbs = []
     for i, it in enumerate(items):
         try:
-            data, _, _ = fetch(it[thumb_key], binary=True, timeout=40, accept="image/*")
+            data, _, _ = fetch(it[thumb_key], binary=True, timeout=40, accept="*/*")
             im = Image.open(__import__("io").BytesIO(data)).convert("RGB")
             im.thumbnail((cell, cell))
             thumbs.append((i, im, it.get(label_key, "")))
@@ -604,6 +604,18 @@ def main():
         save("unsplash-html.json", unsplash_html())
     if "openverse" in only:
         save("openverse.json", openverse())
+    for arg in only:
+        # refaz as folhas de contato do Openverse com a imagem original (a miniatura da API dá 406)
+        if arg.startswith("ov_sheets:"):
+            name = arg.split(":", 1)[1]
+            path = os.path.join(OUT, f"{name}.json")
+            data = json.load(open(path))
+            for q, v in data.items():
+                if isinstance(v, dict) and v.get("items"):
+                    for it in v["items"]:
+                        it["thumb_src"] = it.get("url")
+                    v["sheet"] = contact_sheet(f"openverse-{slugify(q)}", v["items"], thumb_key="thumb_src")
+            save(f"{name}.json", data)
     for arg in only:
         # buscas extras: "openverse:<nome>" / "commons:<nome>" lêem research/queries-<nome>.txt
         if arg.startswith(("openverse:", "commons:")):
