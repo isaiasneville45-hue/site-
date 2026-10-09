@@ -335,6 +335,7 @@ export const productCategories: ProductCategory[] = [
         description:
           'Central endereçável para até 60 dispositivos, configurada pelo aplicativo Programador CIE via Wi-Fi.',
         image: '/produtos/alarme/intelbras-cie-1060.webp',
+        imageFit: 'cover',
         imageAlt: 'Central de alarme de incêndio endereçável Intelbras CIE 1060, vista frontal com LEDs',
         brand: 'Intelbras',
         group: 'Centrais de alarme',

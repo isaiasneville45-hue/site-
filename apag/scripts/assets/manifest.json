@@ -531,10 +531,8 @@
    "id": "luxpryme-csb-400",
    "name": "Central de iluminação 12 V 400 W CSB-400",
    "brand": "Luxpryme",
-   "url": "https://www.luxpryme.com.br/admin/image/produto/50/181md.png",
-   "fallbacks": [
-    "https://www.luxpryme.com.br/admin/image/produto/50/50-1thumb.png"
-   ],
+   "url": "https://www.luxpryme.com.br/admin/image/produto/50/50-1thumb.png",
+   "fallbacks": [],
    "page": "https://www.luxpryme.com.br/produto/central-de-iluminacao-12vcc-400w"
   },
   {
@@ -562,10 +560,8 @@
    "id": "luxpryme-duplo-farol-lcf",
    "name": "Luminária duplo farol LCF (opção IP-66)",
    "brand": "Luxpryme",
-   "url": "https://www.luxpryme.com.br/admin/image/produto/53/186md.png",
-   "fallbacks": [
-    "https://www.luxpryme.com.br/admin/image/produto/53/53-1thumb.png"
-   ],
+   "url": "https://www.luxpryme.com.br/admin/image/produto/53/53-1thumb.png",
+   "fallbacks": [],
    "page": "https://www.luxpryme.com.br/produto/luminaria-duplo-farol-"
   },
   {
@@ -573,9 +569,8 @@
    "id": "luxpryme-slim-lsc-ip67",
    "name": "Luminária Slim 12/24 V LSC (IP-67)",
    "brand": "Luxpryme",
-   "url": "https://www.luxpryme.com.br/admin/image/produto/56/188md.png",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/56/189md.png",
    "fallbacks": [
-    "https://www.luxpryme.com.br/admin/image/produto/56/189md.png",
     "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png"
    ],
    "page": "https://www.luxpryme.com.br/produto/luminaria-slim-1224vcc-"
