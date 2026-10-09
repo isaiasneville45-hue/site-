@@ -1,0 +1,56 @@
+{
+ "fire hose": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire hose nozzle": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire hydrant cabinet": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "extinguisher wall": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire extinguishers row": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "emergency exit": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "exit sign green": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "smoke alarm": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire alarm button": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "electrician panel": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "technician working building": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "maintenance worker": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "construction worker safety": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "warehouse interior": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "modern office corridor": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "stairwell": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "condominium building": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "industrial plant": {
+  "error": "HTTP Error 401: Unauthorized"
+ }
+}

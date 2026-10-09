@@ -1,0 +1,279 @@
+{
+ "nominatim_structured": [
+  {
+   "place_id": 7276746,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 4560698407,
+   "lat": "-26.2741464",
+   "lon": "-48.8677053",
+   "category": "place",
+   "type": "house",
+   "place_rank": 30,
+   "importance": 6.179064621953181e-05,
+   "addresstype": "place",
+   "name": "",
+   "display_name": "1300, Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89218-501, Brasil",
+   "address": {
+    "house_number": "1300",
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89218-501",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2741964",
+    "-26.2740964",
+    "-48.8677553",
+    "-48.8676553"
+   ]
+  }
+ ],
+ "nominatim_free": [
+  {
+   "place_id": 7303549,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 4560698407,
+   "lat": "-26.2741464",
+   "lon": "-48.8677053",
+   "category": "place",
+   "type": "house",
+   "place_rank": 30,
+   "importance": 6.179064621953181e-05,
+   "addresstype": "place",
+   "name": "",
+   "display_name": "1300, Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89218-501, Brasil",
+   "address": {
+    "house_number": "1300",
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89218-501",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2741964",
+    "-26.2740964",
+    "-48.8677553",
+    "-48.8676553"
+   ]
+  }
+ ],
+ "nominatim_street": [
+  {
+   "place_id": 7322844,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 272208998,
+   "lat": "-26.2813110",
+   "lon": "-48.8651292",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05339512397955287,
+   "addresstype": "road",
+   "name": "Rua Guilherme",
+   "display_name": "Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89204-415, Brasil",
+   "address": {
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89204-415",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2837963",
+    "-26.2783351",
+    "-48.8657604",
+    "-48.8642667"
+   ]
+  },
+  {
+   "place_id": 7306761,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 264519117,
+   "lat": "-26.2744228",
+   "lon": "-48.8676728",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05339512397955287,
+   "addresstype": "road",
+   "name": "Rua Guilherme",
+   "display_name": "Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89218-501, Brasil",
+   "address": {
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89218-501",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2752957",
+    "-26.2738917",
+    "-48.8695800",
+    "-48.8658832"
+   ]
+  },
+  {
+   "place_id": 7300717,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 925825202,
+   "lat": "-26.2767386",
+   "lon": "-48.8649871",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05339512397955287,
+   "addresstype": "road",
+   "name": "Rua Guilherme",
+   "display_name": "Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89218-250, Brasil",
+   "address": {
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89218-250",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2783351",
+    "-26.2752957",
+    "-48.8658832",
+    "-48.8649803"
+   ]
+  },
+  {
+   "place_id": 7292503,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 272208997,
+   "lat": "-26.2738299",
+   "lon": "-48.8705541",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05339512397955287,
+   "addresstype": "road",
+   "name": "Rua Guilherme",
+   "display_name": "Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89233-401, Brasil",
+   "address": {
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89233-401",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2738917",
+    "-26.2737877",
+    "-48.8715292",
+    "-48.8695800"
+   ]
+  },
+  {
+   "place_id": 7302007,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 977967553,
+   "lat": "-26.2838581",
+   "lon": "-48.8641885",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05339512397955287,
+   "addresstype": "road",
+   "name": "Rua Guilherme",
+   "display_name": "Rua Guilherme, Costa e Silva, Joinville, Santa Catarina, Região Sul, 89216-100, Brasil",
+   "address": {
+    "road": "Rua Guilherme",
+    "suburb": "Costa e Silva",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "ISO3166-2-lvl4": "BR-SC",
+    "region": "Região Sul",
+    "postcode": "89216-100",
+    "country": "Brasil",
+    "country_code": "br"
+   },
+   "boundingbox": [
+    "-26.2839201",
+    "-26.2837963",
+    "-48.8642667",
+    "-48.8641105"
+   ]
+  }
+ ],
+ "photon": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 4560698407,
+     "osm_key": "place",
+     "osm_value": "house",
+     "type": "house",
+     "housenumber": "1300",
+     "street": "Rua Guilherme",
+     "district": "Costa e Silva",
+     "city": "Joinville",
+     "state": "Santa Catarina",
+     "country": "Brasil",
+     "postcode": "89218-501",
+     "countrycode": "BR"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -48.8677053,
+      -26.2741464
+     ]
+    }
+   }
+  ]
+ },
+ "viacep": {
+  "cep": "89218-500",
+  "logradouro": "Rua Guilherme",
+  "complemento": "lado par",
+  "unidade": "",
+  "bairro": "Costa e Silva",
+  "localidade": "Joinville",
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "regiao": "Sul",
+  "ibge": "4209102",
+  "gia": "",
+  "ddd": "47",
+  "siafi": "8179"
+ }
+}

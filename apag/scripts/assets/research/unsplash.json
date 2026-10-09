@@ -1,0 +1,68 @@
+{
+ "fire extinguisher": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire extinguisher maintenance": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "firefighter equipment inspection": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire hydrant hose": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire hose cabinet": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire alarm": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "smoke detector ceiling": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire alarm control panel": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "emergency exit sign": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "exit sign corridor": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "emergency light": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "safety technician": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "engineer inspection building": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "industrial warehouse": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "commercial building": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "apartment building brazil": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "office building lobby": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "factory safety": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "fire safety": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "technician helmet": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "evacuation sign": {
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ "sprinkler ceiling": {
+  "error": "HTTP Error 401: Unauthorized"
+ }
+}
