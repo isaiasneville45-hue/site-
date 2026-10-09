@@ -524,6 +524,24 @@ def commons_sheets(data):
     return data
 
 
+def fetch_files(list_file="fetch-files.txt"):
+    """Baixa arquivos binários listados como "<nome> <url>" para research/files/."""
+    out = {}
+    os.makedirs(os.path.join(OUT, "files"), exist_ok=True)
+    for line in open(os.path.join(OUT, list_file)):
+        if not line.strip() or line.startswith("#"):
+            continue
+        name, url = line.split(None, 1)
+        try:
+            data, final, ctype = fetch(url.strip(), binary=True, timeout=180, accept="*/*")
+            with open(os.path.join(OUT, "files", name), "wb") as f:
+                f.write(data)
+            out[name] = {"url": final, "bytes": len(data), "type": ctype}
+        except Exception as e:  # noqa: BLE001
+            out[name] = {"url": url.strip(), "error": str(e)}
+    return out
+
+
 def fetch_pages(list_file="fetch-list.txt"):
     """Busca uma lista de URLs (research/fetch-list.txt) e registra título, descrição,
     imagens (respeitando <base href>), og:image e imagens de JSON-LD de produto."""
@@ -574,6 +592,8 @@ def save(name, data):
 
 def main():
     only = sys.argv[1:] or ["sites", "scala_pdf", "unsplash", "geocode"]
+    if "files" in only:
+        save("files.json", fetch_files())
     for arg in only:
         if arg.startswith("pages:"):
             name = arg.split(":", 1)[1]
