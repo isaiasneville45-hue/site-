@@ -32,6 +32,20 @@ const html = template
   .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
   .replace('</head>', `    ${noscriptStyle}\n  </head>`)
 
+// Toda imagem local referenciada na página (src/srcset) precisa existir em dist/.
+const localImages = new Set(
+  [...html.matchAll(/(?:src|srcset)="([^"]+)"/g)]
+    .flatMap(([, value]) => value.split(',').map((part) => part.trim().split(/\s+/)[0]))
+    .filter((url) => url.startsWith('/') && !url.startsWith('//') && /\.(webp|png|jpe?g|svg|avif)$/i.test(url)),
+)
+const missing = []
+for (const url of localImages) {
+  await fs.access(path.join(distDir, decodeURI(url))).catch(() => missing.push(url))
+}
+if (missing.length) {
+  throw new Error(`prerender: imagens não encontradas em public/:\n  ${missing.join('\n  ')}`)
+}
+
 await fs.writeFile(templatePath, html)
 await fs.rm(ssrDir, { recursive: true, force: true })
 

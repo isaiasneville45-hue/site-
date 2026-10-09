@@ -3,7 +3,7 @@
 Site one-page da **APAG Produtos e Serviços LTDA** (prevenção e combate a incêndio, desde 1998).
 
 **Stack:** React 19 + Vite + TypeScript · Tailwind CSS v4 (tokens em `tailwind.config.ts`) · shadcn/ui (Radix) ·
-Framer Motion · Embla Carousel · React Hook Form + Zod · lucide-react.
+Framer Motion · React Hook Form + Zod · lucide-react.
 
 ## Comandos
 
@@ -20,15 +20,16 @@ npm run format     # prettier
 
 Todo o conteúdo fica em `src/config/` — nenhum dado da empresa está fixo nos componentes.
 
-| Arquivo                       | O que tem                                                                    |
-| ----------------------------- | ---------------------------------------------------------------------------- |
-| `src/config/company.ts`       | Dados da empresa, contato, números (contadores), domínio, textos de SEO      |
-| `src/config/services.ts`      | Os 6 serviços (cards, "Saiba mais" e opções do formulário)                   |
-| `src/config/content.ts`       | Menu, segmentos da faixa, diferenciais ("Por que a APAG") e etapas           |
-| `src/config/faq.ts`           | Perguntas e respostas do FAQ                                                 |
-| `src/config/testimonials.ts`  | Depoimentos (lista vazia = seção some do site)                               |
-| `src/index.css`               | Paleta em variáveis CSS, `@font-face` da Mokoto, texturas                    |
-| `tailwind.config.ts`          | Tokens do Tailwind (`apag-red`, `apag-red-65`, `bg-crimson-noir`, sombras…)  |
+| Arquivo                  | O que tem                                                                   |
+| ------------------------ | --------------------------------------------------------------------------- |
+| `src/config/company.ts`  | Dados da empresa, contato, números (contadores), domínio, textos de SEO     |
+| `src/config/services.ts` | Os 6 serviços (cards, "Saiba mais" e opções do formulário)                  |
+| `src/config/content.ts`  | Menu, segmentos da faixa, diferenciais ("Por que a APAG") e etapas          |
+| `src/config/faq.ts`      | Perguntas e respostas do FAQ                                                |
+| `src/config/products.ts` | Produtos por categoria (abas da seção Produtos), fornecedores e capas       |
+| `src/config/photos.ts`   | Fotos do Hero e da seção "Por que a APAG"                                   |
+| `src/index.css`          | Paleta em variáveis CSS, `@font-face` da Mokoto, texturas                   |
+| `tailwind.config.ts`     | Tokens do Tailwind (`apag-red`, `apag-red-65`, `bg-crimson-noir`, sombras…) |
 
 O `company.ts` também alimenta, no build, as meta tags, o Open Graph, o JSON-LD (`LocalBusiness`), o
 `robots.txt`, o `sitemap.xml` e o `llms.txt` (veja `seo.ts`).
@@ -37,16 +38,19 @@ O `company.ts` também alimenta, no build, as meta tags, o Open Graph, o JSON-LD
 
 **Dados (`src/config/company.ts`)**
 
-- [ ] `phone` — telefone
-- [ ] `whatsapp` — só números, com DDI 55 (ex.: `5548999990000`)
-- [ ] `email`
-- [ ] `address`
-- [ ] `hours` e `openingHoursSchema` (o mesmo horário no formato `Mo-Fr 08:00-18:00`)
+- [x] Telefone, WhatsApp, e-mail, endereço e mapa (Rua Guilherme, 1300 – Costa e Silva, Joinville/SC)
+- [ ] `hours` e `openingHoursSchema` — confirmar o horário de atendimento (hoje: seg a sex, 8h às 18h)
+- [ ] `geo` — confirmar as coordenadas (vieram do OpenStreetMap pelo endereço; ficam no JSON-LD)
 - [ ] `instagram` — URL completa (vazio = ícone não aparece)
-- [ ] `mapsEmbedUrl` — Google Maps → Compartilhar → Incorporar um mapa → copie só o valor do `src` (vazio = mapa oculto)
-- [ ] `serviceArea` — região atendida (aparece no FAQ)
 - [ ] `siteUrl` — domínio final, sem barra no fim
 - [ ] `stats` — números reais dos contadores (`value: null` mostra `[000]`; não invente)
+
+**Produtos (`src/config/products.ts`)**
+
+- [ ] Hidrantes: informar o fornecedor (`suppliers`, marcado com `// TODO`). Enquanto isso o
+      "Trabalhamos com" fica oculto e as fotos são de bancos de imagem livres (com crédito).
+- [ ] Extintores: informar o fornecedor, se quiser exibir "Trabalhamos com" (mesma situação das fotos).
+- [ ] Revisar a lista de produtos de cada aba (o que a APAG realmente vende) e as descrições.
 
 **Arquivos**
 
@@ -58,11 +62,24 @@ O `company.ts` também alimenta, no build, as meta tags, o Open Graph, o JSON-LD
 
 **Conteúdo para revisar**
 
-- [ ] `src/config/testimonials.ts` — depoimentos reais (com autorização do cliente)
 - [ ] `src/config/faq.ts` — respostas marcadas com `// TODO revisar` (prazos, documentos, regiões)
 - [ ] `src/config/services.ts` — itens do "Saiba mais" de cada serviço
 
 > Os "anos de mercado" são calculados a partir de 26/05/1998 na data do build. Um novo deploy atualiza o número.
+
+## Imagens
+
+- **Produtos:** `public/produtos/{categoria}/{id}.webp` (até 800 px, WebP). O caminho vai no campo `image` do
+  produto em `products.ts`; `image: ''` mostra um placeholder com o ícone da categoria. Para trocar uma foto, basta
+  substituir o arquivo (mesmo nome).
+- **Fotos humanizadas:** `public/fotos/{id}-800.webp` e `{id}-1600.webp` (Hero, "Por que a APAG" e capas das abas).
+- **Créditos:** `public/produtos/CREDITOS.md` lista a origem de cada imagem (fabricante, ou autor e licença).
+- **Como foram obtidas:** `scripts/assets/download.py` baixa e otimiza o que está em `scripts/assets/manifest.json`;
+  `scripts/assets/scala_crops.py` recorta as placas do catálogo em PDF da Scala (o PDF só tem imagens). Os sites
+  de banco de imagem Unsplash e Pexels bloquearam o acesso automatizado; por isso as fotos humanizadas e as de
+  hidrantes e extintores vieram do Wikimedia Commons e do Openverse, com licenças livres (CC0, CC BY, CC BY-SA)
+  e crédito no `CREDITOS.md`.
+- O build falha se alguma imagem referenciada na página não existir em `public/`.
 
 ## Deploy na Vercel
 
@@ -87,7 +104,7 @@ Pela CLI, como alternativa: `npm i -g vercel`, depois `cd apag && vercel` (previ
 - **Formulário:** valida com Zod e abre o WhatsApp com a mensagem preenchida. Não há backend; nenhum dado é salvo.
   Ele é carregado num chunk separado logo após a página abrir.
 - **Acessibilidade:** HTML semântico, link "Pular para o conteúdo", foco visível (anel vermelho), menu, acordeão,
-  carrossel e diálogos navegáveis por teclado, botão para pausar a faixa animada e `prefers-reduced-motion`
+  abas e diálogos navegáveis por teclado, botão para pausar a faixa animada e `prefers-reduced-motion`
   respeitado (as animações são desligadas).
 - **Cores:** `#DF2531` sobre o fundo escuro tem contraste 4,3:1, abaixo do AA para texto pequeno. Por isso textos
   pequenos em vermelho usam o tom `apag-ember` (`#FF5A65`); o vermelho da marca fica para botões, ícones e títulos.
@@ -97,12 +114,15 @@ Pela CLI, como alternativa: `npm i -g vercel`, depois `cd apag && vercel` (previ
 ```
 apag/
 ├── public/                 favicon, ícone iOS, imagem de compartilhamento (+ logo e fonte, a adicionar)
+│   ├── produtos/           fotos dos produtos ({categoria}/{id}.webp) e CREDITOS.md
+│   └── fotos/              fotos humanizadas ({id}-800.webp e {id}-1600.webp)
 ├── scripts/                build.mjs (build completo) e prerender.mjs (gera o HTML estático)
+│   └── assets/             scripts que baixam/otimizam as imagens (veja "Imagens" acima)
 ├── seo.ts                  plugin do Vite: meta tags, JSON-LD, robots.txt, sitemap.xml, llms.txt
 ├── src/
 │   ├── components/
-│   │   ├── sections/       uma seção por arquivo (Navbar, Hero, Segments, Services, Stats, WhyApag,
-│   │   │                   Process, Testimonials, Faq, FinalCta, Contact, Footer)
+│   │   ├── sections/       uma seção por arquivo (Navbar, Hero, Segments, Services, Products, Stats,
+│   │   │                   WhyApag, Process, Faq, FinalCta, Contact, Location, Footer)
 │   │   ├── ui/             componentes shadcn/ui (button, accordion, dialog, sheet, select, form…)
 │   │   └── …               Logo, ContactForm, WhatsAppButton, SectionHeading, motion, icons
 │   ├── config/             dados e textos do site

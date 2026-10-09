@@ -98,10 +98,13 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
           {category.cover ? (
             <img
               src={category.cover}
+              srcSet={coverSrcSet(category.cover)}
+              sizes="(min-width: 1280px) 1200px, 100vw"
               alt={category.coverAlt}
               loading="lazy"
               decoding="async"
               className="absolute inset-0 -z-20 size-full object-cover"
+              style={category.coverPosition ? { objectPosition: category.coverPosition } : undefined}
             />
           ) : (
             <div aria-hidden="true" className="absolute inset-0 -z-20 bg-crimson-noir" />
@@ -235,6 +238,15 @@ function ProductCard({
       </div>
     </article>
   )
+}
+
+/**
+ * Capas em public/fotos/{id}-{largura}.webp: a partir do arquivo maior
+ * ("...-1600.webp"), monta o srcset com a versão de 800 px.
+ */
+function coverSrcSet(cover: string) {
+  const match = /^(.*)-1600\.webp$/.exec(cover)
+  return match ? `${match[1]}-800.webp 800w, ${cover} 1600w` : undefined
 }
 
 /** Agrupa os produtos pelo campo `group`, mantendo a ordem em que aparecem. */

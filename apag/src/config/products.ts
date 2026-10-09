@@ -31,9 +31,11 @@ export type ProductCategory = {
   title: string
   /** texto curto explicando a categoria */
   intro: string
-  /** foto "humanizada" da categoria ('' = só o gradiente) */
+  /** foto "humanizada" da categoria: '/fotos/{id}-1600.webp' ('' = só o gradiente) */
   cover: string
   coverAlt: string
+  /** object-position da capa, para enquadrar o assunto (ex.: "70% 50%") */
+  coverPosition?: string
   suppliers: { name: string; url: string }[]
   products: Product[]
 }
@@ -51,7 +53,8 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'saida',
         name: 'Placa de saída de emergência',
-        description: 'Indica a porta de saída final da edificação. Fotoluminescente: continua visível no escuro quando falta energia.',
+        description:
+          'Indica a porta de saída final da edificação. Fotoluminescente: continua visível no escuro quando falta energia.',
         image: '/produtos/sinalizacao/saida.webp',
         imageAlt: 'Placa fotoluminescente verde com a palavra SAÍDA e o símbolo de uma pessoa correndo para a porta',
         brand: 'Grupo Scala',
@@ -60,7 +63,8 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'rota-de-fuga-seta',
         name: 'Placa de rota de fuga com seta',
-        description: 'Mostra a direção da saída mais próxima ao longo de corredores e salões. Há modelos com seta para todos os sentidos.',
+        description:
+          'Mostra a direção da saída mais próxima ao longo de corredores e salões. Há modelos com seta para todos os sentidos.',
         image: '/produtos/sinalizacao/rota-de-fuga-seta.webp',
         imageAlt: 'Placa fotoluminescente verde com uma pessoa correndo para a porta e seta apontando para a direita',
         brand: 'Grupo Scala',
@@ -78,9 +82,11 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'saida-acessivel',
         name: 'Placa de saída com rota acessível',
-        description: 'Indica a saída e a rota adaptada para pessoas com deficiência, com o símbolo internacional de acesso.',
+        description:
+          'Indica a saída e a rota adaptada para pessoas com deficiência, com o símbolo internacional de acesso.',
         image: '/produtos/sinalizacao/saida-acessivel.webp',
-        imageAlt: 'Placa fotoluminescente verde com a palavra SAÍDA, símbolo de cadeira de rodas, pessoa correndo e seta',
+        imageAlt:
+          'Placa fotoluminescente verde com a palavra SAÍDA, símbolo de cadeira de rodas, pessoa correndo e seta',
         brand: 'Grupo Scala',
         group: 'Orientação e salvamento',
       },
@@ -105,7 +111,8 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'fotoluminescente-laudo',
         name: 'Placas fotoluminescentes com laudo',
-        description: 'Placas com laudo de conformidade à ABNT NBR 16820, que comprova brilho, autonomia e marcação exigidos pela norma.',
+        description:
+          'Placas com laudo de conformidade à ABNT NBR 16820, que comprova brilho, autonomia e marcação exigidos pela norma.',
         image: '/produtos/sinalizacao/fotoluminescente-laudo.webp',
         imageAlt: 'Placa SAÍDA fotoluminescente com a marcação do fabricante e dos ensaios na borda inferior',
         brand: 'Grupo Scala',
@@ -168,7 +175,8 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'extintor-hidrante-coluna',
         name: 'Sinalização de extintor e hidrante em coluna',
-        description: 'Faixas com as letras E e H para pilares e colunas onde há extintor ou hidrante, conforme a IN 13 do CBMSC.',
+        description:
+          'Faixas com as letras E e H para pilares e colunas onde há extintor ou hidrante, conforme a IN 13 do CBMSC.',
         image: '/produtos/sinalizacao/extintor-hidrante-coluna.webp',
         imageAlt: 'Duas placas vermelhas com faixas amarelas, uma com a letra H e outra com a letra E em preto',
         brand: 'Grupo Scala',
@@ -177,7 +185,8 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'demarcacao-de-solo',
         name: 'Demarcação de piso para extintor',
-        description: 'Adesivo vermelho com borda amarela que marca o piso sob o extintor e lembra de manter a área livre.',
+        description:
+          'Adesivo vermelho com borda amarela que marca o piso sob o extintor e lembra de manter a área livre.',
         image: '/produtos/sinalizacao/demarcacao-de-solo.webp',
         imageAlt: 'Adesivo de piso quadrado vermelho com larga borda amarela',
         brand: 'Grupo Scala',
@@ -251,7 +260,8 @@ export const productCategories: ProductCategory[] = [
         name: 'Placa Proibido usar o elevador em caso de incêndio',
         description: 'Instalada junto aos elevadores: em um incêndio, a saída deve ser feita pelas escadas.',
         image: '/produtos/sinalizacao/proibido-elevador.webp',
-        imageAlt: 'Placa com círculo vermelho cortado sobre um elevador e o texto PROIBIDO UTILIZAR O ELEVADOR EM CASO DE INCÊNDIO',
+        imageAlt:
+          'Placa com círculo vermelho cortado sobre um elevador e o texto PROIBIDO UTILIZAR O ELEVADOR EM CASO DE INCÊNDIO',
         brand: 'Grupo Scala',
         group: 'Proibição',
       },
@@ -267,7 +277,8 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'faixas-zebradas',
         name: 'Faixas de indicação de obstáculo',
-        description: 'Faixas zebradas vermelho e branco ou amarelo e preto que destacam obstáculos e desníveis nas rotas de fuga.',
+        description:
+          'Faixas zebradas vermelho e branco ou amarelo e preto que destacam obstáculos e desníveis nas rotas de fuga.',
         image: '/produtos/sinalizacao/faixas-zebradas.webp',
         imageAlt: 'Duas faixas zebradas, uma vermelha e branca e outra amarela e preta',
         brand: 'Grupo Scala',
@@ -278,14 +289,16 @@ export const productCategories: ProductCategory[] = [
         name: 'Fita antiderrapante fotoluminescente',
         description: 'Aplicada nos degraus: evita escorregões e marca o contorno da escada no escuro.',
         image: '/produtos/sinalizacao/fita-antiderrapante.webp',
-        imageAlt: 'Rolos de fita antiderrapante preta com faixa fotoluminescente e uma escada com a fita aplicada nos degraus',
+        imageAlt:
+          'Rolos de fita antiderrapante preta com faixa fotoluminescente e uma escada com a fita aplicada nos degraus',
         brand: 'Grupo Scala',
         group: 'Sinalização complementar',
       },
       {
         id: 'plano-de-fuga',
         name: 'Plano de fuga',
-        description: 'Planta da edificação com as rotas de saída e os equipamentos de segurança, feita sob medida conforme a ABNT NBR 16820.',
+        description:
+          'Planta da edificação com as rotas de saída e os equipamentos de segurança, feita sob medida conforme a ABNT NBR 16820.',
         image: '/produtos/sinalizacao/plano-de-fuga.webp',
         imageAlt: 'Planta baixa de rota de fuga com corredores, salas numeradas e equipamentos marcados em cores',
         brand: 'Grupo Scala',
