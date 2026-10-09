@@ -28,16 +28,20 @@ export function Products() {
 
   const onTabChange = (value: string) => {
     setActive(value)
-    // No mobile a lista de abas rola na horizontal: traz a aba escolhida para a vista.
-    const trigger = listRef.current?.querySelector<HTMLElement>(`[data-value="${value}"]`)
-    trigger?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+    // No mobile a lista de abas rola na horizontal: centraliza a aba escolhida.
+    // (Rola só a lista; scrollIntoView rolaria também a seção, que tem overflow oculto.)
+    const list = listRef.current
+    const trigger = list?.querySelector<HTMLElement>(`[data-value="${value}"]`)
+    if (list && trigger && list.scrollWidth > list.clientWidth) {
+      list.scrollTo({ left: trigger.offsetLeft - (list.clientWidth - trigger.offsetWidth) / 2, behavior: 'smooth' })
+    }
   }
 
   return (
     <section
       id="produtos"
       aria-labelledby="produtos-title"
-      className="relative overflow-hidden bg-apag-black py-24 lg:py-32"
+      className="relative overflow-clip-safe bg-apag-black py-24 lg:py-32"
     >
       <div
         aria-hidden="true"
@@ -56,7 +60,7 @@ export function Products() {
           {/* Abas: carrossel horizontal no mobile, centralizadas no desktop */}
           <div
             ref={listRef}
-            className="-mx-4 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:mx-0 lg:overflow-visible lg:px-0 [&::-webkit-scrollbar]:hidden"
+            className="relative -mx-4 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:mx-0 lg:overflow-visible lg:px-0 [&::-webkit-scrollbar]:hidden"
           >
             <TabsList aria-label="Categorias de produtos" className="min-w-max lg:mx-auto lg:flex lg:w-fit">
               {productCategories.map((category) => {

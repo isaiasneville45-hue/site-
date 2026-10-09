@@ -24,7 +24,7 @@ export function Contact() {
     <section
       id="contato"
       aria-labelledby="contato-title"
-      className="relative overflow-hidden bg-apag-black py-24 lg:py-32"
+      className="relative overflow-clip-safe bg-apag-black py-24 lg:py-32"
     >
       <div
         aria-hidden="true"

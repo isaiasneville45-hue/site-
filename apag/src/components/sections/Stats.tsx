@@ -6,7 +6,7 @@ import { company, type Stat } from '@/config/company'
 
 export function Stats() {
   return (
-    <section aria-labelledby="numeros-title" className="relative overflow-hidden bg-apag-noir py-20 lg:py-24">
+    <section aria-labelledby="numeros-title" className="relative overflow-clip-safe bg-apag-noir py-20 lg:py-24">
       <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-50" />
       <div className="container relative">
         <Reveal className="mx-auto max-w-2xl text-center">

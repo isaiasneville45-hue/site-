@@ -23,7 +23,7 @@ export function Hero() {
     <section
       id="inicio"
       aria-labelledby="hero-title"
-      className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-crimson-noir pb-20 pt-28 sm:pt-32 lg:pb-24 lg:pt-36"
+      className="relative isolate flex min-h-[100svh] items-center overflow-clip-safe bg-crimson-noir pb-20 pt-28 sm:pt-32 lg:pb-24 lg:pt-36"
     >
       {/* Foto real com o gradiente Crimson Noir por cima (~70%) */}
       {photos.hero ? (

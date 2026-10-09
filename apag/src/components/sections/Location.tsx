@@ -16,7 +16,7 @@ export function Location() {
     <section
       id="localizacao"
       aria-labelledby="localizacao-title"
-      className="relative overflow-hidden bg-apag-noir py-24 lg:py-32"
+      className="relative overflow-clip-safe bg-apag-noir py-24 lg:py-32"
     >
       <div
         aria-hidden="true"

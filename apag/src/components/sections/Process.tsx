@@ -12,7 +12,7 @@ export function Process() {
     <section
       id="como-trabalhamos"
       aria-labelledby="processo-title"
-      className="relative overflow-hidden bg-apag-noir py-24 lg:py-32"
+      className="relative overflow-clip-safe bg-apag-noir py-24 lg:py-32"
     >
       <div
         aria-hidden="true"

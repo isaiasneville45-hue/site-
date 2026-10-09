@@ -14,7 +14,7 @@ export function WhyApag() {
     <section
       id="sobre"
       aria-labelledby="sobre-title"
-      className="theme-light relative overflow-hidden bg-apag-white py-24 text-apag-black lg:py-32"
+      className="theme-light relative overflow-clip-safe bg-apag-white py-24 text-apag-black lg:py-32"
     >
       <div className="container">
         <SectionHeading

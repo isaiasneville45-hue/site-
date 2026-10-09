@@ -17,7 +17,7 @@ export function Footer() {
   const year = useSyncExternalStore(subscribeNothing, currentYear, buildYear)
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/[0.07] bg-apag-black pt-20">
+    <footer className="relative overflow-clip-safe border-t border-white/[0.07] bg-apag-black pt-20">
       <div
         aria-hidden="true"
         className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-apag-red to-transparent"
