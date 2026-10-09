@@ -16,10 +16,6 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: apag-assets
-  cancel-in-progress: false
-
 jobs:
   plan:
     runs-on: ubuntu-latest
