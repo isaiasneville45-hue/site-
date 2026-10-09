@@ -228,6 +228,13 @@ def scala_catalogs():
     return out
 
 
+UNSPLASH_QUERIES_EXTRA = [
+    "fire hose", "fire hose nozzle", "fire hydrant cabinet", "extinguisher wall", "fire extinguishers row",
+    "emergency exit", "exit sign green", "smoke alarm", "fire alarm button", "electrician panel",
+    "technician working building", "maintenance worker", "construction worker safety", "warehouse interior",
+    "modern office corridor", "stairwell", "condominium building", "industrial plant",
+]
+
 UNSPLASH_QUERIES = [
     "fire extinguisher", "fire extinguisher maintenance", "firefighter equipment inspection",
     "fire hydrant hose", "fire hose cabinet", "fire alarm", "smoke detector ceiling",
@@ -238,9 +245,9 @@ UNSPLASH_QUERIES = [
 ]
 
 
-def unsplash():
+def unsplash(queries=None):
     out = {}
-    for q in UNSPLASH_QUERIES:
+    for q in queries or UNSPLASH_QUERIES:
         url = "https://unsplash.com/napi/search/photos?" + urllib.parse.urlencode({"query": q, "per_page": 30})
         try:
             text, _, _ = fetch(url, accept="application/json")
@@ -267,6 +274,57 @@ def unsplash():
             })
         out[q] = items
         time.sleep(0.5)
+    return out
+
+
+COMMONS_QUERIES = [
+    "Storz coupling", "Storz fire hose coupling", "fire hose nozzle", "fire hose branch pipe", "fire hose reel",
+    "fire hose cabinet", "fire hose rolled", "fire hydrant valve indoor", "landing valve fire", "fire department connection",
+    "Storz spanner", "fire extinguisher CO2", "powder fire extinguisher", "water fire extinguisher",
+    "foam fire extinguisher", "wet chemical fire extinguisher", "fire extinguisher stand", "fire extinguisher bracket",
+    "fire extinguisher sign", "fire hydrant sign", "photoluminescent sign", "emergency exit sign", "assembly point sign",
+    "fire alarm call point", "manual call point", "smoke detector", "heat detector", "beam smoke detector",
+    "fire alarm sounder", "fire alarm control panel", "emergency light", "exit sign illuminated",
+    "anti slip tape", "hazard warning tape", "evacuation plan you are here", "no smoking sign",
+]
+
+
+def commons():
+    """Busca no Wikimedia Commons (licenças livres, com autor e licença de cada arquivo)."""
+    out = {}
+    for q in COMMONS_QUERIES:
+        url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
+            "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
+            "gsrsearch": f"{q} filetype:bitmap", "gsrlimit": 15, "prop": "imageinfo",
+            "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 800,
+        })
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "apag-site-build/1.0 (github.com/isaiasneville45-hue/site-)"})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                data = json.loads(r.read().decode("utf-8"))
+        except Exception as e:  # noqa: BLE001
+            out[q] = {"error": str(e)}
+            continue
+        items = []
+        for page in sorted((data.get("query") or {}).get("pages", {}).values(), key=lambda p: p.get("index", 0)):
+            ii = (page.get("imageinfo") or [{}])[0]
+            meta = ii.get("extmetadata") or {}
+            val = lambda k: re.sub(r"<[^>]+>", "", (meta.get(k) or {}).get("value", "")).strip()
+            items.append({
+                "title": page.get("title"),
+                "page": ii.get("descriptionurl"),
+                "thumb": ii.get("thumburl"),
+                "url": ii.get("url"),
+                "width": ii.get("width"),
+                "height": ii.get("height"),
+                "mime": ii.get("mime"),
+                "license": val("LicenseShortName"),
+                "license_url": val("LicenseUrl"),
+                "artist": val("Artist")[:120],
+                "description": val("ImageDescription")[:200],
+            })
+        out[q] = items
+        time.sleep(0.4)
     return out
 
 
@@ -312,6 +370,10 @@ def save(name, data):
 
 def main():
     only = sys.argv[1:] or ["sites", "scala_pdf", "unsplash", "geocode"]
+    if "commons" in only:
+        save("commons.json", commons())
+    if "unsplash_extra" in only:
+        save("unsplash-extra.json", unsplash(UNSPLASH_QUERIES_EXTRA))
     if "geocode" in only:
         save("geocode.json", geocode())
     if "unsplash" in only:
