@@ -95,8 +95,8 @@ export const company = {
     'https://www.google.com/maps/dir/?api=1&destination=Rua+Guilherme,+1300,+Costa+e+Silva,+Joinville+-+SC,+89218-500',
   mapsUrl:
     'https://www.google.com/maps/search/?api=1&query=Rua+Guilherme,+1300,+Costa+e+Silva,+Joinville+-+SC,+89218-500',
-  /** Coordenadas para o JSON-LD (schema.org GeoCoordinates). */
-  geo: null as { latitude: number; longitude: number } | null, // TODO preencher as coordenadas
+  /** Coordenadas para o JSON-LD (schema.org GeoCoordinates). Fonte: OpenStreetMap/Nominatim (nº 1300). */
+  geo: { latitude: -26.2741464, longitude: -48.8677053 } as { latitude: number; longitude: number } | null,
 
   // ── Extras usados no site ──────────────────────────────────────────
   /** Região atendida (FAQ e JSON-LD). */
