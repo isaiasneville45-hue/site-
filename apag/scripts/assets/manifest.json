@@ -1,0 +1,925 @@
+{
+ "products": [
+  {
+   "category": "sinalizacao",
+   "id": "saida",
+   "name": "Placa de saída de emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "rota-de-fuga-seta",
+   "name": "Placa de rota de fuga com seta",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "escada-de-emergencia",
+   "name": "Placa de rota de fuga por escada",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "saida-acessivel",
+   "name": "Placa de saída com rota acessível",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "porta-corta-fogo",
+   "name": "Placa de porta corta-fogo",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "ponto-de-encontro",
+   "name": "Placa de ponto de encontro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "fotoluminescente-laudo",
+   "name": "Placas fotoluminescentes com laudo",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 8
+  },
+  {
+   "category": "sinalizacao",
+   "id": "extintor",
+   "name": "Placa de extintor",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante",
+   "name": "Placa de hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "mangotinho",
+   "name": "Placa de mangotinho",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "extintor-hidrante-coluna",
+   "name": "Sinalização de extintor e hidrante em coluna",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "acionador-alarme",
+   "name": "Placa de acionador manual de alarme",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "bomba-de-incendio",
+   "name": "Placa de comando da bomba de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "agente-extintor",
+   "name": "Placa de agente extintor",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "abrigo-hidrante",
+   "name": "Adesivo HIDRANTE para abrigo",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante-de-recalque",
+   "name": "Placa de hidrante de recalque",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-inflamavel",
+   "name": "Placa de alerta: material inflamável",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-explosao",
+   "name": "Placa de alerta: risco de explosão",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-choque-eletrico",
+   "name": "Placa de alerta: risco de choque elétrico",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-fumar",
+   "name": "Placa Proibido fumar",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-produzir-chama",
+   "name": "Placa Proibido produzir chamas",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-elevador",
+   "name": "Placa Proibido usar o elevador em caso de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-obstruir",
+   "name": "Placa Não obstrua",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "fita-antiderrapante",
+   "name": "Fita antiderrapante fotoluminescente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "demarcacao-de-solo",
+   "name": "Demarcação de piso para extintor",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "plano-de-fuga",
+   "name": "Plano de fuga",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "faixas-zebradas",
+   "name": "Faixas de indicação de obstáculo",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cic-12l",
+   "name": "Central de alarme convencional CIC 12L",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-07/foto_principal_CIC_12_L_700x480px.jpg",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-convencional-cic-12l"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cie-1060",
+   "name": "Central de alarme endereçável CIE 1060",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2022-04/central-de-alarme-de-incendio-cie-1060.jpg",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2023-09/central-de-alarma-de-incendio-cie-1060_0.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1060"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-avalon-evolution-analogica",
+   "name": "Central de alarme analógica Avalon Evolution",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-alarme-analogico-avalon-evolution-0f44af342b.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-analogico/central-avalon-evolution-analogica"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-kx-80",
+   "name": "Central de alarme endereçável compacta KX-80",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_319a249126364f4ea3f635b4d60b46b8~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/product-page/kx-80"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfe-521",
+   "name": "Detector de fumaça endereçável DFE 521",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-fumaca-enderecavel-dfe-521.jpg",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-11/addressable-smoke-detector-dfe-521.jpg",
+    "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-humo-direccionable-dfe-521.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-521"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfc-421",
+   "name": "Detector de fumaça convencional DFC 421 UN",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DFC_421_UN_700x480px.jpg",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-01/dfc_420_front_.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-convencional-dfc-421-un"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-dtw-c",
+   "name": "Detector termovelocimétrico convencional DTW-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_c3bbec8d15c74db7a58b6fa28fcbeaee~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_7d59d6e61cfc4cc6ae4a770ca8518693~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/product-page/dtw-c"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfl-3100",
+   "name": "Detector linear de fumaça DFL 3100",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-12/detector-de-fumaca-linear-dfl-3100.jpg",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-12/linear-smoke-detector-dfl-3100.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3100"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-gaseg-ext",
+   "name": "Detector de gás GLP GASEG EXT",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_a8c1fdfd5c584ac59f8e02db5a06b79f~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/product-page/gaseg-ext"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-idf-620",
+   "name": "Detector de fumaça Smart IDF 620",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-02/IDF_620%20Detector%20de%20Fuma%C3%A7a%20Smart.jpg",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-smart-idf-620"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amc-422",
+   "name": "Acionador manual convencional com sirene AMC 422",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-06/foto_principal_AMC_422_700x480px.jpg",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-convencional-com-sirene-amc-422"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-enderecavel-ip20",
+   "name": "Acionador manual endereçável IP20",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-enderecavel-ip20-af0ff9a653.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/acionador-manual-enderecavel-ip20"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-ip55-ip67",
+   "name": "Acionador manual IP55 / IP67",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-ip55-ip67-49e701534f.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/acionador-manual-ip55-ip67"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-420c",
+   "name": "Sinalizador audiovisual convencional SAV 420C",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-convencional-sav-420c"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-520e",
+   "name": "Sinalizador audiovisual endereçável SAV 520E",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/sav_520_front_0.png",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-enderecavel-sav-520e"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-sirene-pneumatica-industrial",
+   "name": "Sirene endereçável pneumática industrial",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-sirene-enderecavel-pneumatica-industrial-2253e3e1f0.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/sirene-enderecavel-pneumatica-industrial"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mic-e",
+   "name": "Módulo isolador de curto-circuito MIC-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_4e30abbc819f4f8facf3450b91126d84~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/product-page/mic-e"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-modulo-zona-convencional",
+   "name": "Módulo endereçável para 1 zona convencional",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-modulo-enderecavel-de-deteccao-para-1-zona-convencional-ba07f98711.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/modulo-enderecavel-de-deteccao-para-1-zona-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-mcr",
+   "name": "Módulo de supervisão e comando remoto MCR",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/08/cover-mcr-modulo-de-supervisao-e-comando-remoto-d32713b110.jpg",
+   "fallbacks": [
+    "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2025/06/cover-mcr-modulo-de-supervisao-e-comandos-remotos-cadb17a1f5.jpg"
+   ],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/mcr-modulo-de-supervisao-e-comando-remoto"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-fna-520",
+   "name": "Fonte auxiliar FNA 520",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/fna_520_front.png",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/fonte-auxiliar-fna-520"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-rp-520",
+   "name": "Repetidora para central de alarme RP 520",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/rp_520_front.png",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/repetidora-para-central-de-alarme-de-incendio-rp-520"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-protetor-surto-entrada-ac",
+   "name": "Quadro protetor de surto para entrada AC",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/04/cover-quadro-completo-protetor-de-surto-entrada-ac-760658ed5c.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/quadro-completo-protetor-de-surto-entrada-ac"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cabo-de-instrumentacao",
+   "name": "Cabo de instrumentação para alarme de incêndio",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_473480c112c84014bef6823c25831a6e~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/product-page/cabo-de-instrumenta%C3%A7%C3%A3o"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-spray-de-teste",
+   "name": "Spray de teste para detector de fumaça",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_9510feff2c8c49fcbacf833d12f555e0~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/product-page/spray-de-teste"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-slim-premium",
+   "name": "Luminária autônoma Slim Premium",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/32/32-2thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-premium"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-compacta-basic-embutir",
+   "name": "Luminária compacta autônoma Basic de embutir",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/28/28-4thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-mini-compacta-basic",
+   "name": "Luminária mini compacta autônoma Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/77/77-3thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-mini-bloco-basic",
+   "name": "Mini bloco autônomo Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/23/23-7thumb.jpg",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-nano-bloco-basic",
+   "name": "Nano bloco autônomo Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/17/17-9thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-bloco-3000-basic",
+   "name": "Bloco autônomo 3000 Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/27/27-3thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-csb-400",
+   "name": "Central de iluminação 12 V 400 W CSB-400",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/50/50-1thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/central-de-iluminacao-12vcc-400w"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-lcce-300",
+   "name": "Luminária compacta de embutir 12/24 V LCCE-300",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/54/54-2thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-compacta-1224vcc-embutir"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-lcf-3020-blk",
+   "name": "Luminária triplo farol Black LCF-3020BLK",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/60/321md.png",
+   "fallbacks": [
+    "https://www.luxpryme.com.br/admin/image/produto/60/60-1thumb.png"
+   ],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-triplo-farol-black"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-duplo-farol-lcf",
+   "name": "Luminária duplo farol LCF (opção IP-66)",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/53/53-1thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-duplo-farol-"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-slim-lsc-ip67",
+   "name": "Luminária Slim 12/24 V LSC (IP-67)",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-slim-1224vcc-"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-pps-p-2617",
+   "name": "Placa de saída 26x17 Premium PPS.P-2617",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/39/284md.png",
+   "fallbacks": [
+    "https://www.luxpryme.com.br/admin/image/produto/39/283md.png",
+    "https://www.luxpryme.com.br/admin/image/produto/39/39-1thumb.png"
+   ],
+   "page": "https://www.luxpryme.com.br/produto/placa-de-saida-26x17-premium"
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-pcs-b-2617",
+   "name": "Placa de saída 26x17 12/24 V PCS.B-2617",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/43/271md.png",
+   "fallbacks": [
+    "https://www.luxpryme.com.br/admin/image/produto/43/272md.png",
+    "https://www.luxpryme.com.br/admin/image/produto/43/43-1thumb.png"
+   ],
+   "page": "https://www.luxpryme.com.br/produto/placa-de-saida-26x17-1224vcc"
+  },
+  {
+   "category": "hidrantes",
+   "id": "mangueira-de-incendio",
+   "name": "Mangueira de incêndio",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Firehose75mm.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Firehose75mm.jpg/960px-Firehose75mm.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Firehose75mm.jpg",
+   "author": "Ysignal",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.54,
+    0.5
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "esguicho-regulavel",
+   "name": "Esguicho regulável",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Fire_hose_nozzle_crosslay.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Fire_hose_nozzle_crosslay.jpg/960px-Fire_hose_nozzle_crosslay.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_hose_nozzle_crosslay.jpg",
+   "author": "Jonathan Clemens (Jclemens (talk))",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.45,
+    0.45
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "esguicho-agulheta",
+   "name": "Esguicho agulheta (jato sólido)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Firefighting_nozzle_20160615_084315.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Firefighting_nozzle_20160615_084315.jpg/960px-Firefighting_nozzle_20160615_084315.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Firefighting_nozzle_20160615_084315.jpg",
+   "author": "Peter Southwood",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "conexoes-storz",
+   "name": "Conexões e adaptadores Storz",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Brass_and_alumilium_couplings.JPG",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Brass_and_alumilium_couplings.JPG/960px-Brass_and_alumilium_couplings.JPG"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Brass_and_alumilium_couplings.JPG",
+   "author": "S.J. de Waard",
+   "license": "CC BY 2.5",
+   "cover": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "tampao-storz",
+   "name": "Tampão Storz com corrente",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cologne_Germany_Fire-Water-Supply-01.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cologne_Germany_Fire-Water-Supply-01.jpg/960px-Cologne_Germany_Fire-Water-Supply-01.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Cologne_Germany_Fire-Water-Supply-01.jpg",
+   "author": "CEphoto, Uwe Aranas",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.5,
+    0.62
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "abrigo-para-mangueira",
+   "name": "Abrigo para mangueira",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Hose_box_in_India.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Hose_box_in_India.jpg/960px-Hose_box_in_India.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Hose_box_in_India.jpg",
+   "author": "Kritzolina",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.48,
+    0.5
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "mangotinho-carretel",
+   "name": "Mangotinho (carretel axial)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg/960px-Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_(Wandhydrant)-02ASD.jpg",
+   "author": "Asurnipal",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.5,
+    0.52
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-po-abc",
+   "name": "Extintor de pó químico ABC",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg/960px-1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
+   "author": "Nzandozextinguishers1",
+   "license": "CC0",
+   "trim": false
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-po-bc",
+   "name": "Extintor de pó químico BC",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg/960px-1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
+   "author": "Nzandozextinguishers1",
+   "license": "CC0",
+   "trim": false
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-co2",
+   "name": "Extintor de CO2",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg/960px-Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher,_3KG_Carbon_Die_Oxide_2014.jpg",
+   "author": "Aashaa",
+   "license": "CC BY-SA 3.0",
+   "trim": false
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-agua-pressurizada",
+   "name": "Extintor de água pressurizada",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fire_Extinguisher_01.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fire_Extinguisher_01.jpg/960px-Fire_Extinguisher_01.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher_01.jpg",
+   "author": "Ganesh Mohan T",
+   "license": "CC BY-SA 4.0",
+   "trim": false
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-espuma-mecanica",
+   "name": "Extintor de espuma mecânica",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg/960px-thumbnail.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_foam_extinguisher_(h%C3%A5ndslokker,_brannslukningsapparat,_pulverapparat,_skumapparat,_type_VIKING)_on_wall_in_a_primary_school_in_Fusa,_Hordaland,_Norway._2018-03-23_A.jpg",
+   "author": "Wolfmann",
+   "license": "CC BY-SA 4.0",
+   "trim": false
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-classe-k",
+   "name": "Extintor classe K",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Wet_chemical_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wet_chemical_fire_extinguisher.jpg/960px-Wet_chemical_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Wet_chemical_fire_extinguisher.jpg",
+   "author": "Firetech117",
+   "license": "CC BY-SA 4.0",
+   "trim": false
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-sobre-rodas",
+   "name": "Extintor sobre rodas (carreta)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg/960px-Trolley_type_dry_powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Trolley_type_dry_powder_fire_extinguisher.jpg",
+   "author": "Fumikas Sagisavas",
+   "license": "CC0",
+   "cover": [
+    0.45,
+    0.5
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "suporte-piso-extintor",
+   "name": "Suporte de piso para extintor",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg/960px-Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Water_and_Carbon_Dioxide_fire_extinguishers_(27160694827).jpg",
+   "author": "Eric Fischer",
+   "license": "CC BY 2.0",
+   "cover": [
+    0.55,
+    0.5
+   ]
+  }
+ ],
+ "photos": [
+  {
+   "id": "hero",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel%2C_of_Orange_County%2C_Calif.%2C_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_%28CV_63%29_duri.jpg/1920px-thumbnail.jpg",
+   "widths": [
+    800,
+    1600,
+    1920
+   ],
+   "author": "U.S. Navy photo by Photographer's Mate 3rd Class Bo J. Flannigan",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel,_of_Orange_County,_Calif.,_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_(CV_63)_duri.jpg",
+   "license": "Domínio público",
+   "usage": "Fundo do Hero"
+  },
+  {
+   "id": "por-que-apag",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_%2848880439676%29.jpg/1920px-Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_%2848880439676%29.jpg",
+   "widths": [
+    800,
+    1200
+   ],
+   "author": "PEO ACWA",
+   "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_(48880439676).jpg",
+   "license": "CC BY 2.0",
+   "usage": "Seção \"Por que a APAG\""
+  },
+  {
+   "id": "capa-sinalizacao",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Faculty_Office_Building_hallway_%2830016016168%29.jpg/1920px-Faculty_Office_Building_hallway_%2830016016168%29.jpg",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "Ben P L from Provo, USA",
+   "page": "https://commons.wikimedia.org/wiki/File:Faculty_Office_Building_hallway_(30016016168).jpg",
+   "license": "CC BY-SA 2.0",
+   "usage": "Capa da aba Sinalização"
+  },
+  {
+   "id": "capa-alarme",
+   "url": "https://live.staticflickr.com/3095/2466149416_77702b3484_b.jpg",
+   "widths": [
+    800,
+    1024
+   ],
+   "author": "sun dazed",
+   "page": "https://www.flickr.com/photos/8411191@N07/2466149416",
+   "license": "CC BY-SA 2.0",
+   "usage": "Capa da aba Alarme"
+  },
+  {
+   "id": "capa-hidrantes",
+   "url": "https://pd.w.org/2025/05/32968359647ab41a2.47495107-2048x1536.jpg",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "mujuonly",
+   "page": "https://wordpress.org/photos/photo/3296835964/",
+   "license": "CC0 1.0",
+   "usage": "Capa da aba Hidrantes"
+  },
+  {
+   "id": "capa-iluminacao",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Emergency_exit_sign_%2842050562511%29.jpg/1920px-Emergency_exit_sign_%2842050562511%29.jpg",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "Eric Fischer",
+   "page": "https://commons.wikimedia.org/wiki/File:Emergency_exit_sign_(42050562511).jpg",
+   "license": "CC BY 2.0",
+   "usage": "Capa da aba Iluminação"
+  },
+  {
+   "id": "capa-extintores",
+   "url": "https://live.staticflickr.com/7257/7511791044_1b4102f87a_b.jpg",
+   "widths": [
+    800,
+    1024
+   ],
+   "author": "SunCon Photos",
+   "page": "https://www.flickr.com/photos/67458903@N05/7511791044",
+   "license": "CC BY 2.0",
+   "usage": "Capa da aba Extintores"
+  }
+ ]
+}

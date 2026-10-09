@@ -1,0 +1,7 @@
+dist
+dist-ssr
+node_modules
+package-lock.json
+# gerados por scripts/assets/download.py
+public/produtos/CREDITOS.md
+scripts/assets/manifest.json
