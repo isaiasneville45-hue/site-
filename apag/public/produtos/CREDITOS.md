@@ -1,6 +1,8 @@
 # Créditos das imagens
 
 Imagens otimizadas (WebP) e servidas pelo próprio site — nenhuma é carregada direto do site de origem.
+As fotos de bancos de imagem foram redimensionadas, recortadas e convertidas para WebP; as versões
+adaptadas de fotos CC BY-SA ficam sob a mesma licença da original.
 
 ## Fotos de produtos
 

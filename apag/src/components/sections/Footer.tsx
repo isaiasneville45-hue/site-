@@ -95,7 +95,15 @@ export function Footer() {
       <div className="border-t border-white/[0.07]">
         <div className="container flex flex-col gap-4 py-7 pr-24 text-sm text-white/55 sm:flex-row sm:items-center sm:justify-between sm:pr-28">
           <p>
-            © {year} {company.legalName} · CNPJ {company.cnpj}
+            © {year} {company.legalName} · CNPJ {company.cnpj} ·{' '}
+            <a
+              href="/produtos/CREDITOS.md"
+              target="_blank"
+              rel="noopener"
+              className="underline-offset-4 transition-colors hover:text-white hover:underline"
+            >
+              Créditos das imagens
+            </a>
           </p>
           <a
             href="#inicio"
