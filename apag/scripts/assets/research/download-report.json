@@ -1,0 +1,537 @@
+{
+ "products": [
+  {
+   "category": "sinalizacao",
+   "id": "saida",
+   "dest": "public/produtos/sinalizacao/saida.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "rota-de-fuga-seta",
+   "dest": "public/produtos/sinalizacao/rota-de-fuga-seta.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "escada-de-emergencia",
+   "dest": "public/produtos/sinalizacao/escada-de-emergencia.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "saida-acessivel",
+   "dest": "public/produtos/sinalizacao/saida-acessivel.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "porta-corta-fogo",
+   "dest": "public/produtos/sinalizacao/porta-corta-fogo.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "ponto-de-encontro",
+   "dest": "public/produtos/sinalizacao/ponto-de-encontro.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "fotoluminescente-laudo",
+   "dest": "public/produtos/sinalizacao/fotoluminescente-laudo.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "extintor",
+   "dest": "public/produtos/sinalizacao/extintor.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante",
+   "dest": "public/produtos/sinalizacao/hidrante.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "mangotinho",
+   "dest": "public/produtos/sinalizacao/mangotinho.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "extintor-hidrante-coluna",
+   "dest": "public/produtos/sinalizacao/extintor-hidrante-coluna.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "acionador-alarme",
+   "dest": "public/produtos/sinalizacao/acionador-alarme.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "bomba-de-incendio",
+   "dest": "public/produtos/sinalizacao/bomba-de-incendio.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "agente-extintor",
+   "dest": "public/produtos/sinalizacao/agente-extintor.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "abrigo-hidrante",
+   "dest": "public/produtos/sinalizacao/abrigo-hidrante.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante-de-recalque",
+   "dest": "public/produtos/sinalizacao/hidrante-de-recalque.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-inflamavel",
+   "dest": "public/produtos/sinalizacao/alerta-inflamavel.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-explosao",
+   "dest": "public/produtos/sinalizacao/alerta-explosao.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-choque-eletrico",
+   "dest": "public/produtos/sinalizacao/alerta-choque-eletrico.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-fumar",
+   "dest": "public/produtos/sinalizacao/proibido-fumar.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-produzir-chama",
+   "dest": "public/produtos/sinalizacao/proibido-produzir-chama.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-elevador",
+   "dest": "public/produtos/sinalizacao/proibido-elevador.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-obstruir",
+   "dest": "public/produtos/sinalizacao/proibido-obstruir.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "fita-antiderrapante",
+   "dest": "public/produtos/sinalizacao/fita-antiderrapante.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "demarcacao-de-solo",
+   "dest": "public/produtos/sinalizacao/demarcacao-de-solo.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "plano-de-fuga",
+   "dest": "public/produtos/sinalizacao/plano-de-fuga.webp",
+   "ok": true
+  },
+  {
+   "category": "sinalizacao",
+   "id": "faixas-zebradas",
+   "dest": "public/produtos/sinalizacao/faixas-zebradas.webp",
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cic-12l",
+   "dest": "public/produtos/alarme/intelbras-cic-12l.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2019-07/foto_principal_CIC_12_L_700x480px.jpg",
+   "w": 328,
+   "h": 367,
+   "bytes": 4690,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cie-1060",
+   "dest": "public/produtos/alarme/intelbras-cie-1060.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2022-04/central-de-alarme-de-incendio-cie-1060.jpg",
+   "w": 700,
+   "h": 480,
+   "bytes": 15542,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-avalon-evolution-analogica",
+   "dest": "public/produtos/alarme/tecnohold-avalon-evolution-analogica.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-alarme-analogico-avalon-evolution-0f44af342b.png",
+   "w": 746,
+   "h": 653,
+   "bytes": 21106,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-kx-80",
+   "dest": "public/produtos/alarme/ilumac-kx-80.webp",
+   "used_url": "https://static.wixstatic.com/media/58b02a_319a249126364f4ea3f635b4d60b46b8~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "w": 300,
+   "h": 456,
+   "bytes": 9016,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfe-521",
+   "dest": "public/produtos/alarme/intelbras-dfe-521.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-fumaca-enderecavel-dfe-521.jpg",
+   "w": 326,
+   "h": 245,
+   "bytes": 4052,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfc-421",
+   "dest": "public/produtos/alarme/intelbras-dfc-421.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DFC_421_UN_700x480px.jpg",
+   "w": 501,
+   "h": 418,
+   "bytes": 5120,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-dtw-c",
+   "dest": "public/produtos/alarme/ilumac-dtw-c.webp",
+   "used_url": "https://static.wixstatic.com/media/58b02a_c3bbec8d15c74db7a58b6fa28fcbeaee~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "w": 289,
+   "h": 312,
+   "bytes": 3392,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfl-3100",
+   "dest": "public/produtos/alarme/intelbras-dfl-3100.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2021-12/detector-de-fumaca-linear-dfl-3100.jpg",
+   "w": 279,
+   "h": 387,
+   "bytes": 4644,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-gaseg-ext",
+   "dest": "public/produtos/alarme/ilumac-gaseg-ext.webp",
+   "used_url": "https://static.wixstatic.com/media/58b02a_a8c1fdfd5c584ac59f8e02db5a06b79f~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "w": 194,
+   "h": 268,
+   "bytes": 4336,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-idf-620",
+   "dest": "public/produtos/alarme/intelbras-idf-620.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2021-02/IDF_620%20Detector%20de%20Fuma%C3%A7a%20Smart.jpg",
+   "w": 446,
+   "h": 376,
+   "bytes": 8252,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amc-422",
+   "dest": "public/produtos/alarme/intelbras-amc-422.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/2020-06/foto_principal_AMC_422_700x480px.jpg",
+   "w": 374,
+   "h": 480,
+   "bytes": 11376,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-enderecavel-ip20",
+   "dest": "public/produtos/alarme/tecnohold-acionador-enderecavel-ip20.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-enderecavel-ip20-af0ff9a653.jpg",
+   "w": 480,
+   "h": 480,
+   "bytes": 15646,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-ip55-ip67",
+   "dest": "public/produtos/alarme/tecnohold-acionador-ip55-ip67.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-ip55-ip67-49e701534f.jpg",
+   "w": 637,
+   "h": 800,
+   "bytes": 22440,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-420c",
+   "dest": "public/produtos/alarme/intelbras-sav-420c.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
+   "w": 800,
+   "h": 680,
+   "bytes": 29674,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-520e",
+   "dest": "public/produtos/alarme/intelbras-sav-520e.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/integration/sav_520_front_0.png",
+   "w": 639,
+   "h": 800,
+   "bytes": 40940,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-sirene-pneumatica-industrial",
+   "dest": "public/produtos/alarme/tecnohold-sirene-pneumatica-industrial.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-sirene-enderecavel-pneumatica-industrial-2253e3e1f0.jpg",
+   "w": 480,
+   "h": 480,
+   "bytes": 11718,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mic-e",
+   "dest": "public/produtos/alarme/ilumac-mic-e.webp",
+   "used_url": "https://static.wixstatic.com/media/58b02a_4e30abbc819f4f8facf3450b91126d84~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "w": 264,
+   "h": 197,
+   "bytes": 3918,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-modulo-zona-convencional",
+   "dest": "public/produtos/alarme/tecnohold-modulo-zona-convencional.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-modulo-enderecavel-de-deteccao-para-1-zona-convencional-ba07f98711.jpg",
+   "w": 480,
+   "h": 480,
+   "bytes": 17192,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-mcr",
+   "dest": "public/produtos/alarme/tecnohold-mcr.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/08/cover-mcr-modulo-de-supervisao-e-comando-remoto-d32713b110.jpg",
+   "w": 688,
+   "h": 672,
+   "bytes": 18636,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-fna-520",
+   "dest": "public/produtos/alarme/intelbras-fna-520.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/integration/fna_520_front.png",
+   "w": 675,
+   "h": 800,
+   "bytes": 10348,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-rp-520",
+   "dest": "public/produtos/alarme/intelbras-rp-520.webp",
+   "used_url": "https://backend.intelbras.com/sites/default/files/integration/rp_520_front.png",
+   "w": 675,
+   "h": 800,
+   "bytes": 14182,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-protetor-surto-entrada-ac",
+   "dest": "public/produtos/alarme/tecnohold-protetor-surto-entrada-ac.webp",
+   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/04/cover-quadro-completo-protetor-de-surto-entrada-ac-760658ed5c.jpg",
+   "w": 800,
+   "h": 800,
+   "bytes": 15734,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cabo-de-instrumentacao",
+   "dest": "public/produtos/alarme/ilumac-cabo-de-instrumentacao.webp",
+   "used_url": "https://static.wixstatic.com/media/58b02a_473480c112c84014bef6823c25831a6e~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "w": 450,
+   "h": 278,
+   "bytes": 13684,
+   "ok": true
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-spray-de-teste",
+   "dest": "public/produtos/alarme/ilumac-spray-de-teste.webp",
+   "used_url": "https://static.wixstatic.com/media/58b02a_9510feff2c8c49fcbacf833d12f555e0~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+   "w": 154,
+   "h": 390,
+   "bytes": 7242,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-slim-premium",
+   "dest": "public/produtos/iluminacao/luxpryme-slim-premium.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/32/32-2thumb.png",
+   "w": 307,
+   "h": 347,
+   "bytes": 5672,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-compacta-basic-embutir",
+   "dest": "public/produtos/iluminacao/luxpryme-compacta-basic-embutir.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/28/28-4thumb.png",
+   "w": 248,
+   "h": 360,
+   "bytes": 4072,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-mini-compacta-basic",
+   "dest": "public/produtos/iluminacao/luxpryme-mini-compacta-basic.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/77/77-3thumb.png",
+   "w": 313,
+   "h": 395,
+   "bytes": 3974,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-mini-bloco-basic",
+   "dest": "public/produtos/iluminacao/luxpryme-mini-bloco-basic.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/23/23-7thumb.jpg",
+   "w": 483,
+   "h": 182,
+   "bytes": 3188,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-nano-bloco-basic",
+   "dest": "public/produtos/iluminacao/luxpryme-nano-bloco-basic.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/17/17-9thumb.png",
+   "w": 291,
+   "h": 440,
+   "bytes": 6378,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-bloco-3000-basic",
+   "dest": "public/produtos/iluminacao/luxpryme-bloco-3000-basic.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/27/27-3thumb.png",
+   "w": 388,
+   "h": 377,
+   "bytes": 6952,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-csb-400",
+   "dest": "public/produtos/iluminacao/luxpryme-csb-400.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/50/181md.png",
+   "w": 500,
+   "h": 500,
+   "bytes": 8774,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-lcce-300",
+   "dest": "public/produtos/iluminacao/luxpryme-lcce-300.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/54/54-2thumb.png",
+   "w": 361,
+   "h": 500,
+   "bytes": 6798,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-lcf-3020-blk",
+   "dest": "public/produtos/iluminacao/luxpryme-lcf-3020-blk.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/60/321md.png",
+   "w": 500,
+   "h": 436,
+   "bytes": 11202,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-duplo-farol-lcf",
+   "dest": "public/produtos/iluminacao/luxpryme-duplo-farol-lcf.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/53/186md.png",
+   "w": 500,
+   "h": 370,
+   "bytes": 4150,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-slim-lsc-ip67",
+   "dest": "public/produtos/iluminacao/luxpryme-slim-lsc-ip67.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/56/188md.png",
+   "w": 500,
+   "h": 473,
+   "bytes": 10570,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-pps-p-2617",
+   "dest": "public/produtos/iluminacao/luxpryme-pps-p-2617.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/39/284md.png",
+   "w": 463,
+   "h": 500,
+   "bytes": 10564,
+   "ok": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-pcs-b-2617",
+   "dest": "public/produtos/iluminacao/luxpryme-pcs-b-2617.webp",
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/43/271md.png",
+   "w": 422,
+   "h": 451,
+   "bytes": 11180,
+   "ok": true
+  }
+ ],
+ "photos": []
+}
