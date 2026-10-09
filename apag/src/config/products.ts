@@ -558,7 +558,102 @@ export const productCategories: ProductCategory[] = [
     cover: '',
     coverAlt: 'Mangueira de incêndio enrolada dentro do abrigo de hidrante',
     suppliers: [], // TODO: informar fornecedor
-    products: [],
+    products: [
+      {
+        id: 'mangueira-de-incendio',
+        name: 'Mangueira de incêndio',
+        description:
+          'Mangueiras de 1½" e 2½" com uniões Storz, nos tipos 1 a 5 da NBR 11861, escolhidos conforme o uso e a pressão de trabalho do sistema.',
+        image: '/produtos/hidrantes/mangueira-de-incendio.webp',
+        imageAlt:
+          'Mangueira de incêndio vermelha enrolada, com uniões Storz de alumínio nas duas pontas, sobre piso bege',
+        imageFit: 'cover',
+      },
+      {
+        id: 'esguicho-regulavel',
+        name: 'Esguicho regulável',
+        description:
+          'Alterna entre jato compacto e neblina e fecha a água no próprio esguicho. Com engate Storz, para mangueiras de 1½" e 2½".',
+        image: '/produtos/hidrantes/esguicho-regulavel.webp',
+        imageAlt:
+          'Esguicho regulável com empunhadura tipo pistola e alavanca amarela de abertura, ligado a uma mangueira e preso em suporte metálico',
+        imageFit: 'cover',
+      },
+      {
+        id: 'esguicho-agulheta',
+        name: 'Esguicho agulheta (jato sólido)',
+        description:
+          'Esguicho de latão que forma um jato compacto de longo alcance, com engate Storz e requinte do diâmetro definido em projeto.',
+        image: '/produtos/hidrantes/esguicho-agulheta.webp',
+        imageAlt:
+          'Esguicho de jato sólido em latão, com entrada rosqueada, deitado sobre bancada de madeira e visto pela boca de entrada',
+        imageFit: 'cover',
+      },
+      {
+        id: 'conexoes-storz',
+        name: 'Conexões e adaptadores Storz',
+        description:
+          'Uniões, adaptadores e reduções de engate rápido, em latão ou alumínio, que ligam a válvula do hidrante às mangueiras e ao esguicho.',
+        image: '/produtos/hidrantes/conexoes-storz.webp',
+        imageAlt:
+          'Expositor de arame com uniões e adaptadores Storz em latão e alumínio e, ao fundo, registros com volante vermelho',
+        imageFit: 'cover',
+      },
+      {
+        id: 'tampao-storz',
+        name: 'Tampão Storz com corrente',
+        description:
+          'Fecha a saída da válvula de hidrante ou do registro de recalque quando não há mangueira acoplada, protegendo o engate.',
+        image: '/produtos/hidrantes/tampao-storz.webp',
+        imageAlt:
+          'Saída de hidrante em tubulação vermelha com engate Storz de alumínio fechado por tampão preso por corrente',
+        imageFit: 'cover',
+      },
+      {
+        id: 'chave-storz',
+        name: 'Chave de mangueira (chave Storz)',
+        description:
+          'Ajuda a engatar e desengatar uniões, adaptadores e tampões Storz sem danificar os engates. Fica no abrigo, junto às mangueiras.',
+        image: '',
+        imageAlt: 'Chave de mangueira para engates Storz',
+      },
+      {
+        id: 'abrigo-para-mangueira',
+        name: 'Abrigo para mangueira',
+        description:
+          'Caixa metálica vermelha que guarda mangueiras, esguicho e chave junto ao ponto de hidrante. Modelos de sobrepor, de embutir e para área externa.',
+        image: '/produtos/hidrantes/abrigo-para-mangueira.webp',
+        imageAlt:
+          'Abrigo de mangueira vermelho sobre pedestal, ao ar livre, com placa "Hydrant No 8" e a inscrição "Hose Box" na porta, entre folhagens',
+        imageFit: 'cover',
+      },
+      {
+        id: 'registro-globo-angular-45',
+        name: 'Registro globo angular 45°',
+        description:
+          'Válvula do ponto de hidrante, em latão ou bronze, com saída inclinada que facilita acoplar e lançar a mangueira.',
+        image: '',
+        imageAlt: 'Registro globo angular de 45° para hidrante',
+      },
+      {
+        id: 'mangotinho-carretel',
+        name: 'Mangotinho (carretel axial)',
+        description:
+          'Carretel com mangueira semirrígida e esguicho, pronto para uso: uma só pessoa consegue operar sem desenrolar toda a mangueira.',
+        image: '/produtos/hidrantes/mangotinho-carretel.webp',
+        imageAlt:
+          'Mangotinho em abrigo vermelho aberto: carretel vermelho com mangueira semirrígida preta ligada à válvula de alimentação',
+        imageFit: 'cover',
+      },
+      {
+        id: 'registro-de-recalque',
+        name: 'Hidrante de recalque',
+        description:
+          'Registro no passeio ou na fachada por onde o Corpo de Bombeiros abastece a rede de hidrantes a partir da viatura.',
+        image: '',
+        imageAlt: 'Hidrante de recalque instalado no passeio',
+      },
+    ],
   },
   {
     id: 'iluminacao',
@@ -708,6 +803,90 @@ export const productCategories: ProductCategory[] = [
     cover: '',
     coverAlt: 'Extintores de incêndio vermelhos instalados na parede',
     suppliers: [],
-    products: [],
+    products: [
+      {
+        id: 'extintor-po-abc',
+        name: 'Extintor de pó químico ABC',
+        description:
+          'O mais versátil: serve para fogos classe A (sólidos), B (líquidos inflamáveis) e C (equipamentos elétricos energizados).',
+        image: '/produtos/extintores/extintor-po-abc.webp',
+        imageAlt:
+          'Extintor de pó químico vermelho com mangueira preta e manômetro, apoiado no chão junto a uma parede branca',
+        imageFit: 'cover',
+      },
+      {
+        id: 'extintor-po-bc',
+        name: 'Extintor de pó químico BC',
+        description:
+          'Para fogo em líquidos e gases inflamáveis (classe B) e em equipamentos elétricos energizados (classe C). Comum em centrais de gás e garagens.',
+        image: '/produtos/extintores/extintor-po-bc.webp',
+        imageAlt:
+          'Extintor de pó químico vermelho com gatilho preto e mangueira longa bege, apoiado no chão em frente a uma parede clara',
+        imageFit: 'cover',
+      },
+      {
+        id: 'extintor-co2',
+        name: 'Extintor de CO2',
+        description:
+          'Apaga por abafamento sem deixar resíduos. Indicado para fogos classe B e C, como painéis elétricos, salas de TI e laboratórios.',
+        image: '/produtos/extintores/extintor-co2.webp',
+        imageAlt: 'Extintor de CO2 vermelho com mangueira e difusor preto, fixado na parede',
+        imageFit: 'cover',
+      },
+      {
+        id: 'extintor-agua-pressurizada',
+        name: 'Extintor de água pressurizada',
+        description:
+          'Para fogos classe A (madeira, papel, tecidos), age por resfriamento. Não deve ser usado em equipamentos elétricos energizados.',
+        image: '/produtos/extintores/extintor-agua-pressurizada.webp',
+        imageAlt: 'Extintor de água pressurizada vermelho, com a palavra WATER no rótulo, pendurado na parede',
+        imageFit: 'cover',
+      },
+      {
+        id: 'extintor-espuma-mecanica',
+        name: 'Extintor de espuma mecânica',
+        description:
+          'Forma uma camada de espuma sobre o combustível. Indicado para fogos classe A e B, em especial líquidos inflamáveis.',
+        image: '/produtos/extintores/extintor-espuma-mecanica.webp',
+        imageAlt:
+          'Extintor de espuma mecânica vermelho com mangueira azul-escura e ponteira verde, fixado na parede branca',
+        imageFit: 'cover',
+      },
+      {
+        id: 'extintor-classe-k',
+        name: 'Extintor classe K',
+        description:
+          'Feito para fogo em óleo e gordura de cozinha. Indicado para cozinhas industriais, restaurantes e lanchonetes.',
+        image: '/produtos/extintores/extintor-classe-k.webp',
+        imageAlt: 'Extintor classe K de aço inox com mangueira preta e rótulo de instruções, sobre fundo branco',
+        imageFit: 'cover',
+      },
+      {
+        id: 'extintor-sobre-rodas',
+        name: 'Extintor sobre rodas (carreta)',
+        description:
+          'Extintor de grande capacidade em carreta com rodas, para indústrias, depósitos, pátios e postos de combustível.',
+        image: '/produtos/extintores/extintor-sobre-rodas.webp',
+        imageAlt: 'Dois extintores sobre rodas de pó químico, vermelhos, lado a lado em um corredor',
+        imageFit: 'cover',
+      },
+      {
+        id: 'suporte-parede-extintor',
+        name: 'Suporte de parede para extintor',
+        description: 'Fixa o extintor na parede na altura correta, visível e fácil de retirar numa emergência.',
+        image: '',
+        imageAlt: 'Suporte de parede para extintor',
+      },
+      {
+        id: 'suporte-piso-extintor',
+        name: 'Suporte de piso para extintor',
+        description:
+          'Base que mantém o extintor estável sem furar a parede, ideal para divisórias de vidro ou drywall. Modelos para um ou dois extintores.',
+        image: '/produtos/extintores/suporte-piso-extintor.webp',
+        imageAlt:
+          'Suporte de piso duplo vermelho com um extintor de água e um de CO2, encostado na parede de um corredor',
+        imageFit: 'cover',
+      },
+    ],
   },
 ]

@@ -598,6 +598,261 @@
     "https://www.luxpryme.com.br/admin/image/produto/43/43-1thumb.png"
    ],
    "page": "https://www.luxpryme.com.br/produto/placa-de-saida-26x17-1224vcc"
+  },
+  {
+   "category": "hidrantes",
+   "id": "mangueira-de-incendio",
+   "name": "Mangueira de incêndio",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Firehose75mm.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Firehose75mm.jpg/960px-Firehose75mm.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Firehose75mm.jpg",
+   "author": "Ysignal",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.54,
+    0.5
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "esguicho-regulavel",
+   "name": "Esguicho regulável",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Fire_hose_nozzle_crosslay.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Fire_hose_nozzle_crosslay.jpg/960px-Fire_hose_nozzle_crosslay.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_hose_nozzle_crosslay.jpg",
+   "author": "Jonathan Clemens (Jclemens (talk))",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.45,
+    0.45
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "esguicho-agulheta",
+   "name": "Esguicho agulheta (jato sólido)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Firefighting_nozzle_20160615_084315.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Firefighting_nozzle_20160615_084315.jpg/960px-Firefighting_nozzle_20160615_084315.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Firefighting_nozzle_20160615_084315.jpg",
+   "author": "Peter Southwood",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "conexoes-storz",
+   "name": "Conexões e adaptadores Storz",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Brass_and_alumilium_couplings.JPG",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Brass_and_alumilium_couplings.JPG/960px-Brass_and_alumilium_couplings.JPG"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Brass_and_alumilium_couplings.JPG",
+   "author": "S.J. de Waard",
+   "license": "CC BY 2.5",
+   "cover": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "tampao-storz",
+   "name": "Tampão Storz com corrente",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cologne_Germany_Fire-Water-Supply-01.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cologne_Germany_Fire-Water-Supply-01.jpg/960px-Cologne_Germany_Fire-Water-Supply-01.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Cologne_Germany_Fire-Water-Supply-01.jpg",
+   "author": "CEphoto, Uwe Aranas",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.5,
+    0.62
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "abrigo-para-mangueira",
+   "name": "Abrigo para mangueira",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Hose_box_in_India.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Hose_box_in_India.jpg/960px-Hose_box_in_India.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Hose_box_in_India.jpg",
+   "author": "Kritzolina",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.48,
+    0.5
+   ]
+  },
+  {
+   "category": "hidrantes",
+   "id": "mangotinho-carretel",
+   "name": "Mangotinho (carretel axial)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg/960px-Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_(Wandhydrant)-02ASD.jpg",
+   "author": "Asurnipal",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.5,
+    0.52
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-po-abc",
+   "name": "Extintor de pó químico ABC",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg/960px-1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
+   "author": "Nzandozextinguishers1",
+   "license": "CC0",
+   "cover": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-po-bc",
+   "name": "Extintor de pó químico BC",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg/960px-1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
+   "author": "Nzandozextinguishers1",
+   "license": "CC0",
+   "cover": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-co2",
+   "name": "Extintor de CO2",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg/960px-Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher,_3KG_Carbon_Die_Oxide_2014.jpg",
+   "author": "Aashaa",
+   "license": "CC BY-SA 3.0",
+   "cover": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-agua-pressurizada",
+   "name": "Extintor de água pressurizada",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fire_Extinguisher_01.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fire_Extinguisher_01.jpg/960px-Fire_Extinguisher_01.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher_01.jpg",
+   "author": "Ganesh Mohan T",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-espuma-mecanica",
+   "name": "Extintor de espuma mecânica",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg/960px-thumbnail.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_foam_extinguisher_(h%C3%A5ndslokker,_brannslukningsapparat,_pulverapparat,_skumapparat,_type_VIKING)_on_wall_in_a_primary_school_in_Fusa,_Hordaland,_Norway._2018-03-23_A.jpg",
+   "author": "Wolfmann",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.53,
+    0.55
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-classe-k",
+   "name": "Extintor classe K",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Wet_chemical_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wet_chemical_fire_extinguisher.jpg/960px-Wet_chemical_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Wet_chemical_fire_extinguisher.jpg",
+   "author": "Firetech117",
+   "license": "CC BY-SA 4.0",
+   "cover": [
+    0.5,
+    0.62
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-sobre-rodas",
+   "name": "Extintor sobre rodas (carreta)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg/960px-Trolley_type_dry_powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Trolley_type_dry_powder_fire_extinguisher.jpg",
+   "author": "Fumikas Sagisavas",
+   "license": "CC0",
+   "cover": [
+    0.45,
+    0.5
+   ]
+  },
+  {
+   "category": "extintores",
+   "id": "suporte-piso-extintor",
+   "name": "Suporte de piso para extintor",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg/960px-Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Water_and_Carbon_Dioxide_fire_extinguishers_(27160694827).jpg",
+   "author": "Eric Fischer",
+   "license": "CC BY 2.0",
+   "cover": [
+    0.55,
+    0.5
+   ]
   }
  ],
  "photos": []
