@@ -74,6 +74,21 @@ foi informado — nesse caso com autor e licença.
 | `produtos/iluminacao/luxpryme-slim-lsc-ip67.webp` | Luminária Slim 12/24 V LSC (IP-67) | Luxpryme | https://www.luxpryme.com.br/produto/luminaria-slim-1224vcc- | imagem do fabricante |
 | `produtos/iluminacao/luxpryme-pps-p-2617.webp` | Placa de saída 26x17 Premium PPS.P-2617 | Luxpryme | https://www.luxpryme.com.br/produto/placa-de-saida-26x17-premium | imagem do fabricante |
 | `produtos/iluminacao/luxpryme-pcs-b-2617.webp` | Placa de saída 26x17 12/24 V PCS.B-2617 | Luxpryme | https://www.luxpryme.com.br/produto/placa-de-saida-26x17-1224vcc | imagem do fabricante |
+| `produtos/hidrantes/mangueira-de-incendio.webp` | Mangueira de incêndio |  | https://commons.wikimedia.org/wiki/File:Firehose75mm.jpg | Ysignal — CC BY-SA 3.0 |
+| `produtos/hidrantes/esguicho-regulavel.webp` | Esguicho regulável |  | https://commons.wikimedia.org/wiki/File:Fire_hose_nozzle_crosslay.jpg | Jonathan Clemens (Jclemens (talk)) — CC BY-SA 3.0 |
+| `produtos/hidrantes/esguicho-agulheta.webp` | Esguicho agulheta (jato sólido) |  | https://commons.wikimedia.org/wiki/File:Firefighting_nozzle_20160615_084315.jpg | Peter Southwood — CC BY-SA 4.0 |
+| `produtos/hidrantes/conexoes-storz.webp` | Conexões e adaptadores Storz |  | https://commons.wikimedia.org/wiki/File:Brass_and_alumilium_couplings.JPG | S.J. de Waard — CC BY 2.5 |
+| `produtos/hidrantes/tampao-storz.webp` | Tampão Storz com corrente |  | https://commons.wikimedia.org/wiki/File:Cologne_Germany_Fire-Water-Supply-01.jpg | CEphoto, Uwe Aranas — CC BY-SA 3.0 |
+| `produtos/hidrantes/abrigo-para-mangueira.webp` | Abrigo para mangueira |  | https://commons.wikimedia.org/wiki/File:Hose_box_in_India.jpg | Kritzolina — CC BY-SA 4.0 |
+| `produtos/hidrantes/mangotinho-carretel.webp` | Mangotinho (carretel axial) |  | https://commons.wikimedia.org/wiki/File:Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_(Wandhydrant)-02ASD.jpg | Asurnipal — CC BY-SA 4.0 |
+| `produtos/extintores/extintor-po-abc.webp` | Extintor de pó químico ABC |  | https://commons.wikimedia.org/wiki/File:1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg | Nzandozextinguishers1 — CC0 |
+| `produtos/extintores/extintor-po-bc.webp` | Extintor de pó químico BC |  | https://commons.wikimedia.org/wiki/File:1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg | Nzandozextinguishers1 — CC0 |
+| `produtos/extintores/extintor-co2.webp` | Extintor de CO2 |  | https://commons.wikimedia.org/wiki/File:Fire_Extinguisher,_3KG_Carbon_Die_Oxide_2014.jpg | Aashaa — CC BY-SA 3.0 |
+| `produtos/extintores/extintor-agua-pressurizada.webp` | Extintor de água pressurizada |  | https://commons.wikimedia.org/wiki/File:Fire_Extinguisher_01.jpg | Ganesh Mohan T — CC BY-SA 4.0 |
+| `produtos/extintores/extintor-espuma-mecanica.webp` | Extintor de espuma mecânica |  | https://commons.wikimedia.org/wiki/File:Fire_foam_extinguisher_(h%C3%A5ndslokker,_brannslukningsapparat,_pulverapparat,_skumapparat,_type_VIKING)_on_wall_in_a_primary_school_in_Fusa,_Hordaland,_Norway._2018-03-23_A.jpg | Wolfmann — CC BY-SA 4.0 |
+| `produtos/extintores/extintor-classe-k.webp` | Extintor classe K |  | https://commons.wikimedia.org/wiki/File:Wet_chemical_fire_extinguisher.jpg | Firetech117 — CC BY-SA 4.0 |
+| `produtos/extintores/extintor-sobre-rodas.webp` | Extintor sobre rodas (carreta) |  | https://commons.wikimedia.org/wiki/File:Trolley_type_dry_powder_fire_extinguisher.jpg | Fumikas Sagisavas — CC0 |
+| `produtos/extintores/suporte-piso-extintor.webp` | Suporte de piso para extintor |  | https://commons.wikimedia.org/wiki/File:Water_and_Carbon_Dioxide_fire_extinguishers_(27160694827).jpg | Eric Fischer — CC BY 2.0 |
 
 ## Fotos humanizadas
 
