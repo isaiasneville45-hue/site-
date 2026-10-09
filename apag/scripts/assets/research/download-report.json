@@ -166,541 +166,375 @@
    "category": "alarme",
    "id": "intelbras-cic-12l",
    "dest": "public/produtos/alarme/intelbras-cic-12l.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2019-07/foto_principal_CIC_12_L_700x480px.jpg",
-   "w": 328,
-   "h": 367,
-   "bytes": 4690,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-cie-1060",
    "dest": "public/produtos/alarme/intelbras-cie-1060.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2022-04/central-de-alarme-de-incendio-cie-1060.jpg",
-   "w": 700,
-   "h": 480,
-   "bytes": 15542,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-avalon-evolution-analogica",
    "dest": "public/produtos/alarme/tecnohold-avalon-evolution-analogica.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-alarme-analogico-avalon-evolution-0f44af342b.png",
-   "w": 746,
-   "h": 653,
-   "bytes": 21106,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "ilumac-kx-80",
    "dest": "public/produtos/alarme/ilumac-kx-80.webp",
-   "used_url": "https://static.wixstatic.com/media/58b02a_319a249126364f4ea3f635b4d60b46b8~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 301,
-   "h": 457,
-   "bytes": 8638,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-dfe-521",
    "dest": "public/produtos/alarme/intelbras-dfe-521.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-fumaca-enderecavel-dfe-521.jpg",
-   "w": 326,
-   "h": 245,
-   "bytes": 4052,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-dfc-421",
    "dest": "public/produtos/alarme/intelbras-dfc-421.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DFC_421_UN_700x480px.jpg",
-   "w": 501,
-   "h": 418,
-   "bytes": 5120,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "ilumac-dtw-c",
    "dest": "public/produtos/alarme/ilumac-dtw-c.webp",
-   "used_url": "https://static.wixstatic.com/media/58b02a_c3bbec8d15c74db7a58b6fa28fcbeaee~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 289,
-   "h": 312,
-   "bytes": 3322,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-dfl-3100",
    "dest": "public/produtos/alarme/intelbras-dfl-3100.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2021-12/detector-de-fumaca-linear-dfl-3100.jpg",
-   "w": 279,
-   "h": 387,
-   "bytes": 4644,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "ilumac-gaseg-ext",
    "dest": "public/produtos/alarme/ilumac-gaseg-ext.webp",
-   "used_url": "https://static.wixstatic.com/media/58b02a_a8c1fdfd5c584ac59f8e02db5a06b79f~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 194,
-   "h": 268,
-   "bytes": 4336,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-idf-620",
    "dest": "public/produtos/alarme/intelbras-idf-620.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2021-02/IDF_620%20Detector%20de%20Fuma%C3%A7a%20Smart.jpg",
-   "w": 446,
-   "h": 376,
-   "bytes": 8252,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-amc-422",
    "dest": "public/produtos/alarme/intelbras-amc-422.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/2020-06/foto_principal_AMC_422_700x480px.jpg",
-   "w": 374,
-   "h": 480,
-   "bytes": 11376,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-acionador-enderecavel-ip20",
    "dest": "public/produtos/alarme/tecnohold-acionador-enderecavel-ip20.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-enderecavel-ip20-af0ff9a653.jpg",
-   "w": 480,
-   "h": 480,
-   "bytes": 15646,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-acionador-ip55-ip67",
    "dest": "public/produtos/alarme/tecnohold-acionador-ip55-ip67.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-ip55-ip67-49e701534f.jpg",
-   "w": 637,
-   "h": 800,
-   "bytes": 22440,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-sav-420c",
    "dest": "public/produtos/alarme/intelbras-sav-420c.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
-   "w": 800,
-   "h": 680,
-   "bytes": 30136,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-sav-520e",
    "dest": "public/produtos/alarme/intelbras-sav-520e.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/integration/sav_520_front_0.png",
-   "w": 639,
-   "h": 800,
-   "bytes": 40940,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-sirene-pneumatica-industrial",
    "dest": "public/produtos/alarme/tecnohold-sirene-pneumatica-industrial.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-sirene-enderecavel-pneumatica-industrial-2253e3e1f0.jpg",
-   "w": 480,
-   "h": 480,
-   "bytes": 11718,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "ilumac-mic-e",
    "dest": "public/produtos/alarme/ilumac-mic-e.webp",
-   "used_url": "https://static.wixstatic.com/media/58b02a_4e30abbc819f4f8facf3450b91126d84~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 264,
-   "h": 197,
-   "bytes": 3918,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-modulo-zona-convencional",
    "dest": "public/produtos/alarme/tecnohold-modulo-zona-convencional.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-modulo-enderecavel-de-deteccao-para-1-zona-convencional-ba07f98711.jpg",
-   "w": 480,
-   "h": 480,
-   "bytes": 17192,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-mcr",
    "dest": "public/produtos/alarme/tecnohold-mcr.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/08/cover-mcr-modulo-de-supervisao-e-comando-remoto-d32713b110.jpg",
-   "w": 688,
-   "h": 672,
-   "bytes": 18636,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-fna-520",
    "dest": "public/produtos/alarme/intelbras-fna-520.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/integration/fna_520_front.png",
-   "w": 675,
-   "h": 800,
-   "bytes": 10354,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "intelbras-rp-520",
    "dest": "public/produtos/alarme/intelbras-rp-520.webp",
-   "used_url": "https://backend.intelbras.com/sites/default/files/integration/rp_520_front.png",
-   "w": 675,
-   "h": 800,
-   "bytes": 14182,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "tecnohold-protetor-surto-entrada-ac",
    "dest": "public/produtos/alarme/tecnohold-protetor-surto-entrada-ac.webp",
-   "used_url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/04/cover-quadro-completo-protetor-de-surto-entrada-ac-760658ed5c.jpg",
-   "w": 800,
-   "h": 800,
-   "bytes": 15734,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "ilumac-cabo-de-instrumentacao",
    "dest": "public/produtos/alarme/ilumac-cabo-de-instrumentacao.webp",
-   "used_url": "https://static.wixstatic.com/media/58b02a_473480c112c84014bef6823c25831a6e~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 450,
-   "h": 278,
-   "bytes": 13684,
    "ok": true
   },
   {
    "category": "alarme",
    "id": "ilumac-spray-de-teste",
    "dest": "public/produtos/alarme/ilumac-spray-de-teste.webp",
-   "used_url": "https://static.wixstatic.com/media/58b02a_9510feff2c8c49fcbacf833d12f555e0~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 154,
-   "h": 389,
-   "bytes": 7284,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-slim-premium",
    "dest": "public/produtos/iluminacao/luxpryme-slim-premium.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/32/32-2thumb.png",
-   "w": 307,
-   "h": 347,
-   "bytes": 5672,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-compacta-basic-embutir",
    "dest": "public/produtos/iluminacao/luxpryme-compacta-basic-embutir.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/28/28-4thumb.png",
-   "w": 248,
-   "h": 360,
-   "bytes": 4072,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-mini-compacta-basic",
    "dest": "public/produtos/iluminacao/luxpryme-mini-compacta-basic.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/77/77-3thumb.png",
-   "w": 313,
-   "h": 395,
-   "bytes": 3974,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-mini-bloco-basic",
    "dest": "public/produtos/iluminacao/luxpryme-mini-bloco-basic.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/23/23-7thumb.jpg",
-   "w": 483,
-   "h": 182,
-   "bytes": 3188,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-nano-bloco-basic",
    "dest": "public/produtos/iluminacao/luxpryme-nano-bloco-basic.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/17/17-9thumb.png",
-   "w": 291,
-   "h": 440,
-   "bytes": 6378,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-bloco-3000-basic",
    "dest": "public/produtos/iluminacao/luxpryme-bloco-3000-basic.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/27/27-3thumb.png",
-   "w": 388,
-   "h": 377,
-   "bytes": 6952,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-csb-400",
    "dest": "public/produtos/iluminacao/luxpryme-csb-400.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/50/50-1thumb.png",
-   "w": 481,
-   "h": 403,
-   "bytes": 9124,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-lcce-300",
    "dest": "public/produtos/iluminacao/luxpryme-lcce-300.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/54/54-2thumb.png",
-   "w": 361,
-   "h": 500,
-   "bytes": 6798,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-lcf-3020-blk",
    "dest": "public/produtos/iluminacao/luxpryme-lcf-3020-blk.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/60/321md.png",
-   "w": 500,
-   "h": 436,
-   "bytes": 11202,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-duplo-farol-lcf",
    "dest": "public/produtos/iluminacao/luxpryme-duplo-farol-lcf.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/53/53-1thumb.png",
-   "w": 485,
-   "h": 179,
-   "bytes": 3706,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-slim-lsc-ip67",
    "dest": "public/produtos/iluminacao/luxpryme-slim-lsc-ip67.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png",
-   "w": 483,
-   "h": 262,
-   "bytes": 6730,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-pps-p-2617",
    "dest": "public/produtos/iluminacao/luxpryme-pps-p-2617.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/39/284md.png",
-   "w": 463,
-   "h": 500,
-   "bytes": 10564,
    "ok": true
   },
   {
    "category": "iluminacao",
    "id": "luxpryme-pcs-b-2617",
    "dest": "public/produtos/iluminacao/luxpryme-pcs-b-2617.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/43/271md.png",
-   "w": 422,
-   "h": 451,
-   "bytes": 11180,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "mangueira-de-incendio",
    "dest": "public/produtos/hidrantes/mangueira-de-incendio.webp",
-   "used_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Firehose75mm.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 39490,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "esguicho-regulavel",
    "dest": "public/produtos/hidrantes/esguicho-regulavel.webp",
-   "used_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Fire_hose_nozzle_crosslay.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 71062,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "esguicho-agulheta",
    "dest": "public/produtos/hidrantes/esguicho-agulheta.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Firefighting_nozzle_20160615_084315.jpg/960px-Firefighting_nozzle_20160615_084315.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 28336,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "conexoes-storz",
    "dest": "public/produtos/hidrantes/conexoes-storz.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Brass_and_alumilium_couplings.JPG/960px-Brass_and_alumilium_couplings.JPG",
-   "w": 800,
-   "h": 600,
-   "bytes": 92384,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "tampao-storz",
    "dest": "public/produtos/hidrantes/tampao-storz.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cologne_Germany_Fire-Water-Supply-01.jpg/960px-Cologne_Germany_Fire-Water-Supply-01.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 38952,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "abrigo-para-mangueira",
    "dest": "public/produtos/hidrantes/abrigo-para-mangueira.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Hose_box_in_India.jpg/960px-Hose_box_in_India.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 107330,
    "ok": true
   },
   {
    "category": "hidrantes",
    "id": "mangotinho-carretel",
    "dest": "public/produtos/hidrantes/mangotinho-carretel.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg/960px-Dornbirn-Montfortstra%C3%9Fe-Fire_extinguisher_%28Wandhydrant%29-02ASD.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 38288,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-po-abc",
    "dest": "public/produtos/extintores/extintor-po-abc.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg/960px-1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
-   "w": 600,
-   "h": 800,
-   "bytes": 65726,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-po-bc",
    "dest": "public/produtos/extintores/extintor-po-bc.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg/960px-1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
-   "w": 600,
-   "h": 800,
-   "bytes": 64030,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-co2",
    "dest": "public/produtos/extintores/extintor-co2.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg/960px-Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg",
-   "w": 600,
-   "h": 800,
-   "bytes": 27524,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-agua-pressurizada",
    "dest": "public/produtos/extintores/extintor-agua-pressurizada.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fire_Extinguisher_01.jpg/960px-Fire_Extinguisher_01.jpg",
-   "w": 600,
-   "h": 800,
-   "bytes": 44114,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-espuma-mecanica",
    "dest": "public/produtos/extintores/extintor-espuma-mecanica.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg/960px-thumbnail.jpg",
-   "w": 600,
-   "h": 800,
-   "bytes": 45512,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-classe-k",
    "dest": "public/produtos/extintores/extintor-classe-k.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wet_chemical_fire_extinguisher.jpg/960px-Wet_chemical_fire_extinguisher.jpg",
-   "w": 429,
-   "h": 800,
-   "bytes": 26456,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "extintor-sobre-rodas",
    "dest": "public/produtos/extintores/extintor-sobre-rodas.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg/960px-Trolley_type_dry_powder_fire_extinguisher.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 87272,
    "ok": true
   },
   {
    "category": "extintores",
    "id": "suporte-piso-extintor",
    "dest": "public/produtos/extintores/suporte-piso-extintor.webp",
-   "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg/960px-Water_and_Carbon_Dioxide_fire_extinguishers_%2827160694827%29.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 58316,
    "ok": true
   }
  ],
  "photos": [
   {
    "id": "hero",
-   "files": [],
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+   "files": [
+    {
+     "dest": "public/fotos/hero-800.webp",
+     "w": 800,
+     "h": 532,
+     "bytes": 64880
+    },
+    {
+     "dest": "public/fotos/hero-1600.webp",
+     "w": 1600,
+     "h": 1064,
+     "bytes": 219272
+    },
+    {
+     "dest": "public/fotos/hero-1920.webp",
+     "w": 1920,
+     "h": 1277,
+     "bytes": 300026
+    }
+   ],
+   "ok": true
   },
   {
    "id": "por-que-apag",
-   "files": [],
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+   "files": [
+    {
+     "dest": "public/fotos/por-que-apag-800.webp",
+     "w": 800,
+     "h": 533,
+     "bytes": 53932
+    },
+    {
+     "dest": "public/fotos/por-que-apag-1200.webp",
+     "w": 1200,
+     "h": 800,
+     "bytes": 97068
+    }
+   ],
+   "ok": true
   },
   {
    "id": "capa-sinalizacao",
-   "files": [],
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+   "files": [
+    {
+     "dest": "public/fotos/capa-sinalizacao-800.webp",
+     "w": 800,
+     "h": 597,
+     "bytes": 63148
+    },
+    {
+     "dest": "public/fotos/capa-sinalizacao-1600.webp",
+     "w": 1600,
+     "h": 1194,
+     "bytes": 271746
+    }
+   ],
+   "ok": true
   },
   {
    "id": "capa-alarme",
@@ -740,9 +574,21 @@
   },
   {
    "id": "capa-iluminacao",
-   "files": [],
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+   "files": [
+    {
+     "dest": "public/fotos/capa-iluminacao-800.webp",
+     "w": 800,
+     "h": 600,
+     "bytes": 30824
+    },
+    {
+     "dest": "public/fotos/capa-iluminacao-1600.webp",
+     "w": 1600,
+     "h": 1200,
+     "bytes": 94102
+    }
+   ],
+   "ok": true
   },
   {
    "id": "capa-extintores",

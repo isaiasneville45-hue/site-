@@ -96,6 +96,10 @@ Fotos de bancos de imagem gratuitos, usadas conforme a licença de cada um.
 
 | Arquivos | Onde aparece | Autor | Origem | Licença |
 | --- | --- | --- | --- | --- |
+| `fotos/hero-800.webp`, `fotos/hero-1600.webp`, `fotos/hero-1920.webp` | Fundo do Hero | U.S. Navy photo by Photographer's Mate 3rd Class Bo J. Flannigan | https://commons.wikimedia.org/wiki/File:US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel,_of_Orange_County,_Calif.,_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_(CV_63)_duri.jpg | Domínio público |
+| `fotos/por-que-apag-800.webp`, `fotos/por-que-apag-1200.webp` | Seção "Por que a APAG" | Marinha do Brasil | https://commons.wikimedia.org/wiki/File:Agente_de_seguran%C3%A7a_mar%C3%ADtima_inspeciona_extintor_da_embarca%C3%A7%C3%A3o_na_Marina_da_Gl%C3%B3ria_(RJ)_-_Inspe%C3%A7%C3%A3o_Naval_(52247937389).jpg | CC BY-SA 2.0 |
+| `fotos/capa-sinalizacao-800.webp`, `fotos/capa-sinalizacao-1600.webp` | Capa da aba Sinalização | Ben P L from Provo, USA | https://commons.wikimedia.org/wiki/File:Faculty_Office_Building_hallway_(30016016168).jpg | CC BY-SA 2.0 |
 | `fotos/capa-alarme-800.webp`, `fotos/capa-alarme-1024.webp` | Capa da aba Alarme | sun dazed | https://www.flickr.com/photos/8411191@N07/2466149416 | CC BY-SA 2.0 |
 | `fotos/capa-hidrantes-800.webp`, `fotos/capa-hidrantes-1600.webp` | Capa da aba Hidrantes | mujuonly | https://wordpress.org/photos/photo/3296835964/ | CC0 1.0 |
+| `fotos/capa-iluminacao-800.webp`, `fotos/capa-iluminacao-1600.webp` | Capa da aba Iluminação | Eric Fischer | https://commons.wikimedia.org/wiki/File:Emergency_exit_sign_(42050562511).jpg | CC BY 2.0 |
 | `fotos/capa-extintores-800.webp`, `fotos/capa-extintores-1024.webp` | Capa da aba Extintores | SunCon Photos | https://www.flickr.com/photos/67458903@N05/7511791044 | CC BY 2.0 |
