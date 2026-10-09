@@ -61,7 +61,7 @@ CROPS = {
     # Sinalização complementar e continuada
     "fita-antiderrapante": (4, (48, 84, 668, 318), None, {"trim": False}),
     "demarcacao-de-solo": (9, (469, 312, 664, 509), (460, 304, 500, 336), {"inset": 5}),
-    "plano-de-fuga": (9, (309, 650, 698, 980), None, {}),
+    "plano-de-fuga": (9, (315, 657, 692, 880), None, {"trim": False}),
 }
 
 # Faixas zebradas: duas faixas empilhadas numa imagem

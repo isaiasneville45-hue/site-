@@ -183,7 +183,7 @@ function ProductCard({
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.015] shadow-[inset_0_1px_0_rgb(255_255_255/0.06)] transition-all duration-300 ease-out hover:-translate-y-1 hover:border-apag-red hover:shadow-glow-lg focus-within:border-apag-red-65">
       <div className="relative aspect-[4/3] overflow-hidden">
         {product.image ? (
-          <div className="size-full bg-[radial-gradient(circle_at_50%_35%,#ffffff_0%,#eef0f3_70%,#e2e5ea_100%)]">
+          <div className="size-full bg-white">
             <img
               src={product.image}
               alt={product.imageAlt}
@@ -191,7 +191,10 @@ function ProductCard({
               decoding="async"
               width={800}
               height={600}
-              className="size-full object-contain p-5 transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+              className={cn(
+                'size-full transition-transform duration-500 ease-out group-hover:scale-[1.06]',
+                product.imageFit === 'cover' ? 'object-cover' : 'object-contain p-4',
+              )}
             />
           </div>
         ) : (

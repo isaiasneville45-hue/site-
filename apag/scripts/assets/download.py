@@ -8,7 +8,7 @@ Baixa e otimiza as imagens do site a partir de apag/scripts/assets/manifest.json
 - Relatório → apag/scripts/assets/research/download-report.json
 
 Também pode recortar imagens de páginas de PDF (catálogos), quando o manifest
-indicar "pdf" + "page" + "crop" (frações 0..1 da página: [x0, y0, x1, y1]).
+indicar "pdf" + "pdf_page" + "crop" (frações 0..1 da página: [x0, y0, x1, y1]).
 
 Uso local (precisa de internet e de `pip install pillow`; poppler para PDFs):
     python3 apag/scripts/assets/download.py
@@ -69,6 +69,15 @@ def trim_white(im, tolerance=12, pad=0.04):
     return im.crop(box)
 
 
+def crop_43(im, fx=0.5, fy=0.5):
+    """Maior recorte 4:3 da imagem, centrado o mais perto possível de (fx, fy)."""
+    w, h = im.size
+    cw, ch = (w, round(w * 3 / 4)) if w * 3 / 4 <= h else (round(h * 4 / 3), h)
+    x0 = min(max(0, round(fx * w - cw / 2)), w - cw)
+    y0 = min(max(0, round(fy * h - ch / 2)), h - ch)
+    return im.crop((x0, y0, x0 + cw, y0 + ch))
+
+
 def save_webp(im, path, max_side=None, width=None, quality=82):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if width and im.width > width:
@@ -101,8 +110,16 @@ def main():
         dest = os.path.join(PUBLIC, "produtos", item["category"], f"{item['id']}.webp")
         entry = {"category": item["category"], "id": item["id"], "dest": os.path.relpath(dest, APAG)}
         try:
+            if item.get("local"):
+                # gerada localmente (ex.: recortes do catálogo da Scala por scala_crops.py)
+                if not os.path.exists(dest):
+                    raise FileNotFoundError(dest)
+                entry["ok"] = True
+                report["products"].append(entry)
+                print(f"OK   produto {item['category']}/{item['id']} (local)", flush=True)
+                continue
             if item.get("pdf"):
-                im = pdf_page_image(item["pdf"], item["page"])
+                im = pdf_page_image(item["pdf"], item["pdf_page"])
                 x0, y0, x1, y1 = item["crop"]
                 im = im.crop((int(x0 * im.width), int(y0 * im.height), int(x1 * im.width), int(y1 * im.height)))
             else:
@@ -116,7 +133,10 @@ def main():
                         last_err = e
                 else:
                     raise last_err or RuntimeError("sem URL")
-            if item.get("trim", True):
+            if item.get("cover"):
+                # foto com fundo: recorte 4:3 em torno do produto (foco x, y em 0..1)
+                im = crop_43(im.convert("RGB"), *item["cover"])
+            elif item.get("trim", True):
                 im = trim_white(im)
             entry.update(save_webp(im, dest, max_side=MAX_PRODUCT))
             entry["ok"] = True
@@ -166,17 +186,20 @@ def write_credits(manifest, report):
         "",
         "## Fotos de produtos",
         "",
-        "Imagens dos catálogos e sites dos fabricantes/fornecedores, cujos produtos a APAG revende.",
+        "Imagens dos catálogos e sites dos fabricantes/fornecedores, cujos produtos a APAG revende,",
+        "e fotos de bancos de imagem livres (Wikimedia Commons / Openverse) quando o fornecedor não",
+        "foi informado — nesse caso com autor e licença.",
         "",
-        "| Arquivo | Produto | Fabricante | Origem |",
-        "| --- | --- | --- | --- |",
+        "| Arquivo | Produto | Fabricante | Origem | Autor / licença |",
+        "| --- | --- | --- | --- | --- |",
     ]
     for item in manifest.get("products", []):
         if (item["category"], item["id"]) not in ok_products:
             continue
-        origin = item.get("page") or item.get("pdf") or item.get("url")
-        extra = f" (pág. {item['page']} do catálogo)" if item.get("pdf") else ""
-        lines.append(f"| `produtos/{item['category']}/{item['id']}.webp` | {item.get('name', item['id'])} | {item.get('brand', '')} | {origin}{extra} |")
+        origin = item.get("pdf") or item.get("page") or item.get("url")
+        extra = f" (pág. {item['pdf_page']} do catálogo)" if item.get("pdf_page") else ""
+        license_ = " — ".join(x for x in (item.get("author", ""), item.get("license", "")) if x) or "imagem do fabricante"
+        lines.append(f"| `produtos/{item['category']}/{item['id']}.webp` | {item.get('name', item['id'])} | {item.get('brand', '')} | {origin}{extra} | {license_} |")
     lines += [
         "",
         "## Fotos humanizadas",
