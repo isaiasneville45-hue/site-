@@ -838,11 +838,11 @@
  "photos": [
   {
    "id": "hero",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel%2C_of_Orange_County%2C_Calif.%2C_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_%28CV_63%29_duri.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel%2C_of_Orange_County%2C_Calif.%2C_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_%28CV_63%29_duri.jpg/1920px-thumbnail.jpg",
    "widths": [
     800,
     1600,
-    2400
+    1920
    ],
    "author": "U.S. Navy photo by Photographer's Mate 3rd Class Bo J. Flannigan",
    "page": "https://commons.wikimedia.org/wiki/File:US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel,_of_Orange_County,_Calif.,_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_(CV_63)_duri.jpg",
@@ -851,7 +851,7 @@
   },
   {
    "id": "por-que-apag",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Agente_de_seguran%C3%A7a_mar%C3%ADtima_inspeciona_extintor_da_embarca%C3%A7%C3%A3o_na_Marina_da_Gl%C3%B3ria_%28RJ%29_-_Inspe%C3%A7%C3%A3o_Naval_%2852247937389%29.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Agente_de_seguran%C3%A7a_mar%C3%ADtima_inspeciona_extintor_da_embarca%C3%A7%C3%A3o_na_Marina_da_Gl%C3%B3ria_%28RJ%29_-_Inspe%C3%A7%C3%A3o_Naval_%2852247937389%29.jpg/1920px-Agente_de_seguran%C3%A7a_mar%C3%ADtima_inspeciona_extintor_da_embarca%C3%A7%C3%A3o_na_Marina_da_Gl%C3%B3ria_%28RJ%29_-_Inspe%C3%A7%C3%A3o_Naval_%2852247937389%29.jpg",
    "widths": [
     800,
     1200
@@ -863,7 +863,7 @@
   },
   {
    "id": "capa-sinalizacao",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Faculty_Office_Building_hallway_%2830016016168%29.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Faculty_Office_Building_hallway_%2830016016168%29.jpg/1920px-Faculty_Office_Building_hallway_%2830016016168%29.jpg",
    "widths": [
     800,
     1600
@@ -899,7 +899,7 @@
   },
   {
    "id": "capa-iluminacao",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Emergency_exit_sign_%2842050562511%29.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Emergency_exit_sign_%2842050562511%29.jpg/1920px-Emergency_exit_sign_%2842050562511%29.jpg",
    "widths": [
     800,
     1600

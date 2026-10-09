@@ -19,6 +19,8 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -34,11 +36,23 @@ _pdf_cache = {}
 
 def fetch(url, referer=None, timeout=60):
     headers = {"User-Agent": UA, "Accept": "image/avif,image/webp,image/*,*/*;q=0.8"}
+    if "wikimedia.org" in url:
+        # a Wikimedia pede um User-Agent identificável e limita a taxa (HTTP 429)
+        headers["User-Agent"] = "apag-site-build/1.0 (github.com/isaiasneville45-hue/site-)"
     if referer:
         headers["Referer"] = referer
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    for attempt in range(5):
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                data = r.read()
+            if "wikimedia.org" in url:
+                time.sleep(3)
+            return data
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 4:
+                raise
+            time.sleep(15 * (attempt + 1))
 
 
 def open_image(data):
@@ -106,11 +120,12 @@ def main():
         manifest = json.load(f)
     report = {"products": [], "photos": []}
 
+    only_photos = "photos" in sys.argv[1:]  # não baixa de novo os produtos já salvos
     for item in manifest.get("products", []):
         dest = os.path.join(PUBLIC, "produtos", item["category"], f"{item['id']}.webp")
         entry = {"category": item["category"], "id": item["id"], "dest": os.path.relpath(dest, APAG)}
         try:
-            if item.get("local"):
+            if item.get("local") or (only_photos and os.path.exists(dest)):
                 # gerada localmente (ex.: recortes do catálogo da Scala por scala_crops.py)
                 if not os.path.exists(dest):
                     raise FileNotFoundError(dest)
@@ -149,13 +164,18 @@ def main():
     for item in manifest.get("photos", []):
         entry = {"id": item["id"], "files": []}
         try:
+            source = None
             for width in item.get("widths", [800, 1600]):
                 url = item["url"]
                 if "images.unsplash.com" in url:
                     parts = urllib.parse.urlsplit(url)
                     query = urllib.parse.urlencode({"w": width, "q": 80, "fm": "jpg", "fit": "max"})
                     url = urllib.parse.urlunsplit((parts.scheme, parts.netloc, parts.path, query, ""))
-                im = open_image(fetch(url, referer=item.get("page")))
+                    im = open_image(fetch(url, referer=item.get("page")))
+                else:
+                    # mesma imagem para todas as larguras: baixa uma vez só
+                    source = source or open_image(fetch(url, referer=item.get("page")))
+                    im = source.copy()
                 if im.mode == "RGBA":
                     im = im.convert("RGB")
                 dest = os.path.join(PUBLIC, "fotos", f"{item['id']}-{width}.webp")

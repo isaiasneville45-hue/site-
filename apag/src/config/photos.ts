@@ -18,7 +18,7 @@ export const photos: { hero: PhotoAsset | null; why: PhotoAsset | null } = {
   hero: {
     id: 'hero',
     alt: 'Técnico caminha por um amplo galpão durante o teste do sistema de chuveiros automáticos, com névoa de água no ar e reflexos das luzes no piso molhado',
-    widths: [800, 1600, 2400],
+    widths: [800, 1600, 1920],
     position: '60% 50%',
   },
   why: {
