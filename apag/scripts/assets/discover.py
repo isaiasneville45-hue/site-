@@ -35,6 +35,7 @@ SKIP_EXT = re.compile(r"\.(jpe?g|png|gif|webp|svg|ico|css|js|pdf|zip|rar|mp4|mp3
 
 
 def fetch(url, binary=False, timeout=25, accept="text/html,application/xhtml+xml,*/*"):
+    url = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*[]~")  # URLs com acento
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept, "Accept-Language": "pt-BR,pt;q=0.9"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         data = r.read()
@@ -53,6 +54,7 @@ class PageParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.links, self.images, self.meta = [], [], {}
+        self.base = None
         self.title, self.h1, self.h2 = "", [], []
         self._in = None
         self._buf = ""
@@ -71,6 +73,8 @@ class PageParser(HTMLParser):
                     src = cands[-1]
             if src and not src.startswith("data:"):
                 self.images.append({"src": src, "alt": (a.get("alt") or "").strip(), "w": a.get("width"), "h": a.get("height")})
+        elif tag == "base" and a.get("href"):
+            self.base = a["href"]
         elif tag == "meta":
             k = a.get("property") or a.get("name")
             if k in ("og:image", "og:title", "og:description", "description", "twitter:image"):
@@ -166,13 +170,14 @@ def crawl(name, start_urls, max_pages=220, extra_hosts=(), url_filter=None):
             p.feed(text)
         except Exception:  # noqa: BLE001
             pass
+        base = urllib.parse.urljoin(final, p.base) if p.base else final
         imgs = []
         for im in p.images:
-            src = urllib.parse.urljoin(final, im["src"])
+            src = urllib.parse.urljoin(base, im["src"])
             if any(x in src.lower() for x in ("logo", "icon", "sprite", "banner-topo", "whatsapp", "facebook", "instagram", "pixel", "loader", "placeholder")):
                 continue
             imgs.append({"src": src, "alt": im["alt"]})
-        pdfs = sorted({urllib.parse.urljoin(final, l) for l in p.links if ".pdf" in l.lower()})
+        pdfs = sorted({urllib.parse.urljoin(base, l) for l in p.links if ".pdf" in l.lower()})
         result["pages"].append({
             "url": final,
             "title": html.unescape(p.title),
@@ -185,7 +190,7 @@ def crawl(name, start_urls, max_pages=220, extra_hosts=(), url_filter=None):
         })
         if depth < 3:
             for l in p.links:
-                push(urllib.parse.urljoin(final, l), depth + 1)
+                push(urllib.parse.urljoin(base, l), depth + 1)
         time.sleep(0.25)
     return result
 
@@ -519,6 +524,40 @@ def commons_sheets(data):
     return data
 
 
+def fetch_pages(list_file="fetch-list.txt"):
+    """Busca uma lista de URLs (research/fetch-list.txt) e registra título, descrição,
+    imagens (respeitando <base href>), og:image e imagens de JSON-LD de produto."""
+    urls = [l.strip() for l in open(os.path.join(OUT, list_file)) if l.strip() and not l.startswith("#")]
+    pages = []
+    for url in urls:
+        entry = {"requested": url}
+        try:
+            text, final, ctype = fetch(url)
+            p = PageParser()
+            p.feed(text)
+            base = urllib.parse.urljoin(final, p.base) if p.base else final
+            ld_images = []
+            for block in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', text, re.S):
+                for m in re.finditer(r'"image"\s*:\s*(\[[^\]]*\]|"[^"]+")', block):
+                    ld_images += re.findall(r'"(https?://[^"]+)"', m.group(1))
+            entry.update({
+                "url": final,
+                "title": html.unescape(p.title),
+                "h1": p.h1[:3],
+                "h2": p.h2,
+                "description": p.meta.get("og:description") or p.meta.get("description", ""),
+                "og_image": urllib.parse.urljoin(base, p.meta.get("og:image", "")) if p.meta.get("og:image") else "",
+                "ld_images": ld_images[:8],
+                "images": [{"src": urllib.parse.urljoin(base, i["src"]), "alt": i["alt"]} for i in p.images][:30],
+                "text": re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", text, flags=re.S)))[:2500],
+            })
+        except Exception as e:  # noqa: BLE001
+            entry["error"] = str(e)
+        pages.append(entry)
+        time.sleep(0.3)
+    return pages
+
+
 SITES = {
     "scala": ["https://gruposcala.com.br/", "https://gruposcala.com.br/catalogo/"],
     "intelbras": ["https://www.intelbras.com/pt-br/seguranca-eletronica/incendio"],
@@ -535,6 +574,10 @@ def save(name, data):
 
 def main():
     only = sys.argv[1:] or ["sites", "scala_pdf", "unsplash", "geocode"]
+    for arg in only:
+        if arg.startswith("pages:"):
+            name = arg.split(":", 1)[1]
+            save(f"pages-{name}.json", fetch_pages(f"fetch-{name}.txt"))
     if "scala_pages" in only:
         save("scala-pages.json", scala_pdf_pages())
     if "unsplash_html" in only:
