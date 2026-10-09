@@ -179,7 +179,7 @@
    "used_url": "https://backend.intelbras.com/sites/default/files/2022-04/central-de-alarme-de-incendio-cie-1060.jpg",
    "w": 700,
    "h": 480,
-   "bytes": 15474,
+   "bytes": 15542,
    "ok": true
   },
   {
@@ -197,9 +197,9 @@
    "id": "ilumac-kx-80",
    "dest": "public/produtos/alarme/ilumac-kx-80.webp",
    "used_url": "https://static.wixstatic.com/media/58b02a_319a249126364f4ea3f635b4d60b46b8~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
-   "w": 300,
-   "h": 456,
-   "bytes": 9016,
+   "w": 301,
+   "h": 457,
+   "bytes": 8638,
    "ok": true
   },
   {
@@ -229,7 +229,7 @@
    "used_url": "https://static.wixstatic.com/media/58b02a_c3bbec8d15c74db7a58b6fa28fcbeaee~mv2.jpg/v1/fit/w_952,h_956,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
    "w": 289,
    "h": 312,
-   "bytes": 3392,
+   "bytes": 3322,
    "ok": true
   },
   {
@@ -506,10 +506,10 @@
    "category": "iluminacao",
    "id": "luxpryme-slim-lsc-ip67",
    "dest": "public/produtos/iluminacao/luxpryme-slim-lsc-ip67.webp",
-   "used_url": "https://www.luxpryme.com.br/admin/image/produto/56/189md.png",
-   "w": 500,
-   "h": 467,
-   "bytes": 9044,
+   "used_url": "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png",
+   "w": 483,
+   "h": 262,
+   "bytes": 6730,
    "ok": true
   },
   {
@@ -607,9 +607,9 @@
    "id": "extintor-po-abc",
    "dest": "public/produtos/extintores/extintor-po-abc.webp",
    "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg/960px-1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 51890,
+   "w": 600,
+   "h": 800,
+   "bytes": 65726,
    "ok": true
   },
   {
@@ -617,9 +617,9 @@
    "id": "extintor-po-bc",
    "dest": "public/produtos/extintores/extintor-po-bc.webp",
    "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg/960px-1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 38764,
+   "w": 600,
+   "h": 800,
+   "bytes": 64030,
    "ok": true
   },
   {
@@ -627,9 +627,9 @@
    "id": "extintor-co2",
    "dest": "public/produtos/extintores/extintor-co2.webp",
    "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg/960px-Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 39340,
+   "w": 600,
+   "h": 800,
+   "bytes": 27524,
    "ok": true
   },
   {
@@ -637,9 +637,9 @@
    "id": "extintor-agua-pressurizada",
    "dest": "public/produtos/extintores/extintor-agua-pressurizada.webp",
    "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fire_Extinguisher_01.jpg/960px-Fire_Extinguisher_01.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 51914,
+   "w": 600,
+   "h": 800,
+   "bytes": 44114,
    "ok": true
   },
   {
@@ -647,9 +647,9 @@
    "id": "extintor-espuma-mecanica",
    "dest": "public/produtos/extintores/extintor-espuma-mecanica.webp",
    "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg/960px-thumbnail.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 50448,
+   "w": 600,
+   "h": 800,
+   "bytes": 45512,
    "ok": true
   },
   {
@@ -657,9 +657,9 @@
    "id": "extintor-classe-k",
    "dest": "public/produtos/extintores/extintor-classe-k.webp",
    "used_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wet_chemical_fire_extinguisher.jpg/960px-Wet_chemical_fire_extinguisher.jpg",
-   "w": 800,
-   "h": 600,
-   "bytes": 37968,
+   "w": 429,
+   "h": 800,
+   "bytes": 26456,
    "ok": true
   },
   {
@@ -683,5 +683,84 @@
    "ok": true
   }
  ],
- "photos": []
+ "photos": [
+  {
+   "id": "hero",
+   "files": [],
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+   "id": "por-que-apag",
+   "files": [],
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+   "id": "capa-sinalizacao",
+   "files": [],
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+   "id": "capa-alarme",
+   "files": [
+    {
+     "dest": "public/fotos/capa-alarme-800.webp",
+     "w": 800,
+     "h": 600,
+     "bytes": 67306
+    },
+    {
+     "dest": "public/fotos/capa-alarme-1024.webp",
+     "w": 1024,
+     "h": 768,
+     "bytes": 93912
+    }
+   ],
+   "ok": true
+  },
+  {
+   "id": "capa-hidrantes",
+   "files": [
+    {
+     "dest": "public/fotos/capa-hidrantes-800.webp",
+     "w": 800,
+     "h": 600,
+     "bytes": 129306
+    },
+    {
+     "dest": "public/fotos/capa-hidrantes-1600.webp",
+     "w": 1600,
+     "h": 1200,
+     "bytes": 371446
+    }
+   ],
+   "ok": true
+  },
+  {
+   "id": "capa-iluminacao",
+   "files": [],
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+   "id": "capa-extintores",
+   "files": [
+    {
+     "dest": "public/fotos/capa-extintores-800.webp",
+     "w": 800,
+     "h": 598,
+     "bytes": 39352
+    },
+    {
+     "dest": "public/fotos/capa-extintores-1024.webp",
+     "w": 1023,
+     "h": 765,
+     "bytes": 57190
+    }
+   ],
+   "ok": true
+  }
+ ]
 }

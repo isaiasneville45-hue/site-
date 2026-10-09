@@ -96,3 +96,6 @@ Fotos de bancos de imagem gratuitos, usadas conforme a licença de cada um.
 
 | Arquivos | Onde aparece | Autor | Origem | Licença |
 | --- | --- | --- | --- | --- |
+| `fotos/capa-alarme-800.webp`, `fotos/capa-alarme-1024.webp` | Capa da aba Alarme | sun dazed | https://www.flickr.com/photos/8411191@N07/2466149416 | CC BY-SA 2.0 |
+| `fotos/capa-hidrantes-800.webp`, `fotos/capa-hidrantes-1600.webp` | Capa da aba Hidrantes | mujuonly | https://wordpress.org/photos/photo/3296835964/ | CC0 1.0 |
+| `fotos/capa-extintores-800.webp`, `fotos/capa-extintores-1024.webp` | Capa da aba Extintores | SunCon Photos | https://www.flickr.com/photos/67458903@N05/7511791044 | CC BY 2.0 |
