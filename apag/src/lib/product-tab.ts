@@ -1,4 +1,4 @@
-import type { ProductCategoryId } from '@/config/products'
+import { productCategories, type ProductCategoryId } from '@/config/products'
 import { scrollToHash } from '@/lib/scroll'
 
 /*
@@ -8,16 +8,33 @@ import { scrollToHash } from '@/lib/scroll'
  */
 type Listener = () => void
 
-let requested: ProductCategoryId | null = null
+let current: ProductCategoryId | null = null
+let readUrl = false
 const listeners = new Set<Listener>()
+
+export const isProductCategoryId = (value: string | null): value is ProductCategoryId =>
+  productCategories.some((category) => category.id === value)
 
 export function subscribeProductTab(listener: Listener) {
   listeners.add(listener)
-  return () => listeners.delete(listener)
+  return () => {
+    listeners.delete(listener)
+  }
 }
 
-export function getRequestedProductTab() {
-  return requested
+/** Aba escolhida (null = a primeira). Na primeira leitura considera o ?aba= da URL. */
+export function getProductTab() {
+  if (!readUrl && typeof window !== 'undefined') {
+    readUrl = true
+    const fromUrl = new URLSearchParams(window.location.search).get('aba')
+    if (isProductCategoryId(fromUrl)) current = fromUrl
+  }
+  return current
+}
+
+export function setProductTab(id: ProductCategoryId) {
+  current = id
+  listeners.forEach((listener) => listener())
 }
 
 export function productTabHref(id: ProductCategoryId) {
@@ -26,8 +43,7 @@ export function productTabHref(id: ProductCategoryId) {
 
 /** Seleciona a aba e rola suavemente até a seção Produtos. */
 export function openProductTab(id: ProductCategoryId) {
-  requested = id
-  listeners.forEach((listener) => listener())
+  setProductTab(id)
   window.history.replaceState(null, '', productTabHref(id))
   scrollToHash('#produtos')
 }

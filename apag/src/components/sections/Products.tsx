@@ -1,15 +1,22 @@
-import { useRef, useState } from 'react'
-import { Droplets, FireExtinguisher, Lightbulb, Signpost, Siren, type LucideIcon } from 'lucide-react'
+import { useDeferredValue, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react'
+import { Droplets, FireExtinguisher, Lightbulb, Search, Signpost, Siren, X, type LucideIcon } from 'lucide-react'
 
 import { Reveal } from '@/components/motion'
 import { SectionHeading } from '@/components/SectionHeading'
 import { WhatsAppIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { productCategories, type Product, type ProductCategory, type ProductCategoryId } from '@/config/products'
+import {
+  productCategories,
+  type CategoryGuide,
+  type Product,
+  type ProductCategory,
+  type ProductCategoryId,
+} from '@/config/products'
+import { headings, productsUi as ui } from '@/config/sections'
 import { whatsappUrl } from '@/lib/contact'
+import { getProductTab, isProductCategoryId, setProductTab, subscribeProductTab } from '@/lib/product-tab'
 import { cn } from '@/lib/utils'
-import { headings } from '@/config/sections'
 
 const categoryIcons: Record<ProductCategoryId, LucideIcon> = {
   sinalizacao: Signpost,
@@ -19,20 +26,16 @@ const categoryIcons: Record<ProductCategoryId, LucideIcon> = {
   extintores: FireExtinguisher,
 }
 
-/** Mensagem do botão "Pedir orçamento" de cada produto. */
-const quoteMessage = (product: Product, category: ProductCategory) =>
-  `Olá! Vim pelo site e gostaria de um orçamento de: ${product.name} (${category.title}).`
-
 export function Products() {
-  const [active, setActive] = useState<string>(productCategories[0].id)
+  const chosen = useSyncExternalStore(subscribeProductTab, getProductTab, () => null)
+  const active = chosen ?? productCategories[0].id
   const listRef = useRef<HTMLDivElement>(null)
 
-  const onTabChange = (value: string) => {
-    setActive(value)
-    // No mobile a lista de abas rola na horizontal: centraliza a aba escolhida.
-    // (Rola só a lista; scrollIntoView rolaria também a seção, que tem overflow oculto.)
+  // No mobile a lista de abas rola na horizontal: centraliza a aba ativa.
+  // (Rola só a lista; scrollIntoView rolaria também a seção, que tem overflow oculto.)
+  useEffect(() => {
     const list = listRef.current
-    const trigger = list?.querySelector<HTMLElement>(`[data-value="${value}"]`)
+    const trigger = list?.querySelector<HTMLElement>(`[data-value="${active}"]`)
     if (list && trigger && list.scrollWidth > list.clientWidth) {
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
       list.scrollTo({
@@ -40,6 +43,10 @@ export function Products() {
         behavior: reduceMotion ? 'auto' : 'smooth',
       })
     }
+  }, [active])
+
+  const onTabChange = (value: string) => {
+    if (isProductCategoryId(value)) setProductTab(value)
   }
 
   return (
@@ -67,7 +74,7 @@ export function Products() {
             ref={listRef}
             className="relative -mx-4 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:mx-0 lg:overflow-visible lg:px-0 [&::-webkit-scrollbar]:hidden"
           >
-            <TabsList aria-label="Categorias de produtos" className="min-w-max lg:mx-auto lg:flex lg:w-fit">
+            <TabsList aria-label={ui.tabsLabel} className="min-w-max lg:mx-auto lg:flex lg:w-fit">
               {productCategories.map((category) => {
                 const Icon = categoryIcons[category.id]
                 return (
@@ -79,7 +86,7 @@ export function Products() {
                   >
                     <Icon aria-hidden="true" />
                     {category.tabLabel}
-                    <span className="rounded-full bg-white/10 px-2 py-0.5 text-[0.7rem] font-semibold tabular-nums">
+                    <span className="rounded-full bg-white/10 px-2 py-0.5 font-sans text-[0.7rem] font-semibold tabular-nums">
                       {category.products.length}
                       <span className="sr-only"> produtos</span>
                     </span>
@@ -103,7 +110,6 @@ export function Products() {
 }
 
 function CategoryPanel({ category }: { category: ProductCategory }) {
-  const groups = groupProducts(category.products)
   const Icon = categoryIcons[category.id]
 
   return (
@@ -137,7 +143,7 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
           <div className="max-w-2xl p-6 sm:p-10">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-apag-noir/60 px-3 py-1.5 font-display-label text-sm tracking-wide text-white/85 backdrop-blur">
               <Icon className="size-3.5 text-apag-ember" aria-hidden="true" />
-              {category.products.length} produtos
+              {ui.productsCount(category.products.length)}
             </span>
             <h3 className="font-display-title mt-5 text-[clamp(1.75rem,1.2rem+1.8vw,2.5rem)] text-balance">
               {category.title}
@@ -145,7 +151,7 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
             <p className="mt-4 leading-relaxed text-white/85 text-pretty sm:text-lg">{category.intro}</p>
             {category.suppliers.length > 0 ? (
               <p className="mt-6 text-sm text-white/75">
-                <span className="font-semibold text-white">Trabalhamos com: </span>
+                <span className="font-semibold text-white">{ui.partners} </span>
                 {category.suppliers.map((supplier, i) => (
                   <span key={supplier.name}>
                     {i > 0 ? ', ' : null}
@@ -165,38 +171,291 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
         </div>
       </Reveal>
 
-      {groups.map(({ group, products }) => (
-        <div key={group ?? 'todos'}>
-          {group ? (
-            <h4 className="mb-5 flex items-center gap-3 font-display-label text-base tracking-wide text-white/70">
-              <span aria-hidden="true" className="h-px w-6 bg-apag-red" />
-              {group}
-            </h4>
-          ) : null}
-          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {products.map((product) => (
-              <li key={product.id}>
-                <ProductCard product={product} category={category} icon={Icon} headingLevel={group ? 'h5' : 'h4'} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      {category.guide ? <Guide guide={category.guide} category={category} /> : null}
+
+      <ProductBrowser category={category} icon={Icon} />
     </div>
   )
+}
+
+/* ── Bloco de ajuda ("Qual tamanho de placa…", "Convencional, endereçável…") ── */
+
+function Guide({ guide, category }: { guide: CategoryGuide; category: ProductCategory }) {
+  const titleId = useId()
+  return (
+    <section
+      aria-labelledby={titleId}
+      className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.015] p-6 sm:p-8"
+    >
+      <h4 id={titleId} className="font-display-title text-2xl">
+        {guide.title}
+      </h4>
+
+      {guide.kind === 'columns' ? (
+        <ul className="mt-6 grid gap-4 md:grid-cols-3">
+          {guide.columns.map((column) => (
+            <li key={column.title} className="rounded-2xl border border-white/10 bg-apag-noir/60 p-5">
+              <p className="font-display-label text-base tracking-wide text-apag-ember">{column.title}</p>
+              <p className="mt-2 text-sm leading-relaxed text-white/75">{column.text}</p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
+          <div className="max-w-2xl">
+            {guide.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="mt-3 leading-relaxed text-white/75 first:mt-0">
+                {paragraph}
+              </p>
+            ))}
+            <Button asChild size="sm" className="mt-6">
+              <a
+                href={whatsappUrl(guide.ctaMessage)}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${guide.cta} (WhatsApp, ${category.title})`}
+              >
+                <WhatsAppIcon />
+                {guide.cta}
+              </a>
+            </Button>
+          </div>
+          {guide.table ? (
+            <figure className="overflow-hidden rounded-2xl border border-white/10">
+              <table className="w-full text-left text-sm">
+                <caption className="bg-white/[0.04] px-4 py-3 text-left font-display-label text-sm tracking-wide text-white/85">
+                  {guide.table.caption}
+                </caption>
+                <thead className="text-white/60">
+                  <tr>
+                    {guide.table.head.map((cell) => (
+                      <th key={cell} scope="col" className="px-4 py-2 font-semibold">
+                        {cell}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {guide.table.rows.map(([size, distance]) => (
+                    <tr key={size} className="border-t border-white/10">
+                      <td className="px-4 py-2 tabular-nums text-white">{size}</td>
+                      <td className="px-4 py-2 tabular-nums text-white/80">{distance}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <figcaption className="border-t border-white/10 px-4 py-2 text-xs text-white/55">
+                {guide.table.source}
+              </figcaption>
+            </figure>
+          ) : null}
+        </div>
+      )}
+    </section>
+  )
+}
+
+/* ── Filtros, busca e paginação ──────────────────────────────────────── */
+
+const normalize = (text: string) => text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+
+function uniqueInOrder(values: (string | undefined)[], order: string[] = []) {
+  const found = [...new Set(values.filter((v): v is string => Boolean(v)))]
+  return found.sort((a, b) => {
+    const ia = order.indexOf(a)
+    const ib = order.indexOf(b)
+    return (ia === -1 ? order.length : ia) - (ib === -1 ? order.length : ib)
+  })
+}
+
+function ProductBrowser({ category, icon }: { category: ProductCategory; icon: LucideIcon }) {
+  const [group, setGroup] = useState<string | null>(null)
+  const [supplier, setSupplier] = useState<string | null>(null)
+  const [system, setSystem] = useState<string | null>(null)
+  const [query, setQuery] = useState('')
+  const [limit, setLimit] = useState(ui.pageSize)
+  const deferredQuery = useDeferredValue(query)
+  const searchId = useId()
+  const countId = useId()
+
+  const groups = useMemo(
+    () =>
+      uniqueInOrder(
+        category.products.map((p) => p.group),
+        category.groups,
+      ),
+    [category],
+  )
+  const suppliers = useMemo(() => uniqueInOrder(category.products.map((p) => p.supplier)), [category])
+  const systems = useMemo(
+    () =>
+      uniqueInOrder(
+        category.products.map((p) => p.system),
+        ['Convencional', 'Endereçável', 'Analógico', 'Sem fio'],
+      ),
+    [category],
+  )
+
+  const filtered = useMemo(() => {
+    const q = normalize(deferredQuery.trim())
+    const ordered = [...category.products].sort((a, b) => groups.indexOf(a.group) - groups.indexOf(b.group))
+    return ordered.filter(
+      (p) =>
+        (!group || p.group === group) &&
+        (!supplier || p.supplier === supplier) &&
+        (!system || p.system === system) &&
+        (!q || normalize(`${p.name} ${p.code ?? ''} ${p.supplier}`).includes(q)),
+    )
+  }, [category, groups, group, supplier, system, deferredQuery])
+
+  // Qualquer mudança de filtro volta para a primeira página.
+  const resetPage =
+    <T,>(setter: (value: T) => void) =>
+    (value: T) => {
+      setter(value)
+      setLimit(ui.pageSize)
+    }
+
+  const visible = filtered.slice(0, limit)
+  const hasFilters = Boolean(group || supplier || system || query)
+
+  return (
+    <div className="grid gap-6">
+      <div className="grid gap-4 rounded-3xl border border-white/10 bg-white/[0.02] p-4 sm:p-5">
+        <label htmlFor={searchId} className="sr-only">
+          {ui.searchLabel}
+        </label>
+        <div className="relative">
+          <Search
+            className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-white/50"
+            aria-hidden="true"
+          />
+          <input
+            id={searchId}
+            type="search"
+            value={query}
+            onChange={(event) => resetPage(setQuery)(event.target.value)}
+            placeholder={ui.searchPlaceholder}
+            aria-describedby={countId}
+            className="h-12 w-full rounded-full border border-white/15 bg-apag-noir/70 pl-11 pr-4 text-base text-white placeholder:text-white/45 focus-visible:border-apag-red-65"
+          />
+        </div>
+        <ChipGroup label={ui.groupFilter} options={groups} value={group} onChange={resetPage(setGroup)} />
+        {suppliers.length > 1 ? (
+          <ChipGroup label={ui.supplierFilter} options={suppliers} value={supplier} onChange={resetPage(setSupplier)} />
+        ) : null}
+        {systems.length > 1 ? (
+          <ChipGroup label={ui.systemFilter} options={systems} value={system} onChange={resetPage(setSystem)} />
+        ) : null}
+      </div>
+
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <p id={countId} aria-live="polite" className="text-sm text-white/70">
+          {ui.showing(visible.length, filtered.length)}
+        </p>
+        {hasFilters ? (
+          <button
+            type="button"
+            onClick={() => {
+              setGroup(null)
+              setSupplier(null)
+              setSystem(null)
+              setQuery('')
+              setLimit(ui.pageSize)
+            }}
+            className="inline-flex items-center gap-1.5 rounded-full text-sm font-semibold text-apag-ember hover:text-white"
+          >
+            <X className="size-4" aria-hidden="true" />
+            {ui.clearFilters}
+          </button>
+        ) : null}
+      </div>
+
+      {visible.length > 0 ? (
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {visible.map((product) => (
+            <li key={product.id}>
+              <ProductCard product={product} category={category} icon={icon} />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="rounded-3xl border border-dashed border-white/15 p-10 text-center text-white/70">{ui.empty}</p>
+      )}
+
+      {filtered.length > visible.length ? (
+        <div className="flex justify-center">
+          <Button type="button" variant="outline" onClick={() => setLimit((current) => current + ui.pageSize)}>
+            {ui.loadMore(filtered.length - visible.length)}
+          </Button>
+        </div>
+      ) : null}
+    </div>
+  )
+}
+
+function ChipGroup({
+  label,
+  options,
+  value,
+  onChange,
+}: {
+  label: string
+  options: string[]
+  value: string | null
+  onChange: (value: string | null) => void
+}) {
+  const labelId = useId()
+  return (
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+      <span id={labelId} className="shrink-0 font-display-label text-sm tracking-wide text-white/60 sm:w-24">
+        {label}
+      </span>
+      <div role="group" aria-labelledby={labelId} className="flex flex-wrap gap-2">
+        {[null, ...options].map((option) => {
+          const selected = option === value
+          return (
+            <button
+              key={option ?? 'todos'}
+              type="button"
+              aria-pressed={selected}
+              onClick={() => onChange(option)}
+              className={cn(
+                'rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors',
+                selected
+                  ? 'border-apag-red bg-apag-red text-white shadow-glow'
+                  : 'border-white/15 bg-white/[0.03] text-white/75 hover:border-white/30 hover:text-white',
+              )}
+            >
+              {option ?? ui.all}
+            </button>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+/* ── Card de produto ─────────────────────────────────────────────────── */
+
+/** "Nome Código – Medida", sem repetir o código quando ele já está no nome. */
+function quoteItem(product: Product, size: string | null) {
+  const hasCode = product.code && !normalize(product.name).includes(normalize(product.code))
+  return [product.name, hasCode ? product.code : null].filter(Boolean).join(' ') + (size ? ` – ${size}` : '')
 }
 
 function ProductCard({
   product,
   category,
   icon: Icon,
-  headingLevel: Heading,
 }: {
   product: Product
   category: ProductCategory
   icon: LucideIcon
-  headingLevel: 'h4' | 'h5'
 }) {
+  const [size, setSize] = useState<string | null>(null)
+  const sizesId = useId()
+
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.015] shadow-[inset_0_1px_0_rgb(255_255_255/0.06)] transition-all duration-300 ease-out hover:-translate-y-1 hover:border-apag-red hover:shadow-glow-lg focus-within:border-apag-red-65">
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -214,12 +473,12 @@ function ProductCard({
                 product.imageFit === 'cover' ? 'object-cover' : 'object-contain p-4',
               )}
             />
-            {product.brand ? null : (
-              // Sem fabricante definido, a foto é de banco de imagem: só ilustra o tipo de produto.
+            {product.illustrative ? (
+              // Foto de banco de imagem: só ilustra o tipo de produto.
               <span className="absolute bottom-3 left-3 rounded-full bg-apag-noir/75 px-2.5 py-1 text-[0.7rem] font-semibold text-white backdrop-blur">
-                Imagem ilustrativa
+                {ui.illustrative}
               </span>
-            )}
+            ) : null}
           </div>
         ) : (
           // Placeholder enquanto a foto do produto não chega
@@ -239,20 +498,89 @@ function ProductCard({
       </div>
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
-        {product.brand ? (
-          <span className="font-display-label text-sm tracking-wide text-apag-ember">{product.brand}</span>
+        {product.supplier || product.code ? (
+          <div className="flex flex-wrap items-center gap-2">
+            {product.code ? (
+              <span className="rounded-md bg-apag-red/15 px-2 py-0.5 font-display text-sm font-semibold tracking-wide text-apag-ember ring-1 ring-apag-red-45">
+                {product.code}
+              </span>
+            ) : null}
+            {product.supplier ? (
+              <span className="font-display-label text-sm tracking-wide text-white/60">{product.supplier}</span>
+            ) : null}
+          </div>
         ) : null}
-        <Heading className={cn('font-semibold leading-snug text-white', product.brand && 'mt-1.5')}>
+        <h4
+          className={cn(
+            'text-base font-semibold leading-snug text-white',
+            (product.supplier || product.code) && 'mt-2',
+          )}
+        >
           {product.name}
-        </Heading>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">{product.description}</p>
-        <Button asChild size="sm" variant="outline" className="mt-5 self-start">
-          <a href={whatsappUrl(quoteMessage(product, category))} target="_blank" rel="noopener noreferrer">
-            <WhatsAppIcon />
-            Pedir orçamento
-            <span className="sr-only"> de {product.name} pelo WhatsApp</span>
-          </a>
-        </Button>
+        </h4>
+        <p className="mt-2 text-sm leading-relaxed text-white/70">{product.description}</p>
+
+        {product.specs?.length ? (
+          <ul className="mt-3 grid gap-1 text-sm text-white/80">
+            {product.specs.map((spec) => (
+              <li key={spec} className="flex gap-2">
+                <span aria-hidden="true" className="mt-2 size-1 shrink-0 rounded-full bg-apag-red" />
+                {spec}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+
+        {product.materials?.length ? (
+          <p className="mt-3 text-sm text-white/65">
+            <span className="font-semibold text-white/80">{ui.materialsLabel}: </span>
+            {product.materials.join(' · ')}
+          </p>
+        ) : null}
+
+        <div className="mt-auto pt-5">
+          {product.sizes?.length ? (
+            <div className="mb-4">
+              <p id={sizesId} className="font-display-label text-sm tracking-wide text-white/60">
+                {ui.sizeLabel}
+              </p>
+              <div role="radiogroup" aria-labelledby={sizesId} className="mt-2 flex flex-wrap gap-1.5">
+                {product.sizes.map((option) => {
+                  const checked = option === size
+                  return (
+                    <button
+                      key={option}
+                      type="button"
+                      role="radio"
+                      aria-checked={checked}
+                      onClick={() => setSize(checked ? null : option)}
+                      className={cn(
+                        'rounded-full border px-2.5 py-1 text-xs font-medium tabular-nums transition-colors',
+                        checked
+                          ? 'border-apag-red bg-apag-red text-white'
+                          : 'border-white/15 text-white/75 hover:border-white/35 hover:text-white',
+                      )}
+                    >
+                      {option}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          ) : null}
+
+          <Button asChild size="sm" variant="outline" className="self-start">
+            <a
+              href={whatsappUrl(ui.quoteMessage(quoteItem(product, size), category.title))}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsAppIcon />
+              {ui.quote}
+              <span className="sr-only"> de {quoteItem(product, size)} pelo WhatsApp</span>
+            </a>
+          </Button>
+        </div>
       </div>
     </article>
   )
@@ -266,15 +594,4 @@ function coverSrcSet(cover: string) {
   const match = /^(.*)-(\d+)\.webp$/.exec(cover)
   if (!match || Number(match[2]) <= 800) return undefined
   return `${match[1]}-800.webp 800w, ${cover} ${match[2]}w`
-}
-
-/** Agrupa os produtos pelo campo `group`, mantendo a ordem em que aparecem. */
-function groupProducts(products: Product[]) {
-  const groups: { group?: string; products: Product[] }[] = []
-  for (const product of products) {
-    const last = groups.find((g) => g.group === product.group)
-    if (last) last.products.push(product)
-    else groups.push({ group: product.group, products: [product] })
-  }
-  return groups
 }

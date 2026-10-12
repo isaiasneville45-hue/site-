@@ -20,6 +20,32 @@ export const hero = {
 
 export const servicesUi = { more: 'Saiba mais' }
 
+/** Rótulos da seção Produtos (filtros, cards, paginação). */
+export const productsUi = {
+  tabsLabel: 'Categorias de produtos',
+  productsCount: (n: number) => `${n} produtos`,
+  partners: 'Trabalhamos com:',
+  searchLabel: 'Buscar produto',
+  searchPlaceholder: 'Buscar por nome ou código',
+  all: 'Todos',
+  groupFilter: 'Subgrupo',
+  supplierFilter: 'Fornecedor',
+  systemFilter: 'Sistema',
+  showing: (shown: number, total: number) =>
+    total === 0 ? 'Nenhum produto encontrado' : `Mostrando ${shown} de ${total} ${total === 1 ? 'produto' : 'produtos'}`,
+  empty: 'Nenhum produto corresponde aos filtros escolhidos.',
+  clearFilters: 'Limpar filtros',
+  loadMore: (remaining: number) => `Carregar mais (${remaining} ${remaining === 1 ? 'restante' : 'restantes'})`,
+  pageSize: 12,
+  sizeLabel: 'Medida',
+  materialsLabel: 'Material',
+  illustrative: 'Imagem ilustrativa',
+  quote: 'Pedir orçamento',
+  /** Mensagem do WhatsApp do botão "Pedir orçamento" de cada produto. */
+  quoteMessage: (item: string, category: string) =>
+    `Olá! Vim pelo site e gostaria de um orçamento de: ${item} (${category}).`,
+}
+
 export const segmentsUi = { pause: 'Pausar animação dos segmentos', resume: 'Retomar animação dos segmentos' }
 
 export const headings = {
