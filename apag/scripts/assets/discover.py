@@ -133,7 +133,7 @@ def sitemap_urls(base, host, limit=4000):
 
 def crawl(name, start_urls, max_pages=220, extra_hosts=(), url_filter=None):
     host = urllib.parse.urlparse(start_urls[0]).netloc.lower().removeprefix("www.")
-    hosts = [host, *extra_hosts]
+    hosts = [host, *extra_hosts, *{urllib.parse.urlparse(u).netloc.lower().removeprefix("www.") for u in start_urls[1:]}]
     result = {"site": name, "start": start_urls, "sitemap": [], "pages": [], "errors": []}
     sm = sitemap_urls(start_urls[0], host)
     result["sitemap"] = sm
@@ -613,10 +613,10 @@ SITES = {
         "https://www.segurimax.com.br/hidrante-de-incendio/mangueira-de-incendio",
         "https://www.segurimax.com.br/hidrante-de-incendio",
     ],
-    "mocelin": ["https://www.mocelin.com.br/"],
+    "mocelin": ["https://mocelin.ind.br/", "https://www.extintoresmocelin.com.br/"],
     "metasal": ["https://metasal.com.br/incendio/"],
 }
-SITE_LIMITS = {"intelbras": 420, "segurimax": 260, "metasal": 220, "mocelin": 160, "tecnohold": 260, "ilumac": 260}
+SITE_LIMITS = {"intelbras": 420, "segurimax": 260, "metasal": 220, "mocelin": 200, "tecnohold": 260, "ilumac": 260}
 SITE_FILTERS = {
     "segurimax": r"alarme|incendio|hidrante|mangueira|detector|sirene|acionador|central|modulo|isolador|repetidor|programador|max-?fi|fumaca|gas|botoeira|quebra|caixa|audiovisual|page|pagina|[?&]p=",
     "metasal": r"incendio|hidrante|abrigo|esguicho|adaptador|chave|tampao|tampão|valvula|registro|extintor|suporte|mangueira|haste|baton|storz|page|produto|catalogo",
