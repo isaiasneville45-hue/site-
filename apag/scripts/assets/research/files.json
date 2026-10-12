@@ -5,11 +5,6 @@
  },
  "cbmsc-in13-2022.pdf": {
   "url": "https://web.archive.org/web/2024id_/https://documentoscbmsc.cbm.sc.gov.br/uploads/0498fecea2ac32941684e1faffa8e8b4.pdf",
-  "error": "HTTP Error 429: Too Many Requests"
- },
- "mocelin-ficha-254.pdf": {
-  "url": "https://mocelin.ind.br/upload/produtos-ficha-tecnica/254.pdf",
-  "bytes": 4638367,
-  "type": "application/pdf"
+  "error": "<urlopen error [Errno 111] Connection refused>"
  }
 }
