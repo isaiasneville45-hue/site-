@@ -4,6 +4,7 @@ import { Reveal } from '@/components/motion'
 import { SectionHeading } from '@/components/SectionHeading'
 import { processSteps } from '@/config/content'
 import { EASE_OUT } from '@/lib/motion'
+import { headings } from '@/config/sections'
 
 export function Process() {
   const reduce = useReducedMotion()
@@ -22,9 +23,9 @@ export function Process() {
       <div className="container relative">
         <SectionHeading
           id="processo-title"
-          eyebrow="Como trabalhamos"
-          title="Do primeiro contato à manutenção periódica"
-          description="Um processo simples e transparente, para você saber exatamente o que acontece em cada etapa."
+          eyebrow={headings.process.eyebrow}
+          title={headings.process.title}
+          description={headings.process.description}
           align="center"
         />
 
@@ -59,13 +60,13 @@ export function Process() {
                 delay={i * 0.12}
                 className="relative flex gap-6 lg:flex-col lg:items-center lg:gap-8 lg:text-center"
               >
-                <span className="relative z-10 grid size-14 shrink-0 place-items-center rounded-full border border-apag-red-65 bg-apag-noir font-display text-sm text-white shadow-glow">
+                <span className="relative z-10 grid size-14 shrink-0 place-items-center rounded-full border border-apag-red-65 bg-apag-noir font-display text-lg font-bold text-white shadow-glow">
                   <span className="absolute inset-1.5 rounded-full bg-red-sheen shadow-neu" aria-hidden="true" />
                   <span className="relative">{String(i + 1).padStart(2, '0')}</span>
                 </span>
                 <div className="flex-1 rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.05)] lg:w-full lg:p-7">
                   <Icon className="size-6 text-apag-ember lg:mx-auto" aria-hidden="true" />
-                  <h3 className="font-display-title mt-4 text-[0.98rem] leading-snug tracking-normal">
+                  <h3 className="font-display-title mt-4 text-xl leading-snug">
                     <span className="sr-only">Etapa {i + 1}: </span>
                     {title}
                   </h3>

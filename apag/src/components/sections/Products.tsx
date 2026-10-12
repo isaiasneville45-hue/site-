@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { productCategories, type Product, type ProductCategory, type ProductCategoryId } from '@/config/products'
 import { whatsappUrl } from '@/lib/contact'
 import { cn } from '@/lib/utils'
+import { headings } from '@/config/sections'
 
 const categoryIcons: Record<ProductCategoryId, LucideIcon> = {
   sinalizacao: Signpost,
@@ -55,9 +56,9 @@ export function Products() {
       <div className="container relative">
         <SectionHeading
           id="produtos-title"
-          eyebrow="Produtos"
-          title="Equipamentos para cada sistema"
-          description="Revendemos e instalamos produtos de fabricantes reconhecidos, com orientação técnica para você escolher o equipamento certo para o seu imóvel."
+          eyebrow={headings.products.eyebrow}
+          title={headings.products.title}
+          description={headings.products.description}
         />
 
         <Tabs value={active} onValueChange={onTabChange} className="mt-12 lg:mt-14">
@@ -134,11 +135,11 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
           />
 
           <div className="max-w-2xl p-6 sm:p-10">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-apag-noir/60 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-white/85 backdrop-blur">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-apag-noir/60 px-3 py-1.5 font-display-label text-sm tracking-wide text-white/85 backdrop-blur">
               <Icon className="size-3.5 text-apag-ember" aria-hidden="true" />
               {category.products.length} produtos
             </span>
-            <h3 className="font-display-title mt-5 text-[clamp(1.35rem,1rem+1.4vw,2.1rem)] text-balance">
+            <h3 className="font-display-title mt-5 text-[clamp(1.75rem,1.2rem+1.8vw,2.5rem)] text-balance">
               {category.title}
             </h3>
             <p className="mt-4 leading-relaxed text-white/85 text-pretty sm:text-lg">{category.intro}</p>
@@ -167,7 +168,7 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
       {groups.map(({ group, products }) => (
         <div key={group ?? 'todos'}>
           {group ? (
-            <h4 className="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/70">
+            <h4 className="mb-5 flex items-center gap-3 font-display-label text-base tracking-wide text-white/70">
               <span aria-hidden="true" className="h-px w-6 bg-apag-red" />
               {group}
             </h4>
@@ -230,10 +231,7 @@ function ProductCard({
             <span className="grid size-14 place-items-center rounded-2xl bg-apag-red-45 shadow-glow ring-1 ring-apag-red-65">
               <Icon className="size-7 text-white" aria-hidden="true" />
             </span>
-            <span
-              aria-hidden="true"
-              className="font-display text-xs uppercase leading-snug tracking-wide text-white/70"
-            >
+            <span aria-hidden="true" className="font-display-label text-sm leading-snug text-white/70">
               {product.name}
             </span>
           </div>
@@ -242,7 +240,7 @@ function ProductCard({
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         {product.brand ? (
-          <span className="text-xs font-semibold uppercase tracking-[0.14em] text-apag-ember">{product.brand}</span>
+          <span className="font-display-label text-sm tracking-wide text-apag-ember">{product.brand}</span>
         ) : null}
         <Heading className={cn('font-semibold leading-snug text-white', product.brand && 'mt-1.5')}>
           {product.name}

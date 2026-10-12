@@ -14,24 +14,22 @@ export const faq: FaqItem[] = [
   },
   {
     question: 'Vocês emitem documentação/laudo após a manutenção?',
-    // TODO revisar: confirmar quais documentos são entregues em cada serviço
+    // TODO confirmar: quais documentos são entregues em cada serviço
     answer:
-      'Sim. Ao final do serviço, você recebe a documentação referente ao que foi executado, que pode ser apresentada em vistorias e fiscalizações. Os documentos variam conforme o serviço contratado; nossa equipe explica tudo no orçamento.',
+      'Sim. Todo serviço é registrado e, ao final, você recebe a documentação do que foi executado, para apresentar em vistorias do Corpo de Bombeiros e auditorias. Os documentos variam conforme o serviço; explicamos tudo já no orçamento.',
   },
   {
     question: 'Atendem condomínios e empresas de todos os portes?',
-    // TODO revisar
     answer:
-      'Sim. Atendemos condomínios residenciais e comerciais, indústrias, comércios, escolas, galpões, clínicas, restaurantes e escritórios, de pequenos imóveis a grandes estruturas.',
+      'Sim. Atendemos de residências e condomínios a comércios, escolas, clínicas, galpões e indústrias, com o mesmo cuidado técnico em qualquer porte de imóvel.',
   },
   {
     question: 'Quais regiões vocês atendem?',
-    // TODO revisar: preencher `serviceArea` no company.ts
-    answer: `Atendemos ${company.serviceArea}. Se o seu imóvel fica em outra cidade, fale com a gente para confirmar a disponibilidade de atendimento.`,
+    // TODO confirmar: lista de cidades atendidas
+    answer: `Atendemos ${company.serviceArea}. Se o seu imóvel fica em outra cidade, fale com a gente para confirmar o atendimento.`,
   },
   {
     question: 'Como solicito um orçamento?',
-    // TODO revisar
-    answer: `É só preencher o formulário desta página, chamar no WhatsApp ou ligar para ${company.phone}. Depois do primeiro contato, agendamos uma visita técnica, se necessário, e enviamos a proposta.`,
+    answer: `Pelo WhatsApp, pelo telefone ${company.phone}, pelo e-mail ${company.email} ou pelo formulário desta página. Para agilizar, mande fotos ou a planta do local: assim já indicamos os equipamentos e o próximo passo.`,
   },
 ]

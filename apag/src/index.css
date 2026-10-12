@@ -2,13 +2,6 @@
 @import 'tw-animate-css';
 @config '../tailwind.config.ts';
 
-/* ──────────────────────────────────────────────────────────────────────
-   Mokoto: fonte dos títulos e da logo textual.
-   TODO: coloque o arquivo em public/fonts/Mokoto.woff2. O @font-face é incluído
-   no index.html pelo vite.config.ts só quando o arquivo existe; enquanto isso, os
-   títulos usam a Michroma (Google Fonts, empacotada via @fontsource).
-   ────────────────────────────────────────────────────────────────────── */
-
 :root {
   /* Paleta APAG */
   --apag-red: #df2531;
@@ -20,9 +13,9 @@
   --apag-white: #ffffff;
   --apag-ember: #ff5a65;
 
-  /* Tipografia: Mokoto (títulos, com Michroma de fallback) e Open Sans (textos) */
-  --font-stack-display: 'Mokoto', 'Michroma', ui-sans-serif, system-ui, sans-serif;
-  --font-stack-sans: 'Open Sans Variable', 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  /* Tipografia: Barlow Semi Condensed (títulos, números, rótulos) e Inter (textos) */
+  --font-stack-display: 'Barlow Semi Condensed', 'Arial Narrow', ui-sans-serif, system-ui, sans-serif;
+  --font-stack-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Gradiente assinatura "Crimson Noir" */
   --gradient-crimson-noir: linear-gradient(160deg, var(--apag-noir) 0%, var(--apag-crimson) 100%);
@@ -87,6 +80,8 @@
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-stack-sans);
+    font-size: 1rem;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -127,13 +122,20 @@
   }
 }
 
-/* Títulos: Mokoto/Michroma em maiúsculas, tracking apertado */
+/* Títulos (h1–h3): Barlow Semi Condensed 700, tracking levemente negativo */
 @utility font-display-title {
   font-family: var(--font-stack-display);
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   line-height: 1.08;
+}
+
+/* Rótulos curtos (abas, selos, números pequenos): Barlow 600 em caixa alta */
+@utility font-display-label {
+  font-family: var(--font-stack-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 /* Textura de grade com fade radial */

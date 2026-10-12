@@ -76,7 +76,7 @@ export const company = {
   whatsapp: '554734258735',
   whatsappMessage: 'Olá, APAG! Vim pelo site e gostaria de solicitar um orçamento.',
   email: 'apag@apag.com.br',
-  hours: 'Seg a Sex, 8h às 18h', // TODO confirmar o horário de atendimento
+  hours: 'Segunda a sexta, das 8h às 17h',
   instagram: '', // TODO (URL completa, ex.: https://www.instagram.com/apag)
 
   // ── Endereço e mapa ────────────────────────────────────────────────
@@ -103,8 +103,8 @@ export const company = {
   serviceArea: 'Joinville e região',
   /** Domínio final do site (sem barra no fim). Usado em canonical, Open Graph e JSON-LD. */
   siteUrl: 'https://www.apag.com.br', // TODO
-  /** Horário no formato schema.org para o JSON-LD (ex.: "Mo-Fr 08:00-18:00"). */
-  openingHoursSchema: ['Mo-Fr 08:00-18:00'], // TODO (deve bater com `hours`)
+  /** Horário no formato schema.org para o JSON-LD (deve bater com `hours`). */
+  openingHoursSchema: ['Mo-Fr 08:00-17:00'],
 
   // ── Números (seção de contadores, definidos no topo do arquivo) ────
   stats,

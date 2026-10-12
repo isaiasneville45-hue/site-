@@ -34,9 +34,12 @@ function AccordionTrigger({ className, children, ...props }: React.ComponentProp
 
 function AccordionContent({ className, children, ...props }: React.ComponentProps<typeof AccordionPrimitive.Content>) {
   return (
+    // forceMount: a resposta fica no HTML mesmo fechada (oculta via data-state),
+    // para leitores de página e buscadores verem todas as respostas.
     <AccordionPrimitive.Content
+      forceMount
       data-slot="accordion-content"
-      className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+      className="overflow-hidden text-sm data-[state=closed]:hidden data-[state=open]:animate-accordion-down"
       {...props}
     >
       <div className={cn('pb-6 pr-12 leading-relaxed text-muted-foreground sm:text-base', className)}>{children}</div>

@@ -1,9 +1,7 @@
 import { StrictMode, startTransition } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 
-// Fontes (Google Fonts empacotadas pelo @fontsource, com font-display: swap)
-import '@fontsource-variable/open-sans/wght.css'
-import '@fontsource/michroma/400.css'
+// As fontes (Barlow Semi Condensed e Inter) vêm do Google Fonts, no index.html.
 import './index.css'
 
 import App from './App.tsx'

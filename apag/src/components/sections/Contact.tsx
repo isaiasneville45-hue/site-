@@ -6,6 +6,7 @@ import { SectionHeading } from '@/components/SectionHeading'
 import { InstagramIcon, WhatsAppIcon } from '@/components/icons'
 import { company } from '@/config/company'
 import { mailHref, phoneHref, whatsappUrl } from '@/lib/contact'
+import { headings } from '@/config/sections'
 
 export function Contact() {
   // O formulário (React Hook Form + Zod + Select) fica num chunk separado, carregado
@@ -34,9 +35,9 @@ export function Contact() {
       <div className="container relative">
         <SectionHeading
           id="contato-title"
-          eyebrow="Contato"
-          title="Solicite seu orçamento"
-          description="Preencha o formulário e envie direto pelo WhatsApp, ou use um dos nossos canais. Respondemos o quanto antes."
+          eyebrow={headings.contact.eyebrow}
+          title={headings.contact.title}
+          description={headings.contact.description}
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-[1.3fr_1fr] lg:gap-8">
@@ -110,7 +111,7 @@ function ContactItem({ icon: Icon, label, href, external, children }: ContactIte
         <Icon className="size-5 text-white" aria-hidden="true" />
       </span>
       <span className="min-w-0">
-        <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-white/55">{label}</span>
+        <span className="block font-display-label text-sm tracking-wide text-white/55">{label}</span>
         <span className="mt-1 block break-words font-semibold text-white">{children}</span>
       </span>
     </>

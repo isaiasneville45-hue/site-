@@ -24,7 +24,7 @@ export function seoPlugin(): Plugin {
         .replace(
           '<!--noscript-->',
           `<noscript><p style="padding:24px;color:#fff;font-family:sans-serif">${escapeAttr(
-            `${company.legalName} — ${company.activity}. Ative o JavaScript para ver o site completo.`,
+            `${company.name}: ${company.activity}. Ative o JavaScript para ver o site completo.`,
           )}</p></noscript>`,
         )
     },
@@ -90,7 +90,7 @@ function renderSeoTags(): string {
     ['property', 'og:image:type', 'image/jpeg'],
     ['property', 'og:image:width', '1200'],
     ['property', 'og:image:height', '630'],
-    ['property', 'og:image:alt', `${company.name} — ${company.tagline}`],
+    ['property', 'og:image:alt', `${company.name}: ${company.tagline}`],
     ['name', 'twitter:card', 'summary_large_image'],
     ['name', 'twitter:title', company.seoTitle],
     ['name', 'twitter:description', company.seoDescription],
@@ -126,10 +126,11 @@ function renderSitemap(): string {
 /** Resumo em Markdown para buscadores e assistentes de IA (https://llmstxt.org). */
 function renderLlmsTxt(): string {
   const url = siteUrl()
-  return `# ${company.legalName}
+  return `# ${company.name}
 
 > ${company.name}: ${company.activity.toLowerCase()} desde ${company.foundedYear}.
 
+- Razão social: ${company.legalName}
 - CNPJ: ${company.cnpj}
 - Fundação: ${company.foundedAtLabel}
 - Região atendida: ${company.serviceArea}

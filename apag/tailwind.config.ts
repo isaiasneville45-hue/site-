@@ -37,7 +37,7 @@ export default {
         ring: 'var(--ring)',
       },
       fontFamily: {
-        // Pilhas definidas em src/index.css (Mokoto → Michroma; Open Sans)
+        // Pilhas definidas em src/index.css (Barlow Semi Condensed; Inter)
         display: 'var(--font-stack-display)',
         sans: 'var(--font-stack-sans)',
       },

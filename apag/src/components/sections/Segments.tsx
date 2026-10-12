@@ -3,6 +3,7 @@ import { Pause, Play } from 'lucide-react'
 
 import { segments } from '@/config/content'
 import { cn } from '@/lib/utils'
+import { segmentsUi } from '@/config/sections'
 
 /** Faixa infinita com os segmentos atendidos. */
 export function Segments() {
@@ -26,7 +27,7 @@ export function Segments() {
           <span className="grid size-9 place-items-center rounded-full bg-apag-red-45 ring-1 ring-apag-red-65">
             <Icon className="size-4 text-white" aria-hidden="true" />
           </span>
-          <span className="font-display text-xs uppercase tracking-[0.08em] text-white/85 sm:text-sm">{label}</span>
+          <span className="font-display-label text-sm tracking-wide text-white/85 sm:text-base">{label}</span>
         </li>
       ))}
     </ul>
@@ -35,13 +36,14 @@ export function Segments() {
   return (
     <section aria-labelledby="segmentos-title" className="relative border-y border-white/[0.06] bg-apag-black py-10">
       <div className="container mb-7 flex items-center justify-between gap-4">
-        <h2 id="segmentos-title" className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">
+        <h2 id="segmentos-title" className="font-display-label text-sm tracking-wide text-white/60">
           Segmentos que atendemos
         </h2>
         <button
           type="button"
           onClick={() => setPaused((p) => !p)}
           aria-pressed={paused}
+          aria-label={paused ? segmentsUi.resume : segmentsUi.pause}
           className="grid size-8 place-items-center rounded-full border border-white/10 text-white/60 transition-colors hover:border-white/25 hover:text-white motion-reduce:hidden"
         >
           {paused ? (
@@ -49,7 +51,6 @@ export function Segments() {
           ) : (
             <Pause className="size-3.5" aria-hidden="true" />
           )}
-          <span className="sr-only">{paused ? 'Retomar animação dos segmentos' : 'Pausar animação dos segmentos'}</span>
         </button>
       </div>
 

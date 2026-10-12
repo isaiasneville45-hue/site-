@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button'
 import { faq } from '@/config/faq'
 import { whatsappUrl } from '@/lib/contact'
+import { headings } from '@/config/sections'
 
 export function Faq() {
   return (
@@ -15,9 +16,9 @@ export function Faq() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <SectionHeading
             id="faq-title"
-            eyebrow="FAQ"
-            title="Perguntas frequentes"
-            description="Tire as principais dúvidas sobre manutenção, documentação e atendimento. Não achou o que procura? Fale com a gente."
+            eyebrow={headings.faq.eyebrow}
+            title={headings.faq.title}
+            description={headings.faq.description}
           />
           <Reveal delay={0.1} className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild variant="outline">

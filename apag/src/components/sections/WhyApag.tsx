@@ -4,9 +4,10 @@ import { Logo } from '@/components/Logo'
 import { Photo } from '@/components/Photo'
 import { Reveal } from '@/components/motion'
 import { SectionHeading } from '@/components/SectionHeading'
-import { company, yearsInBusiness } from '@/config/company'
+import { company } from '@/config/company'
 import { differentials } from '@/config/content'
 import { photos } from '@/config/photos'
+import { headings } from '@/config/sections'
 
 /** Seção clara (branca) — quebra o ritmo do tema escuro. */
 export function WhyApag() {
@@ -20,9 +21,9 @@ export function WhyApag() {
         <SectionHeading
           id="sobre-title"
           tone="light"
-          eyebrow="Por que a APAG"
-          title="Experiência que protege"
-          description={`Há mais de ${yearsInBusiness()} anos a ${company.name} instala e mantém sistemas de prevenção e combate a incêndio, ajudando condomínios e empresas a manter seus imóveis seguros e regularizados.`}
+          eyebrow={headings.why.eyebrow}
+          title={headings.why.title}
+          description={headings.why.description}
           className="max-w-3xl"
         />
 
@@ -99,7 +100,7 @@ export function WhyApag() {
                     <Icon className="size-6" aria-hidden="true" />
                   </span>
                   <div>
-                    <h3 className="font-display-title text-[0.98rem] leading-snug tracking-normal">{title}</h3>
+                    <h3 className="font-display-title text-xl leading-snug">{title}</h3>
                     <p className="mt-2 leading-relaxed text-apag-black/70">{description}</p>
                   </div>
                 </div>

@@ -109,7 +109,7 @@ export function Navbar() {
                       href={item.href}
                       onClick={(event) => navigateFromMenu(event, item.href)}
                       aria-current={active === item.href.slice(1) ? 'location' : undefined}
-                      className="flex items-center justify-between border-b border-white/[0.07] py-4 font-display text-sm uppercase tracking-wide text-white/85 transition-colors hover:text-white aria-[current]:text-apag-ember"
+                      className="flex items-center justify-between border-b border-white/[0.07] py-4 font-display-label text-base tracking-wide text-white/85 transition-colors hover:text-white aria-[current]:text-apag-ember"
                     >
                       {item.label}
                       <ArrowUpRight className="size-4 text-white/40" aria-hidden="true" />

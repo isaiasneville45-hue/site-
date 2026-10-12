@@ -18,6 +18,9 @@ import { services, type Service } from '@/config/services'
 import { useServiceIntent } from '@/context/service-intent'
 import { whatsappUrl } from '@/lib/contact'
 import { scrollToHash } from '@/lib/scroll'
+import { headings, servicesUi } from '@/config/sections'
+import { productCategories } from '@/config/products'
+import { openProductTab, productTabHref } from '@/lib/product-tab'
 
 export function Services() {
   const [selected, setSelected] = useState<Service | null>(null)
@@ -39,9 +42,9 @@ export function Services() {
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <SectionHeading
             id="servicos-title"
-            eyebrow="Serviços"
-            title="Proteção completa para o seu imóvel"
-            description="Cuidamos de todos os sistemas de prevenção e combate a incêndio: instalação, manutenção e apoio na regularização, com um único fornecedor."
+            eyebrow={headings.services.eyebrow}
+            title={headings.services.title}
+            description={headings.services.description}
           />
           <Reveal delay={0.1} className="shrink-0">
             <Button asChild variant="outline">
@@ -80,7 +83,7 @@ export function Services() {
               <DialogDescription>{selected.description}</DialogDescription>
             </DialogHeader>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/60">O que inclui</p>
+              <p className="font-display-label text-sm tracking-wide text-white/60">O que inclui</p>
               <ul className="mt-3 grid gap-2.5">
                 {selected.details.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-white/85 sm:text-base">
@@ -121,8 +124,12 @@ export function Services() {
   )
 }
 
+const moreClass =
+  "mt-7 inline-flex items-center gap-2 self-start rounded-full text-sm font-semibold text-apag-ember transition-colors after:absolute after:inset-0 after:content-[''] hover:text-white"
+
 function ServiceCard({ service, index, onOpen }: { service: Service; index: number; onOpen: () => void }) {
   const Icon = service.icon
+  const productTab = productCategories.find((category) => category.id === service.id)?.id
   return (
     <article className="group relative isolate flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.015] p-7 shadow-[inset_0_1px_0_rgb(255_255_255/0.06)] transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-apag-red hover:shadow-glow-lg focus-within:border-apag-red-65 sm:p-8">
       {/* brilho que aparece no hover */}
@@ -135,23 +142,41 @@ function ServiceCard({ service, index, onOpen }: { service: Service; index: numb
         <span className="grid size-14 place-items-center rounded-2xl bg-apag-red-45 shadow-[inset_0_1px_0_rgb(255_255_255/0.2)] ring-1 ring-apag-red-65 transition-all duration-300 group-hover:bg-apag-red group-hover:shadow-glow">
           <Icon className="size-7 text-white" aria-hidden="true" />
         </span>
-        <span className="font-display text-sm text-white/30" aria-hidden="true">
+        <span className="font-display text-base font-semibold text-white/30" aria-hidden="true">
           {String(index + 1).padStart(2, '0')}
         </span>
       </div>
 
-      <h3 className="font-display-title mt-8 text-[1.05rem] leading-snug tracking-normal">{service.title}</h3>
+      <h3 className="font-display-title mt-8 text-2xl leading-snug">{service.title}</h3>
       <p className="mt-3 flex-1 leading-relaxed text-white/70">{service.description}</p>
 
-      <button
-        type="button"
-        onClick={onOpen}
-        className="mt-7 inline-flex items-center gap-2 self-start rounded-full text-sm font-semibold text-apag-ember transition-colors after:absolute after:inset-0 after:content-[''] hover:text-white"
-      >
-        Saiba mais
-        <span className="sr-only"> sobre {service.title}</span>
-        <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
-      </button>
+      {productTab ? (
+        // Abre a seção Produtos já na aba desta categoria
+        <a
+          href={productTabHref(productTab)}
+          onClick={(event) => {
+            event.preventDefault()
+            openProductTab(productTab)
+          }}
+          className={moreClass}
+        >
+          {servicesUi.more}
+          <span className="sr-only"> sobre {service.title}: ver produtos</span>
+          <ArrowRight
+            className="size-4 transition-transform duration-300 group-hover:translate-x-1"
+            aria-hidden="true"
+          />
+        </a>
+      ) : (
+        <button type="button" onClick={onOpen} className={moreClass}>
+          {servicesUi.more}
+          <span className="sr-only"> sobre {service.title}</span>
+          <ArrowRight
+            className="size-4 transition-transform duration-300 group-hover:translate-x-1"
+            aria-hidden="true"
+          />
+        </button>
+      )}
     </article>
   )
 }

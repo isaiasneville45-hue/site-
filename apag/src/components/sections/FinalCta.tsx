@@ -25,7 +25,7 @@ export function FinalCta() {
 
             <h2
               id="cta-title"
-              className="font-display-title mx-auto max-w-4xl text-[clamp(1.2rem,0.7rem+2.6vw,2.6rem)] text-balance"
+              className="font-display-title mx-auto max-w-4xl text-[clamp(2rem,3vw+1rem,3.25rem)] text-balance"
             >
               Seu imóvel está em dia com a segurança contra incêndio?
             </h2>

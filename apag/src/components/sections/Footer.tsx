@@ -121,7 +121,7 @@ export function Footer() {
 function FooterColumn({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div>
-      <h2 className="font-display text-xs uppercase tracking-[0.14em] text-white">{title}</h2>
+      <h2 className="font-display-label text-sm tracking-wide text-white">{title}</h2>
       <ul className="mt-5 grid gap-3 text-sm">{children}</ul>
     </div>
   )

@@ -10,7 +10,7 @@ export function Eyebrow({ children, className, tone = 'dark' }: EyebrowProps) {
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-2.5 rounded-full border px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.16em]',
+        'inline-flex items-center gap-2.5 rounded-full border px-3.5 py-1.5 font-display-label text-sm tracking-wide',
         tone === 'dark'
           ? 'border-white/12 bg-white/[0.04] text-white/85 shadow-[inset_0_1px_0_rgb(255_255_255/0.08)]'
           : 'border-black/10 bg-black/[0.03] text-apag-black/80',
@@ -48,7 +48,7 @@ export function SectionHeading({
   return (
     <Reveal className={cn('max-w-2xl', align === 'center' && 'mx-auto max-w-3xl text-center', className)}>
       <Eyebrow tone={tone}>{eyebrow}</Eyebrow>
-      <h2 id={id} className="font-display-title mt-6 text-[clamp(1.4rem,1rem+1.7vw,2.3rem)] text-balance">
+      <h2 id={id} className="font-display-title mt-6 text-[clamp(2rem,3vw+1rem,3rem)] text-balance">
         {title}
       </h2>
       {description ? (

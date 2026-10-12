@@ -7,6 +7,7 @@ import { WhatsAppIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { company } from '@/config/company'
 import { mailHref, phoneHref, whatsappUrl } from '@/lib/contact'
+import { headings } from '@/config/sections'
 
 /** "Onde estamos": endereço, canais e mapa do Google. */
 export function Location() {
@@ -27,9 +28,9 @@ export function Location() {
         <div>
           <SectionHeading
             id="localizacao-title"
-            eyebrow="Localização"
-            title="Onde estamos"
-            description={`Ficamos no bairro ${address.district}, em ${address.city}/${address.state}, e atendemos ${company.serviceArea}.`}
+            eyebrow={headings.location.eyebrow}
+            title={headings.location.title}
+            description={headings.location.description}
           />
 
           <Reveal delay={0.1}>
@@ -93,7 +94,7 @@ function InfoRow({ icon: Icon, label, children }: { icon: LucideIcon; label: str
   return (
     // dt e dd são filhos diretos do grupo (estrutura válida de <dl>); o ícone fica dentro do dt.
     <div className="relative min-h-20 rounded-3xl border border-white/10 bg-white/[0.03] py-4 pl-20 pr-5 sm:min-h-22 sm:py-5 sm:pl-21">
-      <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
+      <dt className="font-display-label text-sm tracking-wide text-white/55">
         <span className="absolute left-4 top-4 grid size-12 place-items-center rounded-2xl bg-apag-red-45 ring-1 ring-apag-red-65 sm:left-5 sm:top-5">
           <Icon className="size-5 text-white" aria-hidden="true" />
         </span>
