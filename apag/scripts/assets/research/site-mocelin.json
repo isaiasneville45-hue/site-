@@ -1,0 +1,11 @@
+{
+ "site": "mocelin",
+ "start": [
+  "https://www.mocelin.com.br/"
+ ],
+ "sitemap": [],
+ "pages": [],
+ "errors": [
+  "https://www.mocelin.com.br/: <urlopen error [Errno -2] Name or service not known>"
+ ]
+}
