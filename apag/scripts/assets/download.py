@@ -122,6 +122,8 @@ def main():
     report = {"products": [], "photos": []}
 
     only_photos = "photos" in sys.argv[1:]  # não baixa de novo os produtos já salvos
+    only_missing = "missing" in sys.argv[1:]  # baixa só o que ainda não existe (produtos e fotos)
+    only_photos = only_photos or only_missing
     for item in manifest.get("products", []):
         dest = os.path.join(PUBLIC, "produtos", item["category"], f"{item['id']}.webp")
         entry = {"category": item["category"], "id": item["id"], "dest": os.path.relpath(dest, APAG)}
@@ -164,6 +166,12 @@ def main():
 
     for item in manifest.get("photos", []):
         entry = {"id": item["id"], "files": []}
+        if only_missing and all(
+            os.path.exists(os.path.join(PUBLIC, "fotos", f"{item['id']}-{w}.webp")) for w in item.get("widths", [800, 1600])
+        ):
+            entry["ok"] = True
+            report["photos"].append(entry)
+            continue
         try:
             source = None
             for width in item.get("widths", [800, 1600]):
