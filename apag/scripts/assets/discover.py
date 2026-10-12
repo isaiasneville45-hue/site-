@@ -557,8 +557,19 @@ def fetch_files(list_file="fetch-files.txt"):
         if not line.strip() or line.startswith("#"):
             continue
         name, url = line.split(None, 1)
+        data = None
+        for attempt in range(6):
+            try:
+                data, final, ctype = fetch(url.strip(), binary=True, timeout=180, accept="*/*")
+                break
+            except Exception as e:  # noqa: BLE001
+                if "429" not in str(e) or attempt == 5:
+                    out[name] = {"url": url.strip(), "error": str(e)}
+                    break
+                time.sleep(30 * (attempt + 1))
+        if data is None:
+            continue
         try:
-            data, final, ctype = fetch(url.strip(), binary=True, timeout=180, accept="*/*")
             with open(os.path.join(OUT, "files", name), "wb") as f:
                 f.write(data)
             out[name] = {"url": final, "bytes": len(data), "type": ctype}
