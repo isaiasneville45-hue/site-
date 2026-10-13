@@ -56,53 +56,7 @@
     if (pending.length) console.info("[Isaias Studio] Configure em assets/js/config.js:", pending.join(", "));
   }
 
-  /* ---------- Depoimentos ---------- */
   const escapeHTML = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-
-  function renderTestimonials() {
-    const wrap = $("[data-testimonials]");
-    if (!wrap) return;
-    const list = Array.isArray(CFG.testimonials) ? CFG.testimonials.filter((t) => t && t.text) : [];
-
-    if (list.length) {
-      wrap.innerHTML = list.map((t) => {
-        const initials = String(t.name || "?").trim().split(/\s+/).map((p) => p[0]).slice(0, 2).join("").toUpperCase();
-        return `
-          <figure class="card spot t-card" data-reveal>
-            <span class="t-quote" aria-hidden="true">“</span>
-            <blockquote><p class="t-text">${escapeHTML(t.text)}</p></blockquote>
-            <figcaption class="t-person">
-              <span class="t-avatar" aria-hidden="true">${escapeHTML(initials)}</span>
-              <span><b>${escapeHTML(t.name || "")}</b><small>${escapeHTML(t.role || "")}</small></span>
-            </figcaption>
-          </figure>`;
-      }).join("");
-      return;
-    }
-
-    const empty = `
-      <div class="card t-card t-card--empty" data-reveal aria-hidden="true">
-        <span class="t-quote">“</span>
-        <span class="skel"></span><span class="skel skel--m"></span><span class="skel skel--s"></span>
-        <div class="t-person">
-          <span class="t-avatar"></span>
-          <span style="flex:1"><span class="skel skel--m" style="margin-bottom:8px"></span><span class="skel skel--s" style="margin:0"></span></span>
-        </div>
-      </div>`;
-    wrap.innerHTML = `
-      ${empty}${empty}
-      <div class="card spot t-card t-card--invite" data-reveal>
-        <div>
-          <span class="t-quote" aria-hidden="true">“</span>
-          <h3>Quer ver a sua marca aqui?</h3>
-          <p>Este espaço é para quem constrói a próxima página comigo. Vamos começar pelo seu projeto.</p>
-        </div>
-        <a class="btn btn-primary" data-wa href="#contato">
-          <span>Quero minha landing page</span>
-          <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
-        </a>
-      </div>`;
-  }
 
   /* ---------- Título do hero: divide em palavras ---------- */
   function splitWords(el) {
@@ -233,7 +187,7 @@
     $$("[data-stagger]").forEach((group) => {
       $$(":scope > [data-reveal]", group).forEach((el, i) => el.style.setProperty("--i", i));
     });
-    $$(".works > .work").forEach((el, i) => el.style.setProperty("--i", i % 2));
+    $$(".works > .work").forEach((el, i) => el.style.setProperty("--i", i % 3));
     $$(".steps > .step").forEach((el) => el.style.setProperty("--i", 0));
 
     const targets = $$("[data-reveal]");
@@ -338,10 +292,10 @@
     const el = $("[data-lit]");
     if (!el) return;
     const words = el.textContent.trim().split(/\s+/);
-    const accentFrom = words.findIndex((w) => w.startsWith("claro:")) + 1;
+    const accentFrom = words.findIndex((w) => w.startsWith("transformar"));
     el.setAttribute("aria-label", words.join(" "));
     el.innerHTML = words
-      .map((w, i) => `<span class="lit-w${accentFrom > 0 && i >= accentFrom ? " accent" : ""}" aria-hidden="true">${escapeHTML(w)}</span>`)
+      .map((w, i) => `<span class="lit-w${accentFrom >= 0 && i >= accentFrom ? " accent" : ""}" aria-hidden="true">${escapeHTML(w)}</span>`)
       .join(" ");
     const spans = $$(".lit-w", el);
     if (!motionOK()) { spans.forEach((s) => s.classList.add("on")); return; }
@@ -379,6 +333,47 @@
           }
         });
       });
+    });
+  }
+
+  /* ---------- Modal do projeto ---------- */
+  function initProjectModal() {
+    const modal = $("#project-modal");
+    if (!modal || typeof modal.showModal !== "function") return;
+    const view = $(".browser-view", modal);
+    const photo = $(".pm-photo", modal);
+
+    const open = (card) => {
+      const img = $("img", card);
+      const name = $("h3", card).textContent;
+      $(".pm-title", modal).textContent = name;
+      $(".pm-cat", modal).textContent = $(".work-cat", card).textContent;
+      $(".pm-desc", modal).textContent = $(".work-desc", card).textContent;
+      $(".pm-url", modal).textContent = `conceito / ${card.dataset.project}`;
+      photo.src = img.currentSrc || img.src;
+      photo.alt = img.alt;
+      view.replaceChildren($("template[data-layout]", card).content.cloneNode(true));
+      // usa a foto do projeto no destaque do layout
+      $$(".s-art", view).forEach((art) => {
+        art.classList.add("has-photo");
+        art.style.backgroundImage = `url("${photo.src}")`;
+      });
+      const wa = $("[data-wa]", modal);
+      wa.href = waLink(`Olá! Vi o projeto ${name} no site da Isaias Studio e quero uma landing page assim.`);
+      modal.showModal();
+      document.body.classList.add("modal-open");
+    };
+
+    $$(".work").forEach((card) => {
+      $(".work-link", card).addEventListener("click", () => open(card));
+      $(".work-media", card).addEventListener("click", () => open(card));
+    });
+    $("[data-close]", modal).addEventListener("click", () => modal.close());
+    // fecha ao clicar fora do conteúdo
+    modal.addEventListener("click", (e) => { if (e.target === modal) modal.close(); });
+    modal.addEventListener("close", () => {
+      document.body.classList.remove("modal-open");
+      view.replaceChildren();
     });
   }
 
@@ -446,7 +441,6 @@
   const requestScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(runScroll); } };
 
   /* ---------- Init ---------- */
-  renderTestimonials(); // antes de applyConfig, para os cards gerados receberem o link do WhatsApp
   applyConfig();
   const title = $("[data-split]");
   if (title && motionOK()) splitWords(title);
@@ -461,6 +455,7 @@
   initSteps();
   initLitText();
   initFilters();
+  initProjectModal();
   initForm();
   initFab();
 

@@ -1,8 +1,7 @@
 /**
  * Isaias Studio · Web Design — configuração do site
  * ---------------------------------------------------------------
- * Edite SOMENTE este arquivo para trocar contatos, redes sociais
- * e depoimentos. Tudo é aplicado automaticamente na página.
+ * Edite SOMENTE este arquivo para trocar contatos e redes sociais. Tudo é aplicado automaticamente na página.
  *
  * Valores entre MAIÚSCULAS são marcadores: substitua pelos reais.
  */
@@ -29,11 +28,4 @@ window.SITE_CONFIG = {
   // Cidade/região de atendimento. Deixe "" para ocultar.
   location: "",
 
-  /**
-   * Depoimentos REAIS de clientes. Enquanto a lista estiver vazia,
-   * a seção mostra espaços reservados (nada é inventado).
-   * Formato:
-   * { name: "Nome do cliente", role: "Empresa ou segmento", text: "Depoimento..." }
-   */
-  testimonials: [],
 };
