@@ -30,7 +30,7 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -656,7 +656,7 @@
             <span>Solicitar orçamento</span>
             <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
           </button>
-          <p class="form-note">Ao enviar, o WhatsApp abre com a sua mensagem pronta.</p>
+          <p class="form-note" aria-live="polite">Ao enviar, o WhatsApp abre com a sua mensagem pronta.</p>
         </form>
       </div>
     </div>

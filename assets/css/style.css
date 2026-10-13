@@ -44,6 +44,7 @@
 * { margin: 0; padding: 0; }
 
 html {
+  color-scheme: dark;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--nav-h) + 24px);
   -webkit-text-size-adjust: 100%;
@@ -206,7 +207,7 @@ p { text-wrap: pretty; }
 /* ---------- Navbar ---------- */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  padding: 14px var(--gutter) 0;
+  padding: calc(14px + env(safe-area-inset-top, 0px)) var(--gutter) 0;
   transition: transform 0.5s var(--ease-out);
 }
 .nav-inner {
@@ -1165,6 +1166,7 @@ body.menu-open { overflow: hidden; }
 .field.is-invalid input { border-color: #ff8fa3; }
 .field.is-invalid .field-error { display: block; }
 .form-note { font-size: 0.82rem; color: var(--gray); text-align: center; }
+.form-note a { color: var(--lilac); border-bottom: 1px solid rgba(181, 165, 255, 0.4); }
 
 /* ---------- Rodapé ---------- */
 .footer { position: relative; padding: 96px 0 32px; border-top: 1px solid var(--line); overflow: hidden; }

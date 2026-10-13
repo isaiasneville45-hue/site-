@@ -413,7 +413,16 @@
       ];
       const msg = String(data.get("mensagem") || "").trim();
       if (msg) lines.push(`*Detalhes:* ${msg}`);
-      window.open(waLink(lines.join("\n")), "_blank", "noopener");
+      const url = waLink(lines.join("\n"));
+      window.open(url, "_blank", "noopener");
+      // link de reserva, caso o navegador bloqueie a nova aba
+      const note = $(".form-note", form);
+      if (note) {
+        const a = document.createElement("a");
+        a.href = url; a.target = "_blank"; a.rel = "noopener";
+        a.textContent = "Abrir conversa no WhatsApp";
+        note.replaceChildren(document.createTextNode("Mensagem pronta. Se o WhatsApp não abriu, "), a, document.createTextNode("."));
+      }
     });
   }
 
