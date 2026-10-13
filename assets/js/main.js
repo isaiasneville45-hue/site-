@@ -187,7 +187,7 @@
     $$("[data-stagger]").forEach((group) => {
       $$(":scope > [data-reveal]", group).forEach((el, i) => el.style.setProperty("--i", i));
     });
-    $$(".works > .work").forEach((el, i) => el.style.setProperty("--i", i % 3));
+    $$(".works > .work").forEach((el, i) => el.style.setProperty("--i", i % 2));
     $$(".steps > .step").forEach((el) => el.style.setProperty("--i", 0));
 
     const targets = $$("[data-reveal]");
@@ -308,75 +308,6 @@
     });
   }
 
-  /* ---------- Filtro do portfólio ---------- */
-  function initFilters() {
-    const grid = $(".works");
-    const buttons = $$(".filter");
-    if (!grid || !buttons.length) return;
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const f = btn.dataset.filter;
-        buttons.forEach((b) => {
-          const on = b === btn;
-          b.classList.toggle("is-active", on);
-          b.setAttribute("aria-pressed", String(on));
-        });
-        grid.classList.toggle("is-filtered", f !== "all");
-        $$(".work", grid).forEach((w) => {
-          const show = f === "all" || w.dataset.cat === f;
-          w.classList.toggle("is-hidden", !show);
-          w.classList.add("is-in");
-          if (show && motionOK()) {
-            w.classList.remove("is-entering");
-            void w.offsetWidth; // reinicia a animação
-            w.classList.add("is-entering");
-          }
-        });
-      });
-    });
-  }
-
-  /* ---------- Modal do projeto ---------- */
-  function initProjectModal() {
-    const modal = $("#project-modal");
-    if (!modal || typeof modal.showModal !== "function") return;
-    const view = $(".browser-view", modal);
-    const photo = $(".pm-photo", modal);
-
-    const open = (card) => {
-      const img = $("img", card);
-      const name = $("h3", card).textContent;
-      $(".pm-title", modal).textContent = name;
-      $(".pm-cat", modal).textContent = $(".work-cat", card).textContent;
-      $(".pm-desc", modal).textContent = $(".work-desc", card).textContent;
-      $(".pm-url", modal).textContent = `conceito / ${card.dataset.project}`;
-      photo.src = img.currentSrc || img.src;
-      photo.alt = img.alt;
-      view.replaceChildren($("template[data-layout]", card).content.cloneNode(true));
-      // usa a foto do projeto no destaque do layout
-      $$(".s-art", view).forEach((art) => {
-        art.classList.add("has-photo");
-        art.style.backgroundImage = `url("${photo.src}")`;
-      });
-      const wa = $("[data-wa]", modal);
-      wa.href = waLink(`Olá! Vi o projeto ${name} no site da Isaias Studio e quero uma landing page assim.`);
-      modal.showModal();
-      document.body.classList.add("modal-open");
-    };
-
-    $$(".work").forEach((card) => {
-      $(".work-link", card).addEventListener("click", () => open(card));
-      $(".work-media", card).addEventListener("click", () => open(card));
-    });
-    $("[data-close]", modal).addEventListener("click", () => modal.close());
-    // fecha ao clicar fora do conteúdo
-    modal.addEventListener("click", (e) => { if (e.target === modal) modal.close(); });
-    modal.addEventListener("close", () => {
-      document.body.classList.remove("modal-open");
-      view.replaceChildren();
-    });
-  }
-
   /* ---------- Formulário → WhatsApp ---------- */
   function initForm() {
     const form = $("#form-orcamento");
@@ -454,8 +385,6 @@
   initHeroParallax();
   initSteps();
   initLitText();
-  initFilters();
-  initProjectModal();
   initForm();
   initFab();
 

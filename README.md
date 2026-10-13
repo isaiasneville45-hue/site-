@@ -37,6 +37,10 @@ npx serve .
 
 - Os 6 projetos do portfólio são **conceituais** e estão identificados como tal.
   Substitua por trabalhos reais quando existirem.
+- Os mockups do portfólio são as próprias interfaces em HTML/CSS (sem prints), então
+  continuam nítidos em qualquer tela. Quando um projeto tiver uma página demonstrativa
+  funcionando, adicione dentro do `.w-info` dele:
+  `<a class="w-link" href="caminho/da-demo.html">Ver demonstração</a>`
 - Fotos do portfólio: Unsplash (licença gratuita para uso comercial), salvas localmente
   em WebP (800/1600px) com JPG de reserva. Para trocar uma foto, mantenha o mesmo nome
   de arquivo e a proporção 16:10.
