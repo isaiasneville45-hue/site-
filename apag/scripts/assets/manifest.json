@@ -3873,19 +3873,6 @@
  "photos": [
   {
    "id": "hero",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel%2C_of_Orange_County%2C_Calif.%2C_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_%28CV_63%29_duri.jpg/1920px-thumbnail.jpg",
-   "widths": [
-    800,
-    1600,
-    1920
-   ],
-   "author": "U.S. Navy photo by Photographer's Mate 3rd Class Bo J. Flannigan",
-   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel,_of_Orange_County,_Calif.,_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_(CV_63)_duri.jpg",
-   "license": "Domínio público",
-   "usage": "Foto do Hero"
-  },
-  {
-   "id": "por-que-apag",
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_%2848880439676%29.jpg/1920px-Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_%2848880439676%29.jpg",
    "widths": [
     800,
@@ -3893,6 +3880,18 @@
    ],
    "author": "PEO ACWA",
    "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_(48880439676).jpg",
+   "license": "CC BY 2.0",
+   "usage": "Foto do Hero"
+  },
+  {
+   "id": "empresa",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Emergency_exit_sign_%2842050562511%29.jpg/1920px-Emergency_exit_sign_%2842050562511%29.jpg",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "Eric Fischer",
+   "page": "https://commons.wikimedia.org/wiki/File:Emergency_exit_sign_(42050562511).jpg",
    "license": "CC BY 2.0",
    "usage": "Seção \"Empresa\""
   }

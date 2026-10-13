@@ -380,5 +380,5 @@ Fotos de bancos de imagem gratuitos, usadas conforme a licença de cada um.
 
 | Arquivos | Onde aparece | Autor | Origem | Licença |
 | --- | --- | --- | --- | --- |
-| `fotos/hero-800.webp`, `fotos/hero-1600.webp`, `fotos/hero-1920.webp` | Foto do Hero | U.S. Navy photo by Photographer's Mate 3rd Class Bo J. Flannigan | https://commons.wikimedia.org/wiki/File:US_Navy_050111-N-5781F-087_Damage_Controlman_3rd_Class_Pat_Knodel,_of_Orange_County,_Calif.,_monitors_the_testing_of_the_hangar_bay_sprinkler_system_aboard_the_conventionally_powered_aircraft_carrier_USS_Kitty_Hawk_(CV_63)_duri.jpg | Domínio público |
-| `fotos/por-que-apag-800.webp`, `fotos/por-que-apag-1200.webp` | Seção "Empresa" | PEO ACWA | https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_(48880439676).jpg | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| `fotos/hero-800.webp`, `fotos/hero-1200.webp` | Foto do Hero | PEO ACWA | https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_(48880439676).jpg | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| `fotos/empresa-800.webp`, `fotos/empresa-1600.webp` | Seção "Empresa" | Eric Fischer | https://commons.wikimedia.org/wiki/File:Emergency_exit_sign_(42050562511).jpg | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |

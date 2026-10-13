@@ -11,7 +11,7 @@ export default {
     extend: {
       colors: {
         apag: {
-          red: 'var(--apag-red)', // #DF2531, vermelho institucional
+          red: 'var(--apag-red)', // #D52B32, vermelho institucional
           'red-strong': 'var(--apag-red-strong)', // hover e pressionado
           'red-soft': 'var(--apag-red-soft)', // fundo de selos sobre branco
           ember: 'var(--apag-ember)', // vermelho para textos pequenos sobre escuro
@@ -39,11 +39,14 @@ export default {
       },
       fontFamily: {
         sans: 'var(--font-stack-sans)',
+        mono: 'var(--font-stack-mono)',
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 4px)',
-        sm: 'calc(var(--radius) - 6px)',
+        sm: '3px', // códigos, chips
+        md: '6px', // botões, campos
+        lg: '8px', // cards
+        xl: '12px', // painéis e fotos
+        '2xl': '12px',
       },
       keyframes: {
         'fade-up': {

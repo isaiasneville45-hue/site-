@@ -6,7 +6,7 @@ export function Segments() {
   return (
     <section aria-labelledby="segmentos-title" className="border-b border-apag-line bg-white">
       <div className="container flex flex-col gap-5 py-8 lg:flex-row lg:items-center lg:gap-8 lg:py-7">
-        <h2 id="segmentos-title" className="shrink-0 text-label text-apag-slate">
+        <h2 id="segmentos-title" className="shrink-0 text-tech text-apag-muted">
           {segmentsUi.title}
         </h2>
         <ul className="grid flex-1 grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4 lg:grid-cols-8 lg:gap-0">

@@ -105,7 +105,7 @@ export function Footer() {
 function FooterColumn({ title, children, className }: { title: string; children: ReactNode; className?: string }) {
   return (
     <div className={className}>
-      <h2 className="text-label text-white/50">{title}</h2>
+      <h2 className="text-tech text-white/55">{title}</h2>
       <ul className="mt-4 grid gap-2.5 text-[0.9375rem]">{children}</ul>
     </div>
   )

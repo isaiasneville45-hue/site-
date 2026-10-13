@@ -1,7 +1,6 @@
-import { Check } from 'lucide-react'
-
+import { PlanDrawing } from '@/components/PlanDrawing'
 import { Reveal } from '@/components/motion'
-import { SectionHeading } from '@/components/SectionHeading'
+import { SectionHeader } from '@/components/SectionHeader'
 import { Button } from '@/components/ui/button'
 import { productCategories } from '@/config/products'
 import { headings, servicesUi } from '@/config/sections'
@@ -14,9 +13,9 @@ const equipment = services.filter((service) => service.id !== 'ppci')
 const ppci = services.find((service) => service.id === 'ppci')
 
 /*
- * Composição editorial: o título divide a primeira linha com o destaque da
- * regularização (PPCI), que é o serviço que amarra os demais; abaixo, os cinco
- * sistemas numa grade de filetes, cada um levando direto à aba de produtos.
+ * Composição editorial: à esquerda, a regularização (PPCI) em destaque, com a
+ * planta de prevenção; à direita, os cinco sistemas como uma lista técnica
+ * (sigla, nome, descrição, foto de um produto real do catálogo e ações).
  */
 export function Services() {
   const { requestService } = useServiceIntent()
@@ -27,84 +26,110 @@ export function Services() {
   }
 
   return (
-    <section id="servicos" aria-labelledby="servicos-title" className="bg-apag-paper py-20 lg:py-28">
+    <section id="servicos" aria-labelledby="servicos-title" className="section-pad bg-white">
       <div className="container">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-8">
-          <SectionHeading
-            id="servicos-title"
-            title={headings.services.title}
-            description={headings.services.description}
-            className="lg:col-span-5 lg:pb-2"
-          />
+        <SectionHeader
+          id="servicos-title"
+          index={headings.services.index}
+          label={headings.services.label}
+          meta={`${services.length} serviços`}
+          title={headings.services.title}
+          description={headings.services.description}
+        />
 
+        <div className="mt-14 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
           {ppci ? (
-            <Reveal delay={0.08} className="lg:col-span-7">
-              <article className="theme-dark relative overflow-hidden rounded-2xl bg-apag-navy-900 p-6 sm:p-8">
-                <span aria-hidden="true" className="absolute inset-y-0 left-0 w-1 bg-apag-red" />
-                <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
-                  <div className="max-w-md">
-                    <p className="text-label text-apag-ember">{servicesUi.ppciLabel}</p>
-                    <h3 className="text-heading mt-2 text-2xl">{ppci.title}</h3>
-                    <p className="mt-3 leading-relaxed text-white/75">{ppci.description}</p>
-                    <ul className="mt-5 grid gap-2">
-                      {ppci.details.map((item) => (
-                        <li key={item} className="flex items-start gap-2.5 text-[0.9375rem] text-white/85">
-                          <Check className="mt-1 size-4 shrink-0 text-apag-ember" aria-hidden="true" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <Button variant="light" className="self-start sm:self-auto" onClick={() => quote(ppci)}>
+            <Reveal className="lg:sticky lg:top-24 lg:col-span-5 lg:self-start">
+              <article className="theme-dark flex flex-col overflow-hidden rounded-xl bg-apag-navy-900">
+                <div className="relative border-b border-white/10 bg-blueprint px-6 pb-4 pt-8 sm:px-8">
+                  <PlanDrawing className="w-full opacity-80" />
+                </div>
+                <div className="flex flex-1 flex-col p-6 sm:p-8">
+                  <p className="flex items-center gap-3 text-tech text-white/60">
+                    <span className="text-apag-ember">{ppci.code}</span>
+                    {servicesUi.ppciLabel}
+                  </p>
+                  <h3 className="text-heading mt-3 text-2xl sm:text-[1.75rem]">{ppci.title}</h3>
+                  <p className="mt-3 leading-relaxed text-white/72">{ppci.description}</p>
+                  <ul className="mt-6 grid gap-3 border-t border-white/12 pt-6">
+                    {ppci.details.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-[0.9375rem] text-white/85">
+                        <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 bg-apag-red" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button variant="light" className="mt-8 self-start" onClick={() => quote(ppci)}>
                     {servicesUi.quote}
+                    <span className="sr-only"> de {ppci.title}</span>
                   </Button>
                 </div>
               </article>
             </Reveal>
           ) : null}
-        </div>
 
-        <Reveal delay={0.12} className="mt-8 lg:mt-10">
-          {/* gap-px sobre fundo de filete: linhas de 1 px entre os blocos */}
-          <ul className="grid gap-px overflow-hidden rounded-2xl border border-apag-line bg-apag-line sm:grid-cols-2 lg:grid-cols-5">
-            {equipment.map((service) => (
-              <li key={service.id} className="bg-white sm:max-lg:last:odd:col-span-2">
-                <ServiceTile service={service} />
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+          <Reveal delay={0.08} className="lg:col-span-7">
+            <ul className="border-t border-apag-line-strong">
+              {equipment.map((service) => (
+                <li key={service.id} className="border-b border-apag-line">
+                  <ServiceRow service={service} onQuote={() => quote(service)} />
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </section>
   )
 }
 
-function ServiceTile({ service }: { service: Service }) {
-  const Icon = service.icon
+function ServiceRow({ service, onQuote }: { service: Service; onQuote: () => void }) {
   const tab = productCategories.find((category) => category.id === service.id)?.id
 
   return (
-    <article className="group relative flex h-full flex-col p-6 transition-colors duration-200 hover:bg-apag-paper/60 sm:p-7">
-      {/* filete vermelho que aparece no hover/foco */}
-      <span
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-apag-red transition-transform duration-300 group-hover:scale-x-100 group-focus-within:scale-x-100"
-      />
-      <Icon className="size-7 text-apag-navy-700" strokeWidth={1.5} aria-hidden="true" />
-      <h3 className="text-heading mt-6 text-lg">{service.title}</h3>
-      <p className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-apag-slate">{service.description}</p>
-      {tab ? (
-        <a
-          href={productTabHref(tab)}
-          onClick={(event) => {
-            event.preventDefault()
-            openProductTab(tab)
-          }}
-          className="mt-6 text-sm font-semibold text-apag-red-strong underline-offset-4 after:absolute after:inset-0 after:content-[''] group-hover:underline"
-        >
-          {servicesUi.products}
-          <span className="sr-only"> de {service.title}</span>
-        </a>
+    <article className="group grid grid-cols-[minmax(0,1fr)_5.5rem] items-start gap-5 py-6 sm:grid-cols-[3.5rem_minmax(0,1fr)_7.5rem] sm:gap-6 sm:py-7">
+      <span className="hidden pt-1.5 text-tech text-apag-muted transition-colors group-hover:text-apag-red-strong sm:block">
+        {service.code}
+      </span>
+      <div>
+        <h3 className="text-heading text-xl sm:text-[1.375rem]">{service.title}</h3>
+        <p className="mt-2 max-w-md text-[0.9375rem] leading-relaxed text-apag-slate">{service.description}</p>
+        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+          {tab ? (
+            <a
+              href={productTabHref(tab)}
+              onClick={(event) => {
+                event.preventDefault()
+                openProductTab(tab)
+              }}
+              className="text-apag-ink underline decoration-apag-line-strong underline-offset-[6px] transition-colors hover:decoration-apag-red"
+            >
+              {servicesUi.products}
+              <span className="sr-only"> de {service.title}</span>
+            </a>
+          ) : null}
+          <button
+            type="button"
+            onClick={onQuote}
+            className="text-apag-red-strong underline decoration-transparent underline-offset-[6px] transition-colors hover:decoration-apag-red"
+          >
+            {servicesUi.quote}
+            <span className="sr-only"> de {service.title}</span>
+          </button>
+        </div>
+      </div>
+      {service.image ? (
+        <div className="aspect-square overflow-hidden rounded-lg border border-apag-line bg-white">
+          <img
+            src={service.image.src}
+            alt={service.image.alt}
+            loading="lazy"
+            decoding="async"
+            width={240}
+            height={240}
+            className="size-full object-contain p-2 transition-transform duration-500 ease-out group-hover:scale-[1.05]"
+          />
+        </div>
       ) : null}
     </article>
   )

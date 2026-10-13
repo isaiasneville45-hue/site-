@@ -2,7 +2,7 @@ import { useEffect, useState, type ComponentType, type ReactNode } from 'react'
 import { Navigation } from 'lucide-react'
 
 import { Reveal } from '@/components/motion'
-import { SectionHeading } from '@/components/SectionHeading'
+import { SectionHeader } from '@/components/SectionHeader'
 import { Button } from '@/components/ui/button'
 import { company } from '@/config/company'
 import { headings } from '@/config/sections'
@@ -27,13 +27,20 @@ export function Contact() {
   const { address } = company
 
   return (
-    <section id="contato" aria-labelledby="contato-title" className="bg-white py-20 lg:py-28">
+    <section id="contato" aria-labelledby="contato-title" className="section-pad bg-white">
       <div className="container">
-        <SectionHeading id="contato-title" title={headings.contact.title} description={headings.contact.description} />
+        <SectionHeader
+          id="contato-title"
+          index={headings.contact.index}
+          label={headings.contact.label}
+          meta={company.phone}
+          title={headings.contact.title}
+          description={headings.contact.description}
+        />
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-8">
+        <div className="mt-14 grid gap-12 lg:mt-20 lg:grid-cols-12 lg:gap-8">
           <Reveal className="lg:col-span-7">
-            <div className="rounded-2xl border border-apag-line p-5 sm:p-8">
+            <div className="rounded-xl border border-apag-line bg-white p-5 sm:p-8">
               {ContactForm ? <ContactForm /> : <FormSkeleton />}
             </div>
           </Reveal>
@@ -111,7 +118,7 @@ export function Contact() {
 function Channel({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="flex items-baseline justify-between gap-6 border-b border-apag-line-strong py-4">
-      <dt className="shrink-0 text-label text-apag-slate">{label}</dt>
+      <dt className="shrink-0 text-tech text-apag-muted">{label}</dt>
       <dd className="min-w-0 text-right font-medium text-apag-ink">{children}</dd>
     </div>
   )

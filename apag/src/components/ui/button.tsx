@@ -5,7 +5,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 /*
- * Botões: retângulo com raio de 8 px, sem sombra. O vermelho fica só na ação
+ * Botões: retângulo com raio de 6 px, sem sombra. O vermelho fica só na ação
  * principal; as demais usam contorno (sobre claro ou sobre escuro).
  */
 const buttonVariants = cva(

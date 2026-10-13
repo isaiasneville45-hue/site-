@@ -3,45 +3,53 @@
 @config '../tailwind.config.ts';
 
 /*
- * Sistema visual da APAG
+ * Sistema visual da APAG (v5: industrial premium + editorial)
  *
- * Cor: o vermelho institucional (#DF2531) e o azul quase preto da marca (#02060E)
- * continuam como base. O azul foi aberto em uma escala de marinho para as seções
- * escuras (hero, empresa, chamada final, rodapé); o resto do site é claro (branco e
- * cinza-azulado) para dar leveza e leitura. O vermelho fica restrito a ações,
- * indicadores e ao filete que abre cada seção.
+ * Cor: azul-marinho #10243A estabelece a identidade (hero, chamada final,
+ * cabeçalho ao rolar, rodapé); azul secundário #1B3853 para superfícies e linhas
+ * sobre o marinho; vermelho institucional #D52B32 só em ações, indicadores e
+ * detalhes; branco e cinza #F3F4F5 nas seções de leitura; grafite #202831 nos
+ * textos e na seção "Empresa".
  *
- * Tipo: Geist em todo o site (400 a 700). Títulos em 600 com espaçamento negativo;
- * textos em 400; códigos e números com algarismos tabulares.
+ * Tipo: Geist (interface e títulos) + Geist Mono (identificadores técnicos:
+ * índice das seções, códigos de produto, rótulos de ficha). A mono é da mesma
+ * família, então as duas conversam sem disputar atenção.
  *
- * Espaço: múltiplos de 8 px (no Tailwind, os passos pares: 2, 4, 6, 8, 10, 12…).
- * Raios: 6 px (selos, chips, campos), 8 px (botões), 12 px (cards), 16 px (painéis e fotos).
+ * Espaço: múltiplos de 8 px (no Tailwind, passos pares). Conteúdo até 1280 px.
+ * Raios: 3 px (códigos, chips), 6 px (botões, campos), 8 px (cards), 12 px (painéis).
+ * Breakpoints: os do Tailwind (640, 768, 1024, 1280).
  */
 :root {
   /* Marca */
-  --apag-red: #df2531;
-  --apag-red-strong: #be1b26;
-  --apag-red-soft: #fdecee;
+  --apag-red: #d52b32;
+  --apag-red-strong: #b3232a;
+  --apag-red-soft: #fbeced;
   /* vermelho claro para textos pequenos sobre fundos escuros (contraste AA) */
-  --apag-ember: #ff6b74;
+  --apag-ember: #ff7a80;
 
-  /* Marinho (derivado do #02060E da marca) */
-  --apag-navy-950: #050c19;
-  --apag-navy-900: #0a1830;
-  --apag-navy-800: #11264a;
-  --apag-navy-700: #1b3765;
+  /* Azuis */
+  --apag-navy-950: #0b1a2b; /* rodapé, sombra do marinho */
+  --apag-navy-900: #10243a; /* azul-marinho da marca */
+  --apag-navy-800: #1b3853; /* azul secundário */
+  --apag-navy-700: #2a4a6b; /* ícones e linhas sobre claro */
 
   /* Neutros */
-  --apag-graphite: #171b22;
-  --apag-ink: #0b1424;
-  --apag-slate: #4d5a6e;
-  --apag-muted: #5e6a7f;
-  --apag-line: #dde3eb;
-  --apag-line-strong: #c3ccd8;
-  --apag-paper: #f3f5f8;
+  --apag-graphite: #202831;
+  --apag-ink: #202831;
+  --apag-slate: #4f5a66;
+  --apag-muted: #66717d;
+  --apag-line: #dde1e5;
+  --apag-line-strong: #c4cad1;
+  --apag-paper: #f3f4f5;
   --apag-white: #ffffff;
 
   --font-stack-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-stack-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  /* Transições */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration-base: 240ms;
 
   /* Tokens semânticos (componentes shadcn/ui): tema claro por padrão */
   --background: var(--apag-white);
@@ -50,14 +58,14 @@
   --border: var(--apag-line);
   --input: var(--apag-line-strong);
   --ring: var(--apag-red);
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 }
 
 /* Seções escuras (marinho/grafite): inverte os tokens */
 .theme-dark {
-  --background: var(--apag-navy-950);
+  --background: var(--apag-navy-900);
   --foreground: var(--apag-white);
-  --muted-foreground: rgb(255 255 255 / 0.72);
+  --muted-foreground: rgb(255 255 255 / 0.7);
   --border: rgb(255 255 255 / 0.14);
   --input: rgb(255 255 255 / 0.24);
   --ring: var(--apag-ember);
@@ -102,6 +110,12 @@
     scroll-margin-top: 4.5rem;
   }
 
+  /* algarismos tabulares em códigos e números */
+  code,
+  kbd {
+    font-family: var(--font-stack-mono);
+  }
+
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
@@ -112,7 +126,7 @@
   width: 100%;
   margin-inline: auto;
   padding-inline: 1rem;
-  max-width: 78rem;
+  max-width: 80rem;
 
   @variant sm {
     padding-inline: 1.5rem;
@@ -126,18 +140,18 @@
 
 /* Título do hero */
 @utility text-display {
-  font-size: clamp(2.5rem, 1.6rem + 4.2vw, 5rem);
+  font-size: clamp(2.5rem, 1.5rem + 4.4vw, 5.25rem);
   font-weight: 600;
-  letter-spacing: -0.045em;
-  line-height: 0.98;
+  letter-spacing: -0.048em;
+  line-height: 0.96;
 }
 
 /* Títulos de seção (h2) */
 @utility text-title {
-  font-size: clamp(1.875rem, 1.35rem + 2.1vw, 3rem);
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.5rem);
   font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 1.05;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
 }
 
 /* Títulos de bloco (h3) */
@@ -148,12 +162,45 @@
   line-height: 1.25;
 }
 
-/* Rótulos curtos (campos, filtros, dados): caixa normal, peso médio */
+/* Rótulos curtos (campos, filtros): caixa normal, peso médio */
 @utility text-label {
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.4;
+}
+
+/* Identificadores técnicos (índices, códigos, fichas): Geist Mono */
+@utility text-tech {
+  font-family: var(--font-stack-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Respiro vertical padrão das seções */
+@utility section-pad {
+  padding-block: 5rem;
+
+  @variant lg {
+    padding-block: 7.5rem;
+  }
+}
+
+/* Malha de prancha técnica (linhas finas a cada 24 px, reforço a cada 120 px) */
+@utility bg-blueprint {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(to right, rgb(255 255 255 / 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.03) 1px, transparent 1px);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px;
 }
 
 /*

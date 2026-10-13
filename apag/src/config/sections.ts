@@ -4,18 +4,20 @@
  */
 import { company, yearsInBusiness } from './company'
 
-export type SectionHeadingText = { title: string; description?: string }
+export type SectionHeadingText = { index: string; label: string; title: string; description?: string }
 
 export const hero = {
-  title: 'Seu imóvel protegido e regularizado.',
-  subtitle: `Instalação, manutenção e regularização de sistemas contra incêndio em ${company.serviceArea}.`,
+  /** Título em duas linhas (a quebra é intencional). */
+  title: ['Segurança contra incêndio.', 'Precisão em cada detalhe.'],
+  subtitle: `Instalação, manutenção e regularização de sistemas de prevenção em ${company.serviceArea}.`,
   primaryCta: 'Solicitar orçamento',
-  secondaryCta: 'Falar no WhatsApp',
-  /** Ficha técnica sobre a foto (só dados comprovados). */
+  secondaryCta: 'Conhecer os serviços',
+  /** Ficha técnica no pé do hero (só dados comprovados). */
   facts: [
-    { label: 'Desde', value: String(company.foundedYear) },
-    { label: 'Experiência', value: `${yearsInBusiness()} anos` },
+    { label: 'Fundação', value: String(company.foundedYear) },
+    { label: 'Atuação', value: `${yearsInBusiness()} anos` },
     { label: 'Atendimento', value: company.serviceArea },
+    { label: 'Escopo', value: 'Instalação, manutenção e regularização' },
   ],
 }
 
@@ -63,33 +65,53 @@ export const finalCta = {
   description: `Fale com a ${company.name} e solicite um orçamento.`,
 }
 
+export const manufacturersUi = {
+  title: 'Fabricantes no catálogo',
+  visit: 'Site do fabricante',
+  count: (n: number) => `${n} ${n === 1 ? 'produto' : 'produtos'}`,
+}
+
 export const headings = {
   services: {
-    title: 'Um fornecedor para todo o sistema',
+    index: '01',
+    label: 'Serviços',
+    title: 'Um fornecedor para todo o sistema de prevenção',
     description: 'Instalação, manutenção e apoio na regularização do imóvel.',
   },
   products: {
-    title: 'Catálogo de produtos',
-    description: 'Equipamentos dos fabricantes que revendemos e instalamos.',
+    index: '02',
+    label: 'Produtos',
+    title: 'Catálogo técnico',
+    description: 'Equipamentos dos fabricantes que revendemos e instalamos. Busque por nome ou código.',
   },
   why: {
+    index: '03',
+    label: 'Empresa',
     title: `Desde ${company.foundedYear} em ${company.address.city}`,
     description:
       'Instalamos e mantemos sistemas de prevenção e combate a incêndio para condomínios, comércios e indústrias da região.',
   },
   process: {
+    index: '04',
+    label: 'Atendimento',
     title: 'Como trabalhamos',
     description: 'Do primeiro contato à manutenção periódica.',
   },
   faq: {
+    index: '05',
+    label: 'Dúvidas',
     title: 'Perguntas frequentes',
     description: 'Não encontrou a resposta? Fale com a gente.',
   },
   contact: {
+    index: '06',
+    label: 'Contato',
     title: 'Solicite um orçamento',
-    description: 'Preencha o formulário e enviamos pelo WhatsApp, ou use um dos canais abaixo.',
+    description: 'Preencha o formulário e enviamos pelo WhatsApp, ou use um dos canais ao lado.',
   },
   location: {
+    index: '',
+    label: '',
     title: 'Onde estamos',
   },
 } satisfies Record<string, SectionHeadingText>

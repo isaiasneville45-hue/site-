@@ -75,34 +75,36 @@ fornecedores; o que não deu para confirmar está marcado com `// TODO confirmar
 
 ## Sistema visual
 
-Decisões do redesign (v4), para manter o site coeso em futuras alterações:
+Direção "industrial premium + editorial" (v5). Tokens centralizados em `src/index.css` (variáveis CSS e
+utilitários) e expostos no Tailwind por `tailwind.config.ts`.
 
-- **Cores** (`src/index.css`): vermelho institucional `#DF2531` só em ações (botão principal), indicadores
-  (aba ativa, link ativo, filete que abre cada seção) e detalhes; `#BE1B26` para hover e textos vermelhos
-  pequenos sobre branco. O azul quase preto da marca (`#02060E`) virou uma escala de marinho
-  (`apag-navy-950` a `-700`) para o hero, o destaque do PPCI, a chamada final e o rodapé; grafite
-  (`#171B22`) só na seção "Empresa". O restante é claro: branco, cinza-azulado `#F3F5F8` e filetes
-  `#DDE3EB`. Todos os pares de texto passam no contraste AA.
-- **Tipo:** Geist (Google Fonts, 400 a 700) em tudo. Escala: `text-display` (hero, até 80 px),
-  `text-title` (h2, até 48 px), `text-heading` (h3, 20 px), corpo 16 a 18 px com entrelinha 1,6 e `text-label`
-  (13 px, peso 500, sem caixa alta). Títulos em 600 com espaçamento negativo; códigos com algarismos tabulares.
-- **Espaço e forma:** múltiplos de 8 px (seções com 80 a 112 px de respiro). Raios: 6 px (selos, chips,
-  campos), 8 px (botões), 12 px (cards de produto), 16 px (painéis e fotos). Sem sombras decorativas; a
-  separação é feita por filetes de 1 px.
-- **Componentes:** botões retangulares (`primary`, `secondary`, `outline-dark`, `light`, `ghost`); abas
-  sublinhadas; ícones lucide de traço fino (1,5) em marinho; cards de produto com foto 4:3 sobre branco e
-  detalhes (especificações, medidas, orçamento) num modal.
-- **Assinatura:** a ficha técnica no pé da foto do hero (como o carimbo de uma prancha de projeto) e o
-  filete vermelho de 32 px acima de cada título de seção.
-- **Movimento:** uma sequência de entrada no hero (só CSS) e entradas discretas (12 px) nas seções;
-  tudo desligado com `prefers-reduced-motion`.
+- **Cores:** azul-marinho `#10243A` (identidade: hero, cabeçalho, PPCI, chamada final), azul secundário
+  `#1B3853`, azul profundo `#0B1A2B` (rodapé), vermelho `#D52B32` só em ações, indicadores e detalhes
+  (`#B3232A` no hover e em textos vermelhos pequenos sobre claro; `#FF7A80` sobre escuro), branco e cinza
+  `#F3F4F5` nas seções de leitura, grafite `#202831` em textos e na seção "Empresa", cinza `#66717D` em textos
+  secundários. Todos os pares de texto passam no contraste AA.
+- **Tipo:** Geist (interface e títulos) + Geist Mono (identificadores técnicos: índice das seções, siglas dos
+  serviços, códigos de produto, rótulos da ficha). Escala: `text-display` (hero, até 84 px), `text-title`
+  (h2, até 56 px), `text-heading` (h3), corpo 16 a 18 px, `text-label` (13 px) e `text-tech` (Geist Mono 12 px).
+- **Espaço e forma:** múltiplos de 8 px; `section-pad` (80 px, 120 px no desktop); conteúdo até 1280 px.
+  Raios: 3 px (códigos, chips), 6 px (botões, campos), 8 px (cards), 12 px (painéis e fotos). Sem sombras
+  decorativas; separação por filetes de 1 px.
+- **Linguagem técnica:** cada seção abre com uma faixa de prancha (`SectionHeader`: filete, índice e nome em
+  Geist Mono, informação à direita, título grande e frase curta); malha de prancha (`bg-blueprint`) no
+  hero, no PPCI e na chamada final; planta de prevenção esquemática (`PlanDrawing`, ilustrativa, sem
+  medidas); foto do hero como prancha com marcas de corte; ficha técnica no pé do hero.
+- **Imagens:** fotos com o mesmo tratamento (saturação levemente reduzida e véu marinho); serviços ilustrados
+  com fotos reais de produtos do catálogo sobre fundo branco.
+- **Movimento:** sequência de entrada do hero (só CSS), entradas de 12 px nas seções, transições de 160 a
+  240 ms; tudo desligado com `prefers-reduced-motion`.
+- **Breakpoints:** os do Tailwind (640, 768, 1024, 1280).
 
 ## Imagens
 
 - **Produtos:** `public/produtos/{categoria}/{id}.webp` (até 800 px, WebP). O caminho vai no campo `image` do
   produto em `src/config/products/{categoria}.ts`; `image: ''` mostra um placeholder com o ícone da categoria. Para trocar uma foto, basta
   substituir o arquivo (mesmo nome).
-- **Fotos humanizadas:** `public/fotos/{id}-{largura}.webp` (Hero e seção "Empresa").
+- **Fotos:** `public/fotos/{id}-{largura}.webp` (`hero`: extintor em área industrial; `empresa`: placa de saída).
 - **Créditos:** `public/produtos/CREDITOS.md` lista a origem de cada imagem (fabricante, ou autor e licença).
 - **Como foram obtidas:** `scripts/assets/download.py` baixa e otimiza o que está em `scripts/assets/manifest.json`
   e gera o `CREDITOS.md` (`python3 scripts/assets/download.py photos` refaz só as fotos humanizadas);
@@ -110,8 +112,8 @@ Decisões do redesign (v4), para manter o site coeso em futuras alterações:
   de banco de imagem Unsplash e Pexels bloquearam o acesso automatizado; por isso as fotos humanizadas e as de
   extintores vieram do Wikimedia Commons e do Openverse, com licenças livres (CC0, CC BY, CC BY-SA)
   e crédito no `CREDITOS.md`.
-- **Fonte:** Geist (400 a 700), carregada do Google Fonts no `index.html` com `preconnect` e `display=swap`.
-  No Tailwind: `font-sans`.
+- **Fontes:** Geist (400 a 700) e Geist Mono (400 a 600), carregadas do Google Fonts no `index.html` com
+  `preconnect` e `display=swap`. No Tailwind: `font-sans` e `font-mono`.
 - O build falha se alguma imagem referenciada na página não existir em `public/`.
 
 ## Deploy na Vercel
@@ -157,7 +159,7 @@ apag/
 │   │   ├── sections/       uma seção por arquivo (Navbar, Hero, Segments, Services, Products,
 │   │   │                   WhyApag, Process, Faq, FinalCta, Contact, Footer)
 │   │   ├── ui/             componentes shadcn/ui (button, accordion, dialog, sheet, select, form…)
-│   │   └── …               Logo, ContactForm, WhatsAppButton, SectionHeading, motion, icons
+│   │   └── …               Logo, ContactForm, WhatsAppButton, SectionHeader, PlanDrawing, motion, icons
 │   ├── config/             dados e textos do site (products/ = um arquivo por aba)
 │   ├── context/ hooks/ lib/
 │   ├── entry-server.tsx    renderização no build

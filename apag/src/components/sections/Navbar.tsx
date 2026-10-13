@@ -17,9 +17,8 @@ const primary = navigation.filter((item) => item.primary)
 const sectionIds = ['inicio', ...primary.map((item) => item.href.slice(1))]
 
 /*
- * Cabeçalho fixo de 64 px. Sobre o hero (marinho) ele é transparente com texto
- * branco; ao rolar, vira uma barra branca com filete inferior. O link da seção
- * visível ganha um traço vermelho embaixo.
+ * Cabeçalho fixo de 64 px, sempre no marinho da marca: transparente sobre o hero
+ * e sólido ao rolar. O link da seção visível ganha um traço vermelho embaixo.
  */
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -46,7 +45,8 @@ export function Navbar() {
     <header
       className={cn(
         'fixed inset-x-0 top-0 z-40 border-b transition-[background-color,border-color] duration-300',
-        scrolled ? 'border-apag-line bg-white/95 backdrop-blur-md' : 'theme-dark border-transparent bg-transparent',
+        'theme-dark',
+        scrolled ? 'border-white/10 bg-apag-navy-900/95 backdrop-blur-md' : 'border-transparent bg-transparent',
       )}
     >
       <a
@@ -58,7 +58,7 @@ export function Navbar() {
 
       <nav aria-label="Principal" className="container flex h-16 items-center justify-between gap-6">
         <a href="#inicio" aria-label={`${company.name}, voltar ao início`} className="shrink-0 rounded-sm">
-          <Logo tone={scrolled ? 'light' : 'dark'} descriptor />
+          <Logo descriptor />
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">
@@ -73,13 +73,7 @@ export function Navbar() {
                     'relative block rounded-sm px-3 py-2 text-[0.9375rem] font-medium whitespace-nowrap transition-colors',
                     "after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-apag-red after:transition-transform after:duration-300 after:content-['']",
                     isActive && 'after:scale-x-100',
-                    scrolled
-                      ? isActive
-                        ? 'text-apag-ink'
-                        : 'text-apag-slate hover:text-apag-ink'
-                      : isActive
-                        ? 'text-white'
-                        : 'text-white/75 hover:text-white',
+                    isActive ? 'text-white' : 'text-white/70 hover:text-white',
                   )}
                 >
                   {item.label}
@@ -96,12 +90,7 @@ export function Navbar() {
 
           <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild>
-              <Button
-                variant={scrolled ? 'secondary' : 'outline-dark'}
-                size="icon"
-                className="lg:hidden"
-                aria-label="Abrir menu"
-              >
+              <Button variant="outline-dark" size="icon" className="lg:hidden" aria-label="Abrir menu">
                 <Menu aria-hidden="true" />
               </Button>
             </SheetTrigger>

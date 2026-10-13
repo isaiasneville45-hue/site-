@@ -20,7 +20,8 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 
-import { SectionHeading } from '@/components/SectionHeading'
+import { Reveal } from '@/components/motion'
+import { SectionHeader } from '@/components/SectionHeader'
 import { WhatsAppIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog'
@@ -32,7 +33,7 @@ import {
   type ProductCategory,
   type ProductCategoryId,
 } from '@/config/products'
-import { headings, productsUi as ui } from '@/config/sections'
+import { headings, manufacturersUi, productsUi as ui } from '@/config/sections'
 import { whatsappUrl } from '@/lib/contact'
 import { getProductTab, isProductCategoryId, setProductTab, subscribeProductTab } from '@/lib/product-tab'
 import { cn } from '@/lib/utils'
@@ -69,15 +70,18 @@ export function Products() {
   }
 
   return (
-    <section id="produtos" aria-labelledby="produtos-title" className="bg-white py-20 lg:py-28">
+    <section id="produtos" aria-labelledby="produtos-title" className="section-pad bg-apag-paper">
       <div className="container">
-        <SectionHeading
+        <SectionHeader
           id="produtos-title"
+          index={headings.products.index}
+          label={headings.products.label}
+          meta={`${totalProducts} produtos`}
           title={headings.products.title}
           description={headings.products.description}
         />
 
-        <Tabs value={active} onValueChange={onTabChange} className="mt-12">
+        <Tabs value={active} onValueChange={onTabChange} className="mt-14 lg:mt-20">
           <div
             ref={listRef}
             className="relative -mx-4 overflow-x-auto px-4 [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 [&::-webkit-scrollbar]:hidden"
@@ -89,7 +93,7 @@ export function Products() {
                   <TabsTrigger key={category.id} value={category.id} data-value={category.id}>
                     <Icon strokeWidth={1.75} aria-hidden="true" />
                     {category.tabLabel}
-                    <span className="text-sm font-normal tabular-nums text-apag-muted">
+                    <span className="text-tech font-normal text-apag-muted">
                       {category.products.length}
                       <span className="sr-only"> produtos</span>
                     </span>
@@ -107,8 +111,73 @@ export function Products() {
             </TabsContent>
           ))}
         </Tabs>
+
+        <Manufacturers />
       </div>
     </section>
+  )
+}
+
+const totalProducts = productCategories.reduce((sum, category) => sum + category.products.length, 0)
+
+/** Fabricantes com produtos no catálogo: nome, quantidade de itens e link para o site. */
+const manufacturers = (() => {
+  const urls = new Map<string, string>()
+  for (const category of productCategories) {
+    for (const supplier of category.suppliers) if (!urls.has(supplier.name)) urls.set(supplier.name, supplier.url)
+  }
+  const counts = new Map<string, number>()
+  for (const category of productCategories) {
+    for (const product of category.products) {
+      if (product.supplier) counts.set(product.supplier, (counts.get(product.supplier) ?? 0) + 1)
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([name, count]) => ({ name, count, url: urls.get(name) }))
+})()
+
+function Manufacturers() {
+  return (
+    <Reveal className="mt-20 lg:mt-28">
+      <div className="flex items-center justify-between border-t border-apag-line-strong pt-4 text-tech text-apag-muted">
+        <h3 className="text-apag-ink">{manufacturersUi.title}</h3>
+        <span>{manufacturers.length}</span>
+      </div>
+      <ul className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-apag-line bg-apag-line sm:grid-cols-4">
+        {manufacturers.map((m) => (
+          <li key={m.name} className="bg-white">
+            {m.url ? (
+              <a
+                href={m.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-full flex-col justify-between gap-6 p-5 sm:p-6"
+              >
+                <ManufacturerBody name={m.name} count={m.count} />
+                <span className="text-sm font-medium text-apag-slate underline decoration-apag-line-strong underline-offset-4 transition-colors group-hover:text-apag-ink group-hover:decoration-apag-red">
+                  {manufacturersUi.visit}
+                  <span className="sr-only">: {m.name} (abre em nova aba)</span>
+                </span>
+              </a>
+            ) : (
+              <div className="flex h-full flex-col p-5 sm:p-6">
+                <ManufacturerBody name={m.name} count={m.count} />
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </Reveal>
+  )
+}
+
+function ManufacturerBody({ name, count }: { name: string; count: number }) {
+  return (
+    <span className="block">
+      <span className="block text-xl font-semibold tracking-[-0.03em] text-apag-ink sm:text-2xl">{name}</span>
+      <span className="mt-1 block text-tech text-apag-muted">{manufacturersUi.count(count)}</span>
+    </span>
   )
 }
 
@@ -148,7 +217,7 @@ function CategoryIntro({ category }: { category: ProductCategory }) {
 function Guide({ guide, category }: { guide: CategoryGuide; category: ProductCategory }) {
   const titleId = useId()
   return (
-    <section aria-labelledby={titleId} className="rounded-lg bg-apag-paper p-5 sm:p-6">
+    <section aria-labelledby={titleId} className="rounded-lg border border-apag-line bg-white p-5 sm:p-6">
       <h4 id={titleId} className="text-heading text-base">
         {guide.title}
       </h4>
@@ -440,14 +509,14 @@ function FacetGroup({
                 'max-lg:h-9 max-lg:border max-lg:px-3',
                 'lg:w-full lg:justify-between lg:px-3 lg:py-2 lg:text-left',
                 selected
-                  ? 'font-semibold text-apag-ink max-lg:border-apag-ink max-lg:bg-apag-ink max-lg:text-white lg:bg-apag-paper lg:before:absolute lg:before:inset-y-1.5 lg:before:left-0 lg:before:w-0.5 lg:before:bg-apag-red'
-                  : 'text-apag-slate hover:text-apag-ink max-lg:border-apag-line-strong lg:hover:bg-apag-paper',
+                  ? 'font-semibold text-apag-ink max-lg:border-apag-ink max-lg:bg-apag-ink max-lg:text-white lg:bg-white lg:before:absolute lg:before:inset-y-1.5 lg:before:left-0 lg:before:w-0.5 lg:before:bg-apag-red'
+                  : 'text-apag-slate hover:text-apag-ink max-lg:border-apag-line-strong max-lg:bg-white lg:hover:bg-white',
               )}
             >
               <span>{option ?? ui.all}</span>
               <span
                 className={cn(
-                  'text-xs tabular-nums',
+                  'font-mono text-xs tabular-nums',
                   selected ? 'max-lg:text-white/70 lg:text-apag-slate' : 'text-apag-muted',
                 )}
               >
@@ -520,9 +589,7 @@ function ProductMeta({ product }: { product: Product }) {
     <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.8125rem]">
       {product.supplier ? <span className="font-medium text-apag-slate">{product.supplier}</span> : null}
       {product.code ? (
-        <span className="rounded-sm border border-apag-line px-1.5 py-px font-medium tabular-nums text-apag-ink">
-          {product.code}
-        </span>
+        <span className="rounded-sm bg-apag-paper px-1.5 py-0.5 text-tech text-apag-ink">{product.code}</span>
       ) : null}
     </div>
   )
