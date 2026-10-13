@@ -4,39 +4,51 @@
  */
 import { company, yearsInBusiness } from './company'
 
-export type SectionHeadingText = { eyebrow: string; title: string; description?: string }
+export type SectionHeadingText = { title: string; description?: string }
 
 export const hero = {
-  eyebrow: `Desde ${company.foundedYear} em ${company.serviceArea}`,
-  title: 'Seu imóvel protegido e regularizado,',
-  titleHighlight: 'do projeto à manutenção.',
-  subtitle:
-    'Instalação e manutenção de extintores, hidrantes, alarmes, sinalização e iluminação de emergência, tudo para manter seu imóvel regularizado junto ao Corpo de Bombeiros.',
+  title: 'Seu imóvel protegido e regularizado.',
+  subtitle: `Instalação, manutenção e regularização de sistemas contra incêndio em ${company.serviceArea}.`,
   primaryCta: 'Solicitar orçamento',
   secondaryCta: 'Falar no WhatsApp',
-  /** Destaques abaixo dos botões (separados por ponto). */
-  highlights: [`${yearsInBusiness()}+ anos de mercado`, 'Atendimento técnico especializado', company.serviceArea],
+  /** Ficha técnica sobre a foto (só dados comprovados). */
+  facts: [
+    { label: 'Desde', value: String(company.foundedYear) },
+    { label: 'Experiência', value: `${yearsInBusiness()} anos` },
+    { label: 'Atendimento', value: company.serviceArea },
+  ],
 }
 
-export const servicesUi = { more: 'Saiba mais' }
+export const segmentsUi = { title: 'Atendemos' }
 
-/** Rótulos da seção Produtos (filtros, cards, paginação). */
+export const servicesUi = {
+  products: 'Ver produtos',
+  quote: 'Solicitar orçamento',
+  ppciLabel: 'Regularização',
+}
+
+/** Rótulos da seção Produtos (filtros, cards, paginação, detalhes). */
 export const productsUi = {
   tabsLabel: 'Categorias de produtos',
-  productsCount: (n: number) => `${n} produtos`,
-  partners: 'Trabalhamos com:',
+  partners: 'Fornecedores',
   searchLabel: 'Buscar produto',
-  searchPlaceholder: 'Buscar por nome ou código',
+  searchPlaceholder: 'Nome ou código',
   all: 'Todos',
-  groupFilter: 'Subgrupo',
+  filters: 'Filtros',
+  groupFilter: 'Tipo',
   supplierFilter: 'Fornecedor',
   systemFilter: 'Sistema',
   showing: (shown: number, total: number) =>
-    total === 0 ? 'Nenhum produto encontrado' : `Mostrando ${shown} de ${total} ${total === 1 ? 'produto' : 'produtos'}`,
-  empty: 'Nenhum produto corresponde aos filtros escolhidos.',
+    total === 0
+      ? 'Nenhum produto encontrado'
+      : `Mostrando ${shown} de ${total} ${total === 1 ? 'produto' : 'produtos'}`,
+  empty: 'Nenhum produto com esses filtros. Tente outra busca ou limpe os filtros.',
   clearFilters: 'Limpar filtros',
   loadMore: (remaining: number) => `Carregar mais (${remaining} ${remaining === 1 ? 'restante' : 'restantes'})`,
   pageSize: 12,
+  sizesCount: (n: number) => `${n} ${n === 1 ? 'medida' : 'medidas'}`,
+  details: 'Detalhes',
+  specsLabel: 'Especificações',
   sizeLabel: 'Medida',
   materialsLabel: 'Material',
   illustrative: 'Imagem ilustrativa',
@@ -46,47 +58,38 @@ export const productsUi = {
     `Olá! Vim pelo site e gostaria de um orçamento de: ${item} (${category}).`,
 }
 
-export const segmentsUi = { pause: 'Pausar animação dos segmentos', resume: 'Retomar animação dos segmentos' }
+export const finalCta = {
+  title: 'Precisa de uma solução em prevenção contra incêndio?',
+  description: `Fale com a ${company.name} e solicite um orçamento.`,
+}
 
 export const headings = {
   services: {
-    eyebrow: 'Serviços',
-    title: 'Proteção completa para o seu imóvel',
-    description:
-      'Cuidamos de todos os sistemas de prevenção e combate a incêndio: instalação, manutenção e apoio na regularização, com um único fornecedor.',
+    title: 'Um fornecedor para todo o sistema',
+    description: 'Instalação, manutenção e apoio na regularização do imóvel.',
   },
   products: {
-    eyebrow: 'Produtos',
-    title: 'Equipamentos para cada sistema',
-    description:
-      'Revendemos e instalamos produtos de fabricantes reconhecidos, com orientação técnica para você escolher o equipamento certo para o seu imóvel.',
+    title: 'Catálogo de produtos',
+    description: 'Equipamentos dos fabricantes que revendemos e instalamos.',
   },
-  stats: { eyebrow: 'Números', title: `A APAG em números` },
   why: {
-    eyebrow: 'Por que a APAG',
-    title: 'Experiência que protege',
-    description: `Há mais de ${yearsInBusiness()} anos a APAG instala e mantém sistemas de prevenção e combate a incêndio, ajudando condomínios e empresas a manter seus imóveis seguros e regularizados.`,
+    title: `Desde ${company.foundedYear} em ${company.address.city}`,
+    description:
+      'Instalamos e mantemos sistemas de prevenção e combate a incêndio para condomínios, comércios e indústrias da região.',
   },
   process: {
-    eyebrow: 'Como trabalhamos',
-    title: 'Do primeiro contato à manutenção periódica',
-    description: 'Um processo simples e transparente, para você saber exatamente o que acontece em cada etapa.',
+    title: 'Como trabalhamos',
+    description: 'Do primeiro contato à manutenção periódica.',
   },
   faq: {
-    eyebrow: 'FAQ',
     title: 'Perguntas frequentes',
-    description:
-      'Tire as principais dúvidas sobre manutenção, documentação e atendimento. Não achou o que procura? Fale com a gente.',
+    description: 'Não encontrou a resposta? Fale com a gente.',
   },
   contact: {
-    eyebrow: 'Contato',
-    title: 'Solicite seu orçamento',
-    description:
-      'Preencha o formulário e envie direto pelo WhatsApp, ou use um dos nossos canais. Respondemos o quanto antes.',
+    title: 'Solicite um orçamento',
+    description: 'Preencha o formulário e enviamos pelo WhatsApp, ou use um dos canais abaixo.',
   },
   location: {
-    eyebrow: 'Localização',
     title: 'Onde estamos',
-    description: `Ficamos no bairro ${company.address.district}, em ${company.address.city}/${company.address.state}, e atendemos ${company.serviceArea}.`,
   },
 } satisfies Record<string, SectionHeadingText>

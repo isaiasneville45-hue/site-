@@ -18,13 +18,13 @@ function AccordionTrigger({ className, children, ...props }: React.ComponentProp
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          'group flex flex-1 items-center justify-between gap-6 py-5 text-left text-base font-semibold transition-colors hover:text-apag-ember sm:text-lg',
+          'group flex flex-1 items-center justify-between gap-6 py-5 text-left text-base font-semibold tracking-[-0.01em] text-apag-ink transition-colors hover:text-apag-red-strong sm:text-[1.0625rem]',
           className,
         )}
         {...props}
       >
         {children}
-        <span className="grid size-9 shrink-0 place-items-center rounded-full border border-white/15 bg-white/[0.04] text-white transition-all duration-300 group-hover:border-apag-red-65 group-data-[state=open]:rotate-45 group-data-[state=open]:border-apag-red group-data-[state=open]:bg-apag-red">
+        <span className="grid size-8 shrink-0 place-items-center rounded-sm border border-apag-line-strong text-apag-ink transition-[transform,background-color,border-color,color] duration-300 group-hover:border-apag-ink group-data-[state=open]:rotate-45 group-data-[state=open]:border-apag-ink group-data-[state=open]:bg-apag-ink group-data-[state=open]:text-white">
           <Plus className="size-4" aria-hidden="true" />
         </span>
       </AccordionPrimitive.Trigger>
@@ -42,7 +42,11 @@ function AccordionContent({ className, children, ...props }: React.ComponentProp
       className="overflow-hidden text-sm data-[state=closed]:hidden data-[state=open]:animate-accordion-down"
       {...props}
     >
-      <div className={cn('pb-6 pr-12 leading-relaxed text-muted-foreground sm:text-base', className)}>{children}</div>
+      <div
+        className={cn('max-w-2xl pb-6 pr-12 text-[0.9375rem] leading-relaxed text-apag-slate sm:text-base', className)}
+      >
+        {children}
+      </div>
     </AccordionPrimitive.Content>
   )
 }

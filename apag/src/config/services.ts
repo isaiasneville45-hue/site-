@@ -7,24 +7,24 @@ export type Service = {
   title: string
   /** Descrição curta exibida no card. */
   description: string
-  /** O que está incluso (lista exibida no "Saiba mais"). */
+  /** O que está incluso (lista exibida no destaque do PPCI). */
   details: string[]
 }
 
-// TODO revisar: confira se os itens de `details` (lista do "Saiba mais") batem com o que a APAG oferece.
+// TODO revisar: confira se os itens de `details` batem com o que a APAG oferece.
 export const services: Service[] = [
   {
     id: 'extintores',
     icon: FireExtinguisher,
     title: 'Extintores',
-    description: 'Recarga, manutenção, teste hidrostático e venda.',
+    description: 'Venda, recarga, manutenção e teste hidrostático.',
     details: ['Recarga de extintores', 'Manutenção', 'Teste hidrostático', 'Venda de extintores'],
   },
   {
     id: 'hidrantes',
     icon: Droplets,
     title: 'Hidrantes',
-    description: 'Manutenção, inspeção de mangueiras e teste de pressão.',
+    description: 'Inspeção, manutenção e teste de pressão das mangueiras.',
     details: ['Manutenção do sistema de hidrantes', 'Inspeção de mangueiras', 'Teste de pressão'],
   },
   {
@@ -38,7 +38,7 @@ export const services: Service[] = [
     id: 'sinalizacao',
     icon: Signpost,
     title: 'Sinalização de emergência',
-    description: 'Placas fotoluminescentes conforme as normas.',
+    description: 'Placas fotoluminescentes de rota de fuga, equipamentos e alerta.',
     details: ['Placas fotoluminescentes', 'Sinalização de rotas de fuga e equipamentos', 'Conforme as normas técnicas'],
   },
   {
@@ -52,7 +52,7 @@ export const services: Service[] = [
     id: 'ppci',
     icon: ClipboardCheck,
     title: 'Adequação ao PPCI',
-    description: 'Apoio para regularizar o imóvel junto ao Corpo de Bombeiros.',
+    description: 'Apoio técnico para regularizar o imóvel junto ao Corpo de Bombeiros.',
     details: [
       'Apoio na regularização junto ao Corpo de Bombeiros',
       'Adequação dos sistemas de prevenção exigidos para o imóvel',

@@ -6,12 +6,9 @@ export const sinalizacao: ProductCategory = {
   title: "Sinalização de emergência",
   tabLabel: "Sinalização",
   intro: "Placas e fitas que mostram o caminho até a saída e indicam onde estão os equipamentos de combate a incêndio, conforme a ABNT NBR 16820 e as Instruções Normativas do Corpo de Bombeiros de SC (IN 13).",
-  cover: "/fotos/capa-sinalizacao-1600.webp",
-  coverAlt: "Corredor envidraçado de um prédio de escritórios, com a placa de saída de emergência no teto indicando a rota de fuga",
-  coverPosition: "55% 38%",
   suppliers: [{"name": "Grupo Scala", "url": "https://gruposcala.com.br"}],
   groups: ["Sinalização de rota de fuga", "Sinalização de equipamentos", "Alerta", "Proibição", "Sinalização complementar"],
-  guide: {"kind": "sizes", "title": "Qual tamanho de placa eu preciso?", "paragraphs": ["O tamanho mínimo de cada placa depende da distância de onde ela precisa ser lida: quanto mais longe a pessoa estiver, maior a placa. A ABNT NBR 16820 relaciona o tamanho da placa com essa distância de visualização.", "Por isso, a mesma placa pode ser vendida em várias medidas: em um corredor curto, uma placa pequena basta; em um galpão ou estacionamento, é preciso uma maior."], "cta": "Não sabe a medida? Mande a planta ou fotos do local no WhatsApp que a gente indica.", "ctaMessage": "Olá! Vim pelo site e gostaria de ajuda para escolher o tamanho das placas de sinalização. Vou enviar a planta ou fotos do local."},
+  guide: {"kind": "sizes", "title": "Qual tamanho de placa eu preciso?", "paragraphs": ["O tamanho mínimo depende da distância de onde a placa precisa ser lida: quanto mais longe, maior a placa (a ABNT NBR 16820 relaciona as duas medidas). Por isso a mesma placa é vendida em várias medidas."], "cta": "Não sabe a medida? Mande a planta ou fotos do local no WhatsApp que a gente indica.", "ctaMessage": "Olá! Vim pelo site e gostaria de ajuda para escolher o tamanho das placas de sinalização. Vou enviar a planta ou fotos do local."},
   products: [
     // TODO confirmar: Material de base (substrato) e espessura da placa não informados no catálogo — só diz "placa fotoluminescente"; confirmar com a Scala
     {

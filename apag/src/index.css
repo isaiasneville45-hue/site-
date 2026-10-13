@@ -2,65 +2,66 @@
 @import 'tw-animate-css';
 @config '../tailwind.config.ts';
 
+/*
+ * Sistema visual da APAG
+ *
+ * Cor: o vermelho institucional (#DF2531) e o azul quase preto da marca (#02060E)
+ * continuam como base. O azul foi aberto em uma escala de marinho para as seções
+ * escuras (hero, empresa, chamada final, rodapé); o resto do site é claro (branco e
+ * cinza-azulado) para dar leveza e leitura. O vermelho fica restrito a ações,
+ * indicadores e ao filete que abre cada seção.
+ *
+ * Tipo: Geist em todo o site (400 a 700). Títulos em 600 com espaçamento negativo;
+ * textos em 400; códigos e números com algarismos tabulares.
+ *
+ * Espaço: múltiplos de 8 px (no Tailwind, os passos pares: 2, 4, 6, 8, 10, 12…).
+ * Raios: 6 px (selos, chips, campos), 8 px (botões), 12 px (cards), 16 px (painéis e fotos).
+ */
 :root {
-  /* Paleta APAG */
+  /* Marca */
   --apag-red: #df2531;
-  --apag-red-65: rgb(223 37 49 / 0.65);
-  --apag-red-45: rgb(223 37 49 / 0.45);
-  --apag-crimson: #c50337;
-  --apag-noir: #02060e;
-  --apag-black: #000;
+  --apag-red-strong: #be1b26;
+  --apag-red-soft: #fdecee;
+  /* vermelho claro para textos pequenos sobre fundos escuros (contraste AA) */
+  --apag-ember: #ff6b74;
+
+  /* Marinho (derivado do #02060E da marca) */
+  --apag-navy-950: #050c19;
+  --apag-navy-900: #0a1830;
+  --apag-navy-800: #11264a;
+  --apag-navy-700: #1b3765;
+
+  /* Neutros */
+  --apag-graphite: #171b22;
+  --apag-ink: #0b1424;
+  --apag-slate: #4d5a6e;
+  --apag-muted: #5e6a7f;
+  --apag-line: #dde3eb;
+  --apag-line-strong: #c3ccd8;
+  --apag-paper: #f3f5f8;
   --apag-white: #ffffff;
-  --apag-ember: #ff5a65;
 
-  /* Tipografia: Barlow Semi Condensed (títulos, números, rótulos) e Inter (textos) */
-  --font-stack-display: 'Barlow Semi Condensed', 'Arial Narrow', ui-sans-serif, system-ui, sans-serif;
-  --font-stack-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-stack-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  /* Gradiente assinatura "Crimson Noir" */
-  --gradient-crimson-noir: linear-gradient(160deg, var(--apag-noir) 0%, var(--apag-crimson) 100%);
-  --gradient-noir-crimson: linear-gradient(160deg, var(--apag-crimson) 0%, var(--apag-noir) 100%);
-
-  /* Tokens semânticos (shadcn/ui) — tema escuro padrão */
-  --background: var(--apag-noir);
-  --foreground: var(--apag-white);
-  --card: rgb(255 255 255 / 0.03);
-  --card-foreground: var(--apag-white);
-  --popover: #0b111c;
-  --popover-foreground: var(--apag-white);
-  --primary: var(--apag-red);
-  --primary-foreground: var(--apag-white);
-  --secondary: rgb(255 255 255 / 0.06);
-  --secondary-foreground: var(--apag-white);
-  --muted: rgb(255 255 255 / 0.06);
-  --muted-foreground: rgb(255 255 255 / 0.7);
-  --accent: rgb(255 255 255 / 0.08);
-  --accent-foreground: var(--apag-white);
-  --destructive: var(--apag-ember);
-  --destructive-foreground: var(--apag-white);
-  --border: rgb(255 255 255 / 0.1);
-  --input: rgb(255 255 255 / 0.14);
-  --ring: var(--apag-ember);
-  --radius: 1rem;
-}
-
-/* Seção clara (fundo branco, texto preto) */
-.theme-light {
+  /* Tokens semânticos (componentes shadcn/ui): tema claro por padrão */
   --background: var(--apag-white);
-  --foreground: var(--apag-black);
-  --card: rgb(2 6 14 / 0.03);
-  --card-foreground: var(--apag-black);
-  --muted: rgb(2 6 14 / 0.05);
-  --muted-foreground: rgb(2 6 14 / 0.68);
-  --border: rgb(2 6 14 / 0.1);
-  --input: rgb(2 6 14 / 0.16);
+  --foreground: var(--apag-ink);
+  --muted-foreground: var(--apag-slate);
+  --border: var(--apag-line);
+  --input: var(--apag-line-strong);
   --ring: var(--apag-red);
-  --destructive: #b3121d;
+  --radius: 0.75rem;
 }
 
-/* Blocos sobre vermelho/crimson: anel de foco branco para manter contraste */
-.on-red {
-  --ring: var(--apag-white);
+/* Seções escuras (marinho/grafite): inverte os tokens */
+.theme-dark {
+  --background: var(--apag-navy-950);
+  --foreground: var(--apag-white);
+  --muted-foreground: rgb(255 255 255 / 0.72);
+  --border: rgb(255 255 255 / 0.14);
+  --input: rgb(255 255 255 / 0.24);
+  --ring: var(--apag-ember);
+  color: var(--foreground);
 }
 
 @layer base {
@@ -73,7 +74,7 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   body {
@@ -92,14 +93,13 @@
     color: var(--apag-white);
   }
 
-  /* Foco visível em todo o site (anel vermelho) */
   :focus-visible {
     outline: 2px solid var(--ring);
-    outline-offset: 3px;
+    outline-offset: 2px;
   }
 
   [id] {
-    scroll-margin-top: 5.5rem;
+    scroll-margin-top: 4.5rem;
   }
 
   button:not(:disabled),
@@ -112,7 +112,7 @@
   width: 100%;
   margin-inline: auto;
   padding-inline: 1rem;
-  max-width: 80rem;
+  max-width: 78rem;
 
   @variant sm {
     padding-inline: 1.5rem;
@@ -122,42 +122,43 @@
   }
 }
 
-/* Títulos (h1–h3): Barlow Semi Condensed 700, tracking levemente negativo */
-@utility font-display-title {
-  font-family: var(--font-stack-display);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.08;
-}
+/* ── Escala tipográfica ───────────────────────────────────────────── */
 
-/* Rótulos curtos (abas, selos, números pequenos): Barlow 600 em caixa alta */
-@utility font-display-label {
-  font-family: var(--font-stack-display);
+/* Título do hero */
+@utility text-display {
+  font-size: clamp(2.5rem, 1.6rem + 4.2vw, 5rem);
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
 }
 
-/* Textura de grade com fade radial */
-@utility bg-grid {
-  background-image:
-    linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 80%);
+/* Títulos de seção (h2) */
+@utility text-title {
+  font-size: clamp(1.875rem, 1.35rem + 2.1vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
 }
 
-/* Ruído sutil (SVG inline, sem requisição extra) */
-@utility bg-noise {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 160px 160px;
+/* Títulos de bloco (h3) */
+@utility text-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+/* Rótulos curtos (campos, filtros, dados): caixa normal, peso médio */
+@utility text-label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
 }
 
 /*
- * Corta o que passa da seção (brilhos decorativos) sem torná-la rolável:
- * com overflow: hidden, foco, busca do navegador ou scrollIntoView podiam
- * deslocar o conteúdo na horizontal. "hidden" fica de reserva para
- * navegadores sem suporte a "clip".
+ * Corta o que passa da seção sem torná-la rolável (com overflow: hidden, foco
+ * ou scrollIntoView podiam deslocar o conteúdo na horizontal).
  */
 @utility overflow-clip-safe {
   overflow: clip;
@@ -165,11 +166,6 @@
   @supports not (overflow: clip) {
     overflow: hidden;
   }
-}
-
-/* Fade nas bordas laterais (marquee) */
-@utility mask-fade-x {
-  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
 }
 
 /* Respeita quem prefere menos movimento: desliga animações e transições */

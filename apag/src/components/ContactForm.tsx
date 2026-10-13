@@ -116,7 +116,7 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-                Empresa <span className="font-normal text-white/50">(opcional)</span>
+                Empresa <span className="font-normal text-apag-muted">(opcional)</span>
               </FormLabel>
               <FormControl>
                 <Input autoComplete="organization" placeholder="Empresa ou condomínio" {...field} />
@@ -206,7 +206,7 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem className="sm:col-span-2">
               <FormLabel>
-                Mensagem <span className="font-normal text-white/50">(opcional)</span>
+                Mensagem <span className="font-normal text-apag-muted">(opcional)</span>
               </FormLabel>
               <FormControl>
                 <Textarea placeholder="Conte um pouco sobre o imóvel e o que você precisa." rows={5} {...field} />
@@ -217,7 +217,7 @@ export default function ContactForm() {
         />
 
         <div className="flex flex-col gap-4 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs leading-relaxed text-white/55 sm:max-w-xs">
+          <p className="text-[0.8125rem] leading-relaxed text-apag-muted sm:max-w-xs">
             Ao enviar, abrimos o WhatsApp com a sua mensagem pronta. Nenhum dado fica salvo neste site.
           </p>
           <Button type="submit" size="lg" className="shrink-0">
@@ -228,15 +228,15 @@ export default function ContactForm() {
 
         <div aria-live="polite" className="sm:col-span-2">
           {sentUrl ? (
-            <p className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-sm text-white/85">
-              <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-apag-ember" aria-hidden="true" />
+            <p className="flex items-start gap-3 rounded-md border border-apag-line bg-apag-paper p-4 text-sm text-apag-ink">
+              <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-apag-red" aria-hidden="true" />
               <span>
                 Abrimos o WhatsApp com a sua mensagem. Se nada aconteceu,{' '}
                 <a
                   href={sentUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-apag-ember underline underline-offset-4"
+                  className="font-semibold text-apag-red-strong underline underline-offset-4"
                 >
                   clique aqui para enviar
                 </a>
@@ -253,7 +253,7 @@ export default function ContactForm() {
 function Required() {
   return (
     <>
-      <span aria-hidden="true" className="text-apag-ember">
+      <span aria-hidden="true" className="text-apag-red">
         *
       </span>
       <span className="sr-only">(obrigatório)</span>

@@ -1,5 +1,4 @@
 import { useSyncExternalStore, type ReactNode } from 'react'
-import { ArrowUp, MapPin } from 'lucide-react'
 
 import { Logo } from '@/components/Logo'
 import { InstagramIcon, WhatsAppIcon } from '@/components/icons'
@@ -17,19 +16,14 @@ export function Footer() {
   const year = useSyncExternalStore(subscribeNothing, currentYear, buildYear)
 
   return (
-    <footer className="relative overflow-clip-safe border-t border-white/[0.07] bg-apag-black pt-20">
-      <div
-        aria-hidden="true"
-        className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-apag-red to-transparent"
-      />
-
-      <div className="container grid gap-12 pb-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr] lg:gap-10">
-        <div className="max-w-sm">
-          <a href="#inicio" aria-label={`${company.name}, voltar ao início`} className="inline-block rounded-lg">
-            <Logo />
+    <footer className="theme-dark bg-apag-navy-950 text-white">
+      <div className="container grid gap-12 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8 lg:pt-20">
+        <div className="lg:col-span-4">
+          <a href="#inicio" aria-label={`${company.name}, voltar ao início`} className="inline-block rounded-sm">
+            <Logo descriptor />
           </a>
-          <p className="mt-5 leading-relaxed text-white/65">{company.shortAbout}</p>
-          <div className="mt-6 flex gap-3">
+          <p className="mt-5 max-w-xs text-[0.9375rem] leading-relaxed text-white/65">{company.shortAbout}</p>
+          <div className="mt-6 flex gap-2">
             <SocialLink href={whatsappUrl()} label="WhatsApp">
               <WhatsAppIcon className="size-5" />
             </SocialLink>
@@ -41,50 +35,41 @@ export function Footer() {
           </div>
         </div>
 
-        <FooterColumn title="Navegação">
+        <FooterColumn title="Navegação" className="lg:col-span-2 lg:col-start-6">
           {navigation.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="text-white/65 transition-colors hover:text-white">
-                {item.label}
-              </a>
+              <FooterLink href={item.href}>{item.label}</FooterLink>
             </li>
           ))}
         </FooterColumn>
 
-        <FooterColumn title="Serviços">
+        <FooterColumn title="Serviços" className="lg:col-span-2">
           {services.map((service) => (
             <li key={service.id}>
-              <a href="#servicos" className="text-white/65 transition-colors hover:text-white">
-                {service.title}
-              </a>
+              <FooterLink href="#servicos">{service.title}</FooterLink>
             </li>
           ))}
         </FooterColumn>
 
-        <FooterColumn title="Contato">
+        <FooterColumn title="Contato" className="lg:col-span-3">
           <li>
-            <a href={phoneHref()} className="text-white/65 transition-colors hover:text-white">
-              {company.phone}
-            </a>
+            <FooterLink href={phoneHref()}>{company.phone}</FooterLink>
           </li>
           <li>
-            <a href={mailHref()} className="break-words text-white/65 transition-colors hover:text-white">
-              {company.email}
-            </a>
+            <FooterLink href={mailHref()}>{company.email}</FooterLink>
           </li>
           <li className="text-white/65">
             <address className="not-italic">
-              {company.address.street} – {company.address.district}
+              {company.address.street}, {company.address.district}
               <br />
-              {company.address.city}/{company.address.state} – CEP {company.address.zip}
+              {company.address.city}/{company.address.state}, CEP {company.address.zip}
             </address>
             <a
               href={company.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-1.5 font-semibold text-apag-ember transition-colors hover:text-white"
+              className="mt-1 inline-block font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-apag-red"
             >
-              <MapPin className="size-4" aria-hidden="true" />
               Ver no mapa
             </a>
           </li>
@@ -92,10 +77,13 @@ export function Footer() {
         </FooterColumn>
       </div>
 
-      <div className="border-t border-white/[0.07]">
-        <div className="container flex flex-col gap-4 py-7 pr-24 text-sm text-white/55 sm:flex-row sm:items-center sm:justify-between sm:pr-28">
-          <p>
-            © {year} {company.legalName} · CNPJ {company.cnpj} ·{' '}
+      <div className="border-t border-white/10">
+        <div className="container flex flex-col gap-3 py-6 pr-20 text-[0.8125rem] text-white/55 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:pr-24">
+          <p className="flex flex-wrap gap-x-4 gap-y-1">
+            <span>
+              © {year} {company.legalName}
+            </span>
+            <span>CNPJ {company.cnpj}</span>
             <a
               href="/produtos/CREDITOS.md"
               target="_blank"
@@ -105,12 +93,8 @@ export function Footer() {
               Créditos das imagens
             </a>
           </p>
-          <a
-            href="#inicio"
-            className="inline-flex items-center gap-2 self-start font-semibold text-white/70 transition-colors hover:text-white sm:self-auto"
-          >
+          <a href="#inicio" className="font-medium text-white/70 transition-colors hover:text-white">
             Voltar ao topo
-            <ArrowUp className="size-4" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -118,12 +102,20 @@ export function Footer() {
   )
 }
 
-function FooterColumn({ title, children }: { title: string; children: ReactNode }) {
+function FooterColumn({ title, children, className }: { title: string; children: ReactNode; className?: string }) {
   return (
-    <div>
-      <h2 className="font-display-label text-sm tracking-wide text-white">{title}</h2>
-      <ul className="mt-5 grid gap-3 text-sm">{children}</ul>
+    <div className={className}>
+      <h2 className="text-label text-white/50">{title}</h2>
+      <ul className="mt-4 grid gap-2.5 text-[0.9375rem]">{children}</ul>
     </div>
+  )
+}
+
+function FooterLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a href={href} className="break-words text-white/75 transition-colors hover:text-white">
+      {children}
+    </a>
   )
 }
 
@@ -134,7 +126,7 @@ function SocialLink({ href, label, children }: { href: string; label: string; ch
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="grid size-11 place-items-center rounded-full border border-white/12 bg-white/[0.04] text-white/80 shadow-neu-dark transition-all duration-300 hover:-translate-y-0.5 hover:border-apag-red hover:bg-apag-red hover:text-white"
+      className="grid size-10 place-items-center rounded-md border border-white/20 text-white/80 transition-colors hover:border-white hover:text-white"
     >
       {children}
     </a>

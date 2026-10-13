@@ -2,7 +2,7 @@ import { WhatsAppIcon } from '@/components/icons'
 import { company } from '@/config/company'
 import { whatsappUrl } from '@/lib/contact'
 
-/** Botão flutuante de WhatsApp (canto inferior direito), com pulso suave. */
+/** Atalho fixo para o WhatsApp (canto inferior direito). */
 export function WhatsAppButton() {
   return (
     <a
@@ -10,16 +10,9 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Falar com a ${company.name} no WhatsApp`}
-      className="group fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-red-sheen text-white shadow-neu transition-all duration-300 hover:-translate-y-1 hover:shadow-neu-hover sm:bottom-7 sm:right-7 sm:size-16"
+      className="fixed bottom-4 right-4 z-40 grid size-13 place-items-center rounded-full bg-apag-red text-white shadow-[0_12px_32px_-12px_rgb(5_12_25/0.6)] transition-[background-color,transform] duration-200 hover:-translate-y-0.5 hover:bg-apag-red-strong sm:bottom-6 sm:right-6 sm:size-14"
     >
-      <span
-        aria-hidden="true"
-        className="absolute inset-0 -z-10 rounded-full bg-apag-red animate-pulse-ring motion-reduce:hidden"
-      />
-      <WhatsAppIcon className="size-7 sm:size-8" />
-      <span className="pointer-events-none absolute right-full mr-3 hidden whitespace-nowrap rounded-full border border-white/10 bg-apag-noir/90 px-4 py-2 text-sm font-semibold opacity-0 shadow-neu-dark backdrop-blur transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 md:block">
-        Fale conosco
-      </span>
+      <WhatsAppIcon className="size-6 sm:size-7" />
     </a>
   )
 }

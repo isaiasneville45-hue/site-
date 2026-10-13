@@ -7,28 +7,26 @@ type RevealProps = {
   children: ReactNode
   className?: string
   delay?: number
-  /** Deslocamento vertical inicial em px. */
-  y?: number
   /** Elemento renderizado (use "li" dentro de listas). */
   as?: 'div' | 'li'
 }
 
 /**
- * Entrada suave ao rolar (fade + slide). Com prefers-reduced-motion o conteúdo
- * aparece na hora, sem movimento. A marcação é a mesma no HTML pré-renderizado
- * e no cliente, para a hidratação não divergir.
+ * Entrada discreta ao rolar (opacidade + 12 px). Com prefers-reduced-motion o
+ * conteúdo aparece na hora. A marcação é a mesma no HTML pré-renderizado e no
+ * cliente, para a hidratação não divergir.
  */
-export function Reveal({ children, className, delay = 0, y = 28, as = 'div' }: RevealProps) {
+export function Reveal({ children, className, delay = 0, as = 'div' }: RevealProps) {
   const reduce = useReducedMotion()
   const Motion = as === 'li' ? m.li : m.div
 
   return (
     <Motion
       className={className}
-      initial={{ opacity: 0, y }}
+      initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '0px 0px -8% 0px' }}
-      transition={reduce ? { duration: 0 } : { duration: 0.8, ease: EASE_OUT, delay }}
+      viewport={{ once: true, margin: '0px 0px -6% 0px' }}
+      transition={reduce ? { duration: 0 } : { duration: 0.6, ease: EASE_OUT, delay }}
     >
       {children}
     </Motion>

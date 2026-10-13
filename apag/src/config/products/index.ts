@@ -72,11 +72,6 @@ export type ProductCategory = {
   tabLabel: string
   /** texto curto explicando a categoria */
   intro: string
-  /** foto "humanizada" da categoria: o maior arquivo, '/fotos/{id}-{largura}.webp' ('' = só o gradiente) */
-  cover: string
-  coverAlt: string
-  /** object-position da capa, para enquadrar o assunto (ex.: "70% 50%") */
-  coverPosition?: string
   suppliers: { name: string; url: string }[]
   /** ordem dos subgrupos (chips); grupos fora da lista vão para o fim */
   groups: string[]

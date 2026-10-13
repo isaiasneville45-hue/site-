@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 /*
  * A logo oficial vem de /public/logo-apag.svg (company.logoSrc).
  * O arquivo é testado uma única vez; enquanto ele não existir (ou não
- * carregar), mostramos o placeholder: chama do lucide + "APAG" em Barlow Semi Condensed.
+ * carregar), mostramos o placeholder: selo vermelho com a chama + "APAG".
  */
 type Status = 'loading' | 'loaded' | 'error'
 let status: Status = 'loading'
@@ -32,15 +32,13 @@ function subscribe(listener: () => void) {
 
 type LogoProps = {
   className?: string
-  /** Altura da logo; o placeholder acompanha. */
-  size?: 'sm' | 'md' | 'lg'
+  /** 'light' = texto escuro (fundos claros); 'dark' = texto branco (fundos escuros) */
+  tone?: 'light' | 'dark'
+  /** mostra o descritor "Soluções contra incêndio" ao lado da marca */
+  descriptor?: boolean
 }
 
-const heights = { sm: 'h-7', md: 'h-9', lg: 'h-11' }
-const textSizes = { sm: 'text-base', md: 'text-lg', lg: 'text-2xl' }
-const iconSizes = { sm: 'size-5', md: 'size-6', lg: 'size-8' }
-
-export function Logo({ className, size = 'md' }: LogoProps) {
+export function Logo({ className, tone = 'dark', descriptor = false }: LogoProps) {
   const current = useSyncExternalStore(
     subscribe,
     () => status,
@@ -48,19 +46,33 @@ export function Logo({ className, size = 'md' }: LogoProps) {
   )
 
   if (current === 'loaded') {
-    return <img src={company.logoSrc} alt={company.name} className={cn('w-auto', heights[size], className)} />
+    return <img src={company.logoSrc} alt={company.name} className={cn('h-9 w-auto', className)} />
   }
 
   return (
-    // #E5303C: o mesmo vermelho, um tom acima, para o texto passar no contraste AA
-    // sobre os fundos escuros. Some quando a logo oficial (SVG) for adicionada.
-    <span className={cn('inline-flex items-center gap-2 text-[#E5303C]', heights[size], className)}>
-      <span className="relative grid place-items-center">
-        <span aria-hidden="true" className="absolute inset-0 rounded-full bg-apag-red/40 blur-md" />
-        <Flame className={cn('relative fill-apag-red/25', iconSizes[size])} strokeWidth={2.25} aria-hidden="true" />
+    <span className={cn('inline-flex items-center gap-2.5', className)}>
+      <span aria-hidden="true" className="grid size-8 place-items-center rounded-sm bg-apag-red text-white">
+        <Flame className="size-[1.125rem]" strokeWidth={2.25} />
       </span>
-      <span className={cn('font-display font-bold uppercase leading-none tracking-[0.06em]', textSizes[size])}>
-        {company.name}
+      <span className="flex flex-col">
+        <span
+          className={cn(
+            'text-[1.25rem] font-bold leading-none tracking-[-0.03em]',
+            tone === 'dark' ? 'text-white' : 'text-apag-ink',
+          )}
+        >
+          {company.name}
+        </span>
+        {descriptor ? (
+          <span
+            className={cn(
+              'mt-1 text-[0.6875rem] font-medium leading-none tracking-[0.01em]',
+              tone === 'dark' ? 'text-white/60' : 'text-apag-muted',
+            )}
+          >
+            {company.descriptor}
+          </span>
+        ) : null}
       </span>
     </span>
   )

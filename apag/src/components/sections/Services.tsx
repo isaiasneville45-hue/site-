@@ -1,182 +1,111 @@
-import { useRef, useState } from 'react'
-import { ArrowRight, Check } from 'lucide-react'
+import { Check } from 'lucide-react'
 
 import { Reveal } from '@/components/motion'
 import { SectionHeading } from '@/components/SectionHeading'
-import { WhatsAppIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
-import { company } from '@/config/company'
+import { productCategories } from '@/config/products'
+import { headings, servicesUi } from '@/config/sections'
 import { services, type Service } from '@/config/services'
 import { useServiceIntent } from '@/context/service-intent'
-import { whatsappUrl } from '@/lib/contact'
-import { scrollToHash } from '@/lib/scroll'
-import { headings, servicesUi } from '@/config/sections'
-import { productCategories } from '@/config/products'
 import { openProductTab, productTabHref } from '@/lib/product-tab'
+import { scrollToHash } from '@/lib/scroll'
 
+const equipment = services.filter((service) => service.id !== 'ppci')
+const ppci = services.find((service) => service.id === 'ppci')
+
+/*
+ * Composição editorial: o título divide a primeira linha com o destaque da
+ * regularização (PPCI), que é o serviço que amarra os demais; abaixo, os cinco
+ * sistemas numa grade de filetes, cada um levando direto à aba de produtos.
+ */
 export function Services() {
-  const [selected, setSelected] = useState<Service | null>(null)
-  const goToForm = useRef(false)
   const { requestService } = useServiceIntent()
 
-  return (
-    <section
-      id="servicos"
-      aria-labelledby="servicos-title"
-      className="relative overflow-clip-safe bg-apag-noir py-24 lg:py-32"
-    >
-      <div
-        aria-hidden="true"
-        className="absolute left-1/2 top-0 -z-0 h-80 w-[60rem] -translate-x-1/2 rounded-full bg-apag-crimson/15 blur-[120px]"
-      />
+  const quote = (service: Service) => {
+    requestService(service.id)
+    scrollToHash('#contato')
+  }
 
-      <div className="container relative">
-        <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+  return (
+    <section id="servicos" aria-labelledby="servicos-title" className="bg-apag-paper py-20 lg:py-28">
+      <div className="container">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-8">
           <SectionHeading
             id="servicos-title"
-            eyebrow={headings.services.eyebrow}
             title={headings.services.title}
             description={headings.services.description}
+            className="lg:col-span-5 lg:pb-2"
           />
-          <Reveal delay={0.1} className="shrink-0">
-            <Button asChild variant="outline">
-              <a href="#contato">
-                Pedir orçamento
-                <ArrowRight aria-hidden="true" />
-              </a>
-            </Button>
-          </Reveal>
+
+          {ppci ? (
+            <Reveal delay={0.08} className="lg:col-span-7">
+              <article className="theme-dark relative overflow-hidden rounded-2xl bg-apag-navy-900 p-6 sm:p-8">
+                <span aria-hidden="true" className="absolute inset-y-0 left-0 w-1 bg-apag-red" />
+                <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+                  <div className="max-w-md">
+                    <p className="text-label text-apag-ember">{servicesUi.ppciLabel}</p>
+                    <h3 className="text-heading mt-2 text-2xl">{ppci.title}</h3>
+                    <p className="mt-3 leading-relaxed text-white/75">{ppci.description}</p>
+                    <ul className="mt-5 grid gap-2">
+                      {ppci.details.map((item) => (
+                        <li key={item} className="flex items-start gap-2.5 text-[0.9375rem] text-white/85">
+                          <Check className="mt-1 size-4 shrink-0 text-apag-ember" aria-hidden="true" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <Button variant="light" className="self-start sm:self-auto" onClick={() => quote(ppci)}>
+                    {servicesUi.quote}
+                  </Button>
+                </div>
+              </article>
+            </Reveal>
+          ) : null}
         </div>
 
-        <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3">
-          {services.map((service, i) => (
-            <Reveal as="li" key={service.id} delay={(i % 3) * 0.08} className="h-full">
-              <ServiceCard service={service} index={i} onOpen={() => setSelected(service)} />
-            </Reveal>
-          ))}
-        </ul>
+        <Reveal delay={0.12} className="mt-8 lg:mt-10">
+          {/* gap-px sobre fundo de filete: linhas de 1 px entre os blocos */}
+          <ul className="grid gap-px overflow-hidden rounded-2xl border border-apag-line bg-apag-line sm:grid-cols-2 lg:grid-cols-5">
+            {equipment.map((service) => (
+              <li key={service.id} className="bg-white sm:max-lg:last:odd:col-span-2">
+                <ServiceTile service={service} />
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </div>
-
-      <Dialog open={selected !== null} onOpenChange={(open) => !open && setSelected(null)}>
-        {selected ? (
-          <DialogContent
-            onCloseAutoFocus={(event) => {
-              if (!goToForm.current) return
-              event.preventDefault()
-              goToForm.current = false
-              requestAnimationFrame(() => scrollToHash('#contato'))
-            }}
-          >
-            <DialogHeader>
-              <span className="mb-2 grid size-14 place-items-center rounded-2xl bg-red-sheen shadow-neu">
-                <selected.icon className="size-7 text-white" aria-hidden="true" />
-              </span>
-              <DialogTitle>{selected.title}</DialogTitle>
-              <DialogDescription>{selected.description}</DialogDescription>
-            </DialogHeader>
-            <div>
-              <p className="font-display-label text-sm tracking-wide text-white/60">O que inclui</p>
-              <ul className="mt-3 grid gap-2.5">
-                {selected.details.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-white/85 sm:text-base">
-                    <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-apag-red-45 ring-1 ring-apag-red-65">
-                      <Check className="size-3 text-white" aria-hidden="true" />
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <DialogFooter className="pt-2">
-              <Button
-                onClick={() => {
-                  requestService(selected.id)
-                  goToForm.current = true
-                  setSelected(null)
-                }}
-              >
-                Solicitar orçamento
-                <ArrowRight aria-hidden="true" />
-              </Button>
-              <Button asChild variant="outline">
-                <a
-                  href={whatsappUrl(`Olá, ${company.name}! Gostaria de um orçamento de ${selected.title}.`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <WhatsAppIcon />
-                  WhatsApp
-                </a>
-              </Button>
-            </DialogFooter>
-          </DialogContent>
-        ) : null}
-      </Dialog>
     </section>
   )
 }
 
-const moreClass =
-  "mt-7 inline-flex items-center gap-2 self-start rounded-full text-sm font-semibold text-apag-ember transition-colors after:absolute after:inset-0 after:content-[''] hover:text-white"
-
-function ServiceCard({ service, index, onOpen }: { service: Service; index: number; onOpen: () => void }) {
+function ServiceTile({ service }: { service: Service }) {
   const Icon = service.icon
-  const productTab = productCategories.find((category) => category.id === service.id)?.id
+  const tab = productCategories.find((category) => category.id === service.id)?.id
+
   return (
-    <article className="group relative isolate flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.015] p-7 shadow-[inset_0_1px_0_rgb(255_255_255/0.06)] transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-apag-red hover:shadow-glow-lg focus-within:border-apag-red-65 sm:p-8">
-      {/* brilho que aparece no hover */}
-      <div
+    <article className="group relative flex h-full flex-col p-6 transition-colors duration-200 hover:bg-apag-paper/60 sm:p-7">
+      {/* filete vermelho que aparece no hover/foco */}
+      <span
         aria-hidden="true"
-        className="absolute -inset-px -z-10 bg-[radial-gradient(28rem_14rem_at_20%_0%,var(--apag-red-45),transparent_70%)] opacity-0 transition-opacity duration-300 group-hover:opacity-60"
+        className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-apag-red transition-transform duration-300 group-hover:scale-x-100 group-focus-within:scale-x-100"
       />
-
-      <div className="flex items-start justify-between">
-        <span className="grid size-14 place-items-center rounded-2xl bg-apag-red-45 shadow-[inset_0_1px_0_rgb(255_255_255/0.2)] ring-1 ring-apag-red-65 transition-all duration-300 group-hover:bg-apag-red group-hover:shadow-glow">
-          <Icon className="size-7 text-white" aria-hidden="true" />
-        </span>
-        <span className="font-display text-base font-semibold text-white/30" aria-hidden="true">
-          {String(index + 1).padStart(2, '0')}
-        </span>
-      </div>
-
-      <h3 className="font-display-title mt-8 text-2xl leading-snug">{service.title}</h3>
-      <p className="mt-3 flex-1 leading-relaxed text-white/70">{service.description}</p>
-
-      {productTab ? (
-        // Abre a seção Produtos já na aba desta categoria
+      <Icon className="size-7 text-apag-navy-700" strokeWidth={1.5} aria-hidden="true" />
+      <h3 className="text-heading mt-6 text-lg">{service.title}</h3>
+      <p className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-apag-slate">{service.description}</p>
+      {tab ? (
         <a
-          href={productTabHref(productTab)}
+          href={productTabHref(tab)}
           onClick={(event) => {
             event.preventDefault()
-            openProductTab(productTab)
+            openProductTab(tab)
           }}
-          className={moreClass}
+          className="mt-6 text-sm font-semibold text-apag-red-strong underline-offset-4 after:absolute after:inset-0 after:content-[''] group-hover:underline"
         >
-          {servicesUi.more}
-          <span className="sr-only"> sobre {service.title}: ver produtos</span>
-          <ArrowRight
-            className="size-4 transition-transform duration-300 group-hover:translate-x-1"
-            aria-hidden="true"
-          />
+          {servicesUi.products}
+          <span className="sr-only"> de {service.title}</span>
         </a>
-      ) : (
-        <button type="button" onClick={onOpen} className={moreClass}>
-          {servicesUi.more}
-          <span className="sr-only"> sobre {service.title}</span>
-          <ArrowRight
-            className="size-4 transition-transform duration-300 group-hover:translate-x-1"
-            aria-hidden="true"
-          />
-        </button>
-      )}
+      ) : null}
     </article>
   )
 }

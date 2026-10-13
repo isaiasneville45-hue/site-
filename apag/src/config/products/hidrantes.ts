@@ -6,9 +6,6 @@ export const hidrantes: ProductCategory = {
   title: "Hidrantes e mangotinhos",
   tabLabel: "Hidrantes",
   intro: "Mangueiras, esguichos, conexões e abrigos para a rede de hidrantes do seu imóvel, além do teste hidrostático das mangueiras e da manutenção da rede.",
-  cover: "/fotos/capa-hidrantes-1600.webp",
-  coverAlt: "Hidrante com registro de volante e abrigo vermelho de mangueiras com visores, com as mangueiras brancas enroladas, em área externa com jardim",
-  coverPosition: "60% 54%",
   suppliers: [{"name": "Segurimax", "url": "https://www.segurimax.com.br/hidrante-de-incendio/mangueira-de-incendio"}, {"name": "Mocelin", "url": "https://mocelin.ind.br"}, {"name": "Metasal", "url": "https://metasal.com.br/incendio/"}],
   groups: ["Mangueiras", "Abrigos", "Esguichos", "Conexões e acessórios", "Válvulas", "Mangotinhos"],
   products: [

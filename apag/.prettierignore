@@ -5,3 +5,9 @@ package-lock.json
 # gerados por scripts/assets/download.py
 public/produtos/CREDITOS.md
 scripts/assets/manifest.json
+# dados gerados a partir dos catálogos dos fornecedores (formato próprio)
+src/config/products/alarme.ts
+src/config/products/extintores.ts
+src/config/products/hidrantes.ts
+src/config/products/iluminacao.ts
+src/config/products/sinalizacao.ts

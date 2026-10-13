@@ -6,9 +6,6 @@ export const extintores: ProductCategory = {
   title: "Extintores",
   tabLabel: "Extintores",
   intro: "Extintores para cada classe de incêndio, com suportes e acessórios para a instalação, além dos serviços de recarga, manutenção e teste hidrostático.",
-  cover: "/fotos/capa-extintores-1024.webp",
-  coverAlt: "Trabalhador de capacete e colete refletivo usa um extintor para apagar o fogo em uma bandeja durante um treinamento",
-  coverPosition: "55% 35%",
   // TODO confirmar: fornecedor dos extintores (hoje só os abrigos e suportes têm fornecedor: Metasal)
   suppliers: [{"name": "Metasal", "url": "https://metasal.com.br/incendio/"}],
   groups: ["Extintores portáteis", "Extintores sobre rodas", "Abrigos e suportes"],

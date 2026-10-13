@@ -1,27 +1,21 @@
-import { ArrowRight } from 'lucide-react'
-
 import { Reveal } from '@/components/motion'
 import { SectionHeading } from '@/components/SectionHeading'
 import { WhatsAppIcon } from '@/components/icons'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { faq } from '@/config/faq'
-import { whatsappUrl } from '@/lib/contact'
 import { headings } from '@/config/sections'
+import { whatsappUrl } from '@/lib/contact'
 
+/** Perguntas frequentes: uma resposta aberta por vez. */
 export function Faq() {
   return (
-    <section id="faq" aria-labelledby="faq-title" className="relative bg-apag-black py-24 lg:py-32">
-      <div className="container grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-        <div className="lg:sticky lg:top-28 lg:self-start">
-          <SectionHeading
-            id="faq-title"
-            eyebrow={headings.faq.eyebrow}
-            title={headings.faq.title}
-            description={headings.faq.description}
-          />
-          <Reveal delay={0.1} className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild variant="outline">
+    <section id="faq" aria-labelledby="faq-title" className="bg-apag-paper py-20 lg:py-28">
+      <div className="container grid gap-10 lg:grid-cols-12 lg:gap-8">
+        <div className="lg:col-span-4">
+          <SectionHeading id="faq-title" title={headings.faq.title} description={headings.faq.description} />
+          <Reveal delay={0.06} className="mt-6">
+            <Button asChild variant="secondary">
               <a
                 href={whatsappUrl('Olá! Tenho uma dúvida sobre os serviços.')}
                 target="_blank"
@@ -31,19 +25,13 @@ export function Faq() {
                 Perguntar no WhatsApp
               </a>
             </Button>
-            <Button asChild variant="ghost">
-              <a href="#contato">
-                Ir para o contato
-                <ArrowRight aria-hidden="true" />
-              </a>
-            </Button>
           </Reveal>
         </div>
 
-        <Reveal delay={0.05}>
-          <Accordion type="single" collapsible defaultValue="item-0" className="border-t border-white/10">
+        <Reveal delay={0.04} className="lg:col-span-7 lg:col-start-6">
+          <Accordion type="single" collapsible className="border-t border-apag-line-strong">
             {faq.map((item, i) => (
-              <AccordionItem key={item.question} value={`item-${i}`} className="border-white/10">
+              <AccordionItem key={item.question} value={`item-${i}`} className="border-apag-line-strong">
                 <AccordionTrigger>{item.question}</AccordionTrigger>
                 <AccordionContent>{item.answer}</AccordionContent>
               </AccordionItem>

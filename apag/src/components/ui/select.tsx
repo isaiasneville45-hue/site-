@@ -17,7 +17,7 @@ function SelectTrigger({ className, children, ...props }: React.ComponentProps<t
     <SelectPrimitive.Trigger
       data-slot="select-trigger"
       className={cn(
-        'flex h-12 w-full items-center justify-between gap-2 rounded-2xl border border-input bg-white/[0.03] px-4 text-left text-base text-foreground shadow-[inset_0_1px_2px_rgb(0_0_0/0.4)] transition-colors focus-visible:border-apag-red-65 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apag-red-45 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-apag-ember data-[placeholder]:text-white/40 sm:text-sm [&>span]:line-clamp-1',
+        'flex h-12 w-full items-center justify-between gap-2 rounded-md border border-input bg-white px-4 text-left text-base text-apag-ink transition-colors hover:border-apag-muted focus-visible:border-apag-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apag-ink/15 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-apag-red data-[placeholder]:text-apag-muted [&>span]:line-clamp-1',
         className,
       )}
       {...props}
@@ -41,7 +41,7 @@ function SelectContent({
       <SelectPrimitive.Content
         data-slot="select-content"
         className={cn(
-          'relative z-50 max-h-(--radix-select-content-available-height) min-w-[8rem] overflow-hidden rounded-2xl border border-white/10 bg-popover text-popover-foreground shadow-2xl data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
+          'relative z-50 max-h-(--radix-select-content-available-height) min-w-[8rem] overflow-hidden rounded-md border border-apag-line bg-white text-apag-ink shadow-[0_16px_40px_-16px_rgb(11_20_36/0.35)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
           position === 'popper' &&
             'w-full min-w-(--radix-select-trigger-width) data-[side=bottom]:translate-y-1 data-[side=top]:-translate-y-1',
           className,
@@ -66,7 +66,7 @@ function SelectItem({ className, children, ...props }: React.ComponentProps<type
     <SelectPrimitive.Item
       data-slot="select-item"
       className={cn(
-        'relative flex w-full cursor-default select-none items-center rounded-xl py-2.5 pl-3 pr-9 text-sm outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-apag-red-45 data-[highlighted]:text-white data-[disabled]:opacity-50',
+        'relative flex w-full cursor-default select-none items-center rounded-sm py-2.5 pl-3 pr-9 text-[0.9375rem] outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-apag-paper data-[state=checked]:font-medium data-[disabled]:opacity-50',
         className,
       )}
       {...props}

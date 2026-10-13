@@ -1,40 +1,31 @@
 import {
-  Award,
   Briefcase,
   Building2,
-  CalendarCheck,
   Factory,
-  FileText,
-  HardHat,
-  Layers,
-  PhoneCall,
   School,
-  ShieldCheck,
   Stethoscope,
   Store,
   UtensilsCrossed,
   Warehouse,
-  Wrench,
   type LucideIcon,
 } from 'lucide-react'
 
 import { company, yearsInBusiness } from './company'
 
-type IconItem = { icon: LucideIcon; title: string; description: string }
-
-/** Links da navbar e do rodapé (âncoras das seções). */
+/**
+ * Âncoras das seções. `primary` = aparece no menu do cabeçalho; o rodapé lista todas.
+ */
 export const navigation = [
-  { label: 'Início', href: '#inicio' },
-  { label: 'Serviços', href: '#servicos' },
-  { label: 'Produtos', href: '#produtos' },
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Como Trabalhamos', href: '#como-trabalhamos' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contato', href: '#contato' },
-  { label: 'Localização', href: '#localizacao' },
+  { label: 'Serviços', href: '#servicos', primary: true },
+  { label: 'Produtos', href: '#produtos', primary: true },
+  { label: 'Empresa', href: '#sobre', primary: true },
+  { label: 'Como trabalhamos', href: '#como-trabalhamos', primary: true },
+  { label: 'FAQ', href: '#faq', primary: true },
+  { label: 'Contato', href: '#contato', primary: true },
+  { label: 'Localização', href: '#localizacao', primary: false },
 ]
 
-/** Segmentos atendidos (faixa infinita). */
+/** Segmentos atendidos. */
 export const segments: { icon: LucideIcon; label: string }[] = [
   { icon: Building2, label: 'Condomínios' },
   { icon: Factory, label: 'Indústrias' },
@@ -46,53 +37,42 @@ export const segments: { icon: LucideIcon; label: string }[] = [
   { icon: Briefcase, label: 'Escritórios' },
 ]
 
-/** Seção "Por que a APAG". */
-export const differentials: IconItem[] = [
+/** Seção "Empresa": diferenciais em uma linha cada. */
+export const differentials: { title: string; description: string }[] = [
   {
-    icon: Award,
-    title: `Experiência desde ${company.foundedYear}`,
-    description: `Mais de ${yearsInBusiness()} anos dedicados à prevenção e ao combate a incêndio, acompanhando a evolução das normas e dos equipamentos.`,
+    title: `Desde ${company.foundedYear}`,
+    description: `${yearsInBusiness()} anos acompanhando a evolução das normas e dos equipamentos.`,
   },
   {
-    icon: HardHat,
-    title: 'Atendimento técnico especializado',
-    description:
-      'Cada visita, instalação e manutenção é conduzida por quem entende de sistemas de segurança contra incêndio.',
+    title: 'Atendimento técnico',
+    description: 'Instalação e manutenção feitas por quem conhece os sistemas.',
   },
   {
-    icon: ShieldCheck,
-    title: 'Conforme as normas e o Corpo de Bombeiros',
-    description: 'Serviços executados de acordo com as normas técnicas e as exigências do Corpo de Bombeiros.',
+    title: 'Conforme as normas',
+    description: 'Serviços de acordo com as normas técnicas e as exigências do Corpo de Bombeiros.',
   },
   {
-    icon: Layers,
-    title: 'Solução completa, um só fornecedor',
-    description:
-      'Extintores, hidrantes, alarme, sinalização, iluminação de emergência e adequação ao PPCI com um único parceiro.',
+    title: 'Um só fornecedor',
+    description: 'Extintores, hidrantes, alarme, sinalização, iluminação e PPCI.',
   },
 ]
 
-/** Seção "Como trabalhamos". */
-export const processSteps: IconItem[] = [
+/** Seção "Como trabalhamos" (sequência real de atendimento). */
+export const processSteps: { title: string; description: string }[] = [
   {
-    icon: PhoneCall,
     title: 'Contato e visita técnica',
-    description:
-      'Você fala com a gente e, quando necessário, agendamos uma visita para avaliar o imóvel e os sistemas existentes.',
+    description: 'Entendemos a necessidade e, quando preciso, avaliamos o imóvel.',
   },
   {
-    icon: FileText,
     title: 'Orçamento',
-    description: 'Enviamos uma proposta clara, com os serviços necessários para deixar o imóvel em conformidade.',
+    description: 'Proposta clara, com os serviços necessários.',
   },
   {
-    icon: Wrench,
-    title: 'Execução / instalação',
-    description: 'Instalamos ou fazemos a manutenção dos sistemas de acordo com as normas técnicas.',
+    title: 'Execução',
+    description: 'Instalação ou manutenção conforme as normas técnicas.',
   },
   {
-    icon: CalendarCheck,
-    title: 'Manutenção periódica e laudos',
-    description: 'Acompanhamos os prazos de manutenção e entregamos a documentação dos serviços realizados.',
+    title: 'Manutenção e documentação',
+    description: 'Acompanhamos os prazos e entregamos a documentação dos serviços.',
   },
 ]

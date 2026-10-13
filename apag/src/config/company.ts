@@ -9,14 +9,6 @@
  * importar nada.
  */
 
-export type Stat = {
-  /** Valor numérico do contador. `null` = ainda não preenchido (mostra placeholder). */
-  value: number | null
-  prefix?: string
-  suffix?: string
-  label: string
-}
-
 const FOUNDED_AT = '1998-05-26'
 
 /** Data do build, injetada pelo Vite (`define` no vite.config.ts). */
@@ -36,19 +28,12 @@ export function yearsInBusiness(now: Date = BUILD_DATE): number {
   return years
 }
 
-// ── Números (seção de contadores) ────────────────────────────────────
-// Não invente números: deixe `value: null` até ter o dado real.
-const stats: Stat[] = [
-  { value: yearsInBusiness(), suffix: '+', label: 'anos de mercado' },
-  { value: null, suffix: '+', label: 'clientes atendidos' }, // TODO
-  { value: null, suffix: '+', label: 'extintores recarregados por ano' }, // TODO
-  { value: null, label: 'cidades atendidas' }, // TODO
-]
-
 export const company = {
   // ── Dados cadastrais ───────────────────────────────────────────────
   legalName: 'Apag Produtos e Serviços LTDA',
   name: 'APAG',
+  /** Descritor da marca, ao lado da logo no cabeçalho. */
+  descriptor: 'Soluções contra incêndio',
   cnpj: '02.591.012/0001-63',
   foundedAt: FOUNDED_AT,
   foundedAtLabel: '26/05/1998',
@@ -105,9 +90,6 @@ export const company = {
   siteUrl: 'https://www.apag.com.br', // TODO
   /** Horário no formato schema.org para o JSON-LD (deve bater com `hours`). */
   openingHoursSchema: ['Mo-Fr 08:00-17:00'],
-
-  // ── Números (seção de contadores, definidos no topo do arquivo) ────
-  stats,
 }
 
 export type Company = typeof company

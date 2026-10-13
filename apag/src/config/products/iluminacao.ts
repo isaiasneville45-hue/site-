@@ -6,9 +6,6 @@ export const iluminacao: ProductCategory = {
   title: "Iluminação de emergência",
   tabLabel: "Iluminação",
   intro: "Luminárias e blocos autônomos que acendem sozinhos na falta de energia e mantêm as rotas de fuga iluminadas, inclusive em áreas externas, úmidas e industriais.",
-  cover: "/fotos/capa-iluminacao-1600.webp",
-  coverAlt: "Luminária de sinalização de saída de emergência acesa, com pictograma verde de pessoa correndo e seta para a direita, fixada no alto de uma passagem em um edifício à noite",
-  coverPosition: "85% 18%",
   suppliers: [{"name": "Luxpryme", "url": "https://www.luxpryme.com.br"}],
   groups: ["Luminárias autônomas", "Blocos autônomos", "Sistema centralizado", "Áreas externas e industriais (IP66/IP67)", "Placas de saída iluminadas"],
   products: [
