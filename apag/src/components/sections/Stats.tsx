@@ -51,7 +51,8 @@ function Counter({ stat }: { stat: Stat }) {
   const ref = useRef<HTMLSpanElement>(null)
   const inView = useInView(ref, { once: true, margin: '0px 0px -10% 0px' })
   const reduce = useReducedMotion()
-  const [display, setDisplay] = useState(0)
+  // null = valor final (igual ao HTML pré-renderizado e sem JavaScript); a contagem começa ao entrar na tela
+  const [display, setDisplay] = useState<number | null>(null)
 
   useEffect(() => {
     if (!inView || stat.value === null || reduce) return
@@ -77,7 +78,7 @@ function Counter({ stat }: { stat: Stat }) {
       <span className="sr-only">{final}</span>
       <span aria-hidden="true" className="tabular-nums">
         {stat.prefix}
-        {(reduce ? stat.value : display).toLocaleString('pt-BR')}
+        {(display ?? stat.value).toLocaleString('pt-BR')}
         <span className="text-apag-red">{stat.suffix}</span>
       </span>
     </span>

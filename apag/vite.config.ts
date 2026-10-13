@@ -35,6 +35,8 @@ export default defineConfig(({ isSsrBuild }) => ({
               groups: [
                 { name: 'react', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ },
                 { name: 'motion', test: /node_modules[\\/](framer-motion|motion-dom|motion-utils)[\\/]/ },
+                // catálogo de produtos (dados): chunk próprio, muda a cada revisão da lista
+                { name: 'products', test: /src[\\/]config[\\/]products[\\/]/ },
               ],
             },
           },

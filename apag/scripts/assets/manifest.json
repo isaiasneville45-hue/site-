@@ -109,249 +109,6 @@
    "local": true
   },
   {
-   "category": "sinalizacao",
-   "id": "saida",
-   "name": "Placa de saída de emergência",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 5
-  },
-  {
-   "category": "sinalizacao",
-   "id": "rota-de-fuga-seta",
-   "name": "Placa de rota de fuga com seta",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 5
-  },
-  {
-   "category": "sinalizacao",
-   "id": "escada-de-emergencia",
-   "name": "Placa de rota de fuga por escada",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 5
-  },
-  {
-   "category": "sinalizacao",
-   "id": "saida-acessivel",
-   "name": "Placa de saída com rota acessível",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 5
-  },
-  {
-   "category": "sinalizacao",
-   "id": "porta-corta-fogo",
-   "name": "Placa de porta corta-fogo",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 5
-  },
-  {
-   "category": "sinalizacao",
-   "id": "ponto-de-encontro",
-   "name": "Placa de ponto de encontro",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 10
-  },
-  {
-   "category": "sinalizacao",
-   "id": "fotoluminescente-laudo",
-   "name": "Placas fotoluminescentes com laudo",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 8
-  },
-  {
-   "category": "sinalizacao",
-   "id": "extintor",
-   "name": "Placa de extintor",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "hidrante",
-   "name": "Placa de hidrante",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "mangotinho",
-   "name": "Placa de mangotinho",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "extintor-hidrante-coluna",
-   "name": "Sinalização de extintor e hidrante em coluna",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 9
-  },
-  {
-   "category": "sinalizacao",
-   "id": "acionador-alarme",
-   "name": "Placa de acionador manual de alarme",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "bomba-de-incendio",
-   "name": "Placa de comando da bomba de incêndio",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "agente-extintor",
-   "name": "Placa de agente extintor",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "abrigo-hidrante",
-   "name": "Adesivo HIDRANTE para abrigo",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 10
-  },
-  {
-   "category": "sinalizacao",
-   "id": "hidrante-de-recalque",
-   "name": "Placa de hidrante de recalque",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 10
-  },
-  {
-   "category": "sinalizacao",
-   "id": "alerta-inflamavel",
-   "name": "Placa de alerta: material inflamável",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "alerta-explosao",
-   "name": "Placa de alerta: risco de explosão",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "alerta-choque-eletrico",
-   "name": "Placa de alerta: risco de choque elétrico",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "proibido-fumar",
-   "name": "Placa Proibido fumar",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "proibido-produzir-chama",
-   "name": "Placa Proibido produzir chamas",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "proibido-elevador",
-   "name": "Placa Proibido usar o elevador em caso de incêndio",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "proibido-obstruir",
-   "name": "Placa Não obstrua",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 7
-  },
-  {
-   "category": "sinalizacao",
-   "id": "fita-antiderrapante",
-   "name": "Fita antiderrapante fotoluminescente",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 4
-  },
-  {
-   "category": "sinalizacao",
-   "id": "demarcacao-de-solo",
-   "name": "Demarcação de piso para extintor",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 9
-  },
-  {
-   "category": "sinalizacao",
-   "id": "plano-de-fuga",
-   "name": "Plano de fuga",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 9
-  },
-  {
-   "category": "sinalizacao",
-   "id": "faixas-zebradas",
-   "name": "Faixas de indicação de obstáculo",
-   "brand": "Grupo Scala",
-   "local": true,
-   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
-   "pdf_page": 4
-  },
-  {
    "category": "iluminacao",
    "id": "luxpryme-slim-premium",
    "name": "Luminária autônoma Slim Premium",
@@ -3220,6 +2977,897 @@
    "url": "https://metasal.com.br/wp-content/uploads/2025/11/haste-pextintor.jpeg",
    "fallbacks": [],
    "page": "https://metasal.com.br/produto/haste-para-extintor/"
+  },
+  {
+   "category": "sinalizacao",
+   "id": "fotoluminescente-laudo",
+   "name": "Placa de saída (SAÍDA)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 8
+  },
+  {
+   "category": "sinalizacao",
+   "id": "saida",
+   "name": "Placa de saída com pictograma (SAÍDA + figura)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "rota-de-fuga-seta",
+   "name": "Placa de rota de fuga – seta à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0558",
+   "name": "Placa de rota de fuga – seta à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0539",
+   "name": "Placa de rota de fuga – seta em frente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0540",
+   "name": "Placa de rota de fuga – seta diagonal superior direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0541",
+   "name": "Placa de rota de fuga – seta diagonal superior esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0543",
+   "name": "Placa de rota de fuga – seta diagonal inferior direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0542",
+   "name": "Placa de rota de fuga – seta diagonal inferior esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0551",
+   "name": "Placa de escada de emergência – descida à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0552",
+   "name": "Placa de escada de emergência – descida à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0548",
+   "name": "Placa de escada de emergência – subida à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "escada-de-emergencia",
+   "name": "Placa de escada de emergência – subida à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0810",
+   "name": "Placa de saída acessível – seta à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0811",
+   "name": "Placa de saída acessível – seta à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0406",
+   "name": "Placa SAÍDA com seta à direita (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0407",
+   "name": "Placa SAÍDA com seta à esquerda (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0408",
+   "name": "Placa SAÍDA com pictograma (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0409",
+   "name": "Placa SAÍDA acessível com seta à direita (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0410",
+   "name": "Placa SAÍDA acessível com seta à esquerda (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "saida-acessivel",
+   "name": "Placa SAÍDA acessível e comum com seta à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0412",
+   "name": "Placa SAÍDA acessível e comum com seta à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "porta-corta-fogo",
+   "name": "Placa porta corta-fogo",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0590",
+   "name": "Placa aperte/empurre (barra antipânico)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0571",
+   "name": "Placa de orientação – quebrar para acessar",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0572",
+   "name": "Placa de orientação – girar a maçaneta (alavanca)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0573",
+   "name": "Placa de orientação – girar o puxador (redondo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0574",
+   "name": "Placa de orientação – empurrar a porta (barra)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0575",
+   "name": "Placa de orientação – pressionar a barra da porta",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-sinalizacao-de-pavimento",
+   "name": "Placa de sinalização de pavimento (andar)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "ponto-de-encontro",
+   "name": "Placa ponto de encontro emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0899",
+   "name": "Placa ponto de encontro da brigada de emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0999",
+   "name": "Placa ponto de encontro (S24)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0909",
+   "name": "Placa ponto de encontro sem texto (S24)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503",
+   "name": "Placa de extintor de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "extintor",
+   "name": "Placa de extintor pó ABC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-bc",
+   "name": "Placa de extintor pó BC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-co2",
+   "name": "Placa de extintor CO₂",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-agp",
+   "name": "Placa de extintor de água",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-em",
+   "name": "Placa de extintor de espuma mecânica (EM)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-k",
+   "name": "Placa de extintor classe K",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-d",
+   "name": "Placa de extintor pó classe D",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0507",
+   "name": "Placa de extintor sobre rodas (carreta)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante",
+   "name": "Placa de hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "mangotinho",
+   "name": "Placa de mangotinho",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0508",
+   "name": "Placa de abrigo de mangueira",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0509",
+   "name": "Placa de alarme sonoro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0506",
+   "name": "Placa de telefone de emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0505",
+   "name": "Placa de equipamento E9 (pictograma semicircular)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0510",
+   "name": "Placa de equipamento E10 (pictograma de chuveiro)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0511",
+   "name": "Placa de equipamento E12 (pictograma de manta)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0513",
+   "name": "Placa de seta para equipamento (horizontal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0514",
+   "name": "Placa de seta para equipamento (diagonal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0530",
+   "name": "Placa de agente – extintor de água",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0532",
+   "name": "Placa de agente – extintor de ABC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0531",
+   "name": "Placa de agente – extintor de gás carbônico (CO₂)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0534",
+   "name": "Placa de agente – extintor de espuma",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "agente-extintor",
+   "name": "Placa de agente – extintor premium ABC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0524",
+   "name": "Placa de comando – alarme de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "bomba-de-incendio",
+   "name": "Placa de comando – bomba de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "acionador-alarme",
+   "name": "Placa de comando – botoeira de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1022",
+   "name": "Placa de hidrante em coluna – letra H (vertical)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1023",
+   "name": "Placa de extintor em coluna – letra E (vertical)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1024",
+   "name": "Placa de hidrante em coluna – letra H (horizontal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1025",
+   "name": "Placa de extintor em coluna – letra E (horizontal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante-de-recalque",
+   "name": "Placa hidrante de recalque",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2733",
+   "name": "Visor para caixa – Hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2735",
+   "name": "Visor para caixa – Incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "abrigo-hidrante",
+   "name": "Adesivo para caixa – Hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2725",
+   "name": "Adesivo para caixa – Incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2727",
+   "name": "Adesivo para caixa – Não use em eletricidade",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2720",
+   "name": "Adesivo para caixa – Em caso de incêndio quebre o vidro e feche o registro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2721",
+   "name": "Adesivo para caixa – Em caso de incêndio quebre o vidro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0553",
+   "name": "Placa de alerta – cuidado, risco geral",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-inflamavel",
+   "name": "Placa de alerta – risco de incêndio (inflamável)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-explosao",
+   "name": "Placa de alerta – risco de explosão",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0559",
+   "name": "Placa de alerta – risco de corrosão",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-choque-eletrico",
+   "name": "Placa de alerta – risco de choque elétrico",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0552",
+   "name": "Placa de alerta – risco de radiação",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0558",
+   "name": "Placa de alerta – substância tóxica",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-fumar",
+   "name": "Placa proibido fumar",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-produzir-chama",
+   "name": "Placa proibido produzir chamas",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0355",
+   "name": "Placa não jogue água",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-elevador",
+   "name": "Placa proibido utilizar o elevador em caso de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-obstruir",
+   "name": "Placa não obstrua",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0589",
+   "name": "Placa de sinalização complementar – seta de rota de fuga (C1)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0458",
+   "name": "Fita de indicação de obstáculo lisa (45 m)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0459",
+   "name": "Faixa zebrada de obstáculo vermelha e branca (B1/B2)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0460",
+   "name": "Faixa zebrada de obstáculo preta e amarela (D1/D2)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0102",
+   "name": "Fita antiderrapante com o meio fotoluminescente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0101",
+   "name": "Fita antiderrapante toda fotoluminescente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "demarcacao-de-solo",
+   "name": "Adesivo de demarcação de solo para extintor (E17)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "plano-de-fuga",
+   "name": "Placa de plano de fuga (rota de fuga)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0797",
+   "name": "Placa de sistemas de segurança contra incêndio da edificação",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0798",
+   "name": "Placa capacidade de público",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0896",
+   "name": "Placa lotação máxima – pessoas sentadas e em pé (M2)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0795",
+   "name": "Placa lotação máxima",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0796",
+   "name": "Placa lotação máxima – sentadas e em pé",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0897",
+   "name": "Placa lotação máxima com dados do alvará",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
   }
  ],
  "photos": [

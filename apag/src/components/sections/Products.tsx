@@ -113,7 +113,7 @@ function CategoryPanel({ category }: { category: ProductCategory }) {
   const Icon = categoryIcons[category.id]
 
   return (
-    <div className="grid gap-10">
+    <div className="grid gap-10 [&>*]:min-w-0">
       <Reveal>
         <div className="relative isolate flex min-h-[20rem] items-end overflow-hidden rounded-[2rem] border border-white/10 shadow-[0_30px_60px_-30px_rgb(0_0_0/0.9)] lg:min-h-[24rem]">
           {category.cover ? (
@@ -208,7 +208,7 @@ function Guide({ guide, category }: { guide: CategoryGuide; category: ProductCat
                 {paragraph}
               </p>
             ))}
-            <Button asChild size="sm" className="mt-6">
+            <Button asChild size="sm" className="mt-6 h-auto min-h-9 whitespace-normal py-2 text-left">
               <a
                 href={whatsappUrl(guide.ctaMessage)}
                 target="_blank"

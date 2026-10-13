@@ -236,7 +236,7 @@ def write_credits(manifest, report=None):
     lines = [
         "# Créditos das imagens",
         "",
-        "Imagens otimizadas (WebP) e servidas pelo próprio site — nenhuma é carregada direto do site de origem.",
+        "Imagens otimizadas (WebP) e servidas pelo próprio site: nenhuma é carregada direto do site de origem.",
         "As fotos de bancos de imagem foram redimensionadas, recortadas e convertidas para WebP; as versões",
         "adaptadas de fotos CC BY-SA ficam sob a mesma licença da original.",
         "",
@@ -244,7 +244,7 @@ def write_credits(manifest, report=None):
         "",
         "Imagens dos catálogos e sites dos fabricantes/fornecedores, cujos produtos a APAG revende,",
         "e fotos de bancos de imagem livres (Wikimedia Commons / Openverse) quando o fornecedor não",
-        "foi informado — nesse caso com autor e licença.",
+        "foi informado (nesse caso, com autor e licença).",
         "",
         "| Arquivo | Produto | Fabricante | Origem | Autor / licença |",
         "| --- | --- | --- | --- | --- |",
@@ -254,8 +254,8 @@ def write_credits(manifest, report=None):
             continue
         origin = item.get("pdf") or item.get("page") or item.get("url")
         extra = f" (pág. {item['pdf_page']} do catálogo)" if item.get("pdf_page") else ""
-        license_ = " — ".join(x for x in (item.get("author", ""), license_md(item.get("license", ""))) if x) or "imagem do fabricante"
-        lines.append(f"| `produtos/{item['category']}/{item['id']}.webp` | {item.get('name', item['id'])} | {item.get('brand', '')} | {origin}{extra} | {license_} |")
+        license_ = " · ".join(x for x in (item.get("author", ""), license_md(item.get("license", ""))) if x) or "imagem do fabricante"
+        lines.append(f"| `produtos/{item['category']}/{item['id']}.webp` | {item.get('name', item['id']).replace('|', '/')} | {item.get('brand', '')} | {origin}{extra} | {license_} |")
     lines += [
         "",
         "## Fotos humanizadas",
