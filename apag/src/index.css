@@ -3,53 +3,49 @@
 @config '../tailwind.config.ts';
 
 /*
- * Sistema visual da APAG (v5: industrial premium + editorial)
+ * Sistema visual da APAG (v6)
  *
- * Cor: azul-marinho #10243A estabelece a identidade (hero, chamada final,
- * cabeçalho ao rolar, rodapé); azul secundário #1B3853 para superfícies e linhas
- * sobre o marinho; vermelho institucional #D52B32 só em ações, indicadores e
- * detalhes; branco e cinza #F3F4F5 nas seções de leitura; grafite #202831 nos
- * textos e na seção "Empresa".
+ * Cor: preto #111111, branco e vermelho #D71920, com cinzas neutros de apoio.
+ * O preto domina as seções fotográficas (hero, "Por que a APAG", contato,
+ * rodapé); branco e cinza claro nas seções de leitura (serviços, catálogo,
+ * etapas, FAQ). O vermelho fica em ações, ícones, destaques de título e filetes.
+ * As fotos de ambiente recebem tratamento monocromático; fotos de produto
+ * mantêm as cores reais.
  *
- * Tipo: Geist (interface e títulos) + Geist Mono (identificadores técnicos:
- * índice das seções, códigos de produto, rótulos de ficha). A mono é da mesma
- * família, então as duas conversam sem disputar atenção.
+ * Tipo: Geist. Títulos em caixa alta, peso 800, espaçamento levemente negativo;
+ * textos em 400; rótulos curtos em caixa alta, 600, espaçados.
  *
- * Espaço: múltiplos de 8 px (no Tailwind, passos pares). Conteúdo até 1280 px.
- * Raios: 3 px (códigos, chips), 6 px (botões, campos), 8 px (cards), 12 px (painéis).
+ * Espaço: múltiplos de 8 px (no Tailwind, passos pares). Conteúdo até 1200 px.
+ * Raios: 2 px (selos), 3 px (botões, campos, cards), 6 px (painéis).
  * Breakpoints: os do Tailwind (640, 768, 1024, 1280).
  */
 :root {
   /* Marca */
-  --apag-red: #d52b32;
-  --apag-red-strong: #b3232a;
-  --apag-red-soft: #fbeced;
-  /* vermelho claro para textos pequenos sobre fundos escuros (contraste AA) */
-  --apag-ember: #ff7a80;
+  --apag-red: #d71920;
+  --apag-red-strong: #b5141a;
+  --apag-red-soft: #fdebec;
+  /* vermelho claro para textos pequenos sobre o preto (contraste AA) */
+  --apag-ember: #ff5a5f;
 
-  /* Azuis */
-  --apag-navy-950: #0b1a2b; /* rodapé, sombra do marinho */
-  --apag-navy-900: #10243a; /* azul-marinho da marca */
-  --apag-navy-800: #1b3853; /* azul secundário */
-  --apag-navy-700: #2a4a6b; /* ícones e linhas sobre claro */
+  /* Pretos */
+  --apag-black-950: #0a0a0a; /* rodapé */
+  --apag-black: #111111; /* preto da marca */
+  --apag-black-800: #1b1b1b; /* superfícies sobre o preto */
+  --apag-black-700: #2a2a2a;
 
   /* Neutros */
-  --apag-graphite: #202831;
-  --apag-ink: #202831;
-  --apag-slate: #4f5a66;
-  --apag-muted: #66717d;
-  --apag-line: #dde1e5;
-  --apag-line-strong: #c4cad1;
-  --apag-paper: #f3f4f5;
+  --apag-ink: #111111;
+  --apag-slate: #4a4a4a;
+  --apag-muted: #6b6b6b;
+  --apag-line: #e3e3e3;
+  --apag-line-strong: #cdcdcd;
+  --apag-paper: #f4f4f4;
   --apag-white: #ffffff;
 
   --font-stack-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-stack-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
   /* Transições */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --duration-fast: 160ms;
-  --duration-base: 240ms;
 
   /* Tokens semânticos (componentes shadcn/ui): tema claro por padrão */
   --background: var(--apag-white);
@@ -58,17 +54,28 @@
   --border: var(--apag-line);
   --input: var(--apag-line-strong);
   --ring: var(--apag-red);
-  --radius: 0.5rem;
+  --radius: 0.1875rem;
 }
 
-/* Seções escuras (marinho/grafite): inverte os tokens */
+/* Seções escuras: inverte os tokens */
 .theme-dark {
-  --background: var(--apag-navy-900);
+  --background: var(--apag-black);
   --foreground: var(--apag-white);
-  --muted-foreground: rgb(255 255 255 / 0.7);
-  --border: rgb(255 255 255 / 0.14);
+  --muted-foreground: rgb(255 255 255 / 0.72);
+  --border: rgb(255 255 255 / 0.16);
   --input: rgb(255 255 255 / 0.24);
   --ring: var(--apag-ember);
+  color: var(--foreground);
+}
+
+/* Volta aos tokens claros dentro de uma seção escura (ex.: painel do formulário) */
+.theme-light {
+  --background: var(--apag-white);
+  --foreground: var(--apag-ink);
+  --muted-foreground: var(--apag-slate);
+  --border: var(--apag-line);
+  --input: var(--apag-line-strong);
+  --ring: var(--apag-red);
   color: var(--foreground);
 }
 
@@ -110,12 +117,6 @@
     scroll-margin-top: 4.5rem;
   }
 
-  /* algarismos tabulares em códigos e números */
-  code,
-  kbd {
-    font-family: var(--font-stack-mono);
-  }
-
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
@@ -126,7 +127,7 @@
   width: 100%;
   margin-inline: auto;
   padding-inline: 1rem;
-  max-width: 80rem;
+  max-width: 75rem;
 
   @variant sm {
     padding-inline: 1.5rem;
@@ -138,69 +139,61 @@
 
 /* ── Escala tipográfica ───────────────────────────────────────────── */
 
-/* Título do hero */
+/* Título do hero: caixa alta, pesado */
 @utility text-display {
-  font-size: clamp(2.5rem, 1.5rem + 4.4vw, 5.25rem);
-  font-weight: 600;
-  letter-spacing: -0.048em;
-  line-height: 0.96;
+  font-size: clamp(2.25rem, 1.4rem + 3.6vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 /* Títulos de seção (h2) */
 @utility text-title {
-  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.5rem);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1.02;
+  font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+  text-transform: uppercase;
 }
 
 /* Títulos de bloco (h3) */
 @utility text-heading {
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
 }
 
-/* Rótulos curtos (campos, filtros): caixa normal, peso médio */
+/* Rótulos curtos (campos, filtros) */
 @utility text-label {
   font-size: 0.8125rem;
   font-weight: 500;
-  letter-spacing: 0;
   line-height: 1.4;
 }
 
-/* Identificadores técnicos (índices, códigos, fichas): Geist Mono */
+/* Rótulos de seção e de ficha: caixa alta, espaçados */
 @utility text-tech {
-  font-family: var(--font-stack-mono);
   font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   line-height: 1.4;
+  text-transform: uppercase;
   font-variant-numeric: tabular-nums;
 }
 
 /* Respiro vertical padrão das seções */
 @utility section-pad {
-  padding-block: 5rem;
+  padding-block: 4.5rem;
 
   @variant lg {
-    padding-block: 7.5rem;
+    padding-block: 6.5rem;
   }
 }
 
-/* Malha de prancha técnica (linhas finas a cada 24 px, reforço a cada 120 px) */
-@utility bg-blueprint {
-  background-image:
-    linear-gradient(to right, rgb(255 255 255 / 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.07) 1px, transparent 1px),
-    linear-gradient(to right, rgb(255 255 255 / 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.03) 1px, transparent 1px);
-  background-size:
-    120px 120px,
-    120px 120px,
-    24px 24px,
-    24px 24px;
+/* Tratamento das fotos de ambiente: monocromático, contraste firme */
+@utility photo-mono {
+  filter: grayscale(1) contrast(1.08) brightness(0.92);
 }
 
 /*

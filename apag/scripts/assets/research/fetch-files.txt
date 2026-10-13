@@ -1,9 +1,0 @@
-v6-hero.jpg https://commons.wikimedia.org/wiki/Special:FilePath/EASTERN_STORAGE_AREA%2C_FROM_CENTER_OF_WEST_WALL%2C_LOOKING_EAST._-_Oakland_Naval_Supply_Center%2C_Reserve_Materials_Storehouse%2C_Between_I_and_J_Streets%2C_between_Fourth_and_Fifth_HABS_CAL%2C1-OAK%2C16GG-4.tif?width=2400
-v6-why.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Detail_of_steel_truss_and_column_connection_of_roof_structure%2C_view_facing_southeast_-_U.S._Naval_Base%2C_Pearl_Harbor%2C_Lumber_Storehouse%2C_Seventh_Street_near_Avenue_E%2C_Pearl_City%2C_HABS_HI-464-7.tif?width=2000
-v6-contact.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Detail_of_the_ridge_framing_of_the_clerestory_roof%2C_note_the_alternating_wood_and_steel_beams%2C_view_facing_northeast_-_U.S._Marine_Corps_Base_Hawaii%2C_Kaneohe_Bay%2C_Warehouse_250%2C_HABS_HI-311-H-10.tif?width=2000
-v6-contact-alt.jpg https://commons.wikimedia.org/wiki/Special:FilePath/GENERAL_INTERIOR_VIEW_SHOWING_SOUTH_CORNER_OF_SHED_WITH_ONE-STORY_OFFICES%2C_SHOWING_TYPICAL_COLUMN_BASE_WITH_TIMBER_BOLTED_TO_STEEL_%27L%27_SHOE_-_Oakland_Army_Base%2C_Transit_Shed%2C_HAER_CAL%2C1-OAK%2C12-A-27.tif?width=2000
-v6-extintores.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Aviation_Structural_Mechanic_Airman_signs_an_inspection_record_card._%2839846227104%29.jpg?width=1600
-v6-hidrantes.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Fire_hose_cabinet_on_wall.jpg?width=1600
-v6-alarme.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Alarm_control_panel_VERS_PK4_TRIO-M.jpg?width=1600
-v6-iluminacao.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_exit.jpg?width=1600
-v6-ppci.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Photocopy_of_1921_architectural_drawing_titled-_BUILDING_59%2C_EXTENSION_NORTH._ROOF_PLAN%2C_NORTH_ELEVATION_AND_LOCATION_PLAN._Drawing_No._6259%2C_File_No._651-23._-_Puget_Sound_HAER_WASH%2C18-BREM%2C4A-29.tif?width=2000

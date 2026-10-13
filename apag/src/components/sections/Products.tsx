@@ -70,18 +70,15 @@ export function Products() {
   }
 
   return (
-    <section id="produtos" aria-labelledby="produtos-title" className="section-pad bg-apag-paper">
+    <section id="produtos" aria-labelledby="produtos-title" className="section-pad bg-white">
       <div className="container">
         <SectionHeader
           id="produtos-title"
-          index={headings.products.index}
-          label={headings.products.label}
-          meta={`${totalProducts} produtos`}
           title={headings.products.title}
           description={headings.products.description}
         />
 
-        <Tabs value={active} onValueChange={onTabChange} className="mt-14 lg:mt-20">
+        <Tabs value={active} onValueChange={onTabChange} className="mt-12 lg:mt-16">
           <div
             ref={listRef}
             className="relative -mx-4 overflow-x-auto px-4 [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 [&::-webkit-scrollbar]:hidden"
@@ -93,7 +90,7 @@ export function Products() {
                   <TabsTrigger key={category.id} value={category.id} data-value={category.id}>
                     <Icon strokeWidth={1.75} aria-hidden="true" />
                     {category.tabLabel}
-                    <span className="text-tech font-normal text-apag-muted">
+                    <span className="text-sm font-normal tabular-nums text-apag-muted">
                       {category.products.length}
                       <span className="sr-only"> produtos</span>
                     </span>
@@ -117,8 +114,6 @@ export function Products() {
     </section>
   )
 }
-
-const totalProducts = productCategories.reduce((sum, category) => sum + category.products.length, 0)
 
 /** Fabricantes com produtos no catálogo: nome, quantidade de itens e link para o site. */
 const manufacturers = (() => {
@@ -509,14 +504,14 @@ function FacetGroup({
                 'max-lg:h-9 max-lg:border max-lg:px-3',
                 'lg:w-full lg:justify-between lg:px-3 lg:py-2 lg:text-left',
                 selected
-                  ? 'font-semibold text-apag-ink max-lg:border-apag-ink max-lg:bg-apag-ink max-lg:text-white lg:bg-white lg:before:absolute lg:before:inset-y-1.5 lg:before:left-0 lg:before:w-0.5 lg:before:bg-apag-red'
-                  : 'text-apag-slate hover:text-apag-ink max-lg:border-apag-line-strong max-lg:bg-white lg:hover:bg-white',
+                  ? 'font-semibold text-apag-ink max-lg:border-apag-ink max-lg:bg-apag-ink max-lg:text-white lg:bg-apag-paper lg:before:absolute lg:before:inset-y-1.5 lg:before:left-0 lg:before:w-0.5 lg:before:bg-apag-red'
+                  : 'text-apag-slate hover:text-apag-ink max-lg:border-apag-line-strong max-lg:bg-white lg:hover:bg-apag-paper',
               )}
             >
               <span>{option ?? ui.all}</span>
               <span
                 className={cn(
-                  'font-mono text-xs tabular-nums',
+                  'text-xs tabular-nums',
                   selected ? 'max-lg:text-white/70 lg:text-apag-slate' : 'text-apag-muted',
                 )}
               >
@@ -589,7 +584,9 @@ function ProductMeta({ product }: { product: Product }) {
     <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.8125rem]">
       {product.supplier ? <span className="font-medium text-apag-slate">{product.supplier}</span> : null}
       {product.code ? (
-        <span className="rounded-sm bg-apag-paper px-1.5 py-0.5 text-tech text-apag-ink">{product.code}</span>
+        <span className="rounded-sm bg-apag-paper px-1.5 py-0.5 text-xs font-semibold tabular-nums text-apag-ink">
+          {product.code}
+        </span>
       ) : null}
     </div>
   )
@@ -608,7 +605,7 @@ function ProductCard({
 }) {
   return (
     // celular: miniatura à esquerda e ações embaixo; a partir de 640 px, card vertical
-    <article className="group relative grid h-full grid-cols-[6.5rem_minmax(0,1fr)] overflow-hidden rounded-lg border border-apag-line bg-white transition-[border-color,box-shadow] duration-200 hover:border-apag-line-strong hover:shadow-[0_12px_32px_-20px_rgb(11_20_36/0.35)] sm:flex sm:flex-col">
+    <article className="group relative grid h-full grid-cols-[6.5rem_minmax(0,1fr)] overflow-hidden rounded-lg border border-apag-line bg-white transition-[border-color,box-shadow] duration-200 hover:border-apag-line-strong hover:shadow-[0_12px_32px_-20px_rgb(0_0_0/0.35)] sm:flex sm:flex-col">
       <ProductImage
         product={product}
         icon={icon}
@@ -633,14 +630,14 @@ function ProductCard({
         ) : null}
       </div>
       <div className="relative z-10 col-span-2 flex items-center gap-2 border-t border-apag-line px-4 py-3 sm:mt-auto sm:border-t-0 sm:px-5 sm:pb-5 sm:pt-4">
-        <Button asChild size="sm" variant="secondary" className="flex-1">
+        <Button asChild size="sm" variant="secondary" className="min-w-0 flex-1 px-2.5 normal-case tracking-normal">
           <a href={quoteHref(product, category, null)} target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon />
             {ui.quote}
             <span className="sr-only"> de {quoteItem(product, null)} pelo WhatsApp</span>
           </a>
         </Button>
-        <Button size="sm" variant="ghost" className="px-2.5" onClick={onOpen}>
+        <Button size="sm" variant="ghost" className="shrink-0 px-2 normal-case tracking-normal" onClick={onOpen}>
           {ui.details}
           <span className="sr-only"> de {product.name}</span>
         </Button>

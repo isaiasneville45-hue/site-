@@ -1,4 +1,4 @@
-import { PlanDrawing } from '@/components/PlanDrawing'
+import { Photo } from '@/components/Photo'
 import { Reveal } from '@/components/motion'
 import { SectionHeader } from '@/components/SectionHeader'
 import { Button } from '@/components/ui/button'
@@ -9,13 +9,10 @@ import { useServiceIntent } from '@/context/service-intent'
 import { openProductTab, productTabHref } from '@/lib/product-tab'
 import { scrollToHash } from '@/lib/scroll'
 
-const equipment = services.filter((service) => service.id !== 'ppci')
-const ppci = services.find((service) => service.id === 'ppci')
-
 /*
- * Composição editorial: à esquerda, a regularização (PPCI) em destaque, com a
- * planta de prevenção; à direita, os cinco sistemas como uma lista técnica
- * (sigla, nome, descrição, foto de um produto real do catálogo e ações).
+ * Serviços como a galeria da referência: cartões com foto de ambiente,
+ * legenda em barra clara (nome, descrição curta) e as ações. Quando o serviço
+ * ainda não tem foto de ambiente, mostra um produto real do catálogo.
  */
 export function Services() {
   const { requestService } = useServiceIntent()
@@ -26,75 +23,60 @@ export function Services() {
   }
 
   return (
-    <section id="servicos" aria-labelledby="servicos-title" className="section-pad bg-white">
+    <section id="servicos" aria-labelledby="servicos-title" className="section-pad bg-apag-paper">
       <div className="container">
         <SectionHeader
           id="servicos-title"
-          index={headings.services.index}
-          label={headings.services.label}
-          meta={`${services.length} serviços`}
           title={headings.services.title}
           description={headings.services.description}
         />
 
-        <div className="mt-14 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
-          {ppci ? (
-            <Reveal className="lg:sticky lg:top-24 lg:col-span-5 lg:self-start">
-              <article className="theme-dark flex flex-col overflow-hidden rounded-xl bg-apag-navy-900">
-                <div className="relative border-b border-white/10 bg-blueprint px-6 pb-4 pt-8 sm:px-8">
-                  <PlanDrawing className="w-full opacity-80" />
-                </div>
-                <div className="flex flex-1 flex-col p-6 sm:p-8">
-                  <p className="flex items-center gap-3 text-tech text-white/60">
-                    <span className="text-apag-ember">{ppci.code}</span>
-                    {servicesUi.ppciLabel}
-                  </p>
-                  <h3 className="text-heading mt-3 text-2xl sm:text-[1.75rem]">{ppci.title}</h3>
-                  <p className="mt-3 leading-relaxed text-white/72">{ppci.description}</p>
-                  <ul className="mt-6 grid gap-3 border-t border-white/12 pt-6">
-                    {ppci.details.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-[0.9375rem] text-white/85">
-                        <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 bg-apag-red" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button variant="light" className="mt-8 self-start" onClick={() => quote(ppci)}>
-                    {servicesUi.quote}
-                    <span className="sr-only"> de {ppci.title}</span>
-                  </Button>
-                </div>
-              </article>
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-6">
+          {services.map((service, i) => (
+            <Reveal as="li" key={service.id} delay={(i % 3) * 0.06}>
+              <ServiceCard service={service} onQuote={() => quote(service)} />
             </Reveal>
-          ) : null}
+          ))}
+        </ul>
 
-          <Reveal delay={0.08} className="lg:col-span-7">
-            <ul className="border-t border-apag-line-strong">
-              {equipment.map((service) => (
-                <li key={service.id} className="border-b border-apag-line">
-                  <ServiceRow service={service} onQuote={() => quote(service)} />
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-        </div>
+        <Reveal className="mt-12 flex justify-center">
+          <Button asChild size="lg">
+            <a href="#contato">{servicesUi.quote}</a>
+          </Button>
+        </Reveal>
       </div>
     </section>
   )
 }
 
-function ServiceRow({ service, onQuote }: { service: Service; onQuote: () => void }) {
+function ServiceCard({ service, onQuote }: { service: Service; onQuote: () => void }) {
   const tab = productCategories.find((category) => category.id === service.id)?.id
 
   return (
-    <article className="group grid grid-cols-[minmax(0,1fr)_5.5rem] items-start gap-5 py-6 sm:grid-cols-[3.5rem_minmax(0,1fr)_7.5rem] sm:gap-6 sm:py-7">
-      <span className="hidden pt-1.5 text-tech text-apag-muted transition-colors group-hover:text-apag-red-strong sm:block">
-        {service.code}
-      </span>
-      <div>
-        <h3 className="text-heading text-xl sm:text-[1.375rem]">{service.title}</h3>
-        <p className="mt-2 max-w-md text-[0.9375rem] leading-relaxed text-apag-slate">{service.description}</p>
-        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+    <article className="group flex h-full flex-col overflow-hidden rounded-md border border-apag-line bg-white shadow-[0_1px_2px_rgb(0_0_0/0.04)] transition-shadow duration-300 hover:shadow-[0_18px_40px_-24px_rgb(0_0_0/0.45)]">
+      <div className="relative aspect-[3/2] overflow-hidden bg-apag-paper">
+        {service.photo ? (
+          <Photo
+            photo={service.photo}
+            sizes="(min-width: 1200px) 370px, (min-width: 640px) 46vw, 100vw"
+            className="absolute inset-0 size-full transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          />
+        ) : service.image ? (
+          <img
+            src={service.image.src}
+            alt={service.image.alt}
+            loading="lazy"
+            decoding="async"
+            width={800}
+            height={600}
+            className="absolute inset-0 size-full bg-white object-contain p-8 transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          />
+        ) : null}
+      </div>
+      <div className="flex flex-1 flex-col border-t-2 border-apag-red p-5 sm:p-6">
+        <h3 className="text-tech text-[0.875rem] text-apag-ink">{service.title}</h3>
+        <p className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-apag-slate">{service.description}</p>
+        <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold">
           {tab ? (
             <a
               href={productTabHref(tab)}
@@ -118,19 +100,6 @@ function ServiceRow({ service, onQuote }: { service: Service; onQuote: () => voi
           </button>
         </div>
       </div>
-      {service.image ? (
-        <div className="aspect-square overflow-hidden rounded-lg border border-apag-line bg-white">
-          <img
-            src={service.image.src}
-            alt={service.image.alt}
-            loading="lazy"
-            decoding="async"
-            width={240}
-            height={240}
-            className="size-full object-contain p-2 transition-transform duration-500 ease-out group-hover:scale-[1.05]"
-          />
-        </div>
-      ) : null}
     </article>
   )
 }

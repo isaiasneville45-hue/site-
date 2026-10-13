@@ -3873,18 +3873,91 @@
  "photos": [
   {
    "id": "hero",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_%2848880439676%29.jpg/1920px-Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_%2848880439676%29.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/EASTERN_STORAGE_AREA%2C_FROM_CENTER_OF_WEST_WALL%2C_LOOKING_EAST._-_Oakland_Naval_Supply_Center%2C_Reserve_Materials_Storehouse%2C_Between_I_and_J_Streets%2C_between_Fourth_and_Fifth_HABS_CAL%2C1-OAK%2C16GG-4.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "widths": [
     800,
-    1200
+    1600,
+    2400
    ],
-   "author": "PEO ACWA",
-   "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Fire_Extinguisher_(48880439676).jpg",
-   "license": "CC BY 2.0",
-   "usage": "Foto do Hero"
+   "author": "Historic American Buildings Survey (Library of Congress)",
+   "page": "https://commons.wikimedia.org/wiki/File:EASTERN_STORAGE_AREA,_FROM_CENTER_OF_WEST_WALL,_LOOKING_EAST._-_Oakland_Naval_Supply_Center,_Reserve_Materials_Storehouse,_Between_I_and_J_Streets,_between_Fourth_and_Fifth_HABS_CAL,1-OAK,16GG-4.tif",
+   "license": "Domínio público",
+   "usage": "Fundo do Hero"
   },
   {
-   "id": "empresa",
+   "id": "por-que",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Detail_of_steel_truss_and_column_connection_of_roof_structure%2C_view_facing_southeast_-_U.S._Naval_Base%2C_Pearl_Harbor%2C_Lumber_Storehouse%2C_Seventh_Street_near_Avenue_E%2C_Pearl_City%2C_HABS_HI-464-7.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "David Franzen, Historic American Buildings Survey",
+   "page": "https://commons.wikimedia.org/wiki/File:Detail_of_steel_truss_and_column_connection_of_roof_structure,_view_facing_southeast_-_U.S._Naval_Base,_Pearl_Harbor,_Lumber_Storehouse,_Seventh_Street_near_Avenue_E,_Pearl_City,_HABS_HI-464-7.tif",
+   "license": "Domínio público",
+   "usage": "Fundo da seção \"Por que a APAG\""
+  },
+  {
+   "id": "contato",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Detail_of_the_ridge_framing_of_the_clerestory_roof%2C_note_the_alternating_wood_and_steel_beams%2C_view_facing_northeast_-_U.S._Marine_Corps_Base_Hawaii%2C_Kaneohe_Bay%2C_Warehouse_250%2C_HABS_HI-311-H-10.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "David Franzen, Historic American Buildings Survey",
+   "page": "https://commons.wikimedia.org/wiki/File:Detail_of_the_ridge_framing_of_the_clerestory_roof,_note_the_alternating_wood_and_steel_beams,_view_facing_northeast_-_U.S._Marine_Corps_Base_Hawaii,_Kaneohe_Bay,_Warehouse_250,_HABS_HI-311-H-10.tif",
+   "license": "Domínio público",
+   "usage": "Fundo da seção Contato"
+  },
+  {
+   "id": "servico-extintores",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Aviation_Structural_Mechanic_Airman_signs_an_inspection_record_card._%2839846227104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "U.S. Navy (foto oficial)",
+   "page": "https://commons.wikimedia.org/wiki/File:Aviation_Structural_Mechanic_Airman_signs_an_inspection_record_card._(39846227104).jpg",
+   "license": "Domínio público",
+   "usage": "Serviço: Extintores"
+  },
+  {
+   "id": "servico-hidrantes",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Fire_hose_cabinet_on_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "Downtowngal",
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_hose_cabinet_on_wall.jpg",
+   "license": "CC BY-SA 4.0",
+   "usage": "Serviço: Hidrantes"
+  },
+  {
+   "id": "servico-alarme",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Alarm_control_panel_VERS_PK4_TRIO-M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "Georg Pik",
+   "page": "https://commons.wikimedia.org/wiki/File:Alarm_control_panel_VERS_PK4_TRIO-M.jpg",
+   "license": "CC0",
+   "usage": "Serviço: Alarme de incêndio"
+  },
+  {
+   "id": "servico-iluminacao",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Emergency_exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "Megalesius",
+   "page": "https://commons.wikimedia.org/wiki/File:Emergency_exit.jpg",
+   "license": "CC BY-SA 3.0",
+   "usage": "Serviço: Iluminação de emergência"
+  },
+  {
+   "id": "servico-sinalizacao",
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Emergency_exit_sign_%2842050562511%29.jpg/1920px-Emergency_exit_sign_%2842050562511%29.jpg",
    "widths": [
     800,
@@ -3893,7 +3966,19 @@
    "author": "Eric Fischer",
    "page": "https://commons.wikimedia.org/wiki/File:Emergency_exit_sign_(42050562511).jpg",
    "license": "CC BY 2.0",
-   "usage": "Seção \"Empresa\""
+   "usage": "Serviço: Sinalização de emergência"
+  },
+  {
+   "id": "servico-ppci",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Photocopy_of_1921_architectural_drawing_titled-_BUILDING_59%2C_EXTENSION_NORTH._ROOF_PLAN%2C_NORTH_ELEVATION_AND_LOCATION_PLAN._Drawing_No._6259%2C_File_No._651-23._-_Puget_Sound_HAER_WASH%2C18-BREM%2C4A-29.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "John Stamets, Historic American Engineering Record",
+   "page": "https://commons.wikimedia.org/wiki/File:Photocopy_of_1921_architectural_drawing_titled-_BUILDING_59,_EXTENSION_NORTH._ROOF_PLAN,_NORTH_ELEVATION_AND_LOCATION_PLAN._Drawing_No._6259,_File_No._651-23._-_Puget_Sound_HAER_WASH,18-BREM,4A-29.tif",
+   "license": "Domínio público",
+   "usage": "Serviço: Adequação ao PPCI"
   }
  ]
 }

@@ -5,7 +5,7 @@ import { segmentsUi } from '@/config/sections'
 export function Segments() {
   return (
     <section aria-labelledby="segmentos-title" className="border-b border-apag-line bg-white">
-      <div className="container flex flex-col gap-5 py-8 lg:flex-row lg:items-center lg:gap-8 lg:py-7">
+      <div className="container flex flex-col gap-5 pb-10 pt-12 lg:flex-row lg:items-center lg:gap-8 lg:pb-10 lg:pt-14">
         <h2 id="segmentos-title" className="shrink-0 text-tech text-apag-muted">
           {segmentsUi.title}
         </h2>
@@ -15,7 +15,7 @@ export function Segments() {
               key={label}
               className="flex items-center gap-2.5 lg:justify-center lg:border-l lg:border-apag-line lg:px-2 lg:first:border-l-0 lg:first:justify-start lg:first:pl-0"
             >
-              <Icon className="size-5 shrink-0 text-apag-navy-700" strokeWidth={1.5} aria-hidden="true" />
+              <Icon className="size-5 shrink-0 text-apag-red" strokeWidth={1.5} aria-hidden="true" />
               <span className="text-sm font-medium tracking-[-0.01em] text-apag-ink xl:text-[0.9375rem]">{label}</span>
             </li>
           ))}

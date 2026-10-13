@@ -17,8 +17,9 @@ const primary = navigation.filter((item) => item.primary)
 const sectionIds = ['inicio', ...primary.map((item) => item.href.slice(1))]
 
 /*
- * Cabeçalho fixo de 64 px, sempre no marinho da marca: transparente sobre o hero
- * e sólido ao rolar. O link da seção visível ganha um traço vermelho embaixo.
+ * Cabeçalho fixo de 64 px: transparente sobre a foto do hero e preto sólido ao
+ * rolar. Links em caixa alta (como a referência); o link da seção visível ganha
+ * um traço vermelho embaixo.
  */
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -46,7 +47,7 @@ export function Navbar() {
       className={cn(
         'fixed inset-x-0 top-0 z-40 border-b transition-[background-color,border-color] duration-300',
         'theme-dark',
-        scrolled ? 'border-white/10 bg-apag-navy-900/95 backdrop-blur-md' : 'border-transparent bg-transparent',
+        scrolled ? 'border-white/10 bg-apag-black/95 backdrop-blur-md' : 'border-transparent bg-transparent',
       )}
     >
       <a
@@ -70,7 +71,7 @@ export function Navbar() {
                   href={item.href}
                   aria-current={isActive ? 'location' : undefined}
                   className={cn(
-                    'relative block rounded-sm px-3 py-2 text-[0.9375rem] font-medium whitespace-nowrap transition-colors',
+                    'relative block rounded-sm px-3 py-2 text-[0.75rem] font-semibold uppercase tracking-[0.08em] whitespace-nowrap transition-colors',
                     "after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-apag-red after:transition-transform after:duration-300 after:content-['']",
                     isActive && 'after:scale-x-100',
                     isActive ? 'text-white' : 'text-white/70 hover:text-white',

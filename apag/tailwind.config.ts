@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 /**
  * Tokens de design da APAG.
  * Os valores ficam em variáveis CSS (src/index.css) e são expostos aqui
- * como classes do Tailwind: bg-apag-red, text-apag-ink, bg-apag-navy-950…
+ * como classes do Tailwind: bg-apag-red, text-apag-ink, bg-apag-black…
  * Carregado pelo Tailwind v4 via `@config` no src/index.css.
  */
 export default {
@@ -11,17 +11,16 @@ export default {
     extend: {
       colors: {
         apag: {
-          red: 'var(--apag-red)', // #D52B32, vermelho institucional
-          'red-strong': 'var(--apag-red-strong)', // hover e pressionado
-          'red-soft': 'var(--apag-red-soft)', // fundo de selos sobre branco
-          ember: 'var(--apag-ember)', // vermelho para textos pequenos sobre escuro
-          navy: {
-            950: 'var(--apag-navy-950)',
-            900: 'var(--apag-navy-900)',
-            800: 'var(--apag-navy-800)',
-            700: 'var(--apag-navy-700)',
+          red: 'var(--apag-red)', // #D71920, vermelho institucional
+          'red-strong': 'var(--apag-red-strong)', // hover e textos vermelhos pequenos sobre claro
+          'red-soft': 'var(--apag-red-soft)',
+          ember: 'var(--apag-ember)', // vermelho para textos pequenos sobre o preto
+          black: {
+            DEFAULT: 'var(--apag-black)', // #111111
+            950: 'var(--apag-black-950)',
+            800: 'var(--apag-black-800)',
+            700: 'var(--apag-black-700)',
           },
-          graphite: 'var(--apag-graphite)',
           ink: 'var(--apag-ink)',
           slate: 'var(--apag-slate)',
           muted: 'var(--apag-muted)',
@@ -39,14 +38,13 @@ export default {
       },
       fontFamily: {
         sans: 'var(--font-stack-sans)',
-        mono: 'var(--font-stack-mono)',
       },
       borderRadius: {
-        sm: '3px', // códigos, chips
-        md: '6px', // botões, campos
-        lg: '8px', // cards
-        xl: '12px', // painéis e fotos
-        '2xl': '12px',
+        sm: '2px', // selos
+        md: '3px', // botões, campos
+        lg: '3px', // cards
+        xl: '6px', // painéis
+        '2xl': '6px',
       },
       keyframes: {
         'fade-up': {

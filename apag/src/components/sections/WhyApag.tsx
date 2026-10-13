@@ -1,50 +1,50 @@
 import { Photo } from '@/components/Photo'
 import { Reveal } from '@/components/motion'
 import { SectionHeader } from '@/components/SectionHeader'
-import { company } from '@/config/company'
 import { differentials } from '@/config/content'
 import { photos } from '@/config/photos'
 import { headings } from '@/config/sections'
 
-/** "Empresa": seção grafite com foto ampla e os diferenciais como linhas de ficha. */
+/*
+ * "Por que escolher a APAG" como na referência: foto de ambiente em preto e
+ * branco sob véu preto, título centralizado e quatro cartões de contorno fino
+ * com ícone vermelho.
+ */
 export function WhyApag() {
   return (
-    <section id="sobre" aria-labelledby="sobre-title" className="theme-dark section-pad bg-apag-graphite">
+    <section
+      id="sobre"
+      aria-labelledby="sobre-title"
+      className="theme-dark section-pad relative isolate overflow-clip-safe bg-apag-black"
+    >
+      {photos.why ? (
+        <Photo photo={photos.why} sizes="100vw" className="absolute inset-0 -z-20 size-full photo-mono" />
+      ) : null}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-apag-black/85" />
+
       <div className="container">
         <SectionHeader
           id="sobre-title"
           tone="dark"
-          index={headings.why.index}
-          label={headings.why.label}
-          meta={`${company.address.city}/${company.address.state}`}
           title={headings.why.title}
+          accent={headings.why.accent}
           description={headings.why.description}
         />
 
-        <div className="mt-14 grid gap-12 lg:mt-20 lg:grid-cols-12 lg:gap-8">
-          <Reveal className="lg:col-span-7">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-apag-navy-900">
-              {photos.why ? (
-                <Photo
-                  photo={photos.why}
-                  sizes="(min-width: 1280px) 720px, (min-width: 1024px) 56vw, 100vw"
-                  className="absolute inset-0 size-full saturate-[0.85]"
-                />
-              ) : null}
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.08} className="lg:col-span-4 lg:col-start-9">
-            <dl className="border-b border-white/14">
-              {differentials.map((item) => (
-                <div key={item.title} className="border-t border-white/14 py-5">
-                  <dt className="font-semibold tracking-[-0.01em] text-white">{item.title}</dt>
-                  <dd className="mt-1.5 text-[0.9375rem] leading-relaxed text-white/70">{item.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </Reveal>
-        </div>
+        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-5">
+          {differentials.map(({ icon: Icon, title, description }, i) => (
+            <Reveal
+              as="li"
+              key={title}
+              delay={i * 0.06}
+              className="rounded-md border border-white/20 bg-apag-black/50 p-6 text-center backdrop-blur-[2px] lg:p-8"
+            >
+              <Icon className="mx-auto size-9 text-apag-red" strokeWidth={1.5} aria-hidden="true" />
+              <h3 className="text-tech mt-5 text-[0.875rem] text-white">{title}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-white/72">{description}</p>
+            </Reveal>
+          ))}
+        </ul>
       </div>
     </section>
   )

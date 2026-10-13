@@ -20,17 +20,17 @@ npm run format     # prettier
 
 Todo o conteúdo fica em `src/config/`: nenhum dado da empresa está fixo nos componentes.
 
-| Arquivo                  | O que tem                                                                   |
-| ------------------------ | --------------------------------------------------------------------------- |
-| `src/config/company.ts`  | Dados da empresa, contato, descritor da marca, domínio, textos de SEO       |
-| `src/config/services.ts` | Os 6 serviços (grade de serviços, destaque do PPCI e opções do formulário)  |
+| Arquivo                  | O que tem                                                                  |
+| ------------------------ | -------------------------------------------------------------------------- |
+| `src/config/company.ts`  | Dados da empresa, contato, descritor da marca, domínio, textos de SEO      |
+| `src/config/services.ts` | Os 6 serviços (grade de serviços, destaque do PPCI e opções do formulário) |
 | `src/config/content.ts`  | Menu (`primary` = cabeçalho), segmentos, diferenciais ("Empresa") e etapas |
-| `src/config/faq.ts`      | Perguntas e respostas do FAQ                                                |
-| `src/config/sections.ts` | Textos fixos: Hero (e ficha técnica), títulos, chamada final, rótulos       |
-| `src/config/products/`   | Produtos: um arquivo por aba (`sinalizacao.ts`, `alarme.ts`…) e os tipos     |
-| `src/config/photos.ts`   | Fotos do Hero e da seção "Empresa"                                          |
-| `src/index.css`          | Paleta em variáveis CSS, fonte, escala tipográfica (`text-display`…)        |
-| `tailwind.config.ts`     | Tokens do Tailwind (`apag-red`, `apag-navy-950`, `apag-ink`, raios…)        |
+| `src/config/faq.ts`      | Perguntas e respostas do FAQ                                               |
+| `src/config/sections.ts` | Textos fixos: Hero (e ficha técnica), títulos, chamada final, rótulos      |
+| `src/config/products/`   | Produtos: um arquivo por aba (`sinalizacao.ts`, `alarme.ts`…) e os tipos   |
+| `src/config/photos.ts`   | Fotos do Hero e da seção "Empresa"                                         |
+| `src/index.css`          | Paleta em variáveis CSS, fonte, escala tipográfica (`text-display`…)       |
+| `tailwind.config.ts`     | Tokens do Tailwind (`apag-red`, `apag-navy-950`, `apag-ink`, raios…)       |
 
 O `company.ts` também alimenta, no build, as meta tags, o Open Graph, o JSON-LD (`LocalBusiness`), o
 `robots.txt`, o `sitemap.xml` e o `llms.txt` (veja `seo.ts`).
@@ -75,28 +75,28 @@ fornecedores; o que não deu para confirmar está marcado com `// TODO confirmar
 
 ## Sistema visual
 
-Direção "industrial premium + editorial" (v5). Tokens centralizados em `src/index.css` (variáveis CSS e
-utilitários) e expostos no Tailwind por `tailwind.config.ts`.
+Direção preto, branco e vermelho (v6), guiada pela referência visual aprovada: foto de ambiente em tela
+cheia, títulos em caixa alta, cartões brancos sobrepostos e seções escuras com foto. Tokens centralizados em
+`src/index.css` (variáveis CSS e utilitários) e expostos no Tailwind por `tailwind.config.ts`.
 
-- **Cores:** azul-marinho `#10243A` (identidade: hero, cabeçalho, PPCI, chamada final), azul secundário
-  `#1B3853`, azul profundo `#0B1A2B` (rodapé), vermelho `#D52B32` só em ações, indicadores e detalhes
-  (`#B3232A` no hover e em textos vermelhos pequenos sobre claro; `#FF7A80` sobre escuro), branco e cinza
-  `#F3F4F5` nas seções de leitura, grafite `#202831` em textos e na seção "Empresa", cinza `#66717D` em textos
-  secundários. Todos os pares de texto passam no contraste AA.
-- **Tipo:** Geist (interface e títulos) + Geist Mono (identificadores técnicos: índice das seções, siglas dos
-  serviços, códigos de produto, rótulos da ficha). Escala: `text-display` (hero, até 84 px), `text-title`
-  (h2, até 56 px), `text-heading` (h3), corpo 16 a 18 px, `text-label` (13 px) e `text-tech` (Geist Mono 12 px).
-- **Espaço e forma:** múltiplos de 8 px; `section-pad` (80 px, 120 px no desktop); conteúdo até 1280 px.
-  Raios: 3 px (códigos, chips), 6 px (botões, campos), 8 px (cards), 12 px (painéis e fotos). Sem sombras
-  decorativas; separação por filetes de 1 px.
-- **Linguagem técnica:** cada seção abre com uma faixa de prancha (`SectionHeader`: filete, índice e nome em
-  Geist Mono, informação à direita, título grande e frase curta); malha de prancha (`bg-blueprint`) no
-  hero, no PPCI e na chamada final; planta de prevenção esquemática (`PlanDrawing`, ilustrativa, sem
-  medidas); foto do hero como prancha com marcas de corte; ficha técnica no pé do hero.
-- **Imagens:** fotos com o mesmo tratamento (saturação levemente reduzida e véu marinho); serviços ilustrados
-  com fotos reais de produtos do catálogo sobre fundo branco.
-- **Movimento:** sequência de entrada do hero (só CSS), entradas de 12 px nas seções, transições de 160 a
-  240 ms; tudo desligado com `prefers-reduced-motion`.
+- **Cores:** preto `#111111` (cabeçalho, hero, "Por que escolher a APAG", contato; `#0A0A0A` no rodapé),
+  branco `#FFFFFF` e cinzas neutros (`#F4F4F4` nas seções alternadas, `#E3E3E3` nos filetes, `#4A4A4A` e
+  `#6B6B6B` em textos secundários). Vermelho `#D71920` só onde importa: ações principais, segunda linha dos
+  títulos de destaque, ícones, números das etapas e filete dos cards (`#B5141A` no hover e em textos vermelhos
+  pequenos sobre claro; `#FF5A5F` sobre escuro). Sem azuis. Fotos, produtos e logos de fabricantes mantêm as
+  cores naturais.
+- **Tipo:** só Geist. Títulos em caixa alta, peso 800: `text-display` (hero, até 68 px) e `text-title` (h2,
+  até 40 px); `text-tech` (12 a 14 px, caixa alta espaçada) nos nomes de serviços, pilares e etapas; corpo
+  de 15 a 18 px em peso 400.
+- **Espaço e forma:** `section-pad` (72 px, 104 px no desktop); conteúdo até 1200 px. Cantos quase retos
+  (2 a 3 px em botões, campos e cards; 6 px no máximo). Botões retangulares com texto em caixa alta.
+- **Títulos de seção:** `SectionHeader` centraliza o título entre dois filetes, com trecho opcional em
+  vermelho (por exemplo "Por que escolher a **APAG**").
+- **Imagens:** fotos de ambiente (hero, "Por que escolher a APAG", contato) em preto e branco (`photo-mono`)
+  sob véu preto; fotos dos serviços coloridas, em proporção 3:2, com filete vermelho na legenda; produtos
+  sempre com a foto real do fabricante.
+- **Movimento:** entrada do hero só com CSS, entradas de 12 px nas seções, transições de 160 a 300 ms; tudo
+  desligado com `prefers-reduced-motion`.
 - **Breakpoints:** os do Tailwind (640, 768, 1024, 1280).
 
 ## Imagens
@@ -104,7 +104,10 @@ utilitários) e expostos no Tailwind por `tailwind.config.ts`.
 - **Produtos:** `public/produtos/{categoria}/{id}.webp` (até 800 px, WebP). O caminho vai no campo `image` do
   produto em `src/config/products/{categoria}.ts`; `image: ''` mostra um placeholder com o ícone da categoria. Para trocar uma foto, basta
   substituir o arquivo (mesmo nome).
-- **Fotos:** `public/fotos/{id}-{largura}.webp` (`hero`: extintor em área industrial; `empresa`: placa de saída).
+- **Fotos:** `public/fotos/{id}-{largura}.webp`: `hero` (galpão industrial com estrutura metálica), `por-que` e
+  `contato` (estruturas metálicas industriais) e `servico-*` (uma por serviço). Origem, autor e licença de
+  cada uma em `scripts/assets/manifest.json` e no `CREDITOS.md`; os textos alternativos ficam em
+  `src/config/photos.ts` e `src/config/services.ts`.
 - **Créditos:** `public/produtos/CREDITOS.md` lista a origem de cada imagem (fabricante, ou autor e licença).
 - **Como foram obtidas:** `scripts/assets/download.py` baixa e otimiza o que está em `scripts/assets/manifest.json`
   e gera o `CREDITOS.md` (`python3 scripts/assets/download.py photos` refaz só as fotos humanizadas);
@@ -112,8 +115,8 @@ utilitários) e expostos no Tailwind por `tailwind.config.ts`.
   de banco de imagem Unsplash e Pexels bloquearam o acesso automatizado; por isso as fotos humanizadas e as de
   extintores vieram do Wikimedia Commons e do Openverse, com licenças livres (CC0, CC BY, CC BY-SA)
   e crédito no `CREDITOS.md`.
-- **Fontes:** Geist (400 a 700) e Geist Mono (400 a 600), carregadas do Google Fonts no `index.html` com
-  `preconnect` e `display=swap`. No Tailwind: `font-sans` e `font-mono`.
+- **Fontes:** Geist (400 a 800), carregada do Google Fonts no `index.html` com `preconnect` e
+  `display=swap`. No Tailwind: `font-sans`.
 - O build falha se alguma imagem referenciada na página não existir em `public/`.
 
 ## Deploy na Vercel
@@ -141,8 +144,9 @@ Pela CLI, como alternativa: `npm i -g vercel`, depois `cd apag && vercel` (previ
 - **Acessibilidade:** HTML semântico, link "Pular para o conteúdo", foco visível (vermelho no claro, rosado no
   escuro), menu, acordeão, abas, filtros e o modal de produto navegáveis por teclado (o foco volta ao card ao
   fechar) e `prefers-reduced-motion` respeitado.
-- **Cores:** `#DF2531` sobre o marinho tem contraste 4,1:1, abaixo do AA para texto pequeno. Por isso textos
-  pequenos em vermelho usam `apag-ember` (`#FF6B74`) no escuro e `apag-red-strong` (`#BE1B26`) no claro.
+- **Cores:** `#D71920` tem contraste 5,2:1 com o branco (texto e botão), mas 3,6:1 sobre o preto, então no
+  escuro o vermelho puro aparece só em títulos grandes e ícones; textos pequenos em vermelho usam `apag-ember`
+  (`#FF5A5F`, 6,2:1) no escuro e `apag-red-strong` (`#B5141A`) no claro.
 
 ## Estrutura
 
@@ -150,16 +154,16 @@ Pela CLI, como alternativa: `npm i -g vercel`, depois `cd apag && vercel` (previ
 apag/
 ├── public/                 favicon, ícone iOS, imagem de compartilhamento (+ logo, a adicionar)
 │   ├── produtos/           fotos dos produtos ({categoria}/{id}.webp) e CREDITOS.md
-│   └── fotos/              fotos humanizadas ({id}-800.webp e {id}-1600.webp)
+│   └── fotos/              fotos de ambiente e de serviços ({id}-{largura}.webp)
 ├── scripts/                build.mjs (build completo) e prerender.mjs (gera o HTML estático)
 │   └── assets/             scripts que baixam/otimizam as imagens (veja "Imagens" acima)
 ├── seo.ts                  plugin do Vite: meta tags, JSON-LD, robots.txt, sitemap.xml, llms.txt
 ├── src/
 │   ├── components/
 │   │   ├── sections/       uma seção por arquivo (Navbar, Hero, Segments, Services, Products,
-│   │   │                   WhyApag, Process, Faq, FinalCta, Contact, Footer)
+│   │   │                   WhyApag, Process, Faq, Contact, Footer)
 │   │   ├── ui/             componentes shadcn/ui (button, accordion, dialog, sheet, select, form…)
-│   │   └── …               Logo, ContactForm, WhatsAppButton, SectionHeader, PlanDrawing, motion, icons
+│   │   └── …               Logo, ContactForm, WhatsAppButton, SectionHeader, Photo, motion, icons
 │   ├── config/             dados e textos do site (products/ = um arquivo por aba)
 │   ├── context/ hooks/ lib/
 │   ├── entry-server.tsx    renderização no build

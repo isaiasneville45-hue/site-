@@ -5,11 +5,12 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 /*
- * Botões: retângulo com raio de 6 px, sem sombra. O vermelho fica só na ação
- * principal; as demais usam contorno (sobre claro ou sobre escuro).
+ * Botões: retângulos com raio de 3 px e rótulo em caixa alta (como a referência),
+ * sem sombra. O vermelho fica só na ação principal; as demais usam contorno
+ * (sobre claro ou sobre escuro).
  */
 const buttonVariants = cva(
-  'inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md font-semibold tracking-[-0.01em] transition-[background-color,border-color,color] duration-200 ease-out disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0',
+  'inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md font-bold uppercase tracking-[0.06em] transition-[background-color,border-color,color] duration-200 ease-out disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0',
   {
     variants: {
       variant: {
@@ -22,12 +23,12 @@ const buttonVariants = cva(
         // Botão branco sobre fundo escuro
         light: 'bg-white text-apag-ink hover:bg-apag-paper',
         ghost: 'text-apag-ink hover:bg-apag-paper',
-        link: 'h-auto rounded-none p-0 text-apag-red underline-offset-4 hover:underline',
+        link: 'h-auto rounded-none p-0 normal-case tracking-normal text-apag-red underline-offset-4 hover:underline',
       },
       size: {
-        sm: 'h-9 px-3.5 text-sm [&_svg]:size-4',
-        default: 'h-11 px-5 text-[0.9375rem] [&_svg]:size-[1.125rem]',
-        lg: 'h-12 px-6 text-base [&_svg]:size-5',
+        sm: 'h-9 px-3.5 text-[0.75rem] [&_svg]:size-4',
+        default: 'h-11 px-5 text-[0.8125rem] [&_svg]:size-[1.125rem]',
+        lg: 'h-12 px-7 text-[0.875rem] [&_svg]:size-5',
         icon: 'size-10 [&_svg]:size-5',
       },
     },

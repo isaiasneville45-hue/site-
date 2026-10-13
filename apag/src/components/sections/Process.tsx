@@ -3,37 +3,24 @@ import { SectionHeader } from '@/components/SectionHeader'
 import { processSteps } from '@/config/content'
 import { headings } from '@/config/sections'
 
-/** Etapas do atendimento (sequência real): números grandes em Geist Mono sobre uma linha contínua. */
+/** Etapas do atendimento (sequência real): número vermelho grande sobre filete. */
 export function Process() {
   return (
     <section id="como-trabalhamos" aria-labelledby="processo-title" className="section-pad bg-white">
       <div className="container">
-        <SectionHeader
-          id="processo-title"
-          index={headings.process.index}
-          label={headings.process.label}
-          meta={`${processSteps.length} etapas`}
-          title={headings.process.title}
-          description={headings.process.description}
-        />
+        <SectionHeader id="processo-title" title={headings.process.title} description={headings.process.description} />
 
-        <ol className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
           {processSteps.map((step, i) => (
-            <Reveal as="li" key={step.title} delay={i * 0.06} className="relative">
-              <span
-                aria-hidden="true"
-                className="block font-mono text-5xl font-normal leading-none tracking-[-0.04em] text-apag-navy-900"
-              >
+            <Reveal as="li" key={step.title} delay={i * 0.06} className="border-t-2 border-apag-ink pt-6">
+              <span aria-hidden="true" className="block text-4xl font-extrabold leading-none text-apag-red">
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <div className="relative mt-6 border-t border-apag-line-strong pt-6">
-                <span aria-hidden="true" className="absolute -top-px left-0 h-0.5 w-12 bg-apag-red" />
-                <h3 className="text-heading text-lg">
-                  <span className="sr-only">Etapa {i + 1}: </span>
-                  {step.title}
-                </h3>
-                <p className="mt-2 max-w-xs text-[0.9375rem] leading-relaxed text-apag-slate">{step.description}</p>
-              </div>
+              <h3 className="text-tech mt-5 text-[0.875rem] text-apag-ink">
+                <span className="sr-only">Etapa {i + 1}: </span>
+                {step.title}
+              </h3>
+              <p className="mt-2 max-w-xs text-[0.9375rem] leading-relaxed text-apag-slate">{step.description}</p>
             </Reveal>
           ))}
         </ol>

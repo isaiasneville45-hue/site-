@@ -4,65 +4,58 @@ import { Reveal } from '@/components/motion'
 import { cn } from '@/lib/utils'
 
 type SectionHeaderProps = {
-  /** índice da seção ("01") */
-  index: string
-  /** nome curto da seção ("Serviços") */
-  label: string
-  /** informação técnica à direita da faixa (ex.: "373 produtos") */
-  meta?: ReactNode
   id?: string
   title: ReactNode
+  /** trecho final do título em vermelho (usar com moderação; título grande: AA também sobre o preto) */
+  accent?: ReactNode
   description?: ReactNode
   tone?: 'light' | 'dark'
+  align?: 'center' | 'left'
   className?: string
 }
 
 /*
- * Abertura de seção no formato das pranchas técnicas: uma faixa com filete de
- * ponta a ponta, índice e nome da seção em Geist Mono (e uma informação à
- * direita), seguida do título grande e de uma frase curta alinhada à base.
+ * Título de seção no padrão da referência: caixa alta, peso 800, centralizado
+ * entre dois filetes, com uma frase curta embaixo. No alinhamento à esquerda,
+ * o filete fica só à direita.
  */
 export function SectionHeader({
-  index,
-  label,
-  meta,
   id,
   title,
+  accent,
   description,
   tone = 'light',
+  align = 'center',
   className,
 }: SectionHeaderProps) {
   const dark = tone === 'dark'
+  const rule = cn('hidden h-px flex-1 sm:block', dark ? 'bg-white/25' : 'bg-apag-line-strong')
   return (
-    <Reveal className={className}>
-      <div
-        className={cn(
-          'relative flex items-center justify-between gap-6 border-t pt-4 text-tech',
-          dark ? 'border-white/20 text-white/60' : 'border-apag-line-strong text-apag-muted',
-        )}
-      >
-        <span aria-hidden="true" className="absolute -top-px left-0 h-0.5 w-12 bg-apag-red" />
-        <span className="flex gap-4">
-          <span className={dark ? 'text-apag-ember' : 'text-apag-red-strong'}>{index}</span>
-          <span className={dark ? 'text-white/85' : 'text-apag-ink'}>{label}</span>
-        </span>
-        {meta ? <span className="text-right">{meta}</span> : null}
-      </div>
-      <div className="mt-10 grid gap-6 lg:mt-14 lg:grid-cols-12 lg:items-end lg:gap-8">
-        <h2 id={id} className="text-title text-balance lg:col-span-7">
+    <Reveal className={cn(align === 'center' ? 'text-center' : 'text-left', className)}>
+      <div className={cn('flex items-center gap-6', align === 'center' ? 'justify-center' : '')}>
+        {align === 'center' ? <span aria-hidden="true" className={cn(rule, 'max-w-40')} /> : null}
+        <h2 id={id} className="text-title max-w-4xl text-balance">
           {title}
+          {accent ? (
+            <>
+              {' '}
+              <span className="text-apag-red">{accent}</span>
+            </>
+          ) : null}
         </h2>
-        {description ? (
-          <p
-            className={cn(
-              'max-w-md text-base leading-relaxed text-pretty sm:text-lg lg:col-span-4 lg:col-start-9 lg:pb-1',
-              dark ? 'text-white/70' : 'text-apag-slate',
-            )}
-          >
-            {description}
-          </p>
-        ) : null}
+        <span aria-hidden="true" className={cn(rule, align === 'center' ? 'max-w-40' : '')} />
       </div>
+      {description ? (
+        <p
+          className={cn(
+            'mt-4 max-w-2xl text-base leading-relaxed text-pretty sm:text-lg',
+            align === 'center' && 'mx-auto',
+            dark ? 'text-white/72' : 'text-apag-slate',
+          )}
+        >
+          {description}
+        </p>
+      ) : null}
     </Reveal>
   )
 }

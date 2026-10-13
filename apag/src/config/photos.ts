@@ -1,9 +1,10 @@
 /**
- * Fotos "humanizadas" (pessoas, técnicos, ambientes) usadas no Hero e na seção
- * "Empresa". Os arquivos ficam em public/fotos/{id}-{largura}.webp e são
- * gerados por scripts/assets/download.py. Créditos em public/produtos/CREDITOS.md.
+ * Fotos de ambiente (hero, "Por que a APAG", contato) e dos serviços. Os arquivos
+ * ficam em public/fotos/{id}-{largura}.webp. Fotos de ambiente recebem o
+ * tratamento monocromático no CSS (photo-mono); fotos dos serviços mantêm as
+ * cores reais dos equipamentos. Créditos em public/produtos/CREDITOS.md.
  *
- * `null` = foto ainda não disponível (o layout usa só o gradiente).
+ * `null` = foto indisponível (a seção fica só com o fundo preto).
  */
 export type PhotoAsset = {
   id: string
@@ -14,17 +15,23 @@ export type PhotoAsset = {
   position?: string
 }
 
-export const photos: { hero: PhotoAsset | null; why: PhotoAsset | null } = {
+export const photos: { hero: PhotoAsset | null; why: PhotoAsset | null; contact: PhotoAsset | null } = {
   hero: {
     id: 'hero',
-    alt: 'Extintor de incêndio vermelho em suporte de piso amarelo com placa de identificação, instalado em uma área industrial com tubulações e andaimes',
-    widths: [800, 1200],
-    position: '42% 50%',
+    alt: 'Interior de um grande galpão industrial com estrutura metálica treliçada no teto e janelas altas nas laterais',
+    widths: [800, 1600, 2400],
+    position: '50% 45%',
   },
   why: {
-    id: 'empresa',
-    alt: 'Placa de saída de emergência iluminada, com pictograma de pessoa correndo e seta, no teto de um corredor de prédio comercial',
+    id: 'por-que',
+    alt: 'Detalhe da estrutura metálica de uma cobertura industrial, com treliças, colunas e telhas onduladas',
     widths: [800, 1600],
-    position: '55% 40%',
+    position: '50% 40%',
+  },
+  contact: {
+    id: 'contato',
+    alt: 'Vigas e estrutura metálica sob o telhado de um armazém',
+    widths: [800, 1600],
+    position: '50% 50%',
   },
 }

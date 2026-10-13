@@ -16,7 +16,7 @@ export function Footer() {
   const year = useSyncExternalStore(subscribeNothing, currentYear, buildYear)
 
   return (
-    <footer className="theme-dark bg-apag-navy-950 text-white">
+    <footer className="theme-dark bg-apag-black-950 text-white">
       <div className="container grid gap-12 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8 lg:pt-20">
         <div className="lg:col-span-4">
           <a href="#inicio" aria-label={`${company.name}, voltar ao início`} className="inline-block rounded-sm">

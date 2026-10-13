@@ -2,24 +2,34 @@
  * Textos fixos das seções (títulos, subtítulos, rótulos de interface).
  * Os dados de empresa ficam em company.ts; serviços, produtos e FAQ nos arquivos próprios.
  */
-import { company, yearsInBusiness } from './company'
+import { company } from './company'
 
-export type SectionHeadingText = { index: string; label: string; title: string; description?: string }
+export type SectionHeadingText = { title: string; accent?: string; description?: string }
 
 export const hero = {
-  /** Título em duas linhas (a quebra é intencional). */
-  title: ['Segurança contra incêndio.', 'Precisão em cada detalhe.'],
-  subtitle: `Instalação, manutenção e regularização de sistemas de prevenção em ${company.serviceArea}.`,
+  /** Título em duas linhas: a segunda em vermelho, como na referência. */
+  title: 'Segurança contra incêndio',
+  titleAccent: 'Precisão em cada detalhe',
+  subtitle: `Instalação, manutenção e regularização de sistemas de prevenção em ${company.serviceArea}, desde ${company.foundedYear}.`,
   primaryCta: 'Solicitar orçamento',
-  secondaryCta: 'Conhecer os serviços',
-  /** Ficha técnica no pé do hero (só dados comprovados). */
-  facts: [
-    { label: 'Fundação', value: String(company.foundedYear) },
-    { label: 'Atuação', value: `${yearsInBusiness()} anos` },
-    { label: 'Atendimento', value: company.serviceArea },
-    { label: 'Escopo', value: 'Instalação, manutenção e regularização' },
-  ],
+  secondaryCta: 'Nossos serviços',
 }
+
+/** Os três pilares (cartões brancos sobre o pé do hero). */
+export const pillars = [
+  {
+    title: 'Instalação',
+    description: 'Extintores, hidrantes, alarme, sinalização e iluminação de emergência.',
+  },
+  {
+    title: 'Manutenção',
+    description: 'Recarga, inspeção e testes periódicos dos sistemas.',
+  },
+  {
+    title: 'Regularização',
+    description: 'Apoio técnico no PPCI junto ao Corpo de Bombeiros.',
+  },
+]
 
 export const segmentsUi = { title: 'Atendemos' }
 
@@ -60,11 +70,6 @@ export const productsUi = {
     `Olá! Vim pelo site e gostaria de um orçamento de: ${item} (${category}).`,
 }
 
-export const finalCta = {
-  title: 'Precisa de uma solução em prevenção contra incêndio?',
-  description: `Fale com a ${company.name} e solicite um orçamento.`,
-}
-
 export const manufacturersUi = {
   title: 'Fabricantes no catálogo',
   visit: 'Site do fabricante',
@@ -73,45 +78,32 @@ export const manufacturersUi = {
 
 export const headings = {
   services: {
-    index: '01',
-    label: 'Serviços',
-    title: 'Um fornecedor para todo o sistema de prevenção',
-    description: 'Instalação, manutenção e apoio na regularização do imóvel.',
+    title: 'Nossos serviços',
+    description: 'Instalação, manutenção e apoio na regularização, com um único fornecedor.',
   },
   products: {
-    index: '02',
-    label: 'Produtos',
-    title: 'Catálogo técnico',
+    title: 'Catálogo de produtos',
     description: 'Equipamentos dos fabricantes que revendemos e instalamos. Busque por nome ou código.',
   },
   why: {
-    index: '03',
-    label: 'Empresa',
-    title: `Desde ${company.foundedYear} em ${company.address.city}`,
-    description:
-      'Instalamos e mantemos sistemas de prevenção e combate a incêndio para condomínios, comércios e indústrias da região.',
+    title: 'Por que escolher a',
+    accent: company.name,
+    description: `Desde ${company.foundedYear} instalando e mantendo sistemas de prevenção em ${company.address.city} e região.`,
   },
   process: {
-    index: '04',
-    label: 'Atendimento',
     title: 'Como trabalhamos',
     description: 'Do primeiro contato à manutenção periódica.',
   },
   faq: {
-    index: '05',
-    label: 'Dúvidas',
     title: 'Perguntas frequentes',
     description: 'Não encontrou a resposta? Fale com a gente.',
   },
   contact: {
-    index: '06',
-    label: 'Contato',
-    title: 'Solicite um orçamento',
-    description: 'Preencha o formulário e enviamos pelo WhatsApp, ou use um dos canais ao lado.',
+    title: 'Precisa de uma solução em prevenção?',
+    accent: 'Fale com a APAG',
+    description: 'Solicite um orçamento pelo formulário ou pelos nossos canais.',
   },
   location: {
-    index: '',
-    label: '',
     title: 'Onde estamos',
   },
 } satisfies Record<string, SectionHeadingText>

@@ -3,7 +3,6 @@ import { LazyMotion, MotionConfig, domAnimation } from 'framer-motion'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { Contact } from '@/components/sections/Contact'
 import { Faq } from '@/components/sections/Faq'
-import { FinalCta } from '@/components/sections/FinalCta'
 import { Footer } from '@/components/sections/Footer'
 import { Hero } from '@/components/sections/Hero'
 import { Navbar } from '@/components/sections/Navbar'
@@ -28,7 +27,6 @@ export default function App() {
             <WhyApag />
             <Process />
             <Faq />
-            <FinalCta />
             <Contact />
           </main>
           <Footer />

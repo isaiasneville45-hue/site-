@@ -1,16 +1,20 @@
 import { useEffect, useState, type ComponentType, type ReactNode } from 'react'
-import { Navigation } from 'lucide-react'
+import { Clock, Mail, Navigation, Phone, type LucideIcon } from 'lucide-react'
 
+import { Photo } from '@/components/Photo'
 import { Reveal } from '@/components/motion'
 import { SectionHeader } from '@/components/SectionHeader'
+import { InstagramIcon, WhatsAppIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { company } from '@/config/company'
+import { photos } from '@/config/photos'
 import { headings } from '@/config/sections'
 import { mailHref, phoneHref, whatsappUrl } from '@/lib/contact'
 
 /**
- * Contato e localização numa seção só: formulário à esquerda; canais, endereço
- * e mapa à direita (o bloco do endereço mantém a âncora #localizacao).
+ * Contato no padrão da referência: foto em preto e branco sob véu preto; à
+ * esquerda o título, os canais e a localização (âncora #localizacao); à direita
+ * o formulário num painel branco. É também a chamada final do site.
  */
 export function Contact() {
   // O formulário (React Hook Form + Zod + Select) fica num chunk separado, carregado
@@ -27,54 +31,58 @@ export function Contact() {
   const { address } = company
 
   return (
-    <section id="contato" aria-labelledby="contato-title" className="section-pad bg-white">
-      <div className="container">
-        <SectionHeader
-          id="contato-title"
-          index={headings.contact.index}
-          label={headings.contact.label}
-          meta={company.phone}
-          title={headings.contact.title}
-          description={headings.contact.description}
-        />
+    <section
+      id="contato"
+      aria-labelledby="contato-title"
+      className="theme-dark section-pad relative isolate overflow-clip-safe bg-apag-black"
+    >
+      {photos.contact ? (
+        <Photo photo={photos.contact} sizes="100vw" className="absolute inset-0 -z-20 size-full photo-mono" />
+      ) : null}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgb(17_17_17/0.95)_0%,rgb(17_17_17/0.86)_55%,rgb(17_17_17/0.78)_100%)]"
+      />
+      <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 bg-apag-red" />
 
-        <div className="mt-14 grid gap-12 lg:mt-20 lg:grid-cols-12 lg:gap-8">
-          <Reveal className="lg:col-span-7">
-            <div className="rounded-xl border border-apag-line bg-white p-5 sm:p-8">
-              {ContactForm ? <ContactForm /> : <FormSkeleton />}
-            </div>
-          </Reveal>
+      <div className="container grid gap-12 lg:grid-cols-12 lg:gap-10">
+        <div className="lg:col-span-5">
+          <SectionHeader
+            id="contato-title"
+            tone="dark"
+            align="left"
+            title={headings.contact.title}
+            accent={headings.contact.accent}
+            description={headings.contact.description}
+          />
 
-          <Reveal delay={0.08} className="lg:col-span-4 lg:col-start-9">
-            <dl className="border-t border-apag-line-strong">
-              <Channel label="Telefone">
-                <a href={phoneHref()} className="hover:text-apag-red-strong">
+          <Reveal delay={0.06}>
+            <dl className="mt-10 border-t border-white/16">
+              <Channel icon={Phone} label="Telefone">
+                <a href={phoneHref()} className="hover:text-apag-ember">
                   {company.phone}
                 </a>
               </Channel>
-              <Channel label="WhatsApp">
-                <a
-                  href={whatsappUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-apag-red-strong"
-                >
+              <Channel icon={WhatsAppIcon} label="WhatsApp">
+                <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-apag-ember">
                   Conversar agora
                 </a>
               </Channel>
-              <Channel label="E-mail">
-                <a href={mailHref()} className="break-words hover:text-apag-red-strong">
+              <Channel icon={Mail} label="E-mail">
+                <a href={mailHref()} className="break-words hover:text-apag-ember">
                   {company.email}
                 </a>
               </Channel>
-              <Channel label="Horário">{company.hours}</Channel>
+              <Channel icon={Clock} label="Horário">
+                {company.hours}
+              </Channel>
               {company.instagram ? (
-                <Channel label="Instagram">
+                <Channel icon={InstagramIcon} label="Instagram">
                   <a
                     href={company.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-apag-red-strong"
+                    className="hover:text-apag-ember"
                   >
                     {company.instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, '@').replace(/\/$/, '')}
                   </a>
@@ -83,25 +91,25 @@ export function Contact() {
             </dl>
 
             <div id="localizacao" aria-labelledby="localizacao-title" role="region" className="mt-10">
-              <h3 id="localizacao-title" className="text-heading">
+              <h3 id="localizacao-title" className="text-tech text-[0.8125rem] text-white">
                 {headings.location.title}
               </h3>
-              <address className="mt-2 not-italic leading-relaxed text-apag-slate">
+              <address className="mt-2 not-italic leading-relaxed text-white/75">
                 {address.street}, {address.district}
                 <br />
                 {address.city}/{address.state}, CEP {address.zip}
               </address>
-              <div className="mt-4 overflow-hidden rounded-lg border border-apag-line">
+              <div className="mt-4 overflow-hidden rounded-md border border-white/16">
                 <iframe
                   src={company.mapsEmbedUrl}
                   title={`Mapa: ${company.name} em ${address.city}/${address.state}`}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
-                  className="block h-56 w-full border-0"
+                  className="block h-48 w-full border-0 grayscale"
                 />
               </div>
-              <Button asChild variant="secondary" size="sm" className="mt-4">
+              <Button asChild variant="outline-dark" size="sm" className="mt-4">
                 <a href={company.mapsDirectionsUrl} target="_blank" rel="noopener noreferrer">
                   <Navigation aria-hidden="true" />
                   Como chegar
@@ -110,16 +118,33 @@ export function Contact() {
             </div>
           </Reveal>
         </div>
+
+        <Reveal delay={0.1} className="lg:col-span-7">
+          {/* painel branco do formulário, como na referência */}
+          <div className="theme-light rounded-md bg-white p-5 shadow-[0_32px_64px_-32px_rgb(0_0_0/0.8)] sm:p-8 lg:p-10">
+            <p className="text-tech mb-6 text-[0.8125rem] text-apag-ink">Solicite um orçamento</p>
+            {ContactForm ? <ContactForm /> : <FormSkeleton />}
+          </div>
+        </Reveal>
       </div>
     </section>
   )
 }
 
-function Channel({ label, children }: { label: string; children: ReactNode }) {
+function Channel({
+  icon: Icon,
+  label,
+  children,
+}: {
+  icon: LucideIcon | typeof WhatsAppIcon
+  label: string
+  children: ReactNode
+}) {
   return (
-    <div className="flex items-baseline justify-between gap-6 border-b border-apag-line-strong py-4">
-      <dt className="shrink-0 text-tech text-apag-muted">{label}</dt>
-      <dd className="min-w-0 text-right font-medium text-apag-ink">{children}</dd>
+    <div className="flex items-center gap-4 border-b border-white/16 py-4">
+      <Icon className="size-5 shrink-0 text-apag-red" aria-hidden="true" />
+      <dt className="sr-only">{label}</dt>
+      <dd className="min-w-0 font-medium text-white">{children}</dd>
     </div>
   )
 }
