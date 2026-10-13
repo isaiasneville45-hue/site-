@@ -1,930 +1,672 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLIVA — Roupas Femininas</title>
-<meta name="description" content="OLIVA — coleções enxutas de roupas femininas, cortes limpos e tecidos que duram.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --preto:#161613;
-    --branco:#faf9f6;
-    --oliva:#6b7250;
-    --oliva-escuro:#565c40;
-    --cinza:#6f6d66;
-    --borda:#e4e2da;
-  }
-
-  *{margin:0;padding:0;box-sizing:border-box;}
-
-  html{scroll-behavior:smooth;}
-
-  body{
-    background:var(--branco);
-    color:var(--preto);
-    font-family:'Jost', sans-serif;
-    font-weight:300;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-
-  h1,h2,h3{
-    font-family:'Cormorant Garamond', serif;
-    font-weight:500;
-    line-height:1.15;
-    letter-spacing:.01em;
-  }
-
-  a{color:inherit;text-decoration:none;}
-
-  img{display:block;max-width:100%;}
-
-  .wrap{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 32px;
-  }
-
-  section{padding:120px 0;}
-
-  .eyebrow{
-    display:block;
-    font-family:'Jost', sans-serif;
-    font-size:12px;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:18px;
-  }
-
-  /* ---------- NAV ---------- */
-  .navbar{
-    position:fixed;
-    top:0;left:0;right:0;
-    z-index:100;
-    background:rgba(250,249,246,.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--borda);
-  }
-
-  .navbar-inner{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 32px;
-    height:76px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-  }
-
-  .logo{
-    font-family:'Cormorant Garamond', serif;
-    font-size:26px;
-    letter-spacing:.12em;
-    font-weight:600;
-  }
-
-  .nav-links{
-    display:flex;
-    gap:40px;
-    list-style:none;
-  }
-
-  .nav-links a{
-    font-size:13px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    color:var(--preto);
-    padding-bottom:4px;
-    border-bottom:1px solid transparent;
-  }
-
-  .nav-links a:hover{
-    border-bottom:1px solid var(--oliva);
-  }
-
-  .menu-toggle{display:none;}
-  .hamburger{
-    display:none;
-    flex-direction:column;
-    justify-content:center;
-    gap:5px;
-    width:26px;
-    height:20px;
-    cursor:pointer;
-  }
-  .hamburger span{
-    display:block;
-    height:1px;
-    width:100%;
-    background:var(--preto);
-    transition:transform .25s ease, opacity .25s ease;
-  }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    align-items:flex-end;
-    color:var(--branco);
-    overflow:hidden;
-  }
-
-  .hero-img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .hero-overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(0deg, rgba(15,15,13,.72) 0%, rgba(15,15,13,.28) 45%, rgba(15,15,13,.15) 100%);
-  }
-
-  .hero-content{
-    position:relative;
-    z-index:2;
-    width:100%;
-    padding:0 32px 100px;
-    max-width:1180px;
-    margin:0 auto;
-  }
-
-  .hero-content .eyebrow{color:#cfd3bd;}
-
-  .hero h1{
-    font-size:clamp(38px, 6vw, 68px);
-    max-width:16ch;
-    margin-bottom:26px;
-  }
-
-  .hero p{
-    font-size:17px;
-    max-width:46ch;
-    color:#e9e8e2;
-    margin-bottom:40px;
-  }
-
-  .btn{
-    display:inline-block;
-    padding:15px 36px;
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    border:1px solid var(--oliva);
-    color:var(--branco);
-    background:transparent;
-  }
-
-  .btn:hover{
-    background:var(--oliva);
-  }
-
-  .btn-dark{
-    border:1px solid var(--preto);
-    color:var(--preto);
-  }
-  .btn-dark:hover{
-    background:var(--preto);
-    color:var(--branco);
-  }
-
-  /* ---------- SOBRE ---------- */
-  .sobre .wrap{
-    display:grid;
-    grid-template-columns:0.95fr 1.05fr;
-    gap:80px;
-    align-items:center;
-  }
-
-  .sobre-img{
-    aspect-ratio:4/5;
-    width:100%;
-    object-fit:cover;
-  }
-
-  .sobre h2{
-    font-size:clamp(30px, 4vw, 44px);
-    margin-bottom:28px;
-  }
-
-  .sobre p{
-    color:#3c3b37;
-    font-size:16px;
-    max-width:52ch;
-    margin-bottom:20px;
-  }
-
-  .sobre p:last-of-type{margin-bottom:0;}
-
-  .assinatura{
-    margin-top:32px;
-    font-family:'Cormorant Garamond', serif;
-    font-size:20px;
-    font-style:italic;
-    color:var(--oliva-escuro);
-  }
-
-  /* ---------- GALERIA ---------- */
-  .galeria{
-    background:#f3f2ec;
-  }
-
-  .galeria-head{
-    display:flex;
-    align-items:flex-end;
-    justify-content:space-between;
-    margin-bottom:56px;
-    gap:24px;
-    flex-wrap:wrap;
-  }
-
-  .galeria-head h2{
-    font-size:clamp(30px, 4vw, 44px);
-  }
-
-  .galeria-head p{
-    color:var(--cinza);
-    max-width:34ch;
-    font-size:15px;
-  }
-
-  .catalogo-controls{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-    margin-bottom:48px;
-  }
-
-  .busca-form{
-    position:relative;
-    max-width:420px;
-  }
-
-  .busca-form input[type="search"]{
-    width:100%;
-    padding:14px 44px 14px 18px;
-    border:1px solid var(--borda);
-    background:var(--branco);
-    font-family:'Jost', sans-serif;
-    font-size:14px;
-    font-weight:300;
-    color:var(--preto);
-  }
-
-  .busca-form input[type="search"]::placeholder{color:var(--cinza);}
-
-  .busca-form input[type="search"]:focus{
-    outline:none;
-    border-color:var(--oliva);
-  }
-
-  .busca-form input[type="search"]::-webkit-search-cancel-button{
-    -webkit-appearance:none;
-  }
-
-  .busca-icon{
-    position:absolute;
-    right:16px;
-    top:50%;
-    transform:translateY(-50%);
-    width:16px;
-    height:16px;
-    stroke:var(--cinza);
-    pointer-events:none;
-  }
-
-  .categorias{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-  }
-
-  .cat-tab{
-    padding:9px 20px;
-    font-family:'Jost', sans-serif;
-    font-size:12px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    border:1px solid var(--borda);
-    background:transparent;
-    color:var(--preto);
-    cursor:pointer;
-  }
-
-  .cat-tab:hover{border-color:var(--oliva);}
-
-  .cat-tab.active{
-    border-color:var(--oliva);
-    color:var(--oliva-escuro);
-  }
-
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:36px 24px;
-  }
-
-  .produto{
-    display:flex;
-    flex-direction:column;
-  }
-
-  .produto[hidden]{display:none;}
-
-  .produto-img{
-    aspect-ratio:3/4;
-    overflow:hidden;
-    background:#e4e2da;
-  }
-
-  .produto-img img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .produto-info{
-    padding-top:16px;
-  }
-
-  .produto-cat{
-    display:block;
-    font-size:11px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:6px;
-  }
-
-  .produto-nome{
-    font-family:'Cormorant Garamond', serif;
-    font-size:19px;
-    margin-bottom:6px;
-  }
-
-  .produto-preco{
-    font-size:14px;
-    color:var(--preto);
-    margin-bottom:14px;
-    font-variant-numeric:tabular-nums;
-  }
-
-  .produto-cta{
-    display:block;
-    width:100%;
-    padding:10px 0;
-    font-family:'Jost', sans-serif;
-    font-size:11px;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    text-align:center;
-    background:transparent;
-    border:1px solid var(--oliva);
-    color:var(--preto);
-    cursor:pointer;
-  }
-
-  .produto-cta:hover{
-    background:var(--oliva);
-    color:var(--branco);
-  }
-
-  .sem-resultado{
-    display:none;
-    text-align:center;
-    padding:60px 0;
-    color:var(--cinza);
-    font-size:15px;
-  }
-
-  .sem-resultado.ativo{display:block;}
-
-  /* ---------- LOCALIZAÇÃO ---------- */
-  .local .wrap{
-    display:grid;
-    grid-template-columns:0.8fr 1.2fr;
-    gap:80px;
-  }
-
-  .local h2{
-    font-size:clamp(30px, 4vw, 44px);
-    margin-bottom:28px;
-  }
-
-  .local-info p{
-    font-size:15px;
-    color:#3c3b37;
-    margin-bottom:18px;
-  }
-
-  .local-info strong{
-    display:block;
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:6px;
-    font-weight:500;
-  }
-
-  .local-item{margin-bottom:32px;}
-
-  .mapa{
-    width:100%;
-    aspect-ratio:4/3;
-    border:1px solid var(--borda);
-    filter:grayscale(40%) contrast(1.02);
-  }
-
-  /* ---------- CTA FAIXA ---------- */
-  .faixa{
-    background:var(--preto);
-    color:var(--branco);
-    text-align:center;
-    padding:90px 0;
-  }
-
-  .faixa h2{
-    font-size:clamp(28px, 4vw, 40px);
-    max-width:20ch;
-    margin:0 auto 32px;
-  }
-
-  /* ---------- FOOTER ---------- */
-  footer{
-    background:var(--branco);
-    padding:80px 0 40px;
-  }
-
-  .footer-top{
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:60px;
-    padding-bottom:60px;
-    border-bottom:1px solid var(--borda);
-  }
-
-  .footer-logo{
-    font-family:'Cormorant Garamond', serif;
-    font-size:26px;
-    letter-spacing:.12em;
-    font-weight:600;
-    margin-bottom:16px;
-    display:inline-block;
-  }
-
-  .footer-top p{
-    font-size:14px;
-    color:var(--cinza);
-    max-width:34ch;
-  }
-
-  .footer-col h4{
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:18px;
-    font-weight:500;
-  }
-
-  .footer-col ul{list-style:none;}
-
-  .footer-col li{
-    margin-bottom:12px;
-    font-size:14px;
-    color:#3c3b37;
-  }
-
-  .socials{
-    display:flex;
-    gap:16px;
-    margin-top:20px;
-  }
-
-  .socials a{
-    width:36px;
-    height:36px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:1px solid var(--borda);
-  }
-
-  .socials a:hover{
-    border-color:var(--oliva);
-  }
-
-  .socials svg{width:16px;height:16px;stroke:var(--preto);}
-
-  .footer-bottom{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:32px;
-    font-size:12px;
-    color:var(--cinza);
-    letter-spacing:.02em;
-    flex-wrap:wrap;
-    gap:12px;
-  }
-
-  /* ---------- RESPONSIVO ---------- */
-  @media (max-width: 860px){
-    section{padding:80px 0;}
-    .wrap{padding:0 24px;}
-
-    .nav-links{
-      position:absolute;
-      top:76px;
-      left:0;
-      right:0;
-      background:var(--branco);
-      border-bottom:1px solid var(--borda);
-      flex-direction:column;
-      gap:0;
-      display:none;
-    }
-    .nav-links a{
-      padding:18px 24px;
-      width:100%;
-      display:block;
-      border-bottom:1px solid var(--borda);
-    }
-    .hamburger{display:flex;}
-
-    .menu-toggle:checked ~ .nav-links{display:flex;}
-    .menu-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(6px) rotate(45deg);}
-    .menu-toggle:checked ~ .hamburger span:nth-child(2){opacity:0;}
-    .menu-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
-
-    .sobre .wrap,
-    .local .wrap{
-      grid-template-columns:1fr;
-      gap:40px;
-    }
-    .sobre-img{order:-1;aspect-ratio:16/10;}
-
-    .grid{grid-template-columns:repeat(2, 1fr);gap:32px 16px;}
-    .categorias{gap:8px;}
-    .cat-tab{padding:8px 16px;}
-
-    .footer-top{
-      grid-template-columns:1fr;
-      gap:36px;
-    }
-
-    .footer-bottom{flex-direction:column;align-items:flex-start;}
-  }
-
-  @media (max-width: 480px){
-    .grid{grid-template-columns:repeat(2, 1fr);}
-    .hero-content{padding-bottom:64px;}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Isaias Studio · Web Design | Landing pages de alta performance</title>
+  <meta name="description" content="Landing pages profissionais e sob medida para empresas, empreendedores e negócios locais. Design estratégico, carregamento rápido, SEO e foco em conversão.">
+  <meta name="author" content="Isaias Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080808">
+  <meta name="color-scheme" content="dark">
+  <!-- Substitua pelo domínio final quando o site estiver publicado: -->
+  <!-- <link rel="canonical" href="https://SEUDOMINIO.com.br/"> -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Isaias Studio · Web Design">
+  <meta property="og:title" content="Isaias Studio · Landing pages que transformam visitantes em clientes">
+  <meta property="og:description" content="Landing pages sob medida, rápidas e pensadas para gerar contatos. Design estratégico para empresas e empreendedores.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Geist:wght@300..600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Isaias Studio · Web Design",
+    "description": "Desenvolvimento de landing pages profissionais para empresas, empreendedores e negócios que desejam atrair clientes pela internet.",
+    "serviceType": ["Web design", "Landing pages", "Desenvolvimento de sites"]
+  }
+  </script>
 </head>
 <body>
 
-<header class="navbar">
-  <div class="navbar-inner">
-    <a href="#inicio" class="logo">OLIVA</a>
+<!-- Ícones (sprite SVG) -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-logo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9A86FF"/>
+      <stop offset="1" stop-color="#5636F2"/>
+    </linearGradient>
+  </defs>
+  <symbol id="logo" viewBox="0 0 32 32">
+    <rect width="32" height="32" rx="9" fill="url(#g-logo)"/>
+    <rect x="13.5" y="15" width="5" height="12" rx="2.5" fill="#fff"/>
+    <path d="M16 4l1.2 3.3 3.3 1.2-3.3 1.2L16 13l-1.2-3.3-3.3-1.2 3.3-1.2z" fill="#fff"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M8.5 10.5c.5 2 2.5 4 4.5 4.5l1.3-1.2 2 1-.4 1.6c-3.6.3-8.1-4.2-7.8-7.8L9.7 8l1 2z"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h8l-1 8 9-12h-8z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><path d="M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-behance" viewBox="0 0 24 24"><path d="M3 6h5.5a3 3 0 0 1 0 6H3zM3 12h6a3 3 0 0 1 0 6H3zM14.5 14.5h7a3.5 3.5 0 1 0-1 2.5M15 7h5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M5 3l14 7.5-6.2 1.6L10 18z" fill="#fff" stroke="#080808" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+</svg>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </label>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <nav class="nav-links">
-      <a href="#inicio">Início</a>
-      <a href="#colecao">Coleção</a>
+<!-- ================= NAVBAR ================= -->
+<header class="nav" id="topo">
+  <div class="nav-inner">
+    <a class="brand" href="#topo" aria-label="Isaias Studio, Web Design — início">
+      <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-name">Isaias Studio</span>
+      <span class="brand-sub">· Web Design</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <span class="nav-pill" aria-hidden="true"></span>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#processo">Processo</a>
+      <a href="#portfolio">Portfólio</a>
       <a href="#sobre">Sobre</a>
-      <a href="#localizacao">Localização</a>
       <a href="#contato">Contato</a>
     </nav>
+
+    <a class="btn btn-sm btn-outline nav-cta" data-wa href="#contato">
+      <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>
+      Fale comigo
+    </a>
+
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
   </div>
+  <div class="nav-progress" aria-hidden="true"></div>
 </header>
 
-<main>
+<!-- Menu mobile -->
+<div class="mobile-menu" id="menu-mobile" hidden>
+  <nav aria-label="Navegação mobile">
+    <a href="#beneficios" style="--i:0">Benefícios</a>
+    <a href="#processo" style="--i:1">Processo</a>
+    <a href="#portfolio" style="--i:2">Portfólio</a>
+    <a href="#sobre" style="--i:3">Sobre</a>
+    <a href="#contato" style="--i:4">Contato</a>
+  </nav>
+  <div class="mobile-menu-foot" style="--i:5">
+    <a class="btn btn-primary btn-block" data-wa href="#contato">
+      <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>
+      Quero minha landing page
+    </a>
+    <a class="mobile-mail" data-config="email" href="#contato"></a>
+  </div>
+</div>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <img class="hero-img" src="https://loremflickr.com/1600/1000/fashion,elegant,woman?lock=101" alt="Look da coleção OLIVA">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="eyebrow">Coleção atual</span>
-      <h1>Peças que ficam com você depois que a estação passa.</h1>
-      <p>Uma seleção enxuta de roupas femininas para o dia a dia com intenção — cortes limpos, tecidos que duram, nada em excesso.</p>
-      <a href="#colecao" class="btn">Ver Coleção</a>
+<main id="conteudo">
+
+  <!-- ================= 01 HERO ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+      <div class="aurora aurora-3"></div>
+      <div class="grid-lines"></div>
     </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="badge" data-hero style="--i:0">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Landing pages profissionais por Isaias Studio
+        </p>
+
+        <h1 id="hero-title" class="hero-title" data-split>
+          Transformo visitantes em <span class="hl">clientes</span> com landing pages de <span class="hl">alta performance.</span>
+        </h1>
+
+        <p class="hero-lead" data-hero style="--i:6">
+          Landing pages sob medida para empresas e empreendedores que querem atrair clientes pela internet.
+        </p>
+
+        <div class="hero-actions" data-hero style="--i:7">
+          <a class="btn btn-primary btn-lg magnetic" data-wa href="#contato">
+            <span>Quero minha landing page</span>
+            <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg magnetic" href="#portfolio">
+            <span>Ver meu portfólio</span>
+          </a>
+        </div>
+
+        <ul class="hero-points" data-hero style="--i:8">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Projeto sob medida</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Pensada para o celular</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Contato direto pelo WhatsApp</li>
+        </ul>
+      </div>
+
+      <!-- Composição visual -->
+      <div class="hero-visual" aria-hidden="true" data-hero style="--i:4">
+        <div class="hv-ring hv-ring-1" data-depth="0.15"></div>
+        <div class="hv-ring hv-ring-2" data-depth="0.25"></div>
+        <div class="hv-orb" data-depth="0.35"></div>
+
+        <div class="hv-stage" data-depth="0.5">
+          <!-- Notebook -->
+          <div class="laptop float-a">
+            <div class="laptop-lid">
+              <span class="laptop-cam"></span>
+              <div class="laptop-screen">
+                <div class="ms">
+                  <div class="ms-nav">
+                    <span class="ms-logo"><i></i>Sua marca</span>
+                    <span class="ms-links"><i></i><i></i><i></i></span>
+                    <span class="ms-navbtn">Contato</span>
+                  </div>
+                  <div class="ms-hero">
+                    <div class="ms-copy">
+                      <span class="ms-kicker">Atendimento em todo o bairro</span>
+                      <span class="ms-title">Seu negócio pronto para ser escolhido.</span>
+                      <span class="ms-line"></span>
+                      <span class="ms-line ms-line--short"></span>
+                      <span class="ms-ctas">
+                        <span class="ms-cta">Falar no WhatsApp
+                          <svg class="ms-cursor"><use href="#i-cursor"/></svg>
+                        </span>
+                        <span class="ms-cta ms-cta--ghost">Serviços</span>
+                      </span>
+                    </div>
+                    <div class="ms-art">
+                      <i class="ms-art-a"></i><i class="ms-art-b"></i>
+                    </div>
+                  </div>
+                  <div class="ms-cards">
+                    <span><i></i><b></b><b></b></span>
+                    <span><i></i><b></b><b></b></span>
+                    <span><i></i><b></b><b></b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+
+          <!-- Celular -->
+          <div class="phone float-b">
+            <span class="phone-notch"></span>
+            <div class="phone-screen">
+              <div class="ms ms--mobile">
+                <div class="ms-nav"><span class="ms-logo"><i></i>Sua marca</span><span class="ms-burger"><i></i><i></i></span></div>
+                <span class="ms-kicker">Agende hoje</span>
+                <span class="ms-title">Seu negócio pronto para ser escolhido.</span>
+                <span class="ms-line"></span><span class="ms-line ms-line--short"></span>
+                <span class="ms-cta">Falar no WhatsApp</span>
+                <div class="ms-art ms-art--m"><i class="ms-art-a"></i><i class="ms-art-b"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elementos flutuantes -->
+          <div class="chip chip-1 float-c">
+            <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Mobile first
+          </div>
+          <div class="chip chip-2 float-b">
+            <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>SEO on-page
+          </div>
+          <div class="toast">
+            <span class="toast-ico"><svg class="ico"><use href="#i-chat"/></svg></span>
+            <span class="toast-txt"><b>WhatsApp integrado</b><small>O visitante fala com você em um toque.</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#beneficios" aria-label="Rolar para benefícios">
+      <span></span>
+    </a>
   </section>
 
-  <!-- SOBRE -->
-  <section class="sobre" id="sobre">
-    <div class="wrap">
-      <img class="sobre-img" src="https://loremflickr.com/800/1000/clothing,boutique,rack?lock=102" alt="Araras de roupa no ateliê OLIVA">
-      <div>
-        <span class="eyebrow">A marca</span>
-        <h2>Roupa boa é a que some do pensamento.</h2>
-        <p>A OLIVA começou numa sala pequena, em 2019, com uma régua de corte e a teimosia de não colocar na loja nada que a gente mesma não vestiria. Isso não mudou. Cada coleção é curta de propósito — escolhemos poucas peças, mas escolhemos com calma.</p>
-        <p>Trabalhamos com tecidos naturais, fornecedores que conhecemos pelo nome e uma produção pequena o suficiente para corrigir o que não está bom antes de chegar até você.</p>
-        <p class="assinatura">— Equipe OLIVA</p>
+  <!-- Faixa de segmentos -->
+  <div class="marquee" aria-label="Segmentos atendidos">
+    <div class="marquee-track">
+      <ul>
+        <li>Negócios locais</li><li>Clínicas e consultórios</li><li>Advocacia</li><li>Consultorias</li>
+        <li>Restaurantes</li><li>Lojas</li><li>Prestadores de serviço</li><li>Lançamentos</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>Negócios locais</li><li>Clínicas e consultórios</li><li>Advocacia</li><li>Consultorias</li>
+        <li>Restaurantes</li><li>Lojas</li><li>Prestadores de serviço</li><li>Lançamentos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================= 02 BENEFÍCIOS ================= -->
+  <section class="section" id="beneficios" aria-labelledby="ben-title">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="ben-title" data-reveal>Feita para <span class="hl">gerar contato.</span></h2>
+        <p data-reveal style="--i:1">Estratégia, técnica e clareza em cada seção.</p>
+      </header>
+
+      <div class="bento" data-stagger>
+        <!-- Conversão -->
+        <article class="card spot bento-conv" data-reveal>
+          <div class="card-top">
+            <span class="ico-box"><svg class="ico" aria-hidden="true"><use href="#i-target"/></svg></span>
+            <h3>Foco em conversão</h3>
+            <p>Cada seção conduz o visitante até o botão certo.</p>
+          </div>
+          <div class="funnel" aria-hidden="true">
+            <div class="funnel-row" style="--w:100%;--i:0"><span>Visitante chega</span><i></i></div>
+            <div class="funnel-row" style="--w:86%;--i:1"><span>Entende a sua oferta</span><i></i></div>
+            <div class="funnel-row" style="--w:72%;--i:2"><span>Confia no seu trabalho</span><i></i></div>
+            <div class="funnel-row funnel-row--end" style="--w:58%;--i:3"><span>Chama no WhatsApp</span><i></i></div>
+          </div>
+        </article>
+
+        <!-- Design -->
+        <article class="card spot bento-design" data-reveal>
+          <span class="ico-box"><svg class="ico" aria-hidden="true"><use href="#i-layout"/></svg></span>
+          <h3>Design estratégico</h3>
+          <p>Visual exclusivo, alinhado à sua marca.</p>
+          <div class="blocks" aria-hidden="true"><i></i><i></i><i></i></div>
+        </article>
+
+        <!-- Responsivo -->
+        <article class="card spot bento-resp" data-reveal>
+          <span class="ico-box"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <h3>Responsiva</h3>
+          <p>Perfeita no celular, tablet e computador.</p>
+          <div class="morph" aria-hidden="true"><i></i></div>
+        </article>
+
+        <!-- Velocidade -->
+        <article class="card spot bento-speed" data-reveal>
+          <span class="ico-box"><svg class="ico" aria-hidden="true"><use href="#i-zap"/></svg></span>
+          <h3>Velocidade</h3>
+          <p>Código leve e imagens otimizadas.</p>
+          <div class="loadbar" aria-hidden="true"><i></i></div>
+        </article>
+
+        <!-- SEO -->
+        <article class="card spot bento-seo" data-reveal>
+          <span class="ico-box"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></span>
+          <h3>SEO</h3>
+          <p>Estrutura e metadados prontos para o Google.</p>
+          <div class="serp" aria-hidden="true">
+            <span class="serp-q">landing page para meu negócio</span>
+            <span class="serp-url">seunegocio.com.br</span>
+            <span class="serp-title">Seu Negócio | O que você faz de melhor</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- GALERIA -->
-  <section class="galeria" id="colecao">
-    <div class="wrap">
-      <div class="galeria-head">
-        <h2>Coleção</h2>
-        <p>Filtre por categoria ou busque a peça que você já tem em mente. Tamanho e disponibilidade a gente confirma pelo WhatsApp.</p>
+  <!-- ================= 03 PROCESSO ================= -->
+  <section class="section section--process" id="processo" aria-labelledby="proc-title">
+    <div class="container process">
+      <div class="process-aside">
+        <h2 id="proc-title" data-reveal>Do briefing à <span class="hl">publicação.</span></h2>
+        <p data-reveal style="--i:1">Cinco etapas claras, com você acompanhando tudo.</p>
+        <a class="btn btn-ghost magnetic" data-reveal style="--i:2" data-wa href="#contato">
+          <span>Começar pelo briefing</span>
+          <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
       </div>
 
-      <div class="catalogo-controls">
-        <form class="busca-form" role="search" onsubmit="return false">
-          <label class="sr-only" for="busca-peca" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Buscar peça</label>
-          <input type="search" id="busca-peca" placeholder="Buscar peça — ex: calça, vestido, saia...">
-          <svg class="busca-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.2" y2="16.2"></line></svg>
+      <ol class="steps">
+        <li class="steps-track" aria-hidden="true"><span class="steps-fill"></span></li>
+        <li class="step" data-reveal>
+          <span class="step-num">01</span>
+          <div>
+            <h3>Briefing</h3>
+            <p>Entendo seu negócio, seu público e o objetivo da página.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">02</span>
+          <div>
+            <h3>Planejamento</h3>
+            <p>Defino a estrutura e o caminho até o contato.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">03</span>
+          <div>
+            <h3>Design e desenvolvimento</h3>
+            <p>Visual exclusivo em código limpo e responsivo.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">04</span>
+          <div>
+            <h3>Ajustes</h3>
+            <p>Você revisa e refinamos juntos.</p>
+          </div>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step-num">05</span>
+          <div>
+            <h3>Publicação</h3>
+            <p>Página no ar com domínio, SEO e WhatsApp.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= 04 PORTFÓLIO ================= -->
+  <section class="section section--work" id="portfolio" aria-labelledby="port-title">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="port-title" data-reveal>Projetos <span class="hl">conceituais.</span></h2>
+        <p data-reveal style="--i:1">Landing pages criadas pelo estúdio para seis segmentos.</p>
+      </header>
+
+      <!-- Projeto em destaque -->
+      <article class="feature" data-reveal>
+        <figure class="w-stage spot" role="img" aria-label="Mockup da landing page conceitual Navalha &amp; Co. em notebook e celular">
+          <div class="dev-browser"><div class="browser-bar"><i></i><i></i><i></i><span>navalha.conceito</span></div><div class="browser-view"><div class="site site--barber">
+  <div class="s-nav"><b>NAVALHA &amp; CO.</b><span class="s-menu"><span>Serviços</span><span>Equipe</span><span>Contato</span></span><span class="s-btn">Agendar</span></div>
+  <div class="s-hero s-hero--split">
+    <div><span class="s-kicker">Barbearia clássica</span><span class="s-title">Corte afiado, atendimento sem pressa.</span><span class="s-sub">Agende pelo WhatsApp e chegue no seu horário.</span><span class="s-actions"><span class="s-btn">Agendar horário</span><span class="s-btn s-btn--ghost">Ver serviços</span></span></div>
+    <span class="s-photo"><img src="assets/img/portfolio/barbearia-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></span>
+  </div>
+  <div class="s-cards"><span><i></i><b>Corte</b><em>Tesoura ou máquina</em></span><span><i></i><b>Barba</b><em>Toalha quente</em></span><span><i></i><b>Combo</b><em>Corte e barba</em></span></div>
+  <div class="s-band"><span class="s-title s-title--sm">Sua cadeira está reservada.</span><span class="s-btn">Chamar no WhatsApp</span></div>
+  <div class="s-foot"><b>NAVALHA &amp; CO.</b><span>Agende online</span></div>
+</div></div></div>
+          <div class="dev-phone "><span class="phone-notch"></span><div class="dev-phone-screen"><div class="site site--barber is-m">
+  <div class="s-nav"><b>NAVALHA &amp; CO.</b><span class="s-burger"><i></i><i></i></span></div>
+  <span class="s-photo"><img src="assets/img/portfolio/barbearia-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 60%"></span>
+  <span class="s-kicker">Barbearia clássica</span>
+  <span class="s-title">Corte afiado, atendimento sem pressa.</span>
+  <span class="s-btn s-btn--block">Agendar horário</span>
+  <div class="s-cards"><span><i></i><b>Corte</b></span><span><i></i><b>Barba</b></span></div>
+</div></div></div>
+        </figure>
+        <div class="feature-info">
+          <div>
+            <h3>Navalha &amp; Co.</h3>
+            <p class="w-meta">Barbearia · Landing page de agendamento</p>
+          </div>
+          <p class="feature-line">Identidade escura e dourada, com agendamento direto pelo WhatsApp.</p>
+          <span class="tag">Projeto conceitual</span>
+        </div>
+      </article>
+
+      <div class="works">
+        <article class="work work--law" data-reveal>
+          <figure class="w-stage spot" role="img" aria-label="Mockup da landing page conceitual Moura Lins Advocacia em navegador">
+            <div class="dev-browser"><div class="browser-bar"><i></i><i></i><i></i><span>mouralins.conceito</span></div><div class="browser-view"><div class="site site--law">
+  <div class="s-nav"><b>Moura Lins</b><span class="s-menu"><span>Áreas</span><span>Escritório</span><span>Contato</span></span><span class="s-btn">Agendar consulta</span></div>
+  <div class="s-hero s-hero--center"><span class="s-kicker">Advocacia empresarial</span><span class="s-title">Segurança jurídica para o seu negócio crescer.</span><span class="s-sub">Contratos, societário e trabalhista com atendimento próximo.</span><span class="s-actions"><span class="s-btn">Agendar consulta</span><span class="s-btn s-btn--ghost">Áreas de atuação</span></span></div>
+  <span class="s-photo s-photo--wide"><img src="assets/img/portfolio/advocacia-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 55%"></span>
+  <div class="s-cards"><span><i></i><b>Contratos</b><em>Saiba mais</em></span><span><i></i><b>Societário</b><em>Saiba mais</em></span><span><i></i><b>Trabalhista</b><em>Saiba mais</em></span></div>
+  <div class="s-band"><span class="s-title s-title--sm">Converse com um especialista.</span><span class="s-btn">Falar agora</span></div>
+</div></div></div>
+          </figure>
+          <div class="w-info">
+            <div><h3>Moura Lins Advocacia</h3><p class="w-meta">Advocacia · Página institucional</p></div>
+            <span class="tag">Conceito</span>
+          </div>
+        </article>
+        <article class="work work--skin" data-reveal>
+          <figure class="w-stage spot" role="img" aria-label="Mockup da loja conceitual Botânica Skin em dois celulares">
+            <div class="dev-phone p1"><span class="phone-notch"></span><div class="dev-phone-screen"><div class="site site--skin is-m">
+  <div class="s-nav"><b>botânica</b><span class="s-btn s-btn--xs">Sacola</span></div>
+  <span class="s-photo s-photo--tall"><img src="assets/img/portfolio/cosmeticos-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:52% 50%"></span>
+  <span class="s-kicker">Skincare natural</span>
+  <span class="s-title">Cuidado que nasce da natureza.</span>
+  <span class="s-btn s-btn--block">Comprar agora</span>
+</div></div></div><div class="dev-phone p2"><span class="phone-notch"></span><div class="dev-phone-screen"><div class="site site--skin is-m">
+  <div class="s-nav"><b>botânica</b><span class="s-btn s-btn--xs">Sacola</span></div>
+  <span class="s-title s-title--sm">Mais vendidos</span>
+  <div class="s-products">
+    <span><i><img src="assets/img/portfolio/cosmeticos-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:18% 20%"></i><b>Sérum</b><em>Ver produto</em></span>
+    <span><i><img src="assets/img/portfolio/cosmeticos-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 62%"></i><b>Óleo corporal</b><em>Ver produto</em></span>
+    <span><i><img src="assets/img/portfolio/cosmeticos-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:42% 8%"></i><b>Bálsamo</b><em>Ver produto</em></span>
+    <span><i><img src="assets/img/portfolio/cosmeticos-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:84% 22%"></i><b>Desodorante</b><em>Ver produto</em></span>
+  </div>
+  <span class="s-btn s-btn--block">Montar minha rotina</span>
+</div></div></div>
+          </figure>
+          <div class="w-info">
+            <div><h3>Botânica Skin</h3><p class="w-meta">Cosméticos naturais · Loja</p></div>
+            <span class="tag">Conceito</span>
+          </div>
+        </article>
+        <article class="work work--pizza" data-reveal>
+          <figure class="w-stage spot" role="img" aria-label="Mockup da landing page conceitual Forno Lume em celular">
+            <div class="dev-phone "><span class="phone-notch"></span><div class="dev-phone-screen"><div class="site site--pizza is-m">
+  <div class="s-nav"><b>Forno Lume</b><span class="s-btn s-btn--xs">Pedir</span></div>
+  <span class="s-photo s-photo--round"><img src="assets/img/portfolio/pizzaria-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 55%"></span>
+  <span class="s-kicker">Fermentação natural</span>
+  <span class="s-title">Massa leve, forno a lenha.</span>
+  <span class="s-actions"><span class="s-btn">Fazer pedido</span><span class="s-btn s-btn--ghost">Cardápio</span></span>
+  <div class="s-cards"><span><i></i><b>Margherita</b></span><span><i></i><b>Da casa</b></span></div>
+</div></div></div><div class="w-float"><span class="w-float-photo"><img src="assets/img/portfolio/pizzaria-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%"></span><span><b>Margherita</b><small>Molho de tomate, muçarela e manjericão</small></span><span class="w-float-btn">Adicionar</span></div>
+          </figure>
+          <div class="w-info">
+            <div><h3>Forno Lume</h3><p class="w-meta">Pizzaria artesanal · Pedidos</p></div>
+            <span class="tag">Conceito</span>
+          </div>
+        </article>
+        <article class="work work--dental" data-reveal>
+          <figure class="w-stage spot" role="img" aria-label="Mockup da landing page conceitual Odonto Clara em navegador">
+            <div class="dev-browser"><div class="browser-bar"><i></i><i></i><i></i><span>odontoclara.conceito</span></div><div class="browser-view"><div class="site site--dental">
+  <div class="s-nav"><b>Odonto Clara</b><span class="s-menu"><span>Tratamentos</span><span>Clínica</span><span>Contato</span></span><span class="s-btn">Agendar</span></div>
+  <div class="s-hero s-hero--split">
+    <div><span class="s-kicker">Clínica odontológica</span><span class="s-title">Sorrir com confiança começa aqui.</span><span class="s-sub">Avaliação completa e plano de tratamento claro.</span><span class="s-actions"><span class="s-btn">Agendar avaliação</span></span></div>
+    <span class="s-photo"><img src="assets/img/portfolio/odontologia-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:40% 50%"></span>
+  </div>
+  <div class="s-cards"><span><i></i><b>Clareamento</b><em>Saiba mais</em></span><span><i></i><b>Implantes</b><em>Saiba mais</em></span><span><i></i><b>Ortodontia</b><em>Saiba mais</em></span></div>
+  <div class="s-band"><span class="s-title s-title--sm">Agende sua avaliação.</span><span class="s-btn">WhatsApp</span></div>
+</div></div></div>
+          </figure>
+          <div class="w-info">
+            <div><h3>Odonto Clara</h3><p class="w-meta">Clínica odontológica · Agendamento</p></div>
+            <span class="tag">Conceito</span>
+          </div>
+        </article>
+        <article class="work work--kicks" data-reveal>
+          <figure class="w-stage spot" role="img" aria-label="Mockup da loja conceitual Pulse Store em navegador e celular">
+            <div class="dev-browser"><div class="browser-bar"><i></i><i></i><i></i><span>pulse.conceito</span></div><div class="browser-view"><div class="site site--kicks">
+  <div class="s-nav"><b>PULSE</b><span class="s-menu"><span>Lançamentos</span><span>Masculino</span><span>Feminino</span></span><span class="s-btn">Sacola</span></div>
+  <div class="s-hero s-hero--split">
+    <div><span class="s-kicker">Nova coleção</span><span class="s-title">Feito para quem não para.</span><span class="s-sub">Conforto e estilo para o dia inteiro.</span><span class="s-actions"><span class="s-btn">Ver coleção</span><span class="s-btn s-btn--ghost">Lançamentos</span></span></div>
+    <span class="s-photo"><img src="assets/img/portfolio/tenis-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%"></span>
+  </div>
+  <div class="s-products">
+    <span><i><img src="assets/img/portfolio/tenis-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%"></i><b>Runner</b></span>
+    <span><i><img src="assets/img/portfolio/tenis-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%;filter:hue-rotate(200deg)"></i><b>Street</b></span>
+    <span><i><img src="assets/img/portfolio/tenis-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%;filter:hue-rotate(110deg)"></i><b>Court</b></span>
+    <span><i><img src="assets/img/portfolio/tenis-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%;filter:grayscale(1)"></i><b>Trail</b></span>
+  </div>
+</div></div></div><div class="dev-phone "><span class="phone-notch"></span><div class="dev-phone-screen"><div class="site site--kicks is-m">
+  <div class="s-nav"><b>PULSE</b><span class="s-burger"><i></i><i></i></span></div>
+  <span class="s-photo s-photo--tall"><img src="assets/img/portfolio/tenis-800.webp" alt="" width="800" height="500" loading="lazy" decoding="async" style="object-position:50% 50%"></span>
+  <span class="s-title s-title--sm">Pulse Runner</span>
+  <span class="s-sizes"><i>38</i><i>39</i><i class="on">40</i><i>41</i><i>42</i></span>
+  <span class="s-btn s-btn--block">Adicionar à sacola</span>
+</div></div></div>
+          </figure>
+          <div class="w-info">
+            <div><h3>Pulse Store</h3><p class="w-meta">Loja de tênis · Lançamentos</p></div>
+            <span class="tag">Conceito</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05 SOBRE ================= -->
+  <section class="section section--about" id="sobre" aria-labelledby="about-title">
+    <div class="container about">
+      <div class="about-visual" aria-hidden="true" data-reveal>
+        <div class="orbit orbit-1"><i></i></div>
+        <div class="orbit orbit-2"><i></i></div>
+        <div class="orbit orbit-3"><i></i></div>
+        <div class="about-mark">
+          <svg><use href="#logo"/></svg>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <h2 id="about-title" class="sr-only">Sobre o estúdio</h2>
+        <p class="lit-text" data-lit>
+          Cada página é criada do zero, com estratégia e estética, para transformar atenção em oportunidade.
+        </p>
+
+        <ul class="pillars" data-stagger>
+          <li data-reveal>
+            <h3>Personalizado</h3>
+            <p>Design que nasce da sua marca.</p>
+          </li>
+          <li data-reveal>
+            <h3>Moderno</h3>
+            <p>Tecnologia atual e visual contemporâneo.</p>
+          </li>
+          <li data-reveal>
+            <h3>Orientado a objetivos</h3>
+            <p>Construída a partir da meta do seu negócio.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 06 CHAMADA FINAL ================= -->
+  <section class="section section--cta" id="contato" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta spot" data-reveal>
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="cta-copy">
+          <h2 id="cta-title">Vamos criar a página que o seu negócio <span class="hl">merece?</span></h2>
+          <p>Conte sobre o projeto. A mensagem chega direto no meu WhatsApp.</p>
+          <ul class="cta-list">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Sem compromisso</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Atendimento direto com o designer</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Proposta sob medida</li>
+          </ul>
+          <p class="cta-alt">Prefere e-mail? <a data-config="email" href="#contato"></a></p>
+        </div>
+
+        <form class="form" id="form-orcamento" novalidate>
+          <div class="field">
+            <label for="f-nome">Seu nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como posso te chamar?">
+            <span class="field-error" id="e-nome">Informe seu nome para continuar.</span>
+          </div>
+          <div class="field">
+            <label for="f-negocio">Seu negócio</label>
+            <input id="f-negocio" name="negocio" type="text" autocomplete="organization" required placeholder="Ex.: clínica, loja, consultoria">
+            <span class="field-error" id="e-negocio">Conte qual é o seu negócio.</span>
+          </div>
+          <div class="field">
+            <label for="f-objetivo">Objetivo principal</label>
+            <div class="select">
+              <select id="f-objetivo" name="objetivo">
+                <option>Atrair mais clientes</option>
+                <option>Divulgar um produto ou serviço</option>
+                <option>Substituir meu site atual</option>
+                <option>Ter minha primeira página na internet</option>
+                <option>Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Detalhes <span class="opt">(opcional)</span></label>
+            <textarea id="f-msg" name="mensagem" rows="3" placeholder="Prazo, referências, o que você imagina…"></textarea>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block magnetic" type="submit">
+            <span>Solicitar orçamento</span>
+            <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <p class="form-note" aria-live="polite">Ao enviar, o WhatsApp abre com a sua mensagem pronta.</p>
         </form>
-
-        <div class="categorias" role="tablist" aria-label="Categorias de produto">
-          <button type="button" class="cat-tab active" data-categoria="todos">Todos</button>
-          <button type="button" class="cat-tab" data-categoria="vestidos">Vestidos</button>
-          <button type="button" class="cat-tab" data-categoria="calcas">Calças</button>
-          <button type="button" class="cat-tab" data-categoria="bermudas">Bermudas</button>
-          <button type="button" class="cat-tab" data-categoria="saias">Saias</button>
-          <button type="button" class="cat-tab" data-categoria="blusas">Blusas &amp; Camisetas</button>
-          <button type="button" class="cat-tab" data-categoria="conjuntos">Conjuntos</button>
-        </div>
       </div>
-
-      <div class="grid" id="grid-produtos">
-        <article class="produto" data-categoria="vestidos" data-nome="Vestido Midi Alfaiataria">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/dress,woman,elegant?lock=201" alt="Vestido Midi Alfaiataria OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Vestidos</span>
-            <h3 class="produto-nome">Vestido Midi Alfaiataria</h3>
-            <p class="produto-preco">R$ 259,90</p>
-            <button class="produto-cta" data-nome="Vestido Midi Alfaiataria">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="vestidos" data-nome="Vestido Longo Linho">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/dress,woman,linen?lock=202" alt="Vestido Longo Linho OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Vestidos</span>
-            <h3 class="produto-nome">Vestido Longo Linho</h3>
-            <p class="produto-preco">R$ 289,90</p>
-            <button class="produto-cta" data-nome="Vestido Longo Linho">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="calcas" data-nome="Calça Pantalona Alfaiataria">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/pants,woman,fashion?lock=203" alt="Calça Pantalona Alfaiataria OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Calças</span>
-            <h3 class="produto-nome">Calça Pantalona Alfaiataria</h3>
-            <p class="produto-preco">R$ 219,90</p>
-            <button class="produto-cta" data-nome="Calça Pantalona Alfaiataria">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="calcas" data-nome="Calça Wide Leg Bege">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/pants,woman,beige?lock=204" alt="Calça Wide Leg Bege OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Calças</span>
-            <h3 class="produto-nome">Calça Wide Leg Bege</h3>
-            <p class="produto-preco">R$ 229,90</p>
-            <button class="produto-cta" data-nome="Calça Wide Leg Bege">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="bermudas" data-nome="Bermuda Alfaiataria">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/shorts,woman,fashion?lock=205" alt="Bermuda Alfaiataria OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Bermudas</span>
-            <h3 class="produto-nome">Bermuda Alfaiataria</h3>
-            <p class="produto-preco">R$ 159,90</p>
-            <button class="produto-cta" data-nome="Bermuda Alfaiataria">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="bermudas" data-nome="Bermuda Cintura Alta Linho">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/shorts,woman,linen?lock=206" alt="Bermuda Cintura Alta Linho OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Bermudas</span>
-            <h3 class="produto-nome">Bermuda Cintura Alta Linho</h3>
-            <p class="produto-preco">R$ 149,90</p>
-            <button class="produto-cta" data-nome="Bermuda Cintura Alta Linho">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="saias" data-nome="Saia Midi Plissada">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/skirt,woman,pleated?lock=207" alt="Saia Midi Plissada OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Saias</span>
-            <h3 class="produto-nome">Saia Midi Plissada</h3>
-            <p class="produto-preco">R$ 179,90</p>
-            <button class="produto-cta" data-nome="Saia Midi Plissada">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="saias" data-nome="Saia Longa Linho">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/skirt,woman,linen?lock=208" alt="Saia Longa Linho OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Saias</span>
-            <h3 class="produto-nome">Saia Longa Linho</h3>
-            <p class="produto-preco">R$ 189,90</p>
-            <button class="produto-cta" data-nome="Saia Longa Linho">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="blusas" data-nome="Camisa Social Ampla">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/blouse,woman,shirt?lock=209" alt="Camisa Social Ampla OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Blusas &amp; Camisetas</span>
-            <h3 class="produto-nome">Camisa Social Ampla</h3>
-            <p class="produto-preco">R$ 169,90</p>
-            <button class="produto-cta" data-nome="Camisa Social Ampla">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="blusas" data-nome="Blusa Alças Cetim">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/blouse,woman,satin?lock=210" alt="Blusa Alças Cetim OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Blusas &amp; Camisetas</span>
-            <h3 class="produto-nome">Blusa Alças Cetim</h3>
-            <p class="produto-preco">R$ 129,90</p>
-            <button class="produto-cta" data-nome="Blusa Alças Cetim">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="conjuntos" data-nome="Conjunto Alfaiataria Completo">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/suit,woman,fashion?lock=211" alt="Conjunto Alfaiataria Completo OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Conjuntos</span>
-            <h3 class="produto-nome">Conjunto Alfaiataria Completo</h3>
-            <p class="produto-preco">R$ 349,90</p>
-            <button class="produto-cta" data-nome="Conjunto Alfaiataria Completo">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="blusas" data-nome="Body Canelado">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/top,woman,fashion?lock=212" alt="Body Canelado OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Blusas &amp; Camisetas</span>
-            <h3 class="produto-nome">Body Canelado</h3>
-            <p class="produto-preco">R$ 99,90</p>
-            <button class="produto-cta" data-nome="Body Canelado">Consultar no WhatsApp</button>
-          </div>
-        </article>
-      </div>
-
-      <p class="sem-resultado" id="sem-resultado">Nenhuma peça encontrada com esse filtro. Tenta outra categoria ou termo de busca.</p>
     </div>
   </section>
-
-  <!-- FAIXA CTA -->
-  <section class="faixa">
-    <div class="wrap">
-      <h2>Prefere ver e experimentar de perto? A loja está de portas abertas.</h2>
-      <a href="#localizacao" class="btn">Como Chegar</a>
-    </div>
-  </section>
-
-  <!-- LOCALIZAÇÃO -->
-  <section class="local" id="localizacao">
-    <div class="wrap">
-      <div class="local-info">
-        <span class="eyebrow">Visite</span>
-        <h2>Loja física</h2>
-
-        <div class="local-item">
-          <strong>Endereço</strong>
-          <p>Rua Oscar Freire, 000 — Jardins<br>São Paulo, SP — 01426-000</p>
-        </div>
-
-        <div class="local-item">
-          <strong>Horário</strong>
-          <p>Segunda a sexta, 10h às 19h<br>Sábado, 10h às 16h</p>
-        </div>
-
-        <div class="local-item">
-          <strong>Estacionamento</strong>
-          <p>Vagas conveniadas no edifício ao lado, com desconto para clientes.</p>
-        </div>
-      </div>
-
-      <iframe
-        class="mapa"
-        src="https://www.google.com/maps?q=Rua+Oscar+Freire,+Jardins,+S%C3%A3o+Paulo+-+SP&output=embed"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Localização da loja OLIVA no mapa">
-      </iframe>
-    </div>
-  </section>
-
 </main>
 
-<footer id="contato">
-  <div class="wrap">
+<!-- ================= 07 RODAPÉ ================= -->
+<footer class="footer">
+  <div class="container">
     <div class="footer-top">
-      <div>
-        <a href="#inicio" class="footer-logo">OLIVA</a>
-        <p>Roupas femininas para o dia a dia, feitas para durar mais que uma estação.</p>
-        <div class="socials">
-          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da OLIVA">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
-          </a>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp da OLIVA">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18l-1.5 3.5L8 20a8 8 0 1 0-3-3z"></path><path d="M9 9c0 3.5 2.5 6 6 6"></path></svg>
-          </a>
-        </div>
+      <div class="footer-brand">
+        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+          <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+          <span class="brand-name">Isaias Studio</span>
+          <span class="brand-sub">· Web Design</span>
+        </a>
+        <p>Landing pages sob medida para atrair clientes.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Rodapé">
+        <h3>Navegação</h3>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#processo">Processo</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <a data-wa href="#contato"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a data-config="email" href="#contato"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <span data-config="location"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
       </div>
 
       <div class="footer-col">
-        <h4>Contato</h4>
-        <ul>
-          <li>contato@oliva.com.br</li>
-          <li>(11) 99999-9999</li>
-          <li>@oliva.roupas</li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Horário</h4>
-        <ul>
-          <li>Seg a sex — 10h às 19h</li>
-          <li>Sábado — 10h às 16h</li>
-          <li>Domingo — fechado</li>
-        </ul>
+        <h3>Redes sociais</h3>
+        <a data-social="instagram" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram</a>
+        <a data-social="linkedin" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        <a data-social="behance" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-behance"/></svg>Behance</a>
       </div>
     </div>
 
+    <div class="footer-word" aria-hidden="true">Isaias Studio</div>
+
     <div class="footer-bottom">
-      <span>© 2026 OLIVA. Todos os direitos reservados.</span>
-      <span>Rua Oscar Freire, 000 — Jardins, São Paulo</span>
+      <p>© <span data-year>2026</span> Isaias Studio · Web Design. Todos os direitos reservados.</p>
+      <a href="#topo" class="to-top">Voltar ao topo
+        <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
     </div>
   </div>
 </footer>
 
-<script>
-  (function(){
-    var busca = document.getElementById('busca-peca');
-    var tabs = document.querySelectorAll('.cat-tab');
-    var produtos = document.querySelectorAll('.produto');
-    var semResultado = document.getElementById('sem-resultado');
-    var categoriaAtiva = 'todos';
+<!-- WhatsApp flutuante -->
+<a class="fab" data-wa href="#contato" aria-label="Conversar no WhatsApp">
+  <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>
+</a>
 
-    function normalizar(texto){
-      return texto.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    }
-
-    function aplicarFiltros(){
-      var termo = normalizar(busca.value.trim());
-      var visiveis = 0;
-
-      produtos.forEach(function(produto){
-        var categoria = produto.dataset.categoria;
-        var nome = normalizar(produto.dataset.nome);
-        var combinaCategoria = categoriaAtiva === 'todos' || categoria === categoriaAtiva;
-        var combinaBusca = termo === '' || nome.indexOf(termo) !== -1;
-        var visivel = combinaCategoria && combinaBusca;
-        produto.hidden = !visivel;
-        if (visivel) visiveis++;
-      });
-
-      semResultado.classList.toggle('ativo', visiveis === 0);
-    }
-
-    tabs.forEach(function(tab){
-      tab.addEventListener('click', function(){
-        tabs.forEach(function(t){ t.classList.remove('active'); });
-        tab.classList.add('active');
-        categoriaAtiva = tab.dataset.categoria;
-        aplicarFiltros();
-      });
-    });
-
-    busca.addEventListener('input', aplicarFiltros);
-
-    document.querySelectorAll('.produto-cta').forEach(function(botao){
-      botao.addEventListener('click', function(){
-        var mensagem = 'Olá! Tenho interesse na peça: ' + botao.dataset.nome;
-        window.open('https://wa.me/5511999999999?text=' + encodeURIComponent(mensagem), '_blank');
-      });
-    });
-  })();
-</script>
-
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
