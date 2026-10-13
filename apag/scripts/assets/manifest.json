@@ -1,0 +1,3984 @@
+{
+ "products": [
+  {
+   "category": "extintores",
+   "id": "extintor-po-abc",
+   "name": "Extintor de pó químico ABC",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg/960px-1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:1998_Wormald_2.7kg_Powder_fire_extinguisher.jpg",
+   "author": "Nzandozextinguishers1",
+   "license": "CC0",
+   "trim": false,
+   "local": true
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-po-bc",
+   "name": "Extintor de pó químico BC",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg/960px-1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:1990_Wormald_9kg_Dry_Powder_fire_extinguisher.jpg",
+   "author": "Nzandozextinguishers1",
+   "license": "CC0",
+   "trim": false,
+   "local": true
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-co2",
+   "name": "Extintor de CO2",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg/960px-Fire_Extinguisher%2C_3KG_Carbon_Die_Oxide_2014.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher,_3KG_Carbon_Die_Oxide_2014.jpg",
+   "author": "Aashaa",
+   "license": "CC BY-SA 3.0",
+   "trim": false,
+   "local": true
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-agua-pressurizada",
+   "name": "Extintor de água pressurizada",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fire_Extinguisher_01.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fire_Extinguisher_01.jpg/960px-Fire_Extinguisher_01.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_Extinguisher_01.jpg",
+   "author": "Ganesh Mohan T",
+   "license": "CC BY-SA 4.0",
+   "trim": false,
+   "local": true
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-espuma-mecanica",
+   "name": "Extintor de espuma mecânica",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fire_foam_extinguisher_%28h%C3%A5ndslokker%2C_brannslukningsapparat%2C_pulverapparat%2C_skumapparat%2C_type_VIKING%29_on_wall_in_a_primary_school_in_Fusa%2C_Hordaland%2C_Norway._2018-03-23_A.jpg/960px-thumbnail.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_foam_extinguisher_(h%C3%A5ndslokker,_brannslukningsapparat,_pulverapparat,_skumapparat,_type_VIKING)_on_wall_in_a_primary_school_in_Fusa,_Hordaland,_Norway._2018-03-23_A.jpg",
+   "author": "Wolfmann",
+   "license": "CC BY-SA 4.0",
+   "trim": false,
+   "local": true
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-classe-k",
+   "name": "Extintor classe K",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Wet_chemical_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wet_chemical_fire_extinguisher.jpg/960px-Wet_chemical_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Wet_chemical_fire_extinguisher.jpg",
+   "author": "Firetech117",
+   "license": "CC BY-SA 4.0",
+   "trim": false,
+   "local": true
+  },
+  {
+   "category": "extintores",
+   "id": "extintor-sobre-rodas",
+   "name": "Extintor sobre rodas (carreta)",
+   "brand": "",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg",
+   "fallbacks": [
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Trolley_type_dry_powder_fire_extinguisher.jpg/960px-Trolley_type_dry_powder_fire_extinguisher.jpg"
+   ],
+   "page": "https://commons.wikimedia.org/wiki/File:Trolley_type_dry_powder_fire_extinguisher.jpg",
+   "author": "Fumikas Sagisavas",
+   "license": "CC0",
+   "cover": [
+    0.45,
+    0.5
+   ],
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-slim-premium",
+   "name": "Luminária autônoma Slim Premium",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/32/32-2thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-premium",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-compacta-basic-embutir",
+   "name": "Luminária compacta autônoma Basic de embutir",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/28/28-4thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-mini-compacta-basic",
+   "name": "Luminária mini compacta autônoma Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/77/77-3thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-mini-bloco-basic",
+   "name": "Mini bloco autônomo Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/23/23-7thumb.jpg",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-nano-bloco-basic",
+   "name": "Nano bloco autônomo Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/17/17-9thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-bloco-3000-basic",
+   "name": "Bloco autônomo 3000 Basic",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/27/27-3thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/1/iluminacao-de-emergencia/autonomas-basic",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-csb-400",
+   "name": "Central de iluminação 12 V 400 W CSB-400",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/50/50-1thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/central-de-iluminacao-12vcc-400w",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-lcce-300",
+   "name": "Luminária compacta de embutir 12/24 V LCCE-300",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/54/54-2thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-compacta-1224vcc-embutir",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-lcf-3020-blk",
+   "name": "Luminária triplo farol Black LCF-3020BLK",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/60/321md.png",
+   "fallbacks": [
+    "https://www.luxpryme.com.br/admin/image/produto/60/60-1thumb.png"
+   ],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-triplo-farol-black",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-duplo-farol-lcf",
+   "name": "Luminária duplo farol LCF (opção IP-66)",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/53/53-1thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-duplo-farol-",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-slim-lsc-ip67",
+   "name": "Luminária Slim 12/24 V LSC (IP-67)",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/56/56-1thumb.png",
+   "fallbacks": [],
+   "page": "https://www.luxpryme.com.br/produto/luminaria-slim-1224vcc-",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-pps-p-2617",
+   "name": "Placa de saída 26x17 Premium PPS.P-2617",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/39/284md.png",
+   "fallbacks": [
+    "https://www.luxpryme.com.br/admin/image/produto/39/283md.png",
+    "https://www.luxpryme.com.br/admin/image/produto/39/39-1thumb.png"
+   ],
+   "page": "https://www.luxpryme.com.br/produto/placa-de-saida-26x17-premium",
+   "local": true
+  },
+  {
+   "category": "iluminacao",
+   "id": "luxpryme-pcs-b-2617",
+   "name": "Placa de saída 26x17 12/24 V PCS.B-2617",
+   "brand": "Luxpryme",
+   "url": "https://www.luxpryme.com.br/admin/image/produto/43/271md.png",
+   "fallbacks": [
+    "https://www.luxpryme.com.br/admin/image/produto/43/272md.png",
+    "https://www.luxpryme.com.br/admin/image/produto/43/43-1thumb.png"
+   ],
+   "page": "https://www.luxpryme.com.br/produto/placa-de-saida-26x17-1224vcc",
+   "local": true
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cic-06l",
+   "name": "Central de alarme de incêndio convencional CIC 06L",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-06/cic_06_l_front_led_1.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-06/cic_06_l_persp_dir_sombra_0.png",
+    "https://backend.intelbras.com/sites/default/files/2019-06/cic_06_l_persp_esq_0.png",
+    "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_CIC_06_L_com_bateria_700x480px_0.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-convencional-com-bateria-cic-06l-com-bateria"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cic-12l",
+   "name": "Central de alarme convencional CIC 12L",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-07/front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-07/perspectiva_direita.png",
+    "https://backend.intelbras.com/sites/default/files/2019-07/perspectiva_esquerda.png",
+    "https://backend.intelbras.com/sites/default/files/2019-07/foto_principal_CIC_12_L_700x480px.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-convencional-cic-12l"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cic-24l",
+   "name": "Central de alarme de incêndio convencional CIC 24L",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/front_6.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_esquerda.png",
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_direita.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-convencional-cic-24l"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cie-1060",
+   "name": "Central de alarme de incêndio CIE 1060",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2022-04/cie-1060-front-led.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2022-04/cie-1060-persp-dir-led.png",
+    "https://backend.intelbras.com/sites/default/files/2022-04/cie-1060-persp-esq-led.png",
+    "https://backend.intelbras.com/sites/default/files/2022-04/central-de-alarme-de-incendio-cie-1060.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1060"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cie-1125",
+   "name": "Central de alarme de incêndio CIE 1125",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/front_0.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_esquerda_0.png",
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_direita_1.png",
+    "https://backend.intelbras.com/sites/default/files/2021-08/central-de-alarme-de-incendio-cie-1125.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1125"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cie-1250",
+   "name": "Central de alarme de incêndio CIE 1250",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/front_7.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_direita_2.png",
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_esquerda_1.png",
+    "https://backend.intelbras.com/sites/default/files/2021-08/central-de-alarme-de-incendio-cie-1250.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1250"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-cie-2500",
+   "name": "Central de alarme de incêndio CIE 2500",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/front_8.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_direita_3.png",
+    "https://backend.intelbras.com/sites/default/files/integration/perspectiva_esquerda_2.png",
+    "https://backend.intelbras.com/sites/default/files/2021-08/central-de-alarme-de-incendio-cie-2500.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-2500"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-ma-2000",
+   "name": "Central de alarme de incêndio algorítmica MA 2000",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2024-12/ma-2000-02.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2024-12/ma-2000-01.png",
+    "https://backend.intelbras.com/sites/default/files/2024-12/central-de-alarme-de-incendio-algoritmica-ma-2000.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-algoritmica-ma-2000"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-ma-8000",
+   "name": "Central de alarme de incêndio algorítmica MA 8000",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2024-12/ma-8000-03.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2024-12/ma-8000-01.png",
+    "https://backend.intelbras.com/sites/default/files/2024-12/central-de-alarme-de-incendio-algoritmica-ma-8000.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-algoritmica-ma-8000"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfe-521",
+   "name": "Detector de fumaça endereçável DFE 521",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-11/dfe-521-frontal-inclinada-led-on.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-11/dfe-521-persp-dir-led-on.png",
+    "https://backend.intelbras.com/sites/default/files/2021-11/dfe-521-persp-esq-led-on.png",
+    "https://backend.intelbras.com/sites/default/files/2021-11/dfe-521-frontal-reta-led-on.png",
+    "https://backend.intelbras.com/sites/default/files/2021-11/detector-de-fumaca-enderecavel-dfe-521.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-521"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfe-523",
+   "name": "Detector de fumaça endereçável DFE 523",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2025-07/dfe-523-front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2025-07/dfe-523-persp-esq_0.png",
+    "https://backend.intelbras.com/sites/default/files/2025-07/dfe-523-front-2_0.png",
+    "https://backend.intelbras.com/sites/default/files/2025-07/detector-de-fumaca-enderecavel-dfe-523_0.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-523"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dte-521",
+   "name": "Detector de temperatura endereçável DTE 521",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-08/dte_521_frontal_inclinada_led_on.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-08/DTE-521.jpg",
+    "https://backend.intelbras.com/sites/default/files/2021-08/dte_521_persp_dir_led_on.png",
+    "https://backend.intelbras.com/sites/default/files/2021-08/dte_521_persp_esq_led_on.png",
+    "https://backend.intelbras.com/sites/default/files/2021-08/dte_521_frontal_reta_led_on.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-temperatura-enderecavel-dte-521"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dte-523",
+   "name": "Detector de temperatura endereçável DTE 523",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2025-07/dte-523-front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2025-07/dte-523-persp-esq.png",
+    "https://backend.intelbras.com/sites/default/files/2025-07/dte-523-persp-dir-teto.png",
+    "https://backend.intelbras.com/sites/default/files/2025-07/detector-de-temperatura-enderecavel-dte-523.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-temperatura-enderecavel-dte-523"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfc-421-un",
+   "name": "Detector de fumaça convencional DFC 421 UN",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-06/dfc_421_un-front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-06/dfc_421_un-persp_dir.png",
+    "https://backend.intelbras.com/sites/default/files/2019-06/dfc_421_un-persp_esq.png",
+    "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DFC_421_UN_700x480px.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-convencional-dfc-421-un"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dtc-421-un",
+   "name": "Detector de temperatura convencional DTC 421 UN",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-06/dtc_421_un-04.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-06/dtc_421_un-05.png",
+    "https://backend.intelbras.com/sites/default/files/2019-06/dtc_421_un-07.png",
+    "https://backend.intelbras.com/sites/default/files/2019-06/foto_principal_DTC_421_UN_700x480px.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-temperatura-convencional-dtc-421-un"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfl-3100",
+   "name": "Detector de fumaça linear DFL 3100",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-12/dfl-3100-10.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-12/dfl-3100-14.png",
+    "https://backend.intelbras.com/sites/default/files/2021-12/dfl-3100-15.png",
+    "https://backend.intelbras.com/sites/default/files/2021-12/detector-de-fumaca-linear-dfl-3100.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3100"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfl-3101",
+   "name": "Detector de fumaça linear DFL 3101",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-12/dfl_3100-10.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-12/dfl_3100-14.png",
+    "https://backend.intelbras.com/sites/default/files/2019-12/dfl_3100-15.png",
+    "https://backend.intelbras.com/sites/default/files/2019-12/foto_principal_DFL%203101_700x480px.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3101"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfl-3102",
+   "name": "Detector de fumaça linear DFL 3102",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-02/foto_principal_DFL%203101_700x480px.jpg",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-02/foto_principal_DFL%203101_700x480px_0.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3102"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dgc-423",
+   "name": "Detector de gás convencional DGC 423",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2025-11/dgc-423-front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2025-11/dgc-423-persp-dir.png",
+    "https://backend.intelbras.com/sites/default/files/2025-11/dgc-423-persp-esq.png",
+    "https://backend.intelbras.com/sites/default/files/2025-11/detector-de-gas-convencional-dgc-423.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-gas-convencional-dgc-423"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dch-7110-7210",
+   "name": "Detector de chama infravermelho DCH 7110 e DCH 7210",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2025-01/dch-7110-dch-7210-02.png",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/ajuda-download/download/detector-de-chama-infravermelho-dch-7110-e-dch-7210"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-idf-620",
+   "name": "Detector de fumaça Smart IDF 620",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-02/idf_620_5%20.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-02/idf_620_1%20.png",
+    "https://backend.intelbras.com/sites/default/files/2021-02/idf_620_2%20.png",
+    "https://backend.intelbras.com/sites/default/files/2021-02/IDF_620%20Detector%20de%20Fuma%C3%A7a%20Smart.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-smart-idf-620"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfa-623",
+   "name": "Detector de fumaça autônomo DFA 623",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2025-04/01%20Frontal.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2025-04/08%20Persp%20Dir.png",
+    "https://backend.intelbras.com/sites/default/files/2025-04/13%20Persp%20Esq%2070mm.png",
+    "https://backend.intelbras.com/sites/default/files/2025-04/detector-de-fuma%C3%A7a-autonomo-dfa-623.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-autonomo-dfa-623"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-dfa-620",
+   "name": "Detector de fumaça autônomo DFA 620",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2019-05/dfa_620-Front_0.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2019-05/dfa_620-persp_dir.png",
+    "https://backend.intelbras.com/sites/default/files/2019-05/dfa_620-persp_esq.png",
+    "https://backend.intelbras.com/sites/default/files/2019-05/foto_principal_DFA_620_700x480px.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/detector-de-fumaca-autonomo-dfa-620"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-ame-521",
+   "name": "Acionador manual endereçável sem sirene AME 521",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-06/AME_521_frontal_led.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-06/AME_521_persp_direita_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AME_521_persp_esquerda_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AME_521_frontal_superior_led.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-ame-522",
+   "name": "Acionador manual endereçável com sirene AME 522",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-06/AME_522_frontal_led.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-06/AME_522_persp_direita_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AME_522_persp_esquerda_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AME_522_frontal_superior_led.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-enderecavel-com-sirene-ame-522"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-ame-566",
+   "name": "Acionador manual endereçável AME 566",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-12/ame-566-front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-12/ame-566-pers-dir.png",
+    "https://backend.intelbras.com/sites/default/files/2020-12/ame-566-pers-esq.png",
+    "https://backend.intelbras.com/sites/default/files/2020-12/acionador-manual-enderecavel-de-incendio-ame-566.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-enderecavel-ame-566"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amc-421",
+   "name": "Acionador manual convencional sem sirene AMC 421",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-06/AMC_421_frontal_led.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-06/AMC_421_persp_direita_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AMC_421_persp_esquerda_led_0.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AMC_421_frontal_superior_led.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-convencional-sem-sirene-amc-421"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amc-422",
+   "name": "Acionador manual convencional com sirene AMC 422",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-06/AMC_422_frontal_led.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-06/AMC_422_persp_direita_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AMC_422_persp_esquerda_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/AMC_422_frontal_superior_led.png",
+    "https://backend.intelbras.com/sites/default/files/2020-06/foto_principal_AMC_422_700x480px.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-convencional-com-sirene-amc-422"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amc-466",
+   "name": "Acionador manual convencional AMC 466",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-12/AMC_466_frontal.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-12/AMC_466_persp_dir.png",
+    "https://backend.intelbras.com/sites/default/files/2020-12/AMC_466_persp_esq.png",
+    "https://backend.intelbras.com/sites/default/files/2020-12/FlyerDigital_AMC_466_03.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-convencional-amc-466"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amb-3201",
+   "name": "Acionador manual de bomba AMB 3201",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-08/AMB_3201_frontal.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-08/AMB_3201_persp_dir_fechado.png",
+    "https://backend.intelbras.com/sites/default/files/2020-08/AMB_3201_persp_esq_fechado.png",
+    "https://backend.intelbras.com/sites/default/files/2020-08/FlyerDigital_AMB_3201_03.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-de-bomba-amb-3201"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-amb-3202",
+   "name": "Acionador manual de bomba AMB 3202",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-08/AMB_3202_frontal.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-08/AMB_3202_persp_dir_fechado.png",
+    "https://backend.intelbras.com/sites/default/files/2020-08/AMB_3202_persp_esq_fechado.png",
+    "https://backend.intelbras.com/sites/default/files/2020-08/FlyerDigital_AMB_3202_03.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/acionador-manual-de-bomba-amb-3202"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-420c",
+   "name": "Sinalizador audiovisual convencional SAV 420C",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front-cima_sombra_0.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-persp-dir.png",
+    "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-persp-esq.png",
+    "https://backend.intelbras.com/sites/default/files/integration/sinalizador-audio-visual-led-front.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-convencional-sav-420c"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-521e",
+   "name": "Sinalizador audiovisual endereçável SAV 521E",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2020-11/SAV-521E_frontal.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2020-11/SAV-521E_persp_esquerda.png",
+    "https://backend.intelbras.com/sites/default/files/2020-11/SAV-521E_persp_direita.png",
+    "https://backend.intelbras.com/sites/default/files/2020-11/Imagens_FlyerDigital_SAV_521E_03.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-enderecavel-sav-521e"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-sav-520e",
+   "name": "Sinalizador audiovisual endereçável SAV 520E",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/sav_520_front_0.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/sav_520_persp_dir_0.png",
+    "https://backend.intelbras.com/sites/default/files/integration/sav_520_persp_esq.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/sinalizador-audiovisual-enderecavel-sav-520e"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-mio-521",
+   "name": "Módulo de entrada ou saída MIO 521",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/2021-10/mio-521-frontal_0.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/2021-10/mio-521-persp-dir.png",
+    "https://backend.intelbras.com/sites/default/files/2021-10/mio-521-persp-esq.png",
+    "https://backend.intelbras.com/sites/default/files/2023-03/210718_FlyerDigital_MIO_521_Imagem-topo.jpg"
+   ],
+   "page": "https://www.intelbras.com/pt-br/modulo-de-entrada-ou-saida-mio-521"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-fna-520",
+   "name": "Fonte auxiliar FNA 520",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/fna_520_front.png",
+   "fallbacks": [],
+   "page": "https://www.intelbras.com/pt-br/fonte-auxiliar-fna-520"
+  },
+  {
+   "category": "alarme",
+   "id": "intelbras-rp-520",
+   "name": "Repetidora para central de alarme de incêndio RP 520",
+   "brand": "Intelbras",
+   "url": "https://backend.intelbras.com/sites/default/files/integration/rp_520_front.png",
+   "fallbacks": [
+    "https://backend.intelbras.com/sites/default/files/integration/rp_520_persp_esq.png",
+    "https://backend.intelbras.com/sites/default/files/integration/rp_520_persp_dir.png"
+   ],
+   "page": "https://www.intelbras.com/pt-br/repetidora-para-central-de-alarme-de-incendio-rp-520"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-solution-24l",
+   "name": "Central de alarme de incêndio convencional Solution 24L",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2021/03/cover-central-de-alarmes-de-incendio-convencional-3c8ddbbfd6.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sistema-de-alarme-de-incendio-convencional/central-de-alarmes-de-incendio-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-prestige-20l",
+   "name": "Central convencional Prestige 20L",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2021/06/cover-alarme-convencional-prestige-20l-567d964319.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-prestige-20l-sistema-de-alarme-convencional/alarme-convencional-prestige-20l"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-vision-24-lacos",
+   "name": "Central convencional Vision 24 Laços",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/08/cover-linha-vision-24-lacos-sistema-de-alarme-convencional-e32476e76a.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sistema-de-alarme-de-incendio-convencional/linha-vision-24-lacos-sistemas-de-alarme-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-safira-l125a",
+   "name": "Central de alarme de incêndio Safira L125A",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-central-de-alarme-de-incendio-safira-l125a-ddd3380a0a.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-safira-sistema-de-alarme-enderecavel/central-de-alarme-de-incendio-safira-l125a"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-sigma-485e",
+   "name": "Central de alarme endereçável Sigma 485E",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2021/03/cover-central-de-alarme-enderecavel-sigma-414244362d.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/central-de-alarme-enderecavel-sigma"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-avalon-65-125-250",
+   "name": "Central de alarme endereçável Avalon 65 | 125 | 250",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-lancamento-tecnohold-alarme-enderecavel-avalon-l-xxxa-7b65e4cf79.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/alarme-enderecavel-avalon-65-125-250"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-avalon-evolution",
+   "name": "Central de alarme endereçável Avalon Evolution",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2025/04/cover-alarme-enderecavel-avalon-evolution-c03f13f202.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/alarme-enderecavel-avalon-evolution"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-sigma-485a-analogica",
+   "name": "Central de alarme analógica endereçável Sigma 485A",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2021/03/cover-alarme-analogico-enderecavel-a87cac3992.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485a-sistema-analogico-de-alarme-enderecavel/alarme-analogico-enderecavel"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-central-avalon-evolution-analogica",
+   "name": "Central Avalon Evolution Analógica",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-alarme-analogico-avalon-evolution-0f44af342b.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-analogico/central-avalon-evolution-analogica"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-optico-fumaca-convencional",
+   "name": "Detector óptico de fumaça convencional",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/02/cover-prestigio-detector-optico-de-fumaca-convencional-7f97488be5.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-prestige-20l-sistema-de-alarme-convencional/linha-prestige-detector-optico-de-fumaca-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-optico-fumaca-enderecavel",
+   "name": "Detector óptico de fumaça endereçável",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-detector-optico-de-fumaca-enderecavel-1190416671.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/detector-optico-de-fumaca-enderecavel"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-optico-fumaca-analogico-dfa10gx",
+   "name": "Detector óptico de fumaça analógico DFA10GX",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2020/07/cover-detector-optico-de-fumaca-analogico-de-alarme-de-incendio-20e8b1e10b.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485a-sistema-analogico-de-alarme-enderecavel/detector-optico-de-fumaca-analogico-de-alarme-de-incendio"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-termovelocimetrico-convencional",
+   "name": "Detector termovelocimétrico convencional",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-detector-termovelocimetrico-3e74cfa66d.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/alarme-detector-termovelocimetrico"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-termovelocimetrico-enderecavel",
+   "name": "Detector termovelocimétrico endereçável",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-detector-termovelocimetrico-enderecavel-12fd9009aa.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/detector-termovelocimetrico-enderecavel"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-termovelocimetrico-dte485t01",
+   "name": "Detector termovelocimétrico endereçável DTE485T01",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2021/06/cover-detector-termovelocimetrico-enderecavel-de-alarme-de-incendio-dte485t01-02546a5352.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/detector-termovelocimetrico-enderecavel-de-alarme-de-incendio-dte485t01"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-detector-fumaca-linear-l-9105",
+   "name": "Detector de fumaça linear 24 Vcc L-9105",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-detector-fumaca-incendio-linear-24vcc-l-9105-6414fe8dfd.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/detector-fumaca-incendio-linear-24vcc-l-9105"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-manual-convencional-ip20",
+   "name": "Acionador manual convencional IP20",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/10/cover-acionador-manual-convencional-ip20-44b1821a2e.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-prestige-20l-sistema-de-alarme-convencional/acionador-manual-convencional-ip20"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-manual-convencional-ip55",
+   "name": "Acionador manual convencional IP55",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/10/cover-acionador-manual-convencional-ip55-440e0b9344.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-prestige-20l-sistema-de-alarme-convencional/acionador-manual-convencional-ip55"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-manual-enderecavel-ip20",
+   "name": "Acionador manual endereçável IP20",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-enderecavel-ip20-af0ff9a653.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/acionador-manual-enderecavel-ip20"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-manual-enderecavel-ip55-ip67",
+   "name": "Acionador manual endereçável IP55 / IP67",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-acionador-manual-ip55-ip67-49e701534f.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/acionador-manual-ip55-ip67"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-manual-enderecavel-com-sirene",
+   "name": "Acionador manual endereçável com sirene IP20",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/06/cover-acionador-manual-enderecavel-com-sirene-ip20-dd269af2de.png",
+   "fallbacks": [
+    "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/06/produto-acionador-manual-enderecavel-com-sirene-ip20-e6993f6831.png"
+   ],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/acionador-manual-enderecavel-com-sirene-ip20"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-acionador-manual-com-sirene-analogico",
+   "name": "Acionador manual endereçável com sirene analógico",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-acionador-manual-enderecavel-com-sirene-analogico-1c7ab9b3af.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485a-sistema-analogico-de-alarme-enderecavel/acionador-manual-enderecavel-com-sirene-analogico"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-sirene-audiovisual-enderecavel",
+   "name": "Sirene áudio visual endereçável",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-sirene-audio-visual-enderecavel-3183207430.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/sirene-audio-visual-enderecavel"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-sirene-enderecavel-pneumatica-industrial",
+   "name": "Sirene endereçável pneumática industrial",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-sirene-enderecavel-pneumatica-industrial-2253e3e1f0.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/sirene-enderecavel-pneumatica-industrial"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-sinalizador-audiovisual-convencional-24v-ip20",
+   "name": "Sinalizador áudio visual convencional 24 V IP20",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/10/cover-sinalizador-audio-visual-convencional-24v-ip20-16ea29f476.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-alarme-enderecavel-65-125-250/sinalizador-audio-visual-convencional-24v-ip20"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-sinalizador-audiovisual-convencional-corneta",
+   "name": "Sinalizador audiovisual convencional corneta",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/10/cover-sinalizador-audiovisual-convencional-corneta-a6474e4418.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-prestige-20l-sistema-de-alarme-convencional/sinalizador-audiovisual-convencional-corneta"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-modulo-isolador-curto-circuito-irc485t03",
+   "name": "Módulo isolador de curto-circuito IRC485T03",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-modulo-isolador-de-curto-circuito-c30e0a6f9c.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/modulo-isolador-de-curto-circuito"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-modulo-deteccao-1-zona-convencional",
+   "name": "Módulo endereçável de detecção para 1 zona convencional",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-modulo-enderecavel-de-deteccao-para-1-zona-convencional-ba07f98711.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/modulo-enderecavel-de-deteccao-para-1-zona-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-modulo-interface-4-20ma",
+   "name": "Módulo endereçável / convencional (interface 4-20 mA)",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-modulo-enderecavel-convencional-e81266bbb6.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/modulo-enderecavel-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-mcr-modulo-supervisao-comando-remoto",
+   "name": "MCR – Módulo de supervisão e comando remoto",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/08/cover-mcr-modulo-de-supervisao-e-comando-remoto-d32713b110.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/mcr-modulo-de-supervisao-e-comando-remoto"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-fonte-alimentacao-enderecavel",
+   "name": "Fonte de alimentação endereçável",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-fonte-de-alimentacao-enderecavel-18675a7bd5.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-sigma-485e-sistema-de-alarme-enderecavel/fonte-de-alimentacao-enderecavel"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-fonte-auxiliar-avalon-evolution",
+   "name": "Fonte de alimentação auxiliar Avalon Evolution",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2025/04/cover-fonte-de-alimentacao-auxiliar-avalon-evolution-2ec19a2fc6.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/fonte-de-alimentacao-auxiliar-avalon-evolution"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-fonte-auxiliar-avalon-evolution-analogica",
+   "name": "Fonte de alimentação auxiliar Avalon Evolution Analógica",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-fonte-de-alimentacao-auxiliar-avalon-evolution-79465f13f5.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-analogico/fonte-de-alimentacao-auxiliar-avalon-evolution-analogica"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-repetidor-avalon-evolution",
+   "name": "Repetidor da central de alarme Avalon Evolution",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2025/04/cover-repetidor-da-central-de-alarme-36c6b4c333.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/repetidor-da-central-de-alarme"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-repetidor-avalon-evolution-analogica",
+   "name": "Repetidor da central de alarme Avalon Evolution Analógica",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2024/11/cover-repetidor-da-central-de-alarme-11f7f0d789.png",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-analogico/repetidor-da-central-de-alarme-avalon-evolution-analogica"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-quadro-protetor-surto-entrada-ac",
+   "name": "Quadro completo protetor de surto entrada AC",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/04/cover-quadro-completo-protetor-de-surto-entrada-ac-760658ed5c.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/quadro-completo-protetor-de-surto-entrada-ac"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-quadro-protetor-surto-rede-dispositivos",
+   "name": "Quadro completo protetor de surto rede de dispositivos",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2023/04/cover-quadro-completo-protetor-de-surto-rede-de-dispositivos-5e63fb0c55.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-enderecavel/quadro-completo-protetor-de-surto-rede-de-dispositivos"
+  },
+  {
+   "category": "alarme",
+   "id": "tecnohold-cabo-flexivel-2x1-50-2x0-75-blindado",
+   "name": "Cabo flexível 2 vias 1,50 mm² + 2 vias 0,75 mm² capa vermelha",
+   "brand": "Tecnohold",
+   "url": "https://www.tecnohold.com.br/doutor/uploads/2/produtos/2018/12/cover-cabo-flexivel-2-vias-1-50mm-2-vias-0-75mm-capa-vermelha-o-metro-4c54c7530c.jpg",
+   "fallbacks": [],
+   "page": "https://www.tecnohold.com.br/produtos/linha-avalon-evolution-sistema-de-alarme-analogico/cabo-flexivel-2-vias-1-50mm%C2%B2-2-vias-0-75mm%C2%B2-capa-vermelha-o-metro"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cac",
+   "name": "Central de alarme de incêndio convencional CAC",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_c2f2473cd36240b7b92561c3dc869b5f~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_f6427b00fa654883a7b35a9fe603ce51~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_69943b7e60fd477ab15b360d4f5229d1~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_05ef4d7bba5b4fcbbf8d7329f9a73576~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/central-cac"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-brava",
+   "name": "Central de alarme de incêndio endereçável compacta BRAVA",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_ef28a842b6c84ae8af36c86c9ccb6a35~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/brava"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-kxe",
+   "name": "Central de alarme de incêndio endereçável compacta KXE",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_1a6bc13d5624436da9023f1ad1a5af3d~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/kxe"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ke-dual-125-250",
+   "name": "Central de alarme de incêndio endereçável KE-DUAL 125/250",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_7ae248be0b6c4c4383a588c2a678d940~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/ke-dual"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cae-500-xmax",
+   "name": "Central de alarme de incêndio endereçável CAE-500 XMAX",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_891d5c8e1044432d98a1f938d2820bec~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/cae-500-xmax"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sirius-lc",
+   "name": "Central de alarme de incêndio endereçável compacta Sirius LC",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_02360d5bd697403eb285d292a2ef1f21~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sirius-lc"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sirius-compact-ii",
+   "name": "Central de alarme de incêndio compacta Sirius Compact II",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_06a7614b572f43f590e5b9614ecbf098~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sirius-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sirius-max-ii",
+   "name": "Central de alarme de incêndio Sirius-Max II",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_aaa99c18c63140a5a34fadbac518e6aa~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sirius-max-ii"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cygnus-max",
+   "name": "Central de alarme de incêndio analógica Cygnus Max",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_0f3684f3bbcd4503b5758be99a559de5~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_ea11845cb59f4ccb97b5162d6801be51~mv2.jpg",
+    "https://static.wixstatic.com/media/3783ab_b59de83b78434169977745a773ab813a~mv2.jpg",
+    "https://static.wixstatic.com/media/3783ab_92030f5e723d469b88bea695486e777e~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/central-de-alarme-de-incendio-analogica-cygnus-max"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cygnus-se",
+   "name": "Central de alarme de incêndio analógica Cygnus-SE",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_2da13873757e4be7962b7cd554f8a7b1~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/cygnus-se"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-lyax",
+   "name": "Central de alarme de incêndio sem fio Lyax",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_95df3cff410548a2a4e458ea835af7b7~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_a880f70fa43a4d8ca57b6d535f8106a1~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_cd78d25d10fa408eaca0ecf9a645748c~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/central-de-alarme-wireless-lyax"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sdo-c",
+   "name": "Detector de fumaça convencional SDO-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_bfb45ce7510949d0a62d26a97fbd09e6~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sdo-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sdo-e",
+   "name": "Detector de fumaça endereçável SDO-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_bfb45ce7510949d0a62d26a97fbd09e6~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sdo-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sdo-d",
+   "name": "Detector de fumaça endereçável SDO-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_bfb45ce7510949d0a62d26a97fbd09e6~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sdo-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdv-c-tdf-c",
+   "name": "Detector térmico convencional TDV-C / TDF-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_2775fd2a4783413fbc86ee7557954dba~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_a30b604194a4485b8c1d507170ea3f78~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_ca92d42bb9e24fc1b81537dde17abcde~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_4ab0a9cb80f249198a090b8357c59aa2~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-convencioal-tdv-c-tdf-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-dgs-c",
+   "name": "Detector de gás GLP convencional DGS-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_e53585203b6b47f09215209772cb7ffb~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_b7fdb19e699f4314b48e945a6ec58ab4~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_258040299d854e2b8d738d417026b6f4~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-de-gas-convencional-dgs-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdpw-c",
+   "name": "Detector térmico convencional IP65 TDPW-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_b03ad547a12b4e3bb13558c2748bdf94~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_fcd0abff8c334fc08c95aa8ec7aecb7f~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-convencional-ip65-tdpw-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-dwtc-302",
+   "name": "Detector linear de temperatura convencional DWTC-302",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_fc64e3f9443d4c0e90dd6db7fb6f5668~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_12a7b3b9200043ab8847b170ebc3a496~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_32b7086dba7a4ada8c391554aa9e0bb6~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_fd9e612f781445f8b98d2ce8bb178060~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-linear-de-temperatura-dwtc302"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tanda",
+   "name": "Detector linear de fumaça Tanda",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_724e4b010378448dabd3609e845f32b9~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/tanda"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdv-e-tdf-e",
+   "name": "Detector térmico endereçável TDV-E / TDF-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_2775fd2a4783413fbc86ee7557954dba~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_a30b604194a4485b8c1d507170ea3f78~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_ca92d42bb9e24fc1b81537dde17abcde~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-tdv-e-tdf-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdpw-e",
+   "name": "Detector térmico endereçável IP65 TDPW-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_b03ad547a12b4e3bb13558c2748bdf94~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_fcd0abff8c334fc08c95aa8ec7aecb7f~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-enderecavel-ip65-tdpw-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sdo-a",
+   "name": "Detector de fumaça óptico analógico SDO-A",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_53eeec602e544bafa8b7db9a661c7d0a~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_8b9c80ac634a4d4d9789b73dfbbc5cf3~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_2bce50eea0ea4516a7808d5ce6454154~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_a3d8c93154ac4b339fbf2cfde0fda859~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-de-fumaca-analogico-sdo-a"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdv-d-tdf-d",
+   "name": "Detector térmico endereçável TDV-D / TDF-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_2775fd2a4783413fbc86ee7557954dba~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_a30b604194a4485b8c1d507170ea3f78~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_ca92d42bb9e24fc1b81537dde17abcde~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_1e1ce9a29c7e46aaaba340dfda7f6bb3~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-tdv-d-tdf-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdf-a",
+   "name": "Detector térmico analógico TDF-A",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_c17e417623b542be8df2f736a6978816~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_6d02b9581a9d48c7b0596ba8f9e18f43~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_6a64958a5ae449b79896c76a355eec75~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_412a446247c749678f41189237cde9f9~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-analogico-tdf-a"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdpw-d",
+   "name": "Detector térmico endereçável IP65 TDPW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_b03ad547a12b4e3bb13558c2748bdf94~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_fcd0abff8c334fc08c95aa8ec7aecb7f~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/detector-termico-sirius-ip65-tdpw-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sdo-g",
+   "name": "Detector de fumaça óptico endereçável SDO-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_c5e78aa14a2b46fbaa8cab1125c5fb96~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_17b979dbaf26421bacc82f00783607ed~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_82d0cd963a164023bb67598c7dbf08dc~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_67d636d2093d4dee84793d458a318980~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-de-fumaca-optico-enderecavel-sdo-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-sdoa-g",
+   "name": "Detector de fumaça óptico analógico SDOA-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_53eeec602e544bafa8b7db9a661c7d0a~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_8b9c80ac634a4d4d9789b73dfbbc5cf3~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_2bce50eea0ea4516a7808d5ce6454154~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_e9f189d63e924cf2b3ef0ffcecf5c09c~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-de-fumaca-optico-analogico-sdoa-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdv-g-tdf-g",
+   "name": "Detector térmico endereçável TDV-G / TDF-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_2775fd2a4783413fbc86ee7557954dba~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_a30b604194a4485b8c1d507170ea3f78~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_ca92d42bb9e24fc1b81537dde17abcde~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_217b149e309844b09cf25f5b02c04d29~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-de-temperatura-enderecavel-tdv-g-tdf-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tdfa-g",
+   "name": "Detector térmico analógico TDFA-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_c17e417623b542be8df2f736a6978816~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_6d02b9581a9d48c7b0596ba8f9e18f43~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_6a64958a5ae449b79896c76a355eec75~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_4a2afae855e745b5b4e3e06986fc0bb9~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/detector-de-temperatura-analogico-tdfa-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-dfs-l",
+   "name": "Detector de fumaça sem fio DFS-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_e317b318e948442db8835aedc81c6e84~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/detector-de-fumaca-wireless-dfs-l"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-tds-l",
+   "name": "Detector térmico sem fio TDS-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_e317b318e948442db8835aedc81c6e84~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/detector-de-temperatura-wireless-tds-l"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-am-c",
+   "name": "Acionador manual quebra-vidro convencional AM-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_33c45e23d3764db688855b3640eb11d7~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_82a2276afd694a62b9d1774e9973468b~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/am-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amq-c",
+   "name": "Acionador manual rearmável convencional AMQ-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_b0fa5ba886f247038633c08147136091~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/amq-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqw-c",
+   "name": "Acionador manual convencional à prova de tempo AMQW-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_e732888f896a4767a993610be07fb35e~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_1e800d9b9d0b4d4d918958c134e262e9~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_186dc8e1d948400a98719d803a18f8c1~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-de-incendio-a-prova-de-tempo-amqw-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ampw-c",
+   "name": "Acionador manual quebra-vidro convencional à prova de tempo AMPW-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_8cfcd824dca64b4d812fa35e09c91437~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/ampw-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ampx-c",
+   "name": "Acionador manual convencional à prova de explosão AMPX-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_287ff69f9983465d89654b8925858e81~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_c32a13686ea246c88b8d8ab9b6d446cf~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/ampx-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amq-b",
+   "name": "Acionador manual de bomba de incêndio AMQ-B",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/5a3f14_26455d69423f4367a79ae40a2af7d179~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/amb-q"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-am-b",
+   "name": "Acionador manual de bomba de incêndio AM-B",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_f8c7a410d296442d8bf4378b8bd701ce~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/am-b"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ampw-b",
+   "name": "Acionador manual de bomba de incêndio AMPW-B",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_c5fb251dd98e4c0e886ef30e2c41844a~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/ampw-b"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-am-e",
+   "name": "Acionador manual quebra-vidro endereçável AM-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_33c45e23d3764db688855b3640eb11d7~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_82a2276afd694a62b9d1774e9973468b~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/am-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amq-e",
+   "name": "Acionador manual endereçável AMQ-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_4ffb49d7a59c40ef9778da6e85a09a44~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_ce632130668e412183558c5614832809~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_edc1a1d7726f430dbc25a4b3316e0b7f~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-amq-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ampw-e",
+   "name": "Acionador manual endereçável IP66 AMPW-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_7b00420624a446fb89452b1ccf56c7a7~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_56082d50023d444ba21e1ceeb69e6dfc~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_d7df0af7b0f94063b006528e9155346e~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-ip66-ampw-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqw-e",
+   "name": "Acionador manual endereçável à prova de tempo AMQW-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_6598f84203f64c77ae17bb35b9420313~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_e732888f896a4767a993610be07fb35e~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_1e800d9b9d0b4d4d918958c134e262e9~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_b99c98cd52fe44ccae19b11ca3911498~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-de-incendio-a-prova-de-tempo-amqw-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amq-d",
+   "name": "Acionador manual endereçável AMQ-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_aca26d5833c94bda9774fed3e0442258~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_1595202352664eeb8a7da95b3d2f1e53~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-enderecavel-amq-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqs-d",
+   "name": "Acionador manual endereçável com saída para sirene AMQS-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_4ffb49d7a59c40ef9778da6e85a09a44~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_ce632130668e412183558c5614832809~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_5d02b9c7f8d24501853bb16556797cea~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-enderecavel-amqs-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqw-d",
+   "name": "Acionador manual endereçável à prova de tempo AMQW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_e732888f896a4767a993610be07fb35e~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_1e800d9b9d0b4d4d918958c134e262e9~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_ac5d68e955dd46868b63c80ffdf2f2f1~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-de-incendio-a-prova-de-tempo"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqsw-d",
+   "name": "Acionador manual endereçável à prova de tempo com saída para sirene AMQSW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_e732888f896a4767a993610be07fb35e~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_a992b6bd94664a65b0d0c3f259ad7205~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_1e800d9b9d0b4d4d918958c134e262e9~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_3ca5f21f41ac456e8594989c466d5f5f~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-de-incendio-a-prova-de-tempo-amqsw-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ampw-d",
+   "name": "Acionador manual Sirius IP66 AMPW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_7b00420624a446fb89452b1ccf56c7a7~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_56082d50023d444ba21e1ceeb69e6dfc~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_d7df0af7b0f94063b006528e9155346e~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-sirius-ip66-ampw-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ampsw-d",
+   "name": "Acionador manual Sirius IP66 com saída para sirene AMPSW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_7b00420624a446fb89452b1ccf56c7a7~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_56082d50023d444ba21e1ceeb69e6dfc~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_d7df0af7b0f94063b006528e9155346e~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_8cfcd824dca64b4d812fa35e09c91437~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-sirius-ip66-ampsw-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amq-g",
+   "name": "Acionador manual endereçável AMQ-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_706c8239261840218c91b9ffc204fbe2~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_09551b025894446bb52bcb0d625f2e0f~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_69a1a09c0f54494b9eec63ebf11fa958~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-enderecavel-amq-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqs-g",
+   "name": "Acionador manual endereçável com saída para sirene AMQS-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_706c8239261840218c91b9ffc204fbe2~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_09551b025894446bb52bcb0d625f2e0f~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_69a1a09c0f54494b9eec63ebf11fa958~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-enderecavel-amqs-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqw-g",
+   "name": "Acionador manual endereçável à prova de tempo AMQW-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_aef7cc244ddb41809853de0c5b89704e~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_b95b2c72baf34ca6a0e72e9fdcad9811~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_e3c0518c393b4937bd3bb62d1c02160d~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-de-incendio-a-grova-de-tempo-amqw-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqsw-g",
+   "name": "Acionador manual endereçável à prova de tempo com saída para sirene AMQSW-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_aef7cc244ddb41809853de0c5b89704e~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_b95b2c72baf34ca6a0e72e9fdcad9811~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_e3c0518c393b4937bd3bb62d1c02160d~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-de-alarme-de-incendio-a-prova-de-tempo-amqsw-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-amqw-l",
+   "name": "Acionador manual sem fio AMQW-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_ad3f471323644b67bb6700a9b3530aec~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_8eb8ae0cb4af4d3fa3b426e355c726be~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_150faed6bb2c4d38a7ed474af98afcf0~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/acionador-manual-wireless-amqw-l"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqw-c",
+   "name": "Sirene audiovisual convencional à prova de tempo SAVQW-C",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_215ab2f3ed074772b2b0109c54e3e04b~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_a01e5e903d6c48a4b8930fd1acbd84a2~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_77c4f1e81ea741859d7942d293f50be9~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/avisador-sirene-audiovisual-de-alarme-de-incendio-a-prova-de-tempo-savqw-c"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqw-e",
+   "name": "Sirene audiovisual endereçável à prova de tempo SAVQW-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_215ab2f3ed074772b2b0109c54e3e04b~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_a01e5e903d6c48a4b8930fd1acbd84a2~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_bf1fd701af4b483ca99d998ab531c5f4~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/avisador-sirene-audiovisual-de-alarme-de-incendio-a-prova-de-tempo-savqw-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savpw-e",
+   "name": "Sirene audiovisual endereçável à prova de tempo SAVPW-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_79c1c31b673846e6900fdb2df2a58e31~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_4fe73009a8184c8ba6db144782541a29~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_2a0dd6ab07fc4e8ca442c941a1ba133d~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-enderecavel-savpw-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqe-d",
+   "name": "Sirene audiovisual endereçável SAVQE-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_ad5fdf70a17d41bd99731bbe2e20d43d~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/savqe-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqi-d",
+   "name": "Sirene audiovisual endereçável SAVQI-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_ad5fdf70a17d41bd99731bbe2e20d43d~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/savqi-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqw-d",
+   "name": "Sirene audiovisual endereçável à prova de tempo SAVQW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_215ab2f3ed074772b2b0109c54e3e04b~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_a01e5e903d6c48a4b8930fd1acbd84a2~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_94e439c4cbe64603ac9dfb11230ed568~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/avisador-sirene-audiovisual-de-alarme-de-incendio-a-prova-de-tempo-savqw-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savpw-d",
+   "name": "Sirene audiovisual Sirius IP66 SAVPW-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_ae22e1ceb5ff4bf4b57504b6b374b2fc~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_0bfaac93b34841699d5acf245036df58~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_056caa11127248198e8999e28d9a6d9b~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_8317934b7bc84cc2a3c45fe2327c439f~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-sirius-ip66-savpw-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqe-g",
+   "name": "Sirene audiovisual endereçável SAVQE-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_9c0a2be17a1949678040e0b61d30bde6~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_8d60a481ff554beda17f420e1430a52e~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_bc89aa09f2554cad9bc1fe51717af404~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_e37a4021b2a94fb99e8e8e0aef4c6543~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-savqe-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqi-g",
+   "name": "Sirene audiovisual endereçável SAVQI-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_9c0a2be17a1949678040e0b61d30bde6~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_8d60a481ff554beda17f420e1430a52e~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_bc89aa09f2554cad9bc1fe51717af404~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_458fc516e9e545d98d835b97f21bc5b8~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-savqi-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqw-g",
+   "name": "Sirene audiovisual endereçável à prova de tempo SAVQW-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_215ab2f3ed074772b2b0109c54e3e04b~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_a01e5e903d6c48a4b8930fd1acbd84a2~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_70e6bdb70bbf46aa94897409391c718b~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-de-alarme-de-incendio-a-prova-de-tempo-savqw-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqw-l",
+   "name": "Sirene audiovisual sem fio SAVQW-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_f2b786fb6838433d9bd76c52bdfa5b74~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-wireless-savqw-l"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-savqwr-l",
+   "name": "Sirene audiovisual com repetidor sem fio SAVQWR-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_c908325523d34df1bc51a6a0b7cdb684~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/sirene-audiovisual-repetidor-wireless-savqwr-l"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-msc-g",
+   "name": "Módulo de saída e comando endereçável MSC-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_80dd0d5e9dcd466c860127170220f352~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_6a775bececf34132a60da56839538cab~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_7b12b07eabbc406299ee814027716952~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_c4740d7ad24649848849503cc02c4c53~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-de-comando-enderecavel-msc-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-msc2-d",
+   "name": "Módulo de saída e comando endereçável MSC2-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_e90231e4c0dd48ac8f8f9bda898b1f2f~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_5a071fb2868d4c4e906c4ff6d0785912~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_2c2b4cb1f1f3432898dd8dc929ebc81a~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_6ffa71f032e64c6a86c9500bbf728b8a~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-de-comando-enderecavel-msc2-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mze-g",
+   "name": "Módulo de entrada de zona endereçável MZE-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_9d5da9de08ba4fcbae5477ea74d466d4~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_8b0fee8871124b9fb9280cc5fc5578c4~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_7ee13913a02b4d6398cf176fe27d58b7~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_9613485c1bbe458ca91860261e4a1b28~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-de-zona-enderecavel-mze-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mze2-d",
+   "name": "Módulo de entrada de zona endereçável MZE2-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_f3c518f197fd488db4696f3631f80546~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_1d793242d59e49569476b0c3d7c7e0e0~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_e1b4695a85524d88a18568e4169a9352~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_912a4cc86e5347b788f51bbb94cb52d1~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-de-zona-enderecavel-mze2-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mic-g",
+   "name": "Módulo isolador de curto MIC-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_1b5e0c38cb4549ccad4e4c576d149ce0~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_047d9224acf64c149739e1e42bf0a448~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_c20c07f1f2254522b6ee7ab35632ac67~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-isolador-de-curto-mic-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mic2-d",
+   "name": "Módulo isolador de curto MIC2-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_3285366b3e4b42ad93085c6495a76936~mv2.jpg",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_c9c6270f380c445aaa31ca1a36f38fd0~mv2.jpg",
+    "https://static.wixstatic.com/media/58b02a_318e077b14a14a01a406b2c4925edf5a~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-isolador-de-curto-mic2-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mic3-e",
+   "name": "Módulo isolador de curto MIC3-E",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_56c0418c1f184e3daa86f9480b75ee8d~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_45a085bfd520466199341216ce5cfddc~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_88b09bcb1a164fbe868e968674cd60c0~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-isolador-de-curto-mic3-e"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mpres-g",
+   "name": "Módulo de comando endereçável para pressurização de escadas MPRES-G",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_99de7c811a294a3ab069f4075ae346e3~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_67001c0751874440a88f6c3f38914915~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_79fcfd35c0a7463eaf8bcbb3211f5748~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_60031615cb7447f4bf27eaf9476a1965~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-para-pressurizacao-mpres-g"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mpres2-d",
+   "name": "Módulo de comando endereçável para pressurização de escadas MPRES2-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_3c866c81eeb3434fb42bfb96acb83bc3~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/58b02a_3ad61ae2708747029e5235087af57792~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_c88905a456ac4acc9f523e75d8b81987~mv2.png",
+    "https://static.wixstatic.com/media/58b02a_f612c18989694f54928e950b7bd5ada4~mv2.jpg"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-para-pressurizacao-mpres2-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mme-d",
+   "name": "Mini módulo de entrada de zona endereçável MME-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_08662d8731ca493fb793420b19ba8b89~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/mme-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mecs-l",
+   "name": "Módulo de entrada sem fio MECS-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_3cd4698cc63040ec9932028c731ede30~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/alarme-de-incendio-wireless-lyax"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-msr-l",
+   "name": "Módulo de saída sem fio MSR-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_5bcf61cd8e11407c9e68de4ccbadf38b~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/alarme-de-incendio-wireless-lyax"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mpres-l",
+   "name": "Módulo para pressurização sem fio MPRES-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_c9755fbb87264057ba3d79f4734f2836~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/alarme-de-incendio-wireless-lyax"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-fal-d",
+   "name": "Fonte auxiliar endereçável FAL-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_beb9592b4b4d42a1ac5f45e1a44b9a30~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_1c5fc7f91c5e418a86cb0644251c98ee~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_c3294f705b854e97a09fe39957cbbb58~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/fonte-auxiliar-de-laco-enderecavel-fal-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-fas-260",
+   "name": "Fonte auxiliar amplificadora de sinal FAS-260",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_cfe277bf3517458ab1a7e65f0b91c52f~mv2_d_1812_2200_s_2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/fonte-auxiliar-fas-260"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-mb-4560",
+   "name": "Módulo de baterias MB-4560",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_31bceb2a9f384cde911d4815109b7f83~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_d18fad454d164cea9cff5c8262eedb74~mv2.png",
+    "https://static.wixstatic.com/media/3783ab_f6e24af544354e5fb8e7e58acc163a7e~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/modulo-de-baterias-mb-4560"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-cabo-de-instrumentacao",
+   "name": "Cabo de instrumentação para alarme de incêndio",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_ed7660aff4134e2cb9c1705ee80ef3ec~mv2.png",
+   "fallbacks": [
+    "https://static.wixstatic.com/media/3783ab_9227094bc1bb45728464c537a439a1ad~mv2.png"
+   ],
+   "page": "https://www.ilumac.com.br/cabo-de-instrumentacao"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-prc-d",
+   "name": "Painel repetidor endereçável PRC-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_392a01331ecd4c61aae237a970167619~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/pr-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-prm-d",
+   "name": "Painel repetidor endereçável PRM-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_d81ccdeadb244e639d1ef88c3698b2c9~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/painel-repetidor-endereçavel-prm-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-psm-d",
+   "name": "Painel supervisor endereçável PSM-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_d81ccdeadb244e639d1ef88c3698b2c9~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/psm-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-ppd-d",
+   "name": "Programador portátil de dispositivos endereçáveis PPD-D",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/58b02a_05fae6eedcc54412a9c1641f35eb6c43~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/ppd-d"
+  },
+  {
+   "category": "alarme",
+   "id": "ilumac-apc-l",
+   "name": "Repetidor de sinal sem fio APC-L",
+   "brand": "Ilumac",
+   "url": "https://static.wixstatic.com/media/3783ab_a96873c396dd414d95a10d5de42f409b~mv2.png",
+   "fallbacks": [],
+   "page": "https://www.ilumac.com.br/repetidor-de-sinal-wireless-apc-l"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-central-convencional-12v",
+   "name": "Central de Alarme de Incêndio Convencional 12V",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/6/26824-central-alarme-de-incendio-as24-12v-1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26824-central-alarme-de-incendio-as24-12v-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26824b-central-alarme-incendio-as24.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26824-central-alarme-de-incendio-as24-12v-3.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26824-central-alarme-de-incendio-as24-12v-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26824d-central-alarme-incendio-as24.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26824e-central-alarme-incendio-as24.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/central-de-alarme-de-incendio-convencional-12v"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-central-convencional-24v",
+   "name": "Central de Alarme de Incêndio Convencional 24V",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27868-central-de-alarme-de-incendio-convencional-24v-com-bateria-inclusa---as12-24v-1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27868-central-de-alarme-de-incendio-convencional-24v-com-bateria-inclusa---as12-24v-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27868-central-de-alarme-de-incendio-convencional-24v-com-bateria-inclusa---as12-24v-3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/central-alarme-incendio-convencional-24v"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-central-enderecavel-smart",
+   "name": "Central de Alarme de Incêndio Endereçável SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/8/28848-central-enderecavel-smart-250l-frente_1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28848-central-enderecavel-smart-250l-frente_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28848-central-enderecavel-smart-250l-perspectiva_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/c/e/central-enderecavel-smart-125l-perspectiva-sem-chave2_1.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/central-de-alarme-de-incendio-enderecavel-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-central-enderecavel-maxpro",
+   "name": "Central de Alarme de Incêndio Endereçável MAXPRO",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/9/39046-39047-central-maxpro-front.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/9/39046-39047-central-maxpro-front.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/9/39046-39047-central-maxpro-display.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/9/39046-39047-central-maxpro-l.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/9/39046-39047-central-maxpro-r.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/central-de-alarme-de-incendio-enderecavel-maxpro"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-central-enderecavel-compact-80e",
+   "name": "Central de Detecção e Alarme de Incêndio Endereçável 80E COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31248-central-de-alarme-compact-c.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31248-central-de-alarme-compact-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31248-central-de-alarme-compact-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31248-central-de-alarme-compact-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31248-central-de-alarme-compact-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/central-de-deteccao-e-alarme-de-incendio-enderecavel-80e-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-fumaca-contato-seco-graduado",
+   "name": "Detector de Fumaça Contato Seco 12V/24V Graduado",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/6/26855-detector_ptico_de_fuma_a_contato_seco_12v_24v_1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26855-detector_ptico_de_fuma_a_contato_seco_12v_24v_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26855-detector_ptico_de_fuma_a_contato_seco_12v_24v_2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26855-detector_ptico_de_fuma_a_contato_seco_12v_24v_3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-fumaca-contato-seco-12v-24v-graduado"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-optico-fumaca-contato-seco",
+   "name": "Detector Óptico de Fumaça Contato Seco 12V/24V CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/6/26855-detector-optico-de-fumaca-contato-seco-12v-24v-1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26855-detector-optico-de-fumaca-contato-seco-12v-24v-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26855-detector-optico-de-fumaca-contato-seco-12v-24v-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/6/26855-detector-optico-de-fumaca-contato-seco-12v-24v-3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/ofertas/detector-optico-de-fumaca-contato-seco-12v24v-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-temperatura-contato-seco",
+   "name": "Detector de Temperatura Contato Seco 12V/24V CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27757-detector-de-temperatura-12-24v-1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27757-detector-de-temperatura-12-24v-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27757-detector-de-temperatura-12-24v-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27757-detector-de-temperatura-12-24v-3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-temperatura-contato-seco-12v24v-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-gas-glp-gn",
+   "name": "Detector de Gás GLP/GN 12V/24V CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/4/2/42961-detector-gn-glp-gas-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42961-detector-gn-glp-gas-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42961-detector-gn-glp-gas-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42961-detector-gn-glp-gas-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42961-detector-gn-glp-gas-d.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42961-detector-gn-glp-gas-e.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-gas-glpgn-12v24v-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-fumaca-graduado-smart",
+   "name": "Detector de Fumaça Graduado - SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/9/59673_-_detector-fuma_a-smart-b.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59673_-_detector-fuma_a-smart-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59673_-_detector-fuma_a-smart-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59673_-_detector-fuma_a-smart-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59673_-_detector-fuma_a-smart-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-fumaca-smart-graduado"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-temperatura-graduado-smart",
+   "name": "Detector de Temperatura Graduado - SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/9/59675_-_detector-temperatura-smart-b.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59675_-_detector-temperatura-smart-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59675_-_detector-temperatura-smart-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59675_-_detector-temperatura-smart-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/9/59675_-_detector-temperatura-smart-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-temperatura-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-optico-fumaca-enderecavel-smart",
+   "name": "Detector Óptico de Fumaça Endereçável SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27108-detector-optico-fumaca-enderecavel-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27108-detector-optico-fumaca-enderecavel-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27108-detector-optico-fumaca-enderecavel-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27108-detector-optico-fumaca-enderecavel-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27108-detector-optico-fumaca-enderecavel-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-optico-de-fumaca-enderecavel-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-temperatura-enderecavel-smart",
+   "name": "Detector de Temperatura Endereçável SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27811-detector-temperatura-enderacavel-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27811-detector-temperatura-enderacavel-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27811-detector-temperatura-enderacavel-b_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27811-detector-temperatura-enderacavel-c_1.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-temperatura-enderecavel-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-fumaca-enderecavel-compact",
+   "name": "Detector de Fumaça Endereçável COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31229-detector-fumaca-compact-frente.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31229-detector-fumaca-compact-frente.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31229-detector-fumaca-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-fumaca-enderecavel-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-temperatura-enderecavel-compact",
+   "name": "Detector de Temperatura Endereçável COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31230-detector-temperatura-compact-perspectiva.jpg",
+   "fallbacks": [],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-temperatura-enderecavel-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-fumaca-linear-tx7130",
+   "name": "Detector de Fumaça Linear TNA TX7130 Convencional",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/7/57370-detector-linear-fuma_a-tna-tx7130-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/7/57370-detector-linear-fuma_a-tna-tx7130-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/7/57370-detector-linear-fuma_a-tna-tx7130-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/7/57370-detector-linear-fuma_a-tna-tx7130-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/7/57370-detector-linear-fuma_a-tna-tx7130-d.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/7/57370-detector-linear-fuma_a-tna-tx7130-f.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/7/57370-detector-linear-fuma_a-tna-tx7130-e.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-fumaca-linear-c-laser-24vcc-tx7130"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-fumaca-autonomo",
+   "name": "Detector de Fumaça Autônomo",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/0/30414-detector-fumaca-autonomo-frente.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/0/30414-detector-fumaca-autonomo-frente.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/0/30414-detector-fumaca-autonomo-perspectiva.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/0/30414-detector-fumaca-autonomo-perspectiva2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/0/30414-detector-fumaca-autonomo-traseira.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/0/30414-detector-fumaca-autonomo-traseira2.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-fumaca-autonomo"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-monoxido-carbono-autonomo",
+   "name": "Detector de Monóxido de Carbono Autônomo",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/d/e/detector-monoxido-carbono-autonomo-a_1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/d/e/detector-monoxido-carbono-autonomo-a_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/d/e/detector-monoxido-carbono-autonomo-c_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/d/e/detector-monoxido-carbono-autonomo-b_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/d/e/detector-monoxido-carbono-autonomo-d_1.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-monoxido-de-carbono-co-autonomo"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-manual-sirene-convencional",
+   "name": "Acionador Manual com Sirene 12V/24V CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27706-acionador-manual-com-sirene-12v-24v-convencional-1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27706-acionador-manual-com-sirene-12v-24v-convencional-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27706-acionador-manual-com-sirene-12v-24v-convencional-3.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27706-acionador-manual-com-sirene-12v-24v-convencional-2.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-manual-com-sirene-12v24v-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-bomba-liga",
+   "name": "Acionador de Bomba com Botão Liga CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/8/28960-acionador-de-bomba-com-botao-liga-convencional-2.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28960-acionador-de-bomba-com-botao-liga-convencional-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28960-acionador-bomba-liga-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28960-acionador-de-bomba-com-botao-liga-convencional-3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-de-bomba-com-botao-liga-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-bomba-liga-desliga",
+   "name": "Acionador de Bomba com Botão Liga/Desliga CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/8/28961-acionador-de-bomba-com-botao-liga-e-desliga-2.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28961-acionador-de-bomba-com-botao-liga-e-desliga-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28961-acionador-de-bomba-com-botao-liga-e-desliga-3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-de-bomba-com-botao-ligadesliga-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-caixa-quebra-vidro-chave-emergencia",
+   "name": "Caixa Quebra Vidro para Chave de Emergência CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/8/28962-caixa-quebra-vidro-para-chave-de-emergencia-2.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28962-caixa-quebra-vidro-para-chave-de-emergencia-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28962-caixa-quebra-vidro-para-chave-de-emergencia-3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/caixa-quebra-vidro-para-chave-de-emergencia-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-manual-enderecavel-smart",
+   "name": "Acionador Manual Endereçável SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27109-acionador-manual-enderecavel-0.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27109-acionador-manual-enderecavel-0.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27109-acionador-manual-enederecavel-b.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-manual-enderecavel-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-manual-enderecavel-compact",
+   "name": "Acionador Manual Endereçável COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31231-acionador-manual-enderecavel-com-sirene-compact.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31231-acionador-manual-enderecavel-com-sirene-compact.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31231-acionador-manual-enderecavel-com-sirene-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-manual-enderecavel-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-manual-enderecavel-sirene-compact",
+   "name": "Acionador Manual Endereçável com Sirene COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31232-acionador-manual-enderecavel-com-sirene-compact.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31232-acionador-manual-enderecavel-com-sirene-compact.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31232-acionador-manual-enderecavel-com-sirene-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-manual-enderecavel-com-sirene-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-sirene-audiovisual-ip66",
+   "name": "Sirene Audiovisual IP66 12/24V",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/s/i/sirene-convencional-ip66-02-b.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/s/i/sirene-convencional-ip66-02-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/s/i/sirene-convencional-ip66-02.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/s/i/sirene-convencional-ip66-03.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/sirene-audiovisual-ip66-1224v"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-sirene-audiovisual-convencional",
+   "name": "Sirene Audiovisual 12V/24V CONVENCIONAL",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27707-sinalizador-audiovisual.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27707-sinalizador-audiovisual.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27707-sinalizador-audiovisual-com-sirene-12v-24v-convencional-3.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27707-sinalizador-audiovisual-com-sirene-12v-24v-convencional-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27707-sinalizador-audiovisual-com-sirene-12v-24v-convencional-1.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/sirene-audiovisual-12v24v-convencional"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-sirene-audiovisual-multitoque-smart",
+   "name": "Sirene Audiovisual Endereçável Multitoque SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/7/37717-sinalizador-audiovisual-enderecavel-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/7/37717-sinalizador-audiovisual-enderecavel-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/7/37717-sinalizador-audiovisual-enderecavel-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/7/37717-sinalizador-audiovisual-enderecavel-c.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/sirene-audiovisual-enderecavel-multitoque-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-sirene-audiovisual-enderecavel-smart",
+   "name": "Sinalizador Audiovisual Endereçável SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27110-sinalizador-audiovisual-enderecavel-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27110-sinalizador-audiovisual-enderecavel-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27110-sinalizador-audiovisual-enderecavel-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27110-sinalizador-audiovisual-enderecavel-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27110-sinalizador-audiovisual-enderecavel-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/sinalizador-audio-visual-enderecavel"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-sirene-audiovisual-enderecavel-compact",
+   "name": "Sirene Audiovisual Endereçável COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31207-sirene-enderecavel-compact-frente.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31207-sirene-enderecavel-compact-frente.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31207-sirene-enderecavel-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/sirene-audiovisual-enderecavel-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-enderecamento-resetavel-smart",
+   "name": "Módulo de Endereçamento Resetável SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/4/1/41081-modulo-enderecamento-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/1/41081-modulo-enderecamento-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/1/41081-modulo-enderecamento-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/1/41081-modulo-enderecamento-c.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-de-enderecamento-resetavel-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-saida-smart",
+   "name": "Módulo de Saída SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27819-modulo-saida-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27819-modulo-saida-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27819-modulo-saida-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27819-modulo-saida-c.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-de-saida-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-isolador-laco-smart",
+   "name": "Módulo Isolador de Laço SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/7/27816-modulo-isolador-laco-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27816-modulo-isolador-laco-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27816-modulo-isolador-laco-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/7/27816-modulo-isolador-laco-c.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-isolador-de-laco-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-amplificador-laco-smart-maxpro",
+   "name": "Módulo Amplificador de Laço SMART e MAXPRO",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/4/5/45459-modulo-amplificador-laco-maxpro-smart-01.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/5/45459-modulo-amplificador-laco-maxpro-smart-01.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/5/45459-modulo-amplificador-laco-maxpro-smart-02.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/5/45459-modulo-amplificador-laco-maxpro-smart-03.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/5/45459-modulo-amplificador-laco-maxpro-smart-04.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-amplificador-de-laco-smart-e-maxpro"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-enderecamento-compact",
+   "name": "Módulo de Endereçamento COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31249-modulo-enderecamento-compact.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31249-modulo-enderecamento-compact.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31249-modulo-enderecamento-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-de-enderecamento-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-saida-compact",
+   "name": "Módulo de Saída COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31251-modulo-saida-compact.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31251-modulo-saida-compact.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31251-modulo-saida-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-de-saida-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-isolador-laco-compact",
+   "name": "Módulo Isolador de Laço COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31257-modulo-isolador-laco-compact.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31257-modulo-isolador-laco-compact.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31257-modulo-isolador-laco-compact-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-isolador-de-laco-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-fonte-auxiliar-24v-smart",
+   "name": "Fonte Auxiliar 24V 2.5A com Bateria Inclusa SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31711-fonte-auxiliar-smart-frente.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31711-fonte-auxiliar-smart-frente.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31711-fonte-auxiliar-smart-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/fonte-auxiliar-24v-25a-com-bateria-inclusa-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-painel-repetidor-smart",
+   "name": "Painel Repetidor SMART",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/2/8/28336-painel-repetidor-frente.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28336-painel-repetidor-frente.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/2/8/28336-painel-repetidor-perspectiva.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/painel-repetidor-smart"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-placa-comunicacao-can-maxpro",
+   "name": "Placa de comunicação CAN para Centrais de Alarme Max Pro",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/7/37646-placa-comunicacao-maxpro-1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/7/37646-placa-comunicacao-maxpro-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/7/37646-placa-comunicacao-maxpro-2.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/placa-de-comunicacao-can-para-centrais-de-alarme-max-pro"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-programador-enderecos-smart-maxpro",
+   "name": "Programador de Endereços SMART e MAXPRO",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/0/50294-programador-de-enderecos-smart-maxpro-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/0/50294-programador-de-enderecos-smart-maxpro-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/0/50294-programador-de-enderecos-smart-maxpro-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/0/50294-programador-de-enderecos-smart-maxpro-c.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/programador-de-enderecos-smart-e-maxpro"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-programador-enderecos-compact",
+   "name": "Programador de Endereços COMPACT",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/1/31272-programador-compact-80e-novo.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/1/31272-programador-compact-80e-novo.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/programador-de-enderecos-compact"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-programador-detector-linear-gst",
+   "name": "Programador Portátil para Detector Linear GST",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/p/r/programador-portatil-gst_2484.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/p/r/programador-portatil-gst_2484.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/programador-portatil-para-detector-linear-gst"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-caixa-plastica-multiuso-ip66",
+   "name": "Caixa Plástica Multiúso IP66",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/4/2/42541-caixa-plastica-multiuso-ip66-5.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42541-caixa-plastica-multiuso-ip66-5.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42541-caixa-plastica-multiuso-ip66-1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42541-caixa-plastica-multiuso-ip66-2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/4/2/42541-caixa-plastica-multiuso-ip66-4.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/caixa-plastica-multiuso-ip66"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-central-sem-fio-max-fi",
+   "name": "Central de Alarme de Incêndio sem fio MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/2/52170---central-alarme-inc_ndio-max-fi-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52170---central-alarme-inc_ndio-max-fi-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52170---central-alarme-inc_ndio-max-fi-d.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52170---central-alarme-inc_ndio-max-fi-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52170---central-alarme-inc_ndio-max-fi-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52170---central-alarme-inc_ndio-max-fi-e.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/central-de-alarme-de-incendio-sem-fio-max-fi"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-fumaca-sem-fio-max-fi",
+   "name": "Detector de Fumaça sem fio MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/2/52167-detector-de-fuma_a-max-fi-a_1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-fuma_a-max-fi-a_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-fuma_a-max-fi-b_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-fuma_a-max-fi-c_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-fuma_a-max-fi-e_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-fuma_a-max-fi-d_1.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-fumaca-sem-fio-max-fi"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-detector-temperatura-sem-fio-max-fi",
+   "name": "Detector de Temperatura sem fio MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/2/52167-detector-de-temperatura-max-fi-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-temperatura-max-fi-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52166-detector-de-temperatura-max-fi-e.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52167-detector-de-temperatura-max-fi-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/detector-de-temperatura-sem-fio-max-fi"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-acionador-manual-sem-fio-max-fi",
+   "name": "Acionador manual sem fio MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/2/52168-acionador-manual-max-fi-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52168-acionador-manual-max-fi-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52168-acionador-manual-max-fi-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52168-acionador-manual-max-fi-c.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/acionador-manual-sem-fio-max-fi"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-sirene-audiovisual-sem-fio-max-fi",
+   "name": "Sirene audiovisual sem fio MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/2/52172-sirene-audiovisual-max-fi-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52172-sirene-audiovisual-max-fi-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52172-sirene-audiovisual-max-fi-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52172-sirene-audiovisual-max-fi-b.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/mais-vendidos/sirene-audiovisual-sem-fio-max-fi"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-modulo-saida-sem-fio-max-fi",
+   "name": "Módulo de saída sem fio MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/2/52173-m_dulo-de-sa_da-max-fi-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52173-m_dulo-de-sa_da-max-fi-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52173-m_dulo-de-sa_da-max-fi-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52173-m_dulo-de-sa_da-max-fi-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/2/52173-m_dulo-de-sa_da-max-fi-d.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/modulo-de-saida-sem-fio-max-fi"
+  },
+  {
+   "category": "alarme",
+   "id": "segurimax-repetidor-sinal-sem-fio-max-fi",
+   "name": "Repetidor de sinal sem fio - MAX-FI",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/5/3/53719-repetidor-de-sinal-max-fi-a.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/3/53719-repetidor-de-sinal-max-fi-a.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/3/53719-repetidor-de-sinal-max-fi-c.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/3/53719-repetidor-de-sinal-max-fi-d.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/3/53719-repetidor-de-sinal-max-fi-b.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/5/3/53719-repetidor-de-sinal-max-fi-e.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/alarme-de-incendio/repetidor-de-sinal-sem-fio-max-fi"
+  },
+  {
+   "category": "hidrantes",
+   "id": "segurimax-mangueira-tipo-1",
+   "name": "Mangueira de Incêndio Predial TIPO 1",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/5/35946-mangueira-incendio-industrial-ul_1_3.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/5/35946-mangueira-incendio-industrial-ul_1_3.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/u/n/uni_o_2_2_3.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/hidrante-de-incendio/mangueira-de-incendio-predial-tipo-1"
+  },
+  {
+   "category": "hidrantes",
+   "id": "segurimax-mangueira-tipo-2",
+   "name": "Mangueira de Incêndio Industrial TIPO 2",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/5/35946-mangueira-incendio-industrial-ul_1_2.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/5/35946-mangueira-incendio-industrial-ul_1_2.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/u/n/uni_o_2_2_2.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/hidrante-de-incendio/mangueira-de-incendio-industrial-tipo-2"
+  },
+  {
+   "category": "hidrantes",
+   "id": "segurimax-mangueira-tipo-3",
+   "name": "Mangueira de Incêndio Industrial TIPO 3",
+   "brand": "Segurimax",
+   "url": "https://www.segurimax.com.br/media/catalog/product/3/5/35946-mangueira-incendio-industrial-ul_1_1.jpg",
+   "fallbacks": [
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/3/5/35946-mangueira-incendio-industrial-ul_1_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/t/i/tipo-3-a_1_1.jpg",
+    "https://www.segurimax.com.br/media/catalog/product/cache/92caef034e22d69b9ab3e88d77e354be/u/n/uni_o_2_2_1.jpg"
+   ],
+   "page": "https://www.segurimax.com.br/hidrante-de-incendio/mangueira-de-incendio-industrial-tipo-3"
+  },
+  {
+   "category": "hidrantes",
+   "id": "mocelin-mangueira-tipo-1-40mm",
+   "name": "Mangueira de incêndio Tipo 1 (predial) 1½\"",
+   "brand": "Mocelin",
+   "url": "https://mocelin.ind.br/upload/produtos/3085.png",
+   "fallbacks": [],
+   "page": "https://mocelin.ind.br/pt/mangueiras-e-mangotinho/mangueiras-de-incendio/mangueira-de-incendio-tipo-1-predial-1.12--certificada"
+  },
+  {
+   "category": "hidrantes",
+   "id": "mocelin-mangueira-tipo-2-40mm",
+   "name": "Mangueira de incêndio Tipo 2 (industrial) 1½\"",
+   "brand": "Mocelin",
+   "url": "https://mocelin.ind.br/upload/produtos/3089.png",
+   "fallbacks": [],
+   "page": "https://mocelin.ind.br/pt/mangueiras-e-mangotinho/mangueiras-de-incendio/mangueira-de-incendio-tipo-2-industrial-1.12--certificada"
+  },
+  {
+   "category": "hidrantes",
+   "id": "mocelin-mangueira-tipo-2-65mm",
+   "name": "Mangueira de incêndio Tipo 2 (industrial) 2½\"",
+   "brand": "Mocelin",
+   "url": "https://mocelin.ind.br/upload/produtos/3081.png",
+   "fallbacks": [],
+   "page": "https://mocelin.ind.br/pt/mangueiras-e-mangotinho/mangueiras-de-incendio/mangueira-de-incendio-tipo-2-industrial-2.12--certificada"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-sobrepor",
+   "name": "Abrigo para mangueira de incêndio tipo sobrepor",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/12/Abrigo-Mangueira.png",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/11/ABRIGO-MANGUEIRA-DE-INCENDIO-SOBREPOR-EM-CHAPA-DE-ACO.png",
+    "https://metasal.com.br/wp-content/uploads/2025/11/ABRIGO-MANGUEIRA-DE-INCENDIO-SOBREPOR-EM-CHAPA-DE-ACO_1.png"
+   ],
+   "page": "https://metasal.com.br/produto/abrigo-para-mangueira-de-incendio-tipo-sobrepor/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-embutir",
+   "name": "Abrigo para mangueira de incêndio – embutir em chapa de aço",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/11/ABRIGO-MANGUEIRA-DE-INCENDIO-EMBUTIR-EM-CHAPA-DE-ACO_1.jpeg",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/11/ABRIGO-MANGUEIRA-DE-INCENDIO-EMBUTIR-EM-CHAPA-DE-ACO-1.jpeg"
+   ],
+   "page": "https://metasal.com.br/produto/abrigo-mangueira-de-incendio-embutir-em-chapa-de-aco/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-2-portas",
+   "name": "Abrigo para mangueira de incêndio – em chapa de aço | 2 portas",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/11/Abrigo-para-mangueira-de-incendio-%E2%80%93-em-chapa-de-aco-2-portas-1.jpeg",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/11/WhatsApp-Image-2025-10-23-at-10.48.29.jpeg",
+    "https://metasal.com.br/wp-content/uploads/2025/01/Abrigo-para-Mangueira-de-Incendio.png"
+   ],
+   "page": "https://metasal.com.br/produto/abrigo-para-mangueira-de-incendio-em-chapa-de-aco-2-portas/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-porta-de-vidro",
+   "name": "Abrigo para mangueira de incêndio tipo embutir ou sobrepor com porta de vidro",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/ABRIGO-PMANGUEIRA-DE-INCENDIO-TIPO-EMBUTIR-OU-SOBREPOR-CPORTA-DE-VIDRO.png",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-23-at-10.48.27-2.jpeg",
+    "https://metasal.com.br/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-23-at-10.48.28.jpeg"
+   ],
+   "page": "https://metasal.com.br/produto/abrigo-para-mangueira-de-incendio-tipo-embutir-ou-sobrepor-com-porta-de-vidro/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-inox-1-porta",
+   "name": "Abrigo para mangueira de incêndio sobrepor e embutir em aço inox – 1 porta",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/Abrigo-para-Mangueira-de-Incendio-Embutir-e-Sobrepor-%E2%80%93-Em-Aco-Inox-304-e-430.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/abrigo-para-mangueira-de-incendio-sobrepor-e-embutir-em-aco-inox-1-porta/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-inox-porta-de-vidro",
+   "name": "Abrigo para mangueira de incêndio tipo embutir ou sobrepor em aço inox com porta de vidro",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/Abrigo-para-Mangueira-de-Incendio-2.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/abrigo-para-mangueira-de-incendio-tipo-embutir-ou-sobrepor-em-aco-inox-com-porta-de-vidro/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-mangueira-padrao-rio",
+   "name": "Abrigo para mangueira de incêndio – Padrão Rio",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/Abrigo-para-Mangueira-de-Incendio-PADRAO-RIO-.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/abrigo-para-mangueira-de-incendio-padrao-rio/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-abrigo-hidrante-recalque",
+   "name": "Abrigo hidrante recalque – Sobrepor e Embutir",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/10/ABRIGO-HIDRANTE-RECALQUE_2.png",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/10/ABRIGO-HIDRANTE-RECALQUE_1.png"
+   ],
+   "page": "https://metasal.com.br/produto/abrigo-hidrante-recalque-sobrepor-e-embutir/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-quadro-abrigo-frente-vazada",
+   "name": "Quadro de abrigo para mangueira de incêndio (frente vazada)",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/Quadro-de-abrigo-para-mangueira-de-incendio-frente-vazada.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/quadro-de-abrigo-para-mangueira-de-incendio-frente-vazada/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-esguicho-jato-solido",
+   "name": "Esguicho jato sólido requinte alumínio",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/1-ESGUICHO-JATO-SOLIDO-ALUMINIO-1-1-2-13mm-preview.jpg",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/esguicho-jato-solido-aluminio-1-1-2-13mm-2/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-esguicho-regulavel-storz-neblina",
+   "name": "Esguicho regulável Storz neblina alumínio injetado",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/ESGUICHO-REGULAVEL-STORZ-NEBLINA-ALUMINIO-INJETADO.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/esguicho-regulavel-storz-neblina-aluminio-injetado-1-1-2/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-adaptador-rosca-5fpp-storz",
+   "name": "Adaptador alumínio rosca globo 5FPP × Storz",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/ADAPTADOR-ALUMINIO-ROSCA-GLOBO-5FPP.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/adaptador-aluminio-rosca-globo-5fpp-1-1-2-storz-para-2-1-2/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-chave-storz-dupla",
+   "name": "Chave Storz dupla em alumínio injetado 2½\"",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/CHAVE-STORZ-DUPLA-EM-ALUMINIO-INJETADO-2-1-2.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/chave-storz-dupla-em-aluminio-injetado-2-1-2/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-tampao-cego-storz-corrente",
+   "name": "Tampão cego com corrente Storz alumínio injetado",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/3-TAMPAO-CEGO-COM-CORRENTE-STORZ-ALUMINIO-INJETADO-1-1-2-preview.jpg",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/tampao-cego-com-corrente-storz-aluminio-injetado-1-1-2/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-valvula-angular-globo-pn16",
+   "name": "Válvula angular hidrante (registro globo nodular) PN16",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/VALVULA-ANGULAR-HIDRANTE-REGISTRO-GLOBO-NODULAR-PN16.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/valvula-angular-hidrante-registro-globo-nodular-pn16/"
+  },
+  {
+   "category": "hidrantes",
+   "id": "metasal-valvula-angular-recalque",
+   "name": "Válvula angular hidrante (registro castelo nodular) recalque",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/01/5-VALVULA-ANGULAR-HIDRANTE-REGISTRO-CASTELO-NODULAR-RECALQUE-preview.jpg",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/valvula-angular-hidrante-registro-castelo-nodular-recalque/"
+  },
+  {
+   "category": "extintores",
+   "id": "metasal-abrigo-extintor-pingadeira",
+   "name": "Abrigo para extintor com pingadeira",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/11/ABRIGO-PARA-EXTINTOR-COM-PINGADEIRA.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/abrigo-para-extintor-com-pingadeira/"
+  },
+  {
+   "category": "extintores",
+   "id": "metasal-abrigo-extintor-sobre-rodas",
+   "name": "Abrigo para extintor sobre rodas | 20 kg a 50 kg",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-06-at-10.23.19.jpeg",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/abrigo-para-extintor-sobre-rodas-20kg-a-50kg/"
+  },
+  {
+   "category": "extintores",
+   "id": "metasal-suporte-l-extintor-parede",
+   "name": "Suporte (L) para extintor de parede em chapa de aço carbono",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/02/Imagem-do-WhatsApp-de-2025-02-12-as-10.17.32_74d4f882.jpg",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/01/2-Suporte-L-para-Extintor-de-parede-em-chapa-de-aco-carbono-preview.jpg"
+   ],
+   "page": "https://metasal.com.br/produto/suporte-l-para-extintor-de-parede-em-chapa-de-aco-carbono/"
+  },
+  {
+   "category": "extintores",
+   "id": "metasal-suporte-piso-extintor",
+   "name": "Suporte para extintor",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/11/SupExtintor.png",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/suporte-para-extintor/"
+  },
+  {
+   "category": "extintores",
+   "id": "metasal-suporte-extintor-baton",
+   "name": "Suporte para extintor – baton",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2026/02/baton.jpeg",
+   "fallbacks": [
+    "https://metasal.com.br/wp-content/uploads/2025/01/SUPORTE-P-EXTINTOR-%E2%80%93-BATON.png"
+   ],
+   "page": "https://metasal.com.br/produto/suporte-para-extintor-baton/"
+  },
+  {
+   "category": "extintores",
+   "id": "metasal-haste-suporte-extintor",
+   "name": "Haste para suporte de extintor",
+   "brand": "Metasal",
+   "url": "https://metasal.com.br/wp-content/uploads/2025/11/haste-pextintor.jpeg",
+   "fallbacks": [],
+   "page": "https://metasal.com.br/produto/haste-para-extintor/"
+  },
+  {
+   "category": "sinalizacao",
+   "id": "fotoluminescente-laudo",
+   "name": "Placa de saída (SAÍDA)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 8
+  },
+  {
+   "category": "sinalizacao",
+   "id": "saida",
+   "name": "Placa de saída com pictograma (SAÍDA + figura)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "rota-de-fuga-seta",
+   "name": "Placa de rota de fuga – seta à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0558",
+   "name": "Placa de rota de fuga – seta à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0539",
+   "name": "Placa de rota de fuga – seta em frente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0540",
+   "name": "Placa de rota de fuga – seta diagonal superior direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0541",
+   "name": "Placa de rota de fuga – seta diagonal superior esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0543",
+   "name": "Placa de rota de fuga – seta diagonal inferior direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0542",
+   "name": "Placa de rota de fuga – seta diagonal inferior esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0551",
+   "name": "Placa de escada de emergência – descida à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0552",
+   "name": "Placa de escada de emergência – descida à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0548",
+   "name": "Placa de escada de emergência – subida à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "escada-de-emergencia",
+   "name": "Placa de escada de emergência – subida à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0810",
+   "name": "Placa de saída acessível – seta à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0811",
+   "name": "Placa de saída acessível – seta à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0406",
+   "name": "Placa SAÍDA com seta à direita (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0407",
+   "name": "Placa SAÍDA com seta à esquerda (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0408",
+   "name": "Placa SAÍDA com pictograma (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0409",
+   "name": "Placa SAÍDA acessível com seta à direita (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0410",
+   "name": "Placa SAÍDA acessível com seta à esquerda (formato longo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "saida-acessivel",
+   "name": "Placa SAÍDA acessível e comum com seta à direita",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0412",
+   "name": "Placa SAÍDA acessível e comum com seta à esquerda",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "porta-corta-fogo",
+   "name": "Placa porta corta-fogo",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0590",
+   "name": "Placa aperte/empurre (barra antipânico)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0571",
+   "name": "Placa de orientação – quebrar para acessar",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0572",
+   "name": "Placa de orientação – girar a maçaneta (alavanca)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0573",
+   "name": "Placa de orientação – girar o puxador (redondo)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0574",
+   "name": "Placa de orientação – empurrar a porta (barra)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0575",
+   "name": "Placa de orientação – pressionar a barra da porta",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-sinalizacao-de-pavimento",
+   "name": "Placa de sinalização de pavimento (andar)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "ponto-de-encontro",
+   "name": "Placa ponto de encontro emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0899",
+   "name": "Placa ponto de encontro da brigada de emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0999",
+   "name": "Placa ponto de encontro (S24)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0909",
+   "name": "Placa ponto de encontro sem texto (S24)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503",
+   "name": "Placa de extintor de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "extintor",
+   "name": "Placa de extintor pó ABC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-bc",
+   "name": "Placa de extintor pó BC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-co2",
+   "name": "Placa de extintor CO₂",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-agp",
+   "name": "Placa de extintor de água",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-em",
+   "name": "Placa de extintor de espuma mecânica (EM)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-k",
+   "name": "Placa de extintor classe K",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0503-d",
+   "name": "Placa de extintor pó classe D",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0507",
+   "name": "Placa de extintor sobre rodas (carreta)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante",
+   "name": "Placa de hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "mangotinho",
+   "name": "Placa de mangotinho",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0508",
+   "name": "Placa de abrigo de mangueira",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0509",
+   "name": "Placa de alarme sonoro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0506",
+   "name": "Placa de telefone de emergência",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0505",
+   "name": "Placa de equipamento E9 (pictograma semicircular)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0510",
+   "name": "Placa de equipamento E10 (pictograma de chuveiro)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0511",
+   "name": "Placa de equipamento E12 (pictograma de manta)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0513",
+   "name": "Placa de seta para equipamento (horizontal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0514",
+   "name": "Placa de seta para equipamento (diagonal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0530",
+   "name": "Placa de agente – extintor de água",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0532",
+   "name": "Placa de agente – extintor de ABC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0531",
+   "name": "Placa de agente – extintor de gás carbônico (CO₂)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0534",
+   "name": "Placa de agente – extintor de espuma",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "agente-extintor",
+   "name": "Placa de agente – extintor premium ABC",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-0524",
+   "name": "Placa de comando – alarme de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "bomba-de-incendio",
+   "name": "Placa de comando – bomba de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "acionador-alarme",
+   "name": "Placa de comando – botoeira de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1022",
+   "name": "Placa de hidrante em coluna – letra H (vertical)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1023",
+   "name": "Placa de extintor em coluna – letra E (vertical)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1024",
+   "name": "Placa de hidrante em coluna – letra H (horizontal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ex-1025",
+   "name": "Placa de extintor em coluna – letra E (horizontal)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "hidrante-de-recalque",
+   "name": "Placa hidrante de recalque",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2733",
+   "name": "Visor para caixa – Hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2735",
+   "name": "Visor para caixa – Incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "abrigo-hidrante",
+   "name": "Adesivo para caixa – Hidrante",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2725",
+   "name": "Adesivo para caixa – Incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2727",
+   "name": "Adesivo para caixa – Não use em eletricidade",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2720",
+   "name": "Adesivo para caixa – Em caso de incêndio quebre o vidro e feche o registro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pg-2721",
+   "name": "Adesivo para caixa – Em caso de incêndio quebre o vidro",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0553",
+   "name": "Placa de alerta – cuidado, risco geral",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-inflamavel",
+   "name": "Placa de alerta – risco de incêndio (inflamável)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-explosao",
+   "name": "Placa de alerta – risco de explosão",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0559",
+   "name": "Placa de alerta – risco de corrosão",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "alerta-choque-eletrico",
+   "name": "Placa de alerta – risco de choque elétrico",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0552",
+   "name": "Placa de alerta – risco de radiação",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ad-0558",
+   "name": "Placa de alerta – substância tóxica",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-fumar",
+   "name": "Placa proibido fumar",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-produzir-chama",
+   "name": "Placa proibido produzir chamas",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0355",
+   "name": "Placa não jogue água",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-elevador",
+   "name": "Placa proibido utilizar o elevador em caso de incêndio",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "proibido-obstruir",
+   "name": "Placa não obstrua",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 7
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0589",
+   "name": "Placa de sinalização complementar – seta de rota de fuga (C1)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 5
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0458",
+   "name": "Fita de indicação de obstáculo lisa (45 m)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0459",
+   "name": "Faixa zebrada de obstáculo vermelha e branca (B1/B2)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0460",
+   "name": "Faixa zebrada de obstáculo preta e amarela (D1/D2)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0102",
+   "name": "Fita antiderrapante com o meio fotoluminescente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-ft-0101",
+   "name": "Fita antiderrapante toda fotoluminescente",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 4
+  },
+  {
+   "category": "sinalizacao",
+   "id": "demarcacao-de-solo",
+   "name": "Adesivo de demarcação de solo para extintor (E17)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "plano-de-fuga",
+   "name": "Placa de plano de fuga (rota de fuga)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 9
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0797",
+   "name": "Placa de sistemas de segurança contra incêndio da edificação",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0798",
+   "name": "Placa capacidade de público",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0896",
+   "name": "Placa lotação máxima – pessoas sentadas e em pé (M2)",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0795",
+   "name": "Placa lotação máxima",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0796",
+   "name": "Placa lotação máxima – sentadas e em pé",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  },
+  {
+   "category": "sinalizacao",
+   "id": "scala-pp-0897",
+   "name": "Placa lotação máxima com dados do alvará",
+   "brand": "Grupo Scala",
+   "local": true,
+   "pdf": "https://gruposcala.com.br/wp-content/uploads/2024/10/SCALA-SERIGRAFIA-CATALOGO-25-Placas-e-adesivos-de-sinalizacao-contra-incendio-catalogo-completo-clicavel-compressed.pdf",
+   "pdf_page": 10
+  }
+ ],
+ "photos": [
+  {
+   "id": "hero",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/EASTERN_STORAGE_AREA%2C_FROM_CENTER_OF_WEST_WALL%2C_LOOKING_EAST._-_Oakland_Naval_Supply_Center%2C_Reserve_Materials_Storehouse%2C_Between_I_and_J_Streets%2C_between_Fourth_and_Fifth_HABS_CAL%2C1-OAK%2C16GG-4.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    800,
+    1600,
+    2400
+   ],
+   "author": "Historic American Buildings Survey (Library of Congress)",
+   "page": "https://commons.wikimedia.org/wiki/File:EASTERN_STORAGE_AREA,_FROM_CENTER_OF_WEST_WALL,_LOOKING_EAST._-_Oakland_Naval_Supply_Center,_Reserve_Materials_Storehouse,_Between_I_and_J_Streets,_between_Fourth_and_Fifth_HABS_CAL,1-OAK,16GG-4.tif",
+   "license": "Domínio público",
+   "usage": "Fundo do Hero"
+  },
+  {
+   "id": "por-que",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Detail_of_steel_truss_and_column_connection_of_roof_structure%2C_view_facing_southeast_-_U.S._Naval_Base%2C_Pearl_Harbor%2C_Lumber_Storehouse%2C_Seventh_Street_near_Avenue_E%2C_Pearl_City%2C_HABS_HI-464-7.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "David Franzen, Historic American Buildings Survey",
+   "page": "https://commons.wikimedia.org/wiki/File:Detail_of_steel_truss_and_column_connection_of_roof_structure,_view_facing_southeast_-_U.S._Naval_Base,_Pearl_Harbor,_Lumber_Storehouse,_Seventh_Street_near_Avenue_E,_Pearl_City,_HABS_HI-464-7.tif",
+   "license": "Domínio público",
+   "usage": "Fundo da seção \"Por que a APAG\""
+  },
+  {
+   "id": "contato",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Detail_of_the_ridge_framing_of_the_clerestory_roof%2C_note_the_alternating_wood_and_steel_beams%2C_view_facing_northeast_-_U.S._Marine_Corps_Base_Hawaii%2C_Kaneohe_Bay%2C_Warehouse_250%2C_HABS_HI-311-H-10.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "David Franzen, Historic American Buildings Survey",
+   "page": "https://commons.wikimedia.org/wiki/File:Detail_of_the_ridge_framing_of_the_clerestory_roof,_note_the_alternating_wood_and_steel_beams,_view_facing_northeast_-_U.S._Marine_Corps_Base_Hawaii,_Kaneohe_Bay,_Warehouse_250,_HABS_HI-311-H-10.tif",
+   "license": "Domínio público",
+   "usage": "Fundo da seção Contato"
+  },
+  {
+   "id": "servico-extintores",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Aviation_Structural_Mechanic_Airman_signs_an_inspection_record_card._%2839846227104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "U.S. Navy (foto oficial)",
+   "page": "https://commons.wikimedia.org/wiki/File:Aviation_Structural_Mechanic_Airman_signs_an_inspection_record_card._(39846227104).jpg",
+   "license": "Domínio público",
+   "usage": "Serviço: Extintores"
+  },
+  {
+   "id": "servico-hidrantes",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Fire_hose_cabinet_on_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "Downtowngal",
+   "page": "https://commons.wikimedia.org/wiki/File:Fire_hose_cabinet_on_wall.jpg",
+   "license": "CC BY-SA 4.0",
+   "usage": "Serviço: Hidrantes"
+  },
+  {
+   "id": "servico-alarme",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Alarm_control_panel_VERS_PK4_TRIO-M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "Georg Pik",
+   "page": "https://commons.wikimedia.org/wiki/File:Alarm_control_panel_VERS_PK4_TRIO-M.jpg",
+   "license": "CC0",
+   "usage": "Serviço: Alarme de incêndio"
+  },
+  {
+   "id": "servico-iluminacao",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Emergency_exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "Megalesius",
+   "page": "https://commons.wikimedia.org/wiki/File:Emergency_exit.jpg",
+   "license": "CC BY-SA 3.0",
+   "usage": "Serviço: Iluminação de emergência"
+  },
+  {
+   "id": "servico-sinalizacao",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Emergency_exit_sign_%2842050562511%29.jpg/1920px-Emergency_exit_sign_%2842050562511%29.jpg",
+   "widths": [
+    800,
+    1600
+   ],
+   "author": "Eric Fischer",
+   "page": "https://commons.wikimedia.org/wiki/File:Emergency_exit_sign_(42050562511).jpg",
+   "license": "CC BY 2.0",
+   "usage": "Serviço: Sinalização de emergência"
+  },
+  {
+   "id": "servico-ppci",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Photocopy_of_1921_architectural_drawing_titled-_BUILDING_59%2C_EXTENSION_NORTH._ROOF_PLAN%2C_NORTH_ELEVATION_AND_LOCATION_PLAN._Drawing_No._6259%2C_File_No._651-23._-_Puget_Sound_HAER_WASH%2C18-BREM%2C4A-29.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "widths": [
+    480,
+    800
+   ],
+   "author": "John Stamets, Historic American Engineering Record",
+   "page": "https://commons.wikimedia.org/wiki/File:Photocopy_of_1921_architectural_drawing_titled-_BUILDING_59,_EXTENSION_NORTH._ROOF_PLAN,_NORTH_ELEVATION_AND_LOCATION_PLAN._Drawing_No._6259,_File_No._651-23._-_Puget_Sound_HAER_WASH,18-BREM,4A-29.tif",
+   "license": "Domínio público",
+   "usage": "Serviço: Adequação ao PPCI"
+  }
+ ]
+}

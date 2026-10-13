@@ -1,0 +1,188 @@
+import type { ProductCategory } from './index'
+
+// Gerado a partir do levantamento nos catálogos/sites dos fornecedores. Revise antes de editar à mão.
+export const extintores: ProductCategory = {
+  id: "extintores",
+  title: "Extintores",
+  tabLabel: "Extintores",
+  intro: "Extintores para cada classe de incêndio, com suportes e acessórios para a instalação, além dos serviços de recarga, manutenção e teste hidrostático.",
+  // TODO confirmar: fornecedor dos extintores (hoje só os abrigos e suportes têm fornecedor: Metasal)
+  suppliers: [{"name": "Metasal", "url": "https://metasal.com.br/incendio/"}],
+  groups: ["Extintores portáteis", "Extintores sobre rodas", "Abrigos e suportes"],
+  products: [
+    // TODO confirmar: capacidades (kg) que a APAG fornece
+    {
+      id: "extintor-po-abc",
+      name: "Extintor de pó químico ABC",
+      supplier: "",
+      group: "Extintores portáteis",
+      description: "Extintor portátil de pó químico seco ABC, à base de fosfato monoamônico. Indicado para escritórios, comércios, condomínios e garagens, onde podem ocorrer fogos em sólidos, líquidos inflamáveis e equipamentos energizados. Atende às três classes (A, B e C) com um único equipamento.",
+      specs: ["Classes de fogo: A, B e C", "Portátil, conforme a ABNT NBR 15808"],
+      image: "/produtos/extintores/extintor-po-abc.webp",
+      imageAlt: "Extintor de pó químico vermelho com mangueira preta e manômetro, apoiado no chão junto a uma parede branca",
+      illustrative: true,
+    },
+    // TODO confirmar: capacidades (kg) que a APAG fornece
+    {
+      id: "extintor-po-bc",
+      name: "Extintor de pó químico BC",
+      supplier: "",
+      group: "Extintores portáteis",
+      description: "Extintor portátil de pó químico seco BC, à base de bicarbonato de sódio. Indicado para centrais de gás, garagens e áreas com líquidos e gases inflamáveis. Age principalmente interrompendo a reação em cadeia da combustão; não é indicado para fogo em sólidos (classe A).",
+      specs: ["Classes de fogo: B e C", "Portátil, conforme a ABNT NBR 15808"],
+      image: "/produtos/extintores/extintor-po-bc.webp",
+      imageAlt: "Extintor de pó químico vermelho com gatilho preto e mangueira longa bege, apoiado no chão em frente a uma parede clara",
+      illustrative: true,
+    },
+    // TODO confirmar: capacidades (kg) que a APAG fornece
+    {
+      id: "extintor-co2",
+      name: "Extintor de CO₂",
+      supplier: "",
+      group: "Extintores portáteis",
+      description: "Extintor de dióxido de carbono (CO₂). Indicado para salas de servidores, painéis elétricos, laboratórios e equipamentos sensíveis. Apaga por abafamento e não deixa resíduo, sem danificar os equipamentos protegidos.",
+      specs: ["Classes de fogo: B e C", "Não deixa resíduo"],
+      image: "/produtos/extintores/extintor-co2.webp",
+      imageAlt: "Extintor de CO₂ vermelho com mangueira e difusor preto, fixado na parede",
+      illustrative: true,
+    },
+    // TODO confirmar: capacidades (litros) que a APAG fornece
+    {
+      id: "extintor-agua-pressurizada",
+      name: "Extintor de água pressurizada",
+      supplier: "",
+      group: "Extintores portáteis",
+      description: "Extintor de água pressurizada para fogo em materiais sólidos, como madeira, papel e tecidos. Indicado para depósitos, escolas, escritórios e áreas com materiais de classe A. Apaga por resfriamento; não deve ser usado em equipamentos elétricos energizados.",
+      specs: ["Classe de fogo: A", "Age por resfriamento"],
+      image: "/produtos/extintores/extintor-agua-pressurizada.webp",
+      imageAlt: "Extintor de água pressurizada vermelho com rótulo de instruções e mangueira preta, pendurado na parede",
+      illustrative: true,
+    },
+    // TODO confirmar: capacidades (litros) que a APAG fornece
+    {
+      id: "extintor-espuma-mecanica",
+      name: "Extintor de espuma mecânica",
+      supplier: "",
+      group: "Extintores portáteis",
+      description: "Extintor de espuma mecânica para fogo em sólidos e líquidos inflamáveis. Indicado para garagens, oficinas e depósitos de combustíveis e solventes. A espuma forma uma camada sobre o combustível que abafa e resfria o fogo; não deve ser usado em equipamentos energizados.",
+      specs: ["Classes de fogo: A e B"],
+      image: "/produtos/extintores/extintor-espuma-mecanica.webp",
+      imageAlt: "Extintor de espuma mecânica vermelho com mangueira azul-escura e ponteira verde, fixado na parede branca",
+      illustrative: true,
+    },
+    // TODO confirmar: capacidades (litros) que a APAG fornece
+    {
+      id: "extintor-classe-k",
+      name: "Extintor classe K",
+      supplier: "",
+      group: "Extintores portáteis",
+      description: "Extintor classe K à base de acetato de potássio, para fogo em óleos e gorduras de cozinha. Indicado para cozinhas industriais, restaurantes e lanchonetes. Aplicado em jato fino, reage com a gordura quente e forma uma camada que abafa o fogo e reduz o risco de reignição.",
+      specs: ["Classe de fogo: K", "Para óleos e gorduras de cozinha"],
+      image: "/produtos/extintores/extintor-classe-k.webp",
+      imageAlt: "Extintor classe K de aço inox com mangueira preta e rótulo de instruções, sobre fundo branco",
+      illustrative: true,
+    },
+    // TODO confirmar: agentes e capacidades que a APAG fornece
+    {
+      id: "extintor-sobre-rodas",
+      name: "Extintor sobre rodas (carreta)",
+      supplier: "",
+      group: "Extintores sobre rodas",
+      description: "Extintor de grande capacidade montado em carreta com rodas, conforme a ABNT NBR 15809. Indicado para indústrias, depósitos, pátios e postos de combustível, onde o risco exige mais agente extintor. O agente e a capacidade são definidos conforme a classe de fogo e o risco do local.",
+      specs: ["Sobre rodas, conforme a ABNT NBR 15809"],
+      image: "/produtos/extintores/extintor-sobre-rodas.webp",
+      imageAlt: "Dois extintores sobre rodas de pó químico, vermelhos, lado a lado em um corredor",
+      imageFit: "cover",
+      illustrative: true,
+    },
+    // TODO confirmar: Uso em área externa é dedução pela pingadeira
+    // TODO confirmar: Material não especificado na fonte
+    {
+      id: "metasal-abrigo-extintor-pingadeira",
+      name: "Abrigo para extintor com pingadeira",
+      code: "244/2 · 124 · 146",
+      supplier: "Metasal",
+      group: "Abrigos e suportes",
+      description: "Abrigo para extintor portátil com pingadeira no teto, em três medidas. Indicado para extintores de 4 a 12 kg instalados em áreas externas ou sujeitas a respingos, onde a pingadeira desvia a água da porta. Porta com visor redondo e venezianas de ventilação, conforme a foto do catálogo.",
+      specs: ["Para extintores portáteis de 4 a 12 kg", "Com pingadeira", "3 medidas"],
+      sizes: ["50 × 30 × 20 cm · cód. 244/2", "75 × 30 × 25 cm · cód. 124", "85 × 40 × 30 cm · cód. 146"],
+      image: "/produtos/extintores/metasal-abrigo-extintor-pingadeira.webp",
+      imageAlt: "Abrigo vermelho para extintor com pingadeira, porta com visor redondo e venezianas",
+      sourceUrl: "https://metasal.com.br/produto/abrigo-para-extintor-com-pingadeira/",
+    },
+    // TODO confirmar: Mesmos códigos aparecem no abrigo Padrão Rio (p. 12) — confirmar
+    // TODO confirmar: Alt da foto no site: 'Abrigo extintor 20 a 30' — conferir se a foto é deste modelo
+    {
+      id: "metasal-abrigo-extintor-sobre-rodas",
+      name: "Abrigo para extintor sobre rodas | 20 kg a 50 kg",
+      code: "742 · 519 · 248/2 · 248/1",
+      supplier: "Metasal",
+      group: "Abrigos e suportes",
+      description: "Abrigo de sobrepor com pé para extintor sobre rodas (carreta), para unidades de 20 kg ou 50 kg. Indicado para áreas industriais, pátios e depósitos onde a carreta precisa ficar protegida. Fabricado com ou sem porta.",
+      specs: ["Sobrepor · com pé", "Com ou sem porta", "Para extintor sobre rodas de 20 kg ou 50 kg"],
+      sizes: ["115 × 50 × 55 cm · 20 kg: com porta cód. 742 / sem porta cód. 519", "150 × 65 × 65 cm · 50 kg: com porta cód. 248/2 / sem porta cód. 248/1"],
+      image: "/produtos/extintores/metasal-abrigo-extintor-sobre-rodas.webp",
+      imageAlt: "Abrigo vermelho com pés para extintor sobre rodas",
+      sourceUrl: "https://metasal.com.br/produto/abrigo-para-extintor-sobre-rodas-20kg-a-50kg/",
+    },
+    {
+      id: "metasal-suporte-l-extintor-parede",
+      name: "Suporte (L) para extintor de parede em chapa de aço carbono",
+      code: "2007",
+      supplier: "Metasal",
+      group: "Abrigos e suportes",
+      description: "Suporte em L de chapa de aço carbono para fixar extintores portáteis na parede. Indicado para instalação de extintores em paredes de corredores, garagens e áreas de produção. Chapa de 2,65 mm.",
+      specs: ["Chapa de aço carbono 2,65 mm", "C1 75 mm · C2 65 mm · C3 25 mm"],
+      sizes: ["C1 75 × C2 65 × C3 25 mm"],
+      materials: ["Chapa de aço carbono 2,65 mm"],
+      image: "/produtos/extintores/metasal-suporte-l-extintor-parede.webp",
+      imageAlt: "Suporte metálico em formato de L para fixar extintor na parede",
+      sourceUrl: "https://metasal.com.br/produto/suporte-l-para-extintor-de-parede-em-chapa-de-aco-carbono/",
+    },
+    // TODO confirmar: Item não estava na lista-base (só 'suporte de parede'); incluído por ser outro suporte da mesma página do catálogo
+    // TODO confirmar: Formato tripé de piso deduzido da foto do catálogo
+    {
+      id: "metasal-suporte-piso-extintor",
+      name: "Suporte para extintor",
+      code: "2003 · 2002",
+      supplier: "Metasal",
+      group: "Abrigos e suportes",
+      description: "Suporte de piso tipo tripé, vermelho, para apoiar o extintor no chão. Indicado onde não há parede para fixação, como áreas abertas e galpões. Modelos para extintor de pó 4/6 kg e para água 10 L, CO2 6 kg ou pó 12 kg.",
+      specs: ["Pó 4/6 kg (cód. 2003)", "Água 10 L / CO2 6 kg / pó 12 kg (cód. 2002)", "Cor vermelha"],
+      sizes: ["Pó 4/6 kg", "Água 10 L / CO2 6 kg / pó 12 kg"],
+      image: "/produtos/extintores/metasal-suporte-piso-extintor.webp",
+      imageAlt: "Suporte de piso vermelho tipo tripé com aro para extintor",
+      sourceUrl: "https://metasal.com.br/produto/suporte-para-extintor/",
+    },
+    // TODO confirmar: Divergência: catálogo diz 600 mm (cód. 2004), site diz 500 mm — usado o catálogo
+    // TODO confirmar: 'EXT' interpretado como altura; diâmetro de 400 mm parece grande para o tubo da foto — confirmar
+    {
+      id: "metasal-suporte-extintor-baton",
+      name: "Suporte para extintor – baton",
+      code: "2005 · 2004",
+      supplier: "Metasal",
+      group: "Abrigos e suportes",
+      description: "Suporte de piso tipo baton em aço inox, cilíndrico, para apoiar o extintor. Indicado para halls, recepções e áreas com acabamento em inox, onde o extintor fica no piso. Diâmetro de 400 mm.",
+      specs: ["Aço inox", "Diâmetro 400 mm"],
+      sizes: ["Altura 400 mm × Ø 400 mm · cód. 2005", "Altura 600 mm × Ø 400 mm · cód. 2004"],
+      materials: ["Inox"],
+      image: "/produtos/extintores/metasal-suporte-extintor-baton.webp",
+      imageAlt: "Suporte cilíndrico em aço inox tipo baton para extintor",
+      sourceUrl: "https://metasal.com.br/produto/suporte-para-extintor-baton/",
+    },
+    // TODO confirmar: Uso para sinalização deduzido da foto (placa vermelha no topo)
+    {
+      id: "metasal-haste-suporte-extintor",
+      name: "Haste para suporte de extintor",
+      code: "2006",
+      supplier: "Metasal",
+      group: "Abrigos e suportes",
+      description: "Haste vertical com placa no topo para sinalizar o extintor apoiado em suporte de piso. Indicada para extintores em áreas abertas, onde a placa no alto facilita localizar o equipamento. Altura de 400 mm; o suporte não acompanha.",
+      specs: ["Altura 400 mm", "Não acompanha o suporte"],
+      sizes: ["400 mm"],
+      image: "/produtos/extintores/metasal-haste-suporte-extintor.webp",
+      imageAlt: "Haste vermelha com placa no topo para suporte de extintor",
+      sourceUrl: "https://metasal.com.br/produto/haste-para-extintor/",
+    },
+  ],
+}

@@ -1,0 +1,225 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@config '../tailwind.config.ts';
+
+/*
+ * Sistema visual da APAG (v6)
+ *
+ * Cor: preto #111111, branco e vermelho #D71920, com cinzas neutros de apoio.
+ * O preto domina as seções fotográficas (hero, "Por que a APAG", contato,
+ * rodapé); branco e cinza claro nas seções de leitura (serviços, catálogo,
+ * etapas, FAQ). O vermelho fica em ações, ícones, destaques de título e filetes.
+ * As fotos de ambiente recebem tratamento monocromático; fotos de produto
+ * mantêm as cores reais.
+ *
+ * Tipo: Geist. Títulos em caixa alta, peso 800, espaçamento levemente negativo;
+ * textos em 400; rótulos curtos em caixa alta, 600, espaçados.
+ *
+ * Espaço: múltiplos de 8 px (no Tailwind, passos pares). Conteúdo até 1200 px.
+ * Raios: 2 px (selos), 3 px (botões, campos, cards), 6 px (painéis).
+ * Breakpoints: os do Tailwind (640, 768, 1024, 1280).
+ */
+:root {
+  /* Marca */
+  --apag-red: #d71920;
+  --apag-red-strong: #b5141a;
+  --apag-red-soft: #fdebec;
+  /* vermelho claro para textos pequenos sobre o preto (contraste AA) */
+  --apag-ember: #ff5a5f;
+
+  /* Pretos */
+  --apag-black-950: #0a0a0a; /* rodapé */
+  --apag-black: #111111; /* preto da marca */
+  --apag-black-800: #1b1b1b; /* superfícies sobre o preto */
+  --apag-black-700: #2a2a2a;
+
+  /* Neutros */
+  --apag-ink: #111111;
+  --apag-slate: #4a4a4a;
+  --apag-muted: #6b6b6b;
+  --apag-line: #e3e3e3;
+  --apag-line-strong: #cdcdcd;
+  --apag-paper: #f4f4f4;
+  --apag-white: #ffffff;
+
+  --font-stack-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Transições */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Tokens semânticos (componentes shadcn/ui): tema claro por padrão */
+  --background: var(--apag-white);
+  --foreground: var(--apag-ink);
+  --muted-foreground: var(--apag-slate);
+  --border: var(--apag-line);
+  --input: var(--apag-line-strong);
+  --ring: var(--apag-red);
+  --radius: 0.1875rem;
+}
+
+/* Seções escuras: inverte os tokens */
+.theme-dark {
+  --background: var(--apag-black);
+  --foreground: var(--apag-white);
+  --muted-foreground: rgb(255 255 255 / 0.72);
+  --border: rgb(255 255 255 / 0.16);
+  --input: rgb(255 255 255 / 0.24);
+  --ring: var(--apag-ember);
+  color: var(--foreground);
+}
+
+/* Volta aos tokens claros dentro de uma seção escura (ex.: painel do formulário) */
+.theme-light {
+  --background: var(--apag-white);
+  --foreground: var(--apag-ink);
+  --muted-foreground: var(--apag-slate);
+  --border: var(--apag-line);
+  --input: var(--apag-line-strong);
+  --ring: var(--apag-red);
+  color: var(--foreground);
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-stack-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--apag-red);
+    color: var(--apag-white);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  [id] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 75rem;
+
+  @variant sm {
+    padding-inline: 1.5rem;
+  }
+  @variant lg {
+    padding-inline: 2rem;
+  }
+}
+
+/* ── Escala tipográfica ───────────────────────────────────────────── */
+
+/* Título do hero: caixa alta, pesado */
+@utility text-display {
+  font-size: clamp(2.25rem, 1.4rem + 3.6vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Títulos de seção (h2) */
+@utility text-title {
+  font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+/* Títulos de bloco (h3) */
+@utility text-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+/* Rótulos curtos (campos, filtros) */
+@utility text-label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Rótulos de seção e de ficha: caixa alta, espaçados */
+@utility text-tech {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Respiro vertical padrão das seções */
+@utility section-pad {
+  padding-block: 4.5rem;
+
+  @variant lg {
+    padding-block: 6.5rem;
+  }
+}
+
+/* Tratamento das fotos de ambiente: monocromático, contraste firme */
+@utility photo-mono {
+  filter: grayscale(1) contrast(1.08) brightness(0.92);
+}
+
+/*
+ * Corta o que passa da seção sem torná-la rolável (com overflow: hidden, foco
+ * ou scrollIntoView podiam deslocar o conteúdo na horizontal).
+ */
+@utility overflow-clip-safe {
+  overflow: clip;
+
+  @supports not (overflow: clip) {
+    overflow: hidden;
+  }
+}
+
+/* Respeita quem prefere menos movimento: desliga animações e transições */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
