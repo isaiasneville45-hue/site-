@@ -1,12 +1,22 @@
-/* Forno Lume — interações da landing page (sem dependências) */
+/* Forno Lume — interações da landing page (sem dependências).
+   Os dados do negócio ficam em js/config.js. */
 (() => {
   "use strict";
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
   const brl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+  const brlShort = (v) => (Number.isInteger(v) ? `R$ ${v}` : brl.format(v));
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const icon = (id) => `<svg class="ico" aria-hidden="true"><use href="#${id}"/></svg>`;
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  const CFG = Object.assign({ demo: true, endereco: {}, contato: {}, horarios: {}, taxaEntrega: null, fermentacaoHoras: null }, window.FORNO_LUME || {});
+  const DEMO = CFG.demo !== false;
+  const WHATSAPP = !DEMO && /^\d{10,15}$/.test(CFG.contato.whatsapp || "") ? CFG.contato.whatsapp : "";
+  const FEE = typeof CFG.taxaEntrega === "number" ? CFG.taxaEntrega : null;
+
+  $$("[data-demo-only]").forEach((el) => { el.hidden = !DEMO; });
 
   /* ---------- Toast ---------- */
   const toastEl = $("[data-toast]");
@@ -19,21 +29,135 @@
     toastTimer = setTimeout(() => toastEl.classList.remove("is-on"), 2600);
   }
 
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (_) {
+      const ta = Object.assign(document.createElement("textarea"), { value: text });
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.append(ta); ta.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch (__) {}
+      ta.remove();
+      return ok;
+    }
+  }
+
+  /* ---------- Dados configuráveis: endereço, contato, horários ---------- */
+  const addressLines = (CFG.endereco.linhas || []).filter(Boolean);
+  $$("[data-cfg-address]").forEach((el) => {
+    el.innerHTML = addressLines.map(esc).join("<br>");
+    el.closest(".footer__col, .visit__block").hidden = addressLines.length === 0;
+  });
+  const copyAddressBtn = $("[data-copy-address]");
+  copyAddressBtn.hidden = addressLines.length === 0;
+  copyAddressBtn.addEventListener("click", async () => {
+    const ok = await copyText(addressLines.join(", "));
+    const label = copyAddressBtn.querySelector("span");
+    const use = copyAddressBtn.querySelector("use");
+    if (!ok) { toast("Não foi possível copiar. Selecione o endereço e copie manualmente."); return; }
+    label.textContent = "Endereço copiado";
+    use.setAttribute("href", "#i-check");
+    toast("Endereço copiado");
+    setTimeout(() => { label.textContent = "Copiar endereço"; use.setAttribute("href", "#i-copy"); }, 2400);
+  });
+  const mapLink = $("[data-map-link]");
+  if (CFG.endereco.mapaUrl && !DEMO) { mapLink.href = CFG.endereco.mapaUrl; mapLink.hidden = false; }
+
+  // Em modo demonstrativo os contatos aparecem como texto, sem links que levariam a lugar nenhum.
+  const c = CFG.contato;
+  const contacts = [
+    c.telefone && { label: "Telefone", text: c.telefone, href: `tel:+55${c.telefone.replace(/\D/g, "")}` },
+    (c.whatsappExibicao || c.whatsapp) && { label: "WhatsApp", text: c.whatsappExibicao || c.whatsapp, href: WHATSAPP ? `https://wa.me/${WHATSAPP}` : "" },
+    c.email && { label: "E-mail", text: c.email, href: `mailto:${c.email}` },
+  ].filter(Boolean);
+  const contactValue = (item) => (DEMO || !item.href)
+    ? `<span class="contact-list__value">${esc(item.text)}</span>`
+    : `<a class="contact-list__value" href="${esc(item.href)}"${item.href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${esc(item.text)}</a>`;
+  const contactList = $("[data-contact-list]");
+  contactList.innerHTML = contacts.map((i) => `<li>${contactValue(i)}<span>${i.label}</span></li>`).join("");
+  contactList.closest(".visit__block").hidden = contacts.length === 0;
+  const footerContact = $("[data-footer-contact]");
+  footerContact.innerHTML = contacts.map((i) => `<li>${contactValue(i)}</li>`).join("");
+  footerContact.closest(".footer__col").hidden = contacts.length === 0;
+
+  const socials = $("[data-socials]");
+  if (!DEMO) {
+    const items = [];
+    if (c.instagram) items.push(`<li><a href="https://instagram.com/${encodeURIComponent(c.instagram)}" target="_blank" rel="noopener" aria-label="Instagram">${icon("i-instagram")}</a></li>`);
+    if (WHATSAPP) items.push(`<li><a href="https://wa.me/${WHATSAPP}" target="_blank" rel="noopener" aria-label="WhatsApp">${icon("i-whatsapp")}</a></li>`);
+    if (c.email) items.push(`<li><a href="mailto:${esc(c.email)}" aria-label="E-mail">${icon("i-mail")}</a></li>`);
+    socials.innerHTML = items.join("");
+    socials.hidden = items.length === 0;
+  }
+
+  if (CFG.fermentacaoHoras) {
+    const fh = $("[data-ferment-hours]");
+    fh.textContent = ` O tempo total de fermentação é de ${CFG.fermentacaoHoras} horas.`;
+    fh.hidden = false;
+  }
+
+  /* ---------- Horários ---------- */
+  const DAY_NAMES = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+  const toMin = (hhmm) => { const [h, m] = hhmm.split(":").map(Number); return h * 60 + (m || 0); };
+  const SCHEDULE = {};
+  for (let d = 0; d < 7; d++) SCHEDULE[d] = (CFG.horarios[d] || []).map(([a, b]) => [toMin(a), toMin(b)]);
+  const fmtTime = (m) => {
+    const h = Math.floor(m / 60) % 24, min = m % 60;
+    return min ? `${h}h${String(min).padStart(2, "0")}` : `${h}h`;
+  };
+  const fmtRange = ([a, b]) => `${fmtTime(a)} ${b === 24 * 60 ? "à" : "às"} ${fmtTime(b)}`;
+  $$("[data-hours-body] tr").forEach((tr) => {
+    const ranges = SCHEDULE[Number(tr.dataset.day)];
+    tr.querySelector("td").textContent = ranges.length ? ranges.map(fmtRange).join(" e ") : "Fechado";
+  });
+
+  function nowInSaoPaulo() {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/Sao_Paulo", weekday: "short", hour: "numeric", minute: "numeric", hourCycle: "h23",
+    }).formatToParts(new Date());
+    const get = (t) => parts.find((p) => p.type === t).value;
+    return { day: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday")), minutes: Number(get("hour")) * 60 + Number(get("minute")) };
+  }
+  function openStatus() {
+    const { day, minutes } = nowInSaoPaulo();
+    const today = SCHEDULE[day];
+    const current = today.find(([a, b]) => minutes >= a && minutes < b);
+    if (current) return { open: true, day, text: `Aberto agora, até ${fmtTime(current[1])}` };
+    const later = today.find(([a]) => a > minutes);
+    if (later) return { open: false, day, text: `Fechado agora. Abre hoje às ${fmtTime(later[0])}` };
+    for (let i = 1; i <= 7; i++) {
+      const d = (day + i) % 7;
+      if (SCHEDULE[d].length) return { open: false, day, text: `Fechado agora. Abre ${i === 1 ? "amanhã" : DAY_NAMES[d]} às ${fmtTime(SCHEDULE[d][0][0])}` };
+    }
+    return { open: false, day, text: "Fechado" };
+  }
+  function renderStatus() {
+    const s = openStatus();
+    $$(".hours__table tr").forEach((tr) => tr.classList.toggle("is-today", Number(tr.dataset.day) === s.day));
+    // O status "aberto/fechado" só aparece com horários reais.
+    $$("[data-status]").forEach((el) => {
+      el.hidden = DEMO;
+      el.classList.toggle("is-open", s.open);
+      el.querySelector("[data-status-text]").textContent = s.text;
+    });
+  }
+  renderStatus();
+  setInterval(renderStatus, 60 * 1000);
+
   /* ---------- Navbar ---------- */
   const nav = $("[data-nav]");
   const hero = $(".hero");
   let lastY = window.scrollY;
   function onScrollNav() {
     const y = window.scrollY;
-    const pastHero = y > hero.offsetHeight - nav.offsetHeight - 10;
-    nav.classList.toggle("is-solid", pastHero);
-    const goingDown = y > lastY + 4;
-    const goingUp = y < lastY - 4;
-    if (goingDown && y > 600) nav.classList.add("is-hidden");
-    else if (goingUp || y < 600) nav.classList.remove("is-hidden");
+    nav.classList.toggle("is-solid", y > hero.offsetHeight - nav.offsetHeight - 10);
+    if (y > lastY + 4 && y > 600) nav.classList.add("is-hidden");
+    else if (y < lastY - 4 || y < 600) nav.classList.remove("is-hidden");
     lastY = y;
   }
-
   const navLinks = $$(".nav__links a");
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -41,10 +165,7 @@
       navLinks.forEach((a) => a.classList.toggle("is-current", a.getAttribute("href") === `#${entry.target.id}`));
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
-  navLinks.forEach((a) => { const s = $(a.getAttribute("href")); if (s) sectionObserver.observe(s); });
-  $(".hero") && new IntersectionObserver(([e]) => {
-    if (e.isIntersecting) navLinks.forEach((a) => a.classList.remove("is-current"));
-  }, { rootMargin: "-45% 0px -50% 0px" }).observe(hero);
+  [hero, ...navLinks.map((a) => $(a.getAttribute("href")))].forEach((s) => s && sectionObserver.observe(s));
 
   /* ---------- Menu móvel ---------- */
   const menu = $("[data-menu]");
@@ -53,104 +174,61 @@
   $$(".mobile-menu__links a").forEach((a) => a.addEventListener("click", () => menu.close()));
   window.matchMedia("(min-width: 1021px)").addEventListener("change", (e) => { if (e.matches && menu.open) menu.close(); });
 
-  /* ---------- Horário: aberto ou fechado (horário de Brasília) ---------- */
-  // minutos desde 0h; 24*60 = meia-noite do dia seguinte
-  const SCHEDULE = {
-    0: [[12 * 60, 16 * 60], [18 * 60, 22 * 60 + 30]],
-    1: [],
-    2: [[18 * 60, 23 * 60]],
-    3: [[18 * 60, 23 * 60]],
-    4: [[18 * 60, 23 * 60]],
-    5: [[18 * 60, 24 * 60]],
-    6: [[18 * 60, 24 * 60]],
-  };
-  const DAY_NAMES = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
-  const fmtTime = (m) => {
-    const h = Math.floor(m / 60) % 24, min = m % 60;
-    return min ? `${h}h${String(min).padStart(2, "0")}` : `${h}h`;
-  };
-  function nowInSaoPaulo() {
-    const parts = new Intl.DateTimeFormat("en-US", {
-      timeZone: "America/Sao_Paulo", weekday: "short", hour: "numeric", minute: "numeric", hourCycle: "h23",
-    }).formatToParts(new Date());
-    const get = (t) => parts.find((p) => p.type === t).value;
-    const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday"));
-    return { day, minutes: Number(get("hour")) * 60 + Number(get("minute")) };
-  }
-  function openStatus() {
-    const { day, minutes } = nowInSaoPaulo();
-    const today = SCHEDULE[day];
-    const current = today.find(([a, b]) => minutes >= a && minutes < b);
-    if (current) {
-      const closesSoon = current[1] - minutes <= 45;
-      return { open: true, day, text: closesSoon ? `Aberto, fecha em ${current[1] - minutes} min` : `Aberto agora, até ${fmtTime(current[1])}` };
-    }
-    const laterToday = today.find(([a]) => a > minutes);
-    if (laterToday) return { open: false, day, text: `Fechado agora. Abrimos hoje às ${fmtTime(laterToday[0])}` };
-    for (let i = 1; i <= 7; i++) {
-      const d = (day + i) % 7;
-      if (SCHEDULE[d].length) {
-        const when = i === 1 ? "amanhã" : DAY_NAMES[d];
-        return { open: false, day, text: `Fechado agora. Abrimos ${when} às ${fmtTime(SCHEDULE[d][0][0])}` };
-      }
-    }
-    return { open: false, day, text: "Fechado" };
-  }
-  function renderStatus() {
-    const s = openStatus();
-    $$("[data-status]").forEach((el) => {
-      el.classList.toggle("is-open", s.open);
-      el.querySelector("[data-status-text]").textContent = s.text;
-    });
-    $$(".hours__table tr").forEach((tr) => tr.classList.toggle("is-today", Number(tr.dataset.day) === s.day));
-  }
-  renderStatus();
-  setInterval(renderStatus, 60 * 1000);
-
-  /* ---------- Pedido (carrinho) ---------- */
+  /* ---------- Cardápio: preços vêm de um só lugar (data-price) ---------- */
   const CATALOG = {};
   $$("[data-dish]").forEach((el) => {
-    CATALOG[el.dataset.dish] = { name: el.dataset.name, price: Number(el.dataset.price) };
+    const price = Number(el.dataset.price);
+    CATALOG[el.dataset.dish] = { name: el.dataset.name, price };
+    $(".dish__price", el).textContent = brlShort(price);
   });
-  const STORE_KEY = "fornolume:pedido";
-  const FEE = { entrega: 8, retirada: 0 };
-  const WHATSAPP = "5511900000000"; // número fictício
+  $$("[data-price-of]").forEach((el) => { el.textContent = brlShort(CATALOG[el.dataset.priceOf].price); });
+  $$("[data-count-of]").forEach((el) => { el.textContent = $$(".dish", $(`#${el.dataset.countOf}`)).length; });
 
+  /* ---------- Pedido ---------- */
+  const STORE_KEY = "fornolume:pedido";
   let cart = {};
-  let mode = "entrega";
+  let mode = "retirada";
   try {
     const saved = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
     if (saved.items) Object.entries(saved.items).forEach(([id, q]) => { if (CATALOG[id] && q > 0) cart[id] = Math.min(q, 20); });
-    if (saved.mode in FEE) mode = saved.mode;
+    if (saved.mode === "entrega" || saved.mode === "retirada") mode = saved.mode;
   } catch (_) { /* armazenamento indisponível: segue sem persistir */ }
 
   const cartDialog = $("[data-cart]");
-  const notesField = $(".cart__notes textarea");
+  const notesField = $("#cart-notes");
+  const preview = $("[data-preview]");
+  const checkoutLink = $("[data-checkout]");
+  const reviewBtn = $("[data-review]");
+  checkoutLink.hidden = !WHATSAPP;
+  reviewBtn.hidden = !!WHATSAPP;
+
   const persist = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify({ items: cart, mode })); } catch (_) {} };
   const count = () => Object.values(cart).reduce((a, b) => a + b, 0);
   const subtotal = () => Object.entries(cart).reduce((sum, [id, q]) => sum + CATALOG[id].price * q, 0);
+  const fee = () => (mode === "entrega" && FEE !== null ? FEE : 0);
+  const total = () => subtotal() + fee();
 
-  function setQty(id, qty, { announce = true } = {}) {
+  function setQty(id, qty) {
     const prev = cart[id] || 0;
     qty = Math.max(0, Math.min(20, qty));
     if (qty === 0) delete cart[id]; else cart[id] = qty;
     persist();
     render();
-    if (announce && qty > prev) {
-      toast(`${CATALOG[id].name} adicionada ao pedido`);
+    if (qty > prev) {
+      toast(`${CATALOG[id].name} no pedido (${qty})`);
       const badge = $("[data-cart-count]");
       badge.classList.remove("bump"); void badge.offsetWidth; badge.classList.add("bump");
-    } else if (announce && qty === 0 && prev > 0) {
+    } else if (qty === 0 && prev > 0) {
       toast(`${CATALOG[id].name} removida do pedido`);
     }
   }
 
   function stepperHTML(id, qty) {
-    const name = CATALOG[id].name;
+    const name = esc(CATALOG[id].name);
     return `<div class="stepper" role="group" aria-label="Quantidade de ${name}">
-      <button type="button" data-dec="${id}" aria-label="Remover uma ${name}">${icon(qty === 1 ? "i-close" : "i-minus")}</button>
+      <button type="button" data-dec="${id}" aria-label="${qty === 1 ? "Remover" : "Diminuir"} ${name}">${icon(qty === 1 ? "i-close" : "i-minus")}</button>
       <output aria-live="polite">${qty}</output>
-      <button type="button" data-inc="${id}" aria-label="Adicionar mais uma ${name}">${icon("i-plus")}</button>
+      <button type="button" data-inc="${id}" aria-label="Aumentar ${name}">${icon("i-plus")}</button>
     </div>`;
   }
 
@@ -158,24 +236,23 @@
     $$("[data-qty-slot]").forEach((slot) => {
       const id = slot.dataset.qtySlot;
       const qty = cart[id] || 0;
-      const state = String(qty);
-      if (slot.dataset.state === state) return;
+      if (slot.dataset.state === String(qty)) return;
       const hadFocus = slot.contains(document.activeElement);
       const focusedInc = hadFocus && document.activeElement.hasAttribute("data-inc");
-      slot.dataset.state = state;
+      slot.dataset.state = String(qty);
       slot.innerHTML = qty
         ? stepperHTML(id, qty)
-        : `<button class="add-btn" type="button" data-inc="${id}" aria-label="Adicionar ${CATALOG[id].name} ao pedido">${icon("i-plus")}Adicionar</button>`;
+        : `<button class="add-btn" type="button" data-inc="${id}" aria-label="Adicionar ${esc(CATALOG[id].name)} ao pedido">${icon("i-plus")}Adicionar</button>`;
       if (hadFocus) (slot.querySelector(focusedInc ? "[data-inc]" : "[data-dec]") || slot.querySelector("button")).focus();
     });
   }
 
-  function whatsappMessage() {
+  function orderMessage() {
     const lines = [`Olá, Forno Lume! Quero fazer um pedido para ${mode === "entrega" ? "entrega" : "retirada no balcão"}:`, ""];
     Object.entries(cart).forEach(([id, q]) => lines.push(`${q}x ${CATALOG[id].name}: ${brl.format(CATALOG[id].price * q)}`));
     lines.push("", `Subtotal: ${brl.format(subtotal())}`);
-    if (mode === "entrega") lines.push(`Entrega: ${brl.format(FEE.entrega)}`);
-    lines.push(`Total: ${brl.format(subtotal() + FEE[mode])}`);
+    if (mode === "entrega") lines.push(`Entrega: ${FEE === null ? "a combinar" : brl.format(FEE)}`);
+    lines.push(`Total: ${brl.format(total())}${mode === "entrega" && FEE === null ? " + entrega" : ""}`);
     const notes = notesField.value.trim();
     if (notes) lines.push("", `Observações: ${notes}`);
     return lines.join("\n");
@@ -194,16 +271,21 @@
         li = document.createElement("li");
         li.dataset.id = id;
         li.innerHTML = `<span class="cart__name"></span><div class="qty-slot" data-qty-slot="${id}"></div><span class="cart__unit"></span>`;
-        li.querySelector(".cart__name").textContent = name;
+        $(".cart__name", li).textContent = name;
         list.append(li);
       }
-      li.querySelector(".cart__unit").innerHTML = `<span>${brl.format(price)} cada</span><strong class="cart__line">${brl.format(price * cart[id])}</strong>`;
+      $(".cart__unit", li).innerHTML = `<span>${brl.format(price)} cada</span><strong class="cart__line">${brl.format(price * cart[id])}</strong>`;
     });
-    const sub = subtotal();
-    $("[data-sum-sub]").textContent = brl.format(sub);
-    $("[data-sum-fee]").textContent = mode === "entrega" ? brl.format(FEE.entrega) : "Grátis";
-    $("[data-sum-total]").textContent = brl.format(sub + FEE[mode]);
-    $("[data-checkout]").href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(whatsappMessage())}`;
+    const delivery = mode === "entrega";
+    $("[data-sum-sub]").textContent = brl.format(subtotal());
+    $("[data-fee-row]").hidden = !delivery;
+    $("[data-sum-fee]").textContent = FEE === null ? "A combinar" : brl.format(FEE);
+    $("[data-fee-note]").hidden = !(delivery && FEE === null);
+    $("[data-sum-total]").textContent = brl.format(total());
+    const msg = orderMessage();
+    if (WHATSAPP) checkoutLink.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+    $("[data-preview-text]").textContent = msg;
+    if (ids.length === 0) preview.hidden = true;
   }
 
   function renderBadge() {
@@ -211,19 +293,20 @@
     const badge = $("[data-cart-count]");
     badge.hidden = n === 0;
     badge.textContent = n;
-    $(".btn--order").setAttribute("aria-label", n ? `Abrir pedido, ${n} ${n === 1 ? "item" : "itens"}` : "Abrir pedido");
+    $(".btn--order").setAttribute("aria-label", n ? `Abrir seu pedido, ${n} ${n === 1 ? "item" : "itens"}` : "Abrir seu pedido");
   }
 
+  // Atalho flutuante: o menu se esconde ao rolar, então o pedido continua a um toque.
   const cartBar = $("[data-cart-bar]");
   function renderBar() {
     const n = count();
-    const on = n > 0 && window.scrollY > hero.offsetHeight * 0.8 && !cartDialog.open;
+    const on = n > 0 && window.scrollY > hero.offsetHeight * 0.8 && !cartDialog.open && !menu.open;
     cartBar.classList.toggle("is-on", on);
     document.body.classList.toggle("has-bar", on);
     cartBar.tabIndex = on ? 0 : -1;
     cartBar.setAttribute("aria-hidden", String(!on));
     $("[data-bar-count]").textContent = `${n} ${n === 1 ? "item" : "itens"}`;
-    $("[data-bar-total]").textContent = brl.format(subtotal() + FEE[mode]);
+    $("[data-bar-total]").textContent = brl.format(total());
   }
 
   function render() { renderCart(); renderSlots(); renderBadge(); renderBar(); }
@@ -241,14 +324,25 @@
   });
   notesField.addEventListener("input", renderCart);
 
+  reviewBtn.addEventListener("click", () => {
+    preview.hidden = false;
+    renderCart();
+    preview.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+  });
+  $("[data-copy-order]").addEventListener("click", async () => {
+    const ok = await copyText(orderMessage());
+    toast(ok ? "Mensagem do pedido copiada" : "Não foi possível copiar. Selecione o texto e copie manualmente.");
+  });
+
   function openCart() {
     if (menu.open) menu.close();
+    preview.hidden = true;
     cartDialog.showModal();
     renderBar();
   }
-  cartDialog.addEventListener("close", renderBar);
   $$("[data-open-cart]").forEach((b) => b.addEventListener("click", openCart));
   $$("[data-close-cart]").forEach((b) => b.addEventListener("click", () => cartDialog.close()));
+  cartDialog.addEventListener("close", renderBar);
   cartDialog.addEventListener("click", (e) => {
     if (e.target !== cartDialog) return;
     const r = cartDialog.getBoundingClientRect();
@@ -257,7 +351,7 @@
 
   render();
 
-  /* ---------- Mais pedidas: foco na mesa ---------- */
+  /* ---------- Sabores em destaque: foco na mesa ---------- */
   const table = $("[data-table]");
   const tableTag = $("[data-table-tag]");
   const ranks = $$("[data-rank]");
@@ -266,7 +360,7 @@
     ranks.forEach((li) => {
       const active = li.dataset.rank === id;
       li.classList.toggle("is-active", active);
-      li.querySelector(".rank__head").setAttribute("aria-expanded", String(active));
+      $(".rank__head", li).setAttribute("aria-expanded", String(active));
       if (active) {
         const [x, y, r] = li.dataset.spot.split(" ");
         table.style.setProperty("--sx", x);
@@ -280,7 +374,7 @@
       h.setAttribute("aria-pressed", String(h.dataset.pick === id));
     });
   }
-  ranks.forEach((li) => li.querySelector(".rank__head").addEventListener("click", () => pick(li.dataset.rank)));
+  ranks.forEach((li) => $(".rank__head", li).addEventListener("click", () => pick(li.dataset.rank)));
   hotspots.forEach((h) => h.addEventListener("click", () => pick(h.dataset.pick)));
   pick("ortolana");
 
@@ -300,43 +394,34 @@
       t.tabIndex = on ? 0 : -1;
       const panel = $(`#${t.getAttribute("aria-controls")}`);
       panel.hidden = !on;
-      if (on && !reduceMotion) {
-        panel.classList.remove("is-entering"); void panel.offsetWidth; panel.classList.add("is-entering");
-      }
+      if (on && !reduceMotion) { panel.classList.remove("is-entering"); void panel.offsetWidth; panel.classList.add("is-entering"); }
     });
     moveInk(tab);
     if (focus) tab.focus();
-    const left = tab.offsetLeft - 24;
-    tabList.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? "auto" : "smooth" });
+    tabList.scrollTo({ left: Math.max(0, tab.offsetLeft - 24), behavior: reduceMotion ? "auto" : "smooth" });
   }
   tabs.forEach((t, i) => {
     t.addEventListener("click", () => selectTab(t));
     t.addEventListener("keydown", (e) => {
-      let next;
-      if (e.key === "ArrowRight") next = tabs[(i + 1) % tabs.length];
-      if (e.key === "ArrowLeft") next = tabs[(i - 1 + tabs.length) % tabs.length];
-      if (e.key === "Home") next = tabs[0];
-      if (e.key === "End") next = tabs[tabs.length - 1];
+      const next = { ArrowRight: tabs[(i + 1) % tabs.length], ArrowLeft: tabs[(i - 1 + tabs.length) % tabs.length], Home: tabs[0], End: tabs[tabs.length - 1] }[e.key];
       if (next) { e.preventDefault(); selectTab(next, { focus: true }); }
     });
   });
   $$("[data-goto-tab]").forEach((a) => a.addEventListener("click", () => selectTab($(`[data-tab="${a.dataset.gotoTab}"]`))));
+  const activeTab = () => $('[data-tab][aria-selected="true"]');
   moveInk(tabs[0]);
-  document.fonts && document.fonts.ready.then(() => moveInk($('[data-tab][aria-selected="true"]')));
-  window.addEventListener("resize", () => moveInk($('[data-tab][aria-selected="true"]')));
 
-  /* ---------- Fermentação: a massa cresce com a rolagem ---------- */
+  /* ---------- A massa: a bola cresce conforme as etapas ---------- */
   const stepsList = $("[data-steps]");
   const steps = $$(".step", stepsList);
   const dough = $("[data-dough]");
-  const hoursEl = $("[data-dough-hours]");
+  const stepEl = $("[data-dough-step]");
   const stageEl = $("[data-dough-stage]");
-  const HOURS = steps.map((s) => Number(s.dataset.hours));
   let markerY = [];
   function measureSteps() {
     const base = stepsList.getBoundingClientRect().top + window.scrollY;
     markerY = steps.map((s) => {
-      const m = s.querySelector(".step__marker").getBoundingClientRect();
+      const m = $(".step__marker", s).getBoundingClientRect();
       return m.top + m.height / 2 + window.scrollY;
     });
     stepsList.style.setProperty("--l-top", `${markerY[0] - base}px`);
@@ -346,18 +431,15 @@
     const anchor = window.scrollY + window.innerHeight * 0.58;
     let idx = -1;
     markerY.forEach((y, i) => { if (anchor >= y) idx = i; });
-    let t = 0, hours = 0, pv = 0;
-    if (idx >= steps.length - 1) { hours = HOURS[HOURS.length - 1]; pv = 1; }
-    else if (idx >= 0) {
-      t = (anchor - markerY[idx]) / (markerY[idx + 1] - markerY[idx]);
-      hours = HOURS[idx] + (HOURS[idx + 1] - HOURS[idx]) * t;
-      pv = (idx + t) / (steps.length - 1);
-    }
+    let pv = 0;
+    if (idx >= steps.length - 1) pv = 1;
+    else if (idx >= 0) pv = (idx + (anchor - markerY[idx]) / (markerY[idx + 1] - markerY[idx])) / (steps.length - 1);
     steps.forEach((s, i) => s.classList.toggle("is-reached", i <= idx));
     stepsList.style.setProperty("--line", pv.toFixed(4));
     dough.style.setProperty("--p", pv.toFixed(4));
-    hoursEl.textContent = Math.round(hours);
-    stageEl.textContent = steps[Math.max(0, idx)].dataset.stage;
+    const current = Math.max(0, idx);
+    stepEl.textContent = current + 1;
+    stageEl.textContent = steps[current].dataset.stage;
   }
 
   /* ---------- Rolagem e redimensionamento ---------- */
@@ -367,7 +449,7 @@
     ticking = true;
     requestAnimationFrame(() => { onScrollNav(); updateFerment(); renderBar(); ticking = false; });
   }, { passive: true });
-  const remeasure = () => { measureSteps(); updateFerment(); };
+  const remeasure = () => { measureSteps(); updateFerment(); moveInk(activeTab()); };
   window.addEventListener("resize", remeasure);
   window.addEventListener("load", remeasure);
   document.fonts && document.fonts.ready.then(remeasure);
@@ -380,10 +462,7 @@
   const lbImg = $("[data-lightbox-img]");
   const lbCap = $("[data-lightbox-caption]");
   const lbCount = $("[data-lightbox-count]");
-  const shots = $$("[data-lightbox]").map((btn) => {
-    const img = btn.querySelector("img");
-    return { btn, img, caption: btn.closest("figure").querySelector("figcaption").textContent };
-  });
+  const shots = $$("[data-lightbox]").map((btn) => ({ img: $("img", btn), caption: $("figcaption", btn.closest("figure")).textContent, btn }));
   let current = 0;
   function show(i) {
     current = (i + shots.length) % shots.length;
@@ -403,46 +482,6 @@
     if (e.key === "ArrowRight") show(current + 1);
   });
   lb.addEventListener("click", (e) => { if (e.target === lb || e.target.classList.contains("lightbox__figure")) lb.close(); });
-
-  /* ---------- Copiar endereço ---------- */
-  $$("[data-copy]").forEach((btn) => btn.addEventListener("click", async () => {
-    const text = btn.dataset.copy;
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch (_) {
-      const ta = Object.assign(document.createElement("textarea"), { value: text });
-      ta.style.position = "fixed"; ta.style.opacity = "0";
-      document.body.append(ta); ta.select();
-      try { document.execCommand("copy"); } catch (__) {}
-      ta.remove();
-    }
-    const label = btn.querySelector("span");
-    const use = btn.querySelector("use");
-    label.textContent = "Endereço copiado";
-    use.setAttribute("href", "#i-check");
-    toast("Endereço copiado");
-    setTimeout(() => { label.textContent = "Copiar endereço"; use.setAttribute("href", "#i-copy"); }, 2400);
-  }));
-
-  /* ---------- Newsletter ---------- */
-  const news = $("[data-news]");
-  const newsMsg = $("[data-news-msg]");
-  news.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const input = news.elements.email;
-    const value = input.value.trim();
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
-    newsMsg.classList.toggle("is-error", !valid);
-    newsMsg.classList.toggle("is-ok", valid);
-    input.setAttribute("aria-invalid", String(!valid));
-    if (!valid) {
-      newsMsg.textContent = value ? "Confira o e-mail: falta algo no endereço." : "Digite seu e-mail para assinar.";
-      input.focus();
-      return;
-    }
-    newsMsg.textContent = "Inscrição confirmada. Demonstração: nenhum e-mail será enviado.";
-    news.reset();
-  });
 
   /* ---------- Ano ---------- */
   $("[data-year]").textContent = new Date().getFullYear();
