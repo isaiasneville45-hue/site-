@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Ilustração temporária: sala de procedimentos com maca">
+  <rect width="900" height="700" fill="#F8F6F3"/>
+  <rect y="480" width="900" height="220" fill="#DDD2C6"/>
+  <rect x="80" y="90" width="260" height="260" rx="12" fill="#DDD2C6"/>
+  <path d="M210 90v260M80 220h260" stroke="#F8F6F3" stroke-width="6"/>
+  <path d="M300 420h360c30 0 50-20 70-60l20-40" fill="none" stroke="#675D50" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M360 440v100M620 440v100" stroke="#3D3630" stroke-width="10" stroke-linecap="round"/>
+  <rect x="300" y="530" width="380" height="14" rx="7" fill="#3D3630"/>
+  <rect x="720" y="300" width="90" height="240" rx="10" fill="#ACA195"/>
+  <rect x="736" y="320" width="58" height="40" rx="6" fill="#F8F6F3"/>
+</svg>

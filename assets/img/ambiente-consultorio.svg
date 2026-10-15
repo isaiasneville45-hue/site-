@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Ilustração temporária: mesa de atendimento com duas cadeiras">
+  <rect width="900" height="700" fill="#C5B3A2"/>
+  <rect width="900" height="460" fill="#DDD2C6"/>
+  <rect x="560" y="80" width="220" height="290" rx="8" fill="#F8F6F3" opacity=".75"/>
+  <rect x="140" y="400" width="520" height="20" rx="4" fill="#3D3630"/>
+  <path d="M170 420v170M630 420v170" stroke="#3D3630" stroke-width="12" stroke-linecap="round"/>
+  <rect x="230" y="340" width="110" height="60" rx="6" fill="#F8F6F3"/>
+  <circle cx="560" cy="372" r="28" fill="#ACA195"/>
+  <rect x="700" y="380" width="110" height="140" rx="30" fill="#675D50"/>
+  <path d="M720 520v80M790 520v80" stroke="#3D3630" stroke-width="10" stroke-linecap="round"/>
+</svg>

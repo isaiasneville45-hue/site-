@@ -1,930 +1,618 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLIVA — Roupas Femininas</title>
-<meta name="description" content="OLIVA — coleções enxutas de roupas femininas, cortes limpos e tecidos que duram.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --preto:#161613;
-    --branco:#faf9f6;
-    --oliva:#6b7250;
-    --oliva-escuro:#565c40;
-    --cinza:#6f6d66;
-    --borda:#e4e2da;
-  }
-
-  *{margin:0;padding:0;box-sizing:border-box;}
-
-  html{scroll-behavior:smooth;}
-
-  body{
-    background:var(--branco);
-    color:var(--preto);
-    font-family:'Jost', sans-serif;
-    font-weight:300;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-
-  h1,h2,h3{
-    font-family:'Cormorant Garamond', serif;
-    font-weight:500;
-    line-height:1.15;
-    letter-spacing:.01em;
-  }
-
-  a{color:inherit;text-decoration:none;}
-
-  img{display:block;max-width:100%;}
-
-  .wrap{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 32px;
-  }
-
-  section{padding:120px 0;}
-
-  .eyebrow{
-    display:block;
-    font-family:'Jost', sans-serif;
-    font-size:12px;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:18px;
-  }
-
-  /* ---------- NAV ---------- */
-  .navbar{
-    position:fixed;
-    top:0;left:0;right:0;
-    z-index:100;
-    background:rgba(250,249,246,.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--borda);
-  }
-
-  .navbar-inner{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 32px;
-    height:76px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-  }
-
-  .logo{
-    font-family:'Cormorant Garamond', serif;
-    font-size:26px;
-    letter-spacing:.12em;
-    font-weight:600;
-  }
-
-  .nav-links{
-    display:flex;
-    gap:40px;
-    list-style:none;
-  }
-
-  .nav-links a{
-    font-size:13px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    color:var(--preto);
-    padding-bottom:4px;
-    border-bottom:1px solid transparent;
-  }
-
-  .nav-links a:hover{
-    border-bottom:1px solid var(--oliva);
-  }
-
-  .menu-toggle{display:none;}
-  .hamburger{
-    display:none;
-    flex-direction:column;
-    justify-content:center;
-    gap:5px;
-    width:26px;
-    height:20px;
-    cursor:pointer;
-  }
-  .hamburger span{
-    display:block;
-    height:1px;
-    width:100%;
-    background:var(--preto);
-    transition:transform .25s ease, opacity .25s ease;
-  }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    align-items:flex-end;
-    color:var(--branco);
-    overflow:hidden;
-  }
-
-  .hero-img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .hero-overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(0deg, rgba(15,15,13,.72) 0%, rgba(15,15,13,.28) 45%, rgba(15,15,13,.15) 100%);
-  }
-
-  .hero-content{
-    position:relative;
-    z-index:2;
-    width:100%;
-    padding:0 32px 100px;
-    max-width:1180px;
-    margin:0 auto;
-  }
-
-  .hero-content .eyebrow{color:#cfd3bd;}
-
-  .hero h1{
-    font-size:clamp(38px, 6vw, 68px);
-    max-width:16ch;
-    margin-bottom:26px;
-  }
-
-  .hero p{
-    font-size:17px;
-    max-width:46ch;
-    color:#e9e8e2;
-    margin-bottom:40px;
-  }
-
-  .btn{
-    display:inline-block;
-    padding:15px 36px;
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    border:1px solid var(--oliva);
-    color:var(--branco);
-    background:transparent;
-  }
-
-  .btn:hover{
-    background:var(--oliva);
-  }
-
-  .btn-dark{
-    border:1px solid var(--preto);
-    color:var(--preto);
-  }
-  .btn-dark:hover{
-    background:var(--preto);
-    color:var(--branco);
-  }
-
-  /* ---------- SOBRE ---------- */
-  .sobre .wrap{
-    display:grid;
-    grid-template-columns:0.95fr 1.05fr;
-    gap:80px;
-    align-items:center;
-  }
-
-  .sobre-img{
-    aspect-ratio:4/5;
-    width:100%;
-    object-fit:cover;
-  }
-
-  .sobre h2{
-    font-size:clamp(30px, 4vw, 44px);
-    margin-bottom:28px;
-  }
-
-  .sobre p{
-    color:#3c3b37;
-    font-size:16px;
-    max-width:52ch;
-    margin-bottom:20px;
-  }
-
-  .sobre p:last-of-type{margin-bottom:0;}
-
-  .assinatura{
-    margin-top:32px;
-    font-family:'Cormorant Garamond', serif;
-    font-size:20px;
-    font-style:italic;
-    color:var(--oliva-escuro);
-  }
-
-  /* ---------- GALERIA ---------- */
-  .galeria{
-    background:#f3f2ec;
-  }
-
-  .galeria-head{
-    display:flex;
-    align-items:flex-end;
-    justify-content:space-between;
-    margin-bottom:56px;
-    gap:24px;
-    flex-wrap:wrap;
-  }
-
-  .galeria-head h2{
-    font-size:clamp(30px, 4vw, 44px);
-  }
-
-  .galeria-head p{
-    color:var(--cinza);
-    max-width:34ch;
-    font-size:15px;
-  }
-
-  .catalogo-controls{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-    margin-bottom:48px;
-  }
-
-  .busca-form{
-    position:relative;
-    max-width:420px;
-  }
-
-  .busca-form input[type="search"]{
-    width:100%;
-    padding:14px 44px 14px 18px;
-    border:1px solid var(--borda);
-    background:var(--branco);
-    font-family:'Jost', sans-serif;
-    font-size:14px;
-    font-weight:300;
-    color:var(--preto);
-  }
-
-  .busca-form input[type="search"]::placeholder{color:var(--cinza);}
-
-  .busca-form input[type="search"]:focus{
-    outline:none;
-    border-color:var(--oliva);
-  }
-
-  .busca-form input[type="search"]::-webkit-search-cancel-button{
-    -webkit-appearance:none;
-  }
-
-  .busca-icon{
-    position:absolute;
-    right:16px;
-    top:50%;
-    transform:translateY(-50%);
-    width:16px;
-    height:16px;
-    stroke:var(--cinza);
-    pointer-events:none;
-  }
-
-  .categorias{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-  }
-
-  .cat-tab{
-    padding:9px 20px;
-    font-family:'Jost', sans-serif;
-    font-size:12px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    border:1px solid var(--borda);
-    background:transparent;
-    color:var(--preto);
-    cursor:pointer;
-  }
-
-  .cat-tab:hover{border-color:var(--oliva);}
-
-  .cat-tab.active{
-    border-color:var(--oliva);
-    color:var(--oliva-escuro);
-  }
-
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:36px 24px;
-  }
-
-  .produto{
-    display:flex;
-    flex-direction:column;
-  }
-
-  .produto[hidden]{display:none;}
-
-  .produto-img{
-    aspect-ratio:3/4;
-    overflow:hidden;
-    background:#e4e2da;
-  }
-
-  .produto-img img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .produto-info{
-    padding-top:16px;
-  }
-
-  .produto-cat{
-    display:block;
-    font-size:11px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:6px;
-  }
-
-  .produto-nome{
-    font-family:'Cormorant Garamond', serif;
-    font-size:19px;
-    margin-bottom:6px;
-  }
-
-  .produto-preco{
-    font-size:14px;
-    color:var(--preto);
-    margin-bottom:14px;
-    font-variant-numeric:tabular-nums;
-  }
-
-  .produto-cta{
-    display:block;
-    width:100%;
-    padding:10px 0;
-    font-family:'Jost', sans-serif;
-    font-size:11px;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    text-align:center;
-    background:transparent;
-    border:1px solid var(--oliva);
-    color:var(--preto);
-    cursor:pointer;
-  }
-
-  .produto-cta:hover{
-    background:var(--oliva);
-    color:var(--branco);
-  }
-
-  .sem-resultado{
-    display:none;
-    text-align:center;
-    padding:60px 0;
-    color:var(--cinza);
-    font-size:15px;
-  }
-
-  .sem-resultado.ativo{display:block;}
-
-  /* ---------- LOCALIZAÇÃO ---------- */
-  .local .wrap{
-    display:grid;
-    grid-template-columns:0.8fr 1.2fr;
-    gap:80px;
-  }
-
-  .local h2{
-    font-size:clamp(30px, 4vw, 44px);
-    margin-bottom:28px;
-  }
-
-  .local-info p{
-    font-size:15px;
-    color:#3c3b37;
-    margin-bottom:18px;
-  }
-
-  .local-info strong{
-    display:block;
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:6px;
-    font-weight:500;
-  }
-
-  .local-item{margin-bottom:32px;}
-
-  .mapa{
-    width:100%;
-    aspect-ratio:4/3;
-    border:1px solid var(--borda);
-    filter:grayscale(40%) contrast(1.02);
-  }
-
-  /* ---------- CTA FAIXA ---------- */
-  .faixa{
-    background:var(--preto);
-    color:var(--branco);
-    text-align:center;
-    padding:90px 0;
-  }
-
-  .faixa h2{
-    font-size:clamp(28px, 4vw, 40px);
-    max-width:20ch;
-    margin:0 auto 32px;
-  }
-
-  /* ---------- FOOTER ---------- */
-  footer{
-    background:var(--branco);
-    padding:80px 0 40px;
-  }
-
-  .footer-top{
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:60px;
-    padding-bottom:60px;
-    border-bottom:1px solid var(--borda);
-  }
-
-  .footer-logo{
-    font-family:'Cormorant Garamond', serif;
-    font-size:26px;
-    letter-spacing:.12em;
-    font-weight:600;
-    margin-bottom:16px;
-    display:inline-block;
-  }
-
-  .footer-top p{
-    font-size:14px;
-    color:var(--cinza);
-    max-width:34ch;
-  }
-
-  .footer-col h4{
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--oliva-escuro);
-    margin-bottom:18px;
-    font-weight:500;
-  }
-
-  .footer-col ul{list-style:none;}
-
-  .footer-col li{
-    margin-bottom:12px;
-    font-size:14px;
-    color:#3c3b37;
-  }
-
-  .socials{
-    display:flex;
-    gap:16px;
-    margin-top:20px;
-  }
-
-  .socials a{
-    width:36px;
-    height:36px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:1px solid var(--borda);
-  }
-
-  .socials a:hover{
-    border-color:var(--oliva);
-  }
-
-  .socials svg{width:16px;height:16px;stroke:var(--preto);}
-
-  .footer-bottom{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:32px;
-    font-size:12px;
-    color:var(--cinza);
-    letter-spacing:.02em;
-    flex-wrap:wrap;
-    gap:12px;
-  }
-
-  /* ---------- RESPONSIVO ---------- */
-  @media (max-width: 860px){
-    section{padding:80px 0;}
-    .wrap{padding:0 24px;}
-
-    .nav-links{
-      position:absolute;
-      top:76px;
-      left:0;
-      right:0;
-      background:var(--branco);
-      border-bottom:1px solid var(--borda);
-      flex-direction:column;
-      gap:0;
-      display:none;
-    }
-    .nav-links a{
-      padding:18px 24px;
-      width:100%;
-      display:block;
-      border-bottom:1px solid var(--borda);
-    }
-    .hamburger{display:flex;}
-
-    .menu-toggle:checked ~ .nav-links{display:flex;}
-    .menu-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(6px) rotate(45deg);}
-    .menu-toggle:checked ~ .hamburger span:nth-child(2){opacity:0;}
-    .menu-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
-
-    .sobre .wrap,
-    .local .wrap{
-      grid-template-columns:1fr;
-      gap:40px;
-    }
-    .sobre-img{order:-1;aspect-ratio:16/10;}
-
-    .grid{grid-template-columns:repeat(2, 1fr);gap:32px 16px;}
-    .categorias{gap:8px;}
-    .cat-tab{padding:8px 16px;}
-
-    .footer-top{
-      grid-template-columns:1fr;
-      gap:36px;
-    }
-
-    .footer-bottom{flex-direction:column;align-items:flex-start;}
-  }
-
-  @media (max-width: 480px){
-    .grid{grid-template-columns:repeat(2, 1fr);}
-    .hero-content{padding-bottom:64px;}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- PENDENTE: nome definitivo, cidade e domínio. Ver README.md -->
+  <title>Alba Dermatologia | Dermatologia clínica e estética em São Paulo</title>
+  <meta name="description" content="Clínica de dermatologia clínica e estética em São Paulo. Consulta dermatológica, mapeamento de pintas, acne, melasma, toxina botulínica, bioestimuladores e lasers com avaliação individual. Agende sua avaliação.">
+  <meta name="theme-color" content="#3D3630">
+  <meta name="robots" content="index, follow">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Ative quando o domínio estiver definido:
+  <link rel="canonical" href="https://www.seudominio.com.br/">
+  -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Alba Dermatologia">
+  <meta property="og:title" content="Alba Dermatologia | Dermatologia clínica e estética">
+  <meta property="og:description" content="Consultas sem pressa, plano individual e tecnologias indicadas com critério. Agende sua avaliação.">
+  <!-- og:image exige URL absoluta: troque pelo domínio definitivo -->
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="image" href="assets/img/hero.svg">
+
+  <!-- Dados estruturados. PENDENTE: substituir todos os valores provisórios -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Alba Dermatologia",
+    "description": "Clínica de dermatologia clínica e estética.",
+    "medicalSpecialty": "Dermatologic",
+    "telephone": "+55-11-3000-0000",
+    "email": "contato@seudominio.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 000",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "00000-000",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<header class="navbar">
-  <div class="navbar-inner">
-    <a href="#inicio" class="logo">OLIVA</a>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </label>
+<!-- ============ CABEÇALHO ============ -->
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <!-- PENDENTE: substituir por logotipo oficial (SVG) quando disponível -->
+    <a class="brand" href="#inicio" aria-label="Alba Dermatologia, voltar ao início">
+      <span class="brand-name">Alba</span>
+      <span class="brand-tag">Dermatologia</span>
+    </a>
 
-    <nav class="nav-links">
-      <a href="#inicio">Início</a>
-      <a href="#colecao">Coleção</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#localizacao">Localização</a>
-      <a href="#contato">Contato</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="visually-hidden">Abrir menu</span>
+    </button>
+
+    <nav class="site-nav" id="menu-principal" aria-label="Principal">
+      <ul class="nav-list">
+        <li><a href="#tratamentos">Tratamentos</a></li>
+        <li><a href="#clinica">A clínica</a></li>
+        <li><a href="#primeira-consulta">Primeira consulta</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#agendamento">Contato</a></li>
+      </ul>
+      <a class="btn btn--primary" href="#agendamento">Agendar avaliação</a>
     </nav>
+
+    <a class="btn btn--primary header-cta" href="#agendamento">Agendar avaliação</a>
   </div>
 </header>
 
-<main>
+<main id="conteudo">
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <img class="hero-img" src="https://loremflickr.com/1600/1000/fashion,elegant,woman?lock=101" alt="Look da coleção OLIVA">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="eyebrow">Coleção atual</span>
-      <h1>Peças que ficam com você depois que a estação passa.</h1>
-      <p>Uma seleção enxuta de roupas femininas para o dia a dia com intenção — cortes limpos, tecidos que duram, nada em excesso.</p>
-      <a href="#colecao" class="btn">Ver Coleção</a>
-    </div>
-  </section>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 id="hero-title" data-enter style="--i:0">Cuidado com a pele, do diagnóstico ao detalhe.</h1>
+        <p class="hero-lead" data-enter style="--i:1">Dermatologia clínica e estética com consultas sem pressa, plano individual e tecnologias indicadas apenas quando fazem sentido para você.</p>
+        <div class="hero-actions" data-enter style="--i:2">
+          <a class="btn btn--primary" href="#agendamento">Agendar avaliação</a>
+          <a class="btn btn--secondary" href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" data-whatsapp>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1Z"/><path d="M9.2 8.6c-.2 3 3.2 6.4 6.2 6.2l.4-1.6-1.8-.8-1 1.2c-1.4-.5-2.3-1.4-2.8-2.8l1.2-1-.8-1.8Z"/></svg>
+            Conversar no WhatsApp
+          </a>
+        </div>
+        <p class="hero-note" data-enter style="--i:3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16"/><rect x="4" y="5" width="16" height="16" rx="2"/></svg>
+          Atendimento com hora marcada, de segunda a sábado.
+        </p>
+      </div>
 
-  <!-- SOBRE -->
-  <section class="sobre" id="sobre">
-    <div class="wrap">
-      <img class="sobre-img" src="https://loremflickr.com/800/1000/clothing,boutique,rack?lock=102" alt="Araras de roupa no ateliê OLIVA">
-      <div>
-        <span class="eyebrow">A marca</span>
-        <h2>Roupa boa é a que some do pensamento.</h2>
-        <p>A OLIVA começou numa sala pequena, em 2019, com uma régua de corte e a teimosia de não colocar na loja nada que a gente mesma não vestiria. Isso não mudou. Cada coleção é curta de propósito — escolhemos poucas peças, mas escolhemos com calma.</p>
-        <p>Trabalhamos com tecidos naturais, fornecedores que conhecemos pelo nome e uma produção pequena o suficiente para corrigir o que não está bom antes de chegar até você.</p>
-        <p class="assinatura">— Equipe OLIVA</p>
+      <div class="hero-media" data-enter style="--i:1">
+        <!-- IMAGEM PENDENTE: foto profissional da clínica ou da médica responsável.
+             Sugestão: 1200×1500 px, WebP/AVIF, luz natural. Remova o selo .placeholder-tag ao substituir. -->
+        <div class="figure figure--portrait">
+          <img src="assets/img/hero.svg" width="800" height="1000" alt="Ilustração temporária de uma bancada iluminada por luz natural, com vaso e ramo" fetchpriority="high">
+          <span class="placeholder-tag">Imagem ilustrativa</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- GALERIA -->
-  <section class="galeria" id="colecao">
-    <div class="wrap">
-      <div class="galeria-head">
-        <h2>Coleção</h2>
-        <p>Filtre por categoria ou busque a peça que você já tem em mente. Tamanho e disponibilidade a gente confirma pelo WhatsApp.</p>
+  <!-- ============ DIFERENCIAIS ============ -->
+  <section class="section section--alt" id="diferenciais" aria-labelledby="diferenciais-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="diferenciais-title">O que orienta o nosso atendimento</h2>
+        <p>Cada decisão sobre a sua pele é tomada em conjunto, com informação clara e acompanhamento médico em todas as etapas.</p>
       </div>
 
-      <div class="catalogo-controls">
-        <form class="busca-form" role="search" onsubmit="return false">
-          <label class="sr-only" for="busca-peca" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Buscar peça</label>
-          <input type="search" id="busca-peca" placeholder="Buscar peça — ex: calça, vestido, saia...">
-          <svg class="busca-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.2" y2="16.2"></line></svg>
+      <ul class="features" role="list">
+        <li class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          </div>
+          <h3>Consulta sem pressa</h3>
+          <p>Tempo para ouvir sua história, examinar com atenção e explicar cada opção antes de qualquer decisão.</p>
+        </li>
+        <li class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg>
+          </div>
+          <h3>Plano individual</h3>
+          <p>Indicações definidas a partir da sua pele, da sua rotina e dos seus objetivos, nunca por pacote.</p>
+        </li>
+        <li class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5V6M12 18v2.5M3.5 12H6M18 12h2.5"/></svg>
+          </div>
+          <h3>Tecnologia com critério</h3>
+          <p>Equipamentos usados com parâmetros ajustados ao seu tipo de pele e a cada fase do tratamento.</p>
+        </li>
+        <li class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.3 3 7.8 7 9.5 4-1.7 7-5.2 7-9.5V6Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>
+          </div>
+          <h3>Biossegurança</h3>
+          <p>Materiais descartáveis ou esterilizados, salas higienizadas entre atendimentos e protocolos documentados.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TRATAMENTOS ============ -->
+  <!-- PENDENTE: confirmar com a clínica a lista real de tratamentos oferecidos -->
+  <section class="section" id="tratamentos" aria-labelledby="tratamentos-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="tratamentos-title">Tratamentos e especialidades</h2>
+        <p>Da saúde da pele aos cuidados estéticos. A indicação de qualquer procedimento acontece somente após avaliação médica.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar tratamentos por área">
+        <button class="filter" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="filter" type="button" data-filter="clinica" aria-pressed="false">Dermatologia clínica</button>
+        <button class="filter" type="button" data-filter="estetica" aria-pressed="false">Estética</button>
+        <button class="filter" type="button" data-filter="tecnologias" aria-pressed="false">Tecnologias</button>
+      </div>
+
+      <ul class="treatments" role="list" id="lista-tratamentos" aria-live="polite">
+        <li class="treatment" data-area="clinica">
+          <span class="treatment-area">Dermatologia clínica</span>
+          <h3>Consulta dermatológica</h3>
+          <p>Avaliação completa de pele, cabelos e unhas, com diagnóstico e um plano de cuidado claro para o dia a dia.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Consulta dermatológica">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="clinica">
+          <span class="treatment-area">Dermatologia clínica</span>
+          <h3>Mapeamento de pintas</h3>
+          <p>Exame das pintas com dermatoscopia para acompanhar mudanças ao longo do tempo e apoiar a prevenção do câncer de pele.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Mapeamento de pintas">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="clinica">
+          <span class="treatment-area">Dermatologia clínica</span>
+          <h3>Acne e rosácea</h3>
+          <p>Tratamento clínico para controlar a inflamação, com procedimentos complementares para as marcas quando indicados.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Acne e rosácea">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="clinica">
+          <span class="treatment-area">Dermatologia clínica</span>
+          <h3>Melasma e manchas</h3>
+          <p>Investigação das causas e combinação de cuidados diários, medicamentos e procedimentos para uniformizar o tom da pele.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Melasma e manchas">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="estetica">
+          <span class="treatment-area">Estética</span>
+          <h3>Toxina botulínica</h3>
+          <p>Suaviza linhas de expressão preservando a naturalidade dos movimentos do rosto.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Toxina botulínica">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="estetica">
+          <span class="treatment-area">Estética</span>
+          <h3>Preenchimento com ácido hialurônico</h3>
+          <p>Reposição de volume e contorno planejada a partir da anatomia e das proporções de cada rosto.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Preenchimento com ácido hialurônico">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="estetica">
+          <span class="treatment-area">Estética</span>
+          <h3>Bioestimuladores de colágeno</h3>
+          <p>Estimulam a produção natural de colágeno para melhorar a firmeza e a qualidade da pele de forma gradual.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Bioestimuladores de colágeno">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="tecnologias">
+          <span class="treatment-area">Tecnologias</span>
+          <h3>Lasers e luz pulsada</h3>
+          <p>Recursos para manchas, vasinhos, textura e rejuvenescimento, com parâmetros definidos para o seu fototipo.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Lasers e luz pulsada">Agendar este atendimento</a>
+        </li>
+        <li class="treatment" data-area="tecnologias">
+          <span class="treatment-area">Tecnologias</span>
+          <h3>Peelings químicos</h3>
+          <p>Renovação controlada das camadas da pele para melhorar textura, manchas superficiais e viço.</p>
+          <a class="text-link" href="#agendamento" data-treatment="Peelings químicos">Agendar este atendimento</a>
+        </li>
+      </ul>
+
+      <p class="disclaimer">Procedimentos realizados mediante avaliação e indicação médica. Os resultados variam de acordo com as características de cada paciente.</p>
+    </div>
+  </section>
+
+  <!-- ============ AMBIENTE ============ -->
+  <!-- IMAGENS PENDENTES: fotos reais da clínica (recepção, consultório, sala de procedimentos, detalhe).
+       Sugestão: 1200×1500 px (verticais) e 1200×900 px (horizontais), WebP. Remova os rótulos ao substituir. -->
+  <section class="section section--alt" id="ambiente" aria-labelledby="ambiente-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="ambiente-title">Conheça a clínica</h2>
+        <p>Recepção, consultórios e sala de procedimentos preparados para receber você com privacidade e conforto.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="figure">
+          <img src="assets/img/ambiente-recepcao.svg" width="900" height="1100" loading="lazy" decoding="async" alt="Ilustração temporária da recepção, com sofá e luminária">
+          <figcaption>Foto: recepção</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="assets/img/ambiente-consultorio.svg" width="900" height="700" loading="lazy" decoding="async" alt="Ilustração temporária do consultório, com mesa e cadeiras">
+          <figcaption>Foto: consultório</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="assets/img/ambiente-procedimentos.svg" width="900" height="700" loading="lazy" decoding="async" alt="Ilustração temporária da sala de procedimentos, com maca">
+          <figcaption>Foto: procedimentos</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="assets/img/ambiente-detalhe.svg" width="900" height="1100" loading="lazy" decoding="async" alt="Ilustração temporária de frascos de cuidados com a pele sobre uma bandeja">
+          <figcaption>Foto: detalhes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A CLÍNICA E PROFISSIONAIS ============ -->
+  <section class="section" id="clinica" aria-labelledby="clinica-title">
+    <div class="container">
+      <div class="about-grid">
+        <!-- IMAGEM PENDENTE: foto do consultório ou da equipe (1200×1500 px). -->
+        <div class="figure figure--portrait">
+          <img src="assets/img/sobre.svg" width="800" height="1000" loading="lazy" decoding="async" alt="Ilustração temporária de um consultório com mesa, cadeira e janela">
+          <span class="placeholder-tag">Imagem ilustrativa</span>
+        </div>
+
+        <div class="about-text">
+          <h2 id="clinica-title">Saúde da pele e estética com o mesmo rigor</h2>
+          <!-- PENDENTE: texto institucional real (história, fundação, filosofia). -->
+          <p>A Alba reúne a dermatologia clínica, que cuida da saúde da pele, e a dermatologia estética, que respeita os traços de cada pessoa. As duas partem do mesmo lugar: uma consulta completa e um diagnóstico bem feito.</p>
+          <p>Antes de qualquer procedimento, você entende o que está sendo indicado, por que, quais são os cuidados e o que esperar de cada etapa.</p>
+
+          <ul class="values">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.7-4.6"/></svg>
+              <span>Atendimento conduzido por médicos em todas as etapas</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.7-4.6"/></svg>
+              <span>Informação clara sobre indicações, riscos e cuidados</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.7-4.6"/></svg>
+              <span>Retornos programados após cada procedimento</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="team-head">
+        <h3 id="equipe">Corpo clínico</h3>
+        <p>Profissionais com registro ativo no conselho de classe e título de especialista.</p>
+      </div>
+
+      <!-- PENDENTE: nome, foto, especialidade, CRM/RQE e minibiografia reais de cada profissional.
+           Para incluir a foto, troque as iniciais por <img src="..." alt="Foto de ..."> dentro de .member-photo. -->
+      <ul class="team" role="list" aria-labelledby="equipe">
+        <li class="member">
+          <div class="member-photo" aria-hidden="true">N</div>
+          <div>
+            <h4>Nome da profissional</h4>
+            <p class="member-role">Dermatologista, responsável técnica</p>
+            <span class="member-reg">CRM-UF 000000 | RQE 00000</span>
+            <p>Formação, títulos e áreas de atuação a serem informados pela clínica.</p>
+          </div>
+        </li>
+        <li class="member">
+          <div class="member-photo" aria-hidden="true">N</div>
+          <div>
+            <h4>Nome do profissional</h4>
+            <p class="member-role">Dermatologista</p>
+            <span class="member-reg">CRM-UF 000000 | RQE 00000</span>
+            <p>Formação, títulos e áreas de atuação a serem informados pela clínica.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PRIMEIRA CONSULTA ============ -->
+  <section class="section section--accent" id="primeira-consulta" aria-labelledby="consulta-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="consulta-title">Como funciona a sua primeira consulta</h2>
+        <p>Um caminho simples, do primeiro contato ao acompanhamento.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <h3>Agendamento</h3>
+          <p>Você escolhe o melhor horário pelo WhatsApp, por telefone ou pelo formulário deste site.</p>
+        </li>
+        <li class="step">
+          <h3>Avaliação</h3>
+          <p>Conversa detalhada e exame da pele, com dermatoscopia quando indicado.</p>
+        </li>
+        <li class="step">
+          <h3>Plano de cuidado</h3>
+          <p>As opções são explicadas com etapas, cuidados, prazos e investimento.</p>
+        </li>
+        <li class="step">
+          <h3>Acompanhamento</h3>
+          <p>Retornos programados para avaliar a resposta e ajustar o que for preciso.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============
+       Seção oculta até que existam depoimentos REAIS e AUTORIZADOS por escrito.
+       Para publicar: remova o atributo "hidden", preencha os blocos e
+       observe as normas do conselho profissional sobre publicidade médica. -->
+  <section class="section" id="depoimentos" aria-labelledby="depoimentos-title" hidden>
+    <div class="container">
+      <div class="section-head">
+        <h2 id="depoimentos-title">Quem já foi atendido</h2>
+        <p>Relatos publicados com autorização dos pacientes.</p>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote><p>Texto do depoimento autorizado.</p></blockquote>
+          <figcaption>Nome ou iniciais do paciente</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AGENDAMENTO E CONTATO ============ -->
+  <section class="section section--alt" id="agendamento" aria-labelledby="agendamento-title">
+    <div class="container booking-grid">
+      <div class="booking-intro">
+        <h2 id="agendamento-title">Agende sua avaliação</h2>
+        <p>Envie seus dados e a equipe retorna para confirmar dia e horário. Se preferir, fale direto pelos canais abaixo.</p>
+
+        <!-- PENDENTE: telefone, WhatsApp e e-mail reais. -->
+        <ul class="contact-list" role="list">
+          <li>
+            <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" data-whatsapp>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1Z"/><path d="M9.2 8.6c-.2 3 3.2 6.4 6.2 6.2l.4-1.6-1.8-.8-1 1.2c-1.4-.5-2.3-1.4-2.8-2.8l1.2-1-.8-1.8Z"/></svg>
+              </span>
+              <span><span class="contact-label">WhatsApp</span><span class="contact-value">(11) 90000-0000</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+551130000000">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.5l1.5 4-2 1.5a10 10 0 0 0 6.5 6.5L16 14l4 1.5V19a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg>
+              </span>
+              <span><span class="contact-label">Telefone</span><span class="contact-value">(11) 3000-0000</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@seudominio.com.br">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              </span>
+              <span><span class="contact-label">E-mail</span><span class="contact-value">contato@seudominio.com.br</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <h3>Solicitar horário</h3>
+        <p>Leva menos de um minuto. Ao enviar, o WhatsApp da clínica abre com a sua mensagem pronta.</p>
+
+        <form id="form-agendamento" novalidate>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required minlength="3" maxlength="80" aria-describedby="nome-erro">
+              <span class="field-error" id="nome-erro"></span>
+            </div>
+
+            <div class="field">
+              <label for="telefone">Celular com DDD</label>
+              <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel-national" required placeholder="(00) 00000-0000" maxlength="16" aria-describedby="telefone-erro">
+              <span class="field-error" id="telefone-erro"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail <span class="optional">(opcional)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="120" aria-describedby="email-erro">
+              <span class="field-error" id="email-erro"></span>
+            </div>
+
+            <div class="field field--full">
+              <label for="tratamento">Motivo da consulta</label>
+              <select id="tratamento" name="tratamento" required aria-describedby="tratamento-erro">
+                <option value="">Selecione uma opção</option>
+                <option>Ainda não sei, quero uma avaliação</option>
+                <optgroup label="Dermatologia clínica">
+                  <option>Consulta dermatológica</option>
+                  <option>Mapeamento de pintas</option>
+                  <option>Acne e rosácea</option>
+                  <option>Melasma e manchas</option>
+                </optgroup>
+                <optgroup label="Estética">
+                  <option>Toxina botulínica</option>
+                  <option>Preenchimento com ácido hialurônico</option>
+                  <option>Bioestimuladores de colágeno</option>
+                </optgroup>
+                <optgroup label="Tecnologias">
+                  <option>Lasers e luz pulsada</option>
+                  <option>Peelings químicos</option>
+                </optgroup>
+              </select>
+              <span class="field-error" id="tratamento-erro"></span>
+            </div>
+
+            <fieldset class="field field--full">
+              <legend>Melhor período</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="periodo" value="Manhã"><span>Manhã</span></label>
+                <label class="choice"><input type="radio" name="periodo" value="Tarde"><span>Tarde</span></label>
+                <label class="choice"><input type="radio" name="periodo" value="Sem preferência" checked><span>Sem preferência</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field field--full">
+              <label for="mensagem">Mensagem <span class="optional">(opcional)</span></label>
+              <textarea id="mensagem" name="mensagem" maxlength="500" aria-describedby="mensagem-dica"></textarea>
+              <span class="field-hint" id="mensagem-dica">Não é preciso detalhar informações de saúde aqui. Isso será conversado na consulta.</span>
+            </div>
+
+            <div class="field field--full">
+              <label class="consent">
+                <input type="checkbox" name="consentimento" id="consentimento" required aria-describedby="consentimento-erro">
+                <span>Concordo com o uso dos meus dados para contato sobre o agendamento, conforme a <a href="politica-de-privacidade.html">Política de Privacidade</a>.</span>
+              </label>
+              <span class="field-error" id="consentimento-erro"></span>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary btn--block" type="submit">Enviar pelo WhatsApp</button>
+            <p class="form-note">Os dados não ficam armazenados neste site. Eles seguem apenas na mensagem que você envia à clínica.</p>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </div>
         </form>
-
-        <div class="categorias" role="tablist" aria-label="Categorias de produto">
-          <button type="button" class="cat-tab active" data-categoria="todos">Todos</button>
-          <button type="button" class="cat-tab" data-categoria="vestidos">Vestidos</button>
-          <button type="button" class="cat-tab" data-categoria="calcas">Calças</button>
-          <button type="button" class="cat-tab" data-categoria="bermudas">Bermudas</button>
-          <button type="button" class="cat-tab" data-categoria="saias">Saias</button>
-          <button type="button" class="cat-tab" data-categoria="blusas">Blusas &amp; Camisetas</button>
-          <button type="button" class="cat-tab" data-categoria="conjuntos">Conjuntos</button>
-        </div>
       </div>
-
-      <div class="grid" id="grid-produtos">
-        <article class="produto" data-categoria="vestidos" data-nome="Vestido Midi Alfaiataria">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/dress,woman,elegant?lock=201" alt="Vestido Midi Alfaiataria OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Vestidos</span>
-            <h3 class="produto-nome">Vestido Midi Alfaiataria</h3>
-            <p class="produto-preco">R$ 259,90</p>
-            <button class="produto-cta" data-nome="Vestido Midi Alfaiataria">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="vestidos" data-nome="Vestido Longo Linho">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/dress,woman,linen?lock=202" alt="Vestido Longo Linho OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Vestidos</span>
-            <h3 class="produto-nome">Vestido Longo Linho</h3>
-            <p class="produto-preco">R$ 289,90</p>
-            <button class="produto-cta" data-nome="Vestido Longo Linho">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="calcas" data-nome="Calça Pantalona Alfaiataria">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/pants,woman,fashion?lock=203" alt="Calça Pantalona Alfaiataria OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Calças</span>
-            <h3 class="produto-nome">Calça Pantalona Alfaiataria</h3>
-            <p class="produto-preco">R$ 219,90</p>
-            <button class="produto-cta" data-nome="Calça Pantalona Alfaiataria">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="calcas" data-nome="Calça Wide Leg Bege">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/pants,woman,beige?lock=204" alt="Calça Wide Leg Bege OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Calças</span>
-            <h3 class="produto-nome">Calça Wide Leg Bege</h3>
-            <p class="produto-preco">R$ 229,90</p>
-            <button class="produto-cta" data-nome="Calça Wide Leg Bege">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="bermudas" data-nome="Bermuda Alfaiataria">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/shorts,woman,fashion?lock=205" alt="Bermuda Alfaiataria OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Bermudas</span>
-            <h3 class="produto-nome">Bermuda Alfaiataria</h3>
-            <p class="produto-preco">R$ 159,90</p>
-            <button class="produto-cta" data-nome="Bermuda Alfaiataria">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="bermudas" data-nome="Bermuda Cintura Alta Linho">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/shorts,woman,linen?lock=206" alt="Bermuda Cintura Alta Linho OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Bermudas</span>
-            <h3 class="produto-nome">Bermuda Cintura Alta Linho</h3>
-            <p class="produto-preco">R$ 149,90</p>
-            <button class="produto-cta" data-nome="Bermuda Cintura Alta Linho">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="saias" data-nome="Saia Midi Plissada">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/skirt,woman,pleated?lock=207" alt="Saia Midi Plissada OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Saias</span>
-            <h3 class="produto-nome">Saia Midi Plissada</h3>
-            <p class="produto-preco">R$ 179,90</p>
-            <button class="produto-cta" data-nome="Saia Midi Plissada">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="saias" data-nome="Saia Longa Linho">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/skirt,woman,linen?lock=208" alt="Saia Longa Linho OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Saias</span>
-            <h3 class="produto-nome">Saia Longa Linho</h3>
-            <p class="produto-preco">R$ 189,90</p>
-            <button class="produto-cta" data-nome="Saia Longa Linho">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="blusas" data-nome="Camisa Social Ampla">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/blouse,woman,shirt?lock=209" alt="Camisa Social Ampla OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Blusas &amp; Camisetas</span>
-            <h3 class="produto-nome">Camisa Social Ampla</h3>
-            <p class="produto-preco">R$ 169,90</p>
-            <button class="produto-cta" data-nome="Camisa Social Ampla">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="blusas" data-nome="Blusa Alças Cetim">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/blouse,woman,satin?lock=210" alt="Blusa Alças Cetim OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Blusas &amp; Camisetas</span>
-            <h3 class="produto-nome">Blusa Alças Cetim</h3>
-            <p class="produto-preco">R$ 129,90</p>
-            <button class="produto-cta" data-nome="Blusa Alças Cetim">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="conjuntos" data-nome="Conjunto Alfaiataria Completo">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/suit,woman,fashion?lock=211" alt="Conjunto Alfaiataria Completo OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Conjuntos</span>
-            <h3 class="produto-nome">Conjunto Alfaiataria Completo</h3>
-            <p class="produto-preco">R$ 349,90</p>
-            <button class="produto-cta" data-nome="Conjunto Alfaiataria Completo">Consultar no WhatsApp</button>
-          </div>
-        </article>
-
-        <article class="produto" data-categoria="blusas" data-nome="Body Canelado">
-          <div class="produto-img"><img src="https://loremflickr.com/600/800/top,woman,fashion?lock=212" alt="Body Canelado OLIVA"></div>
-          <div class="produto-info">
-            <span class="produto-cat">Blusas &amp; Camisetas</span>
-            <h3 class="produto-nome">Body Canelado</h3>
-            <p class="produto-preco">R$ 99,90</p>
-            <button class="produto-cta" data-nome="Body Canelado">Consultar no WhatsApp</button>
-          </div>
-        </article>
-      </div>
-
-      <p class="sem-resultado" id="sem-resultado">Nenhuma peça encontrada com esse filtro. Tenta outra categoria ou termo de busca.</p>
     </div>
   </section>
 
-  <!-- FAIXA CTA -->
-  <section class="faixa">
-    <div class="wrap">
-      <h2>Prefere ver e experimentar de perto? A loja está de portas abertas.</h2>
-      <a href="#localizacao" class="btn">Como Chegar</a>
-    </div>
-  </section>
+  <!-- ============ LOCALIZAÇÃO ============ -->
+  <!-- PENDENTE: endereço, CEP, horários e referências reais. Atualize também data-map-query. -->
+  <section class="section" id="localizacao" aria-labelledby="localizacao-title">
+    <div class="container location-grid">
+      <div class="location-info">
+        <h2 id="localizacao-title">Endereço e horários</h2>
 
-  <!-- LOCALIZAÇÃO -->
-  <section class="local" id="localizacao">
-    <div class="wrap">
-      <div class="local-info">
-        <span class="eyebrow">Visite</span>
-        <h2>Loja física</h2>
-
-        <div class="local-item">
-          <strong>Endereço</strong>
-          <p>Rua Oscar Freire, 000 — Jardins<br>São Paulo, SP — 01426-000</p>
+        <div class="info-block">
+          <h3>Endereço</h3>
+          <address>Rua Exemplo, 000, sala 00<br>Bairro, São Paulo – SP<br>CEP 00000-000</address>
         </div>
 
-        <div class="local-item">
-          <strong>Horário</strong>
-          <p>Segunda a sexta, 10h às 19h<br>Sábado, 10h às 16h</p>
+        <div class="info-block">
+          <h3>Horário de atendimento</h3>
+          <dl class="hours">
+            <div><dt>Segunda a sexta</dt><dd>8h às 19h</dd></div>
+            <div><dt>Sábado</dt><dd>8h às 13h</dd></div>
+            <div><dt>Domingo e feriados</dt><dd>Fechado</dd></div>
+          </dl>
         </div>
 
-        <div class="local-item">
-          <strong>Estacionamento</strong>
-          <p>Vagas conveniadas no edifício ao lado, com desconto para clientes.</p>
-        </div>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Exemplo%2C%20000%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener" data-map-link>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          Abrir rota no Google Maps
+        </a>
       </div>
 
-      <iframe
-        class="mapa"
-        src="https://www.google.com/maps?q=Rua+Oscar+Freire,+Jardins,+S%C3%A3o+Paulo+-+SP&output=embed"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Localização da loja OLIVA no mapa">
-      </iframe>
+      <div class="map" data-map-query="Rua Exemplo, 000, São Paulo - SP">
+        <div class="map-consent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <p>O mapa é carregado a partir do Google Maps, que pode registrar cookies próprios.</p>
+          <button class="btn btn--secondary" type="button" data-map-load>Exibir mapa</button>
+        </div>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer id="contato">
-  <div class="wrap">
-    <div class="footer-top">
-      <div>
-        <a href="#inicio" class="footer-logo">OLIVA</a>
-        <p>Roupas femininas para o dia a dia, feitas para durar mais que uma estação.</p>
+<!-- ============ RODAPÉ ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="Alba Dermatologia, voltar ao início">
+          <span class="brand-name">Alba</span>
+          <span class="brand-tag">Dermatologia</span>
+        </a>
+        <p>Dermatologia clínica e estética com avaliação individual e acompanhamento médico.</p>
         <div class="socials">
-          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da OLIVA">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+          <a href="https://wa.me/5511900000000" target="_blank" rel="noopener" aria-label="WhatsApp da clínica" data-whatsapp>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1Z"/><path d="M9.2 8.6c-.2 3 3.2 6.4 6.2 6.2l.4-1.6-1.8-.8-1 1.2c-1.4-.5-2.3-1.4-2.8-2.8l1.2-1-.8-1.8Z"/></svg>
           </a>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp da OLIVA">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18l-1.5 3.5L8 20a8 8 0 1 0-3-3z"></path><path d="M9 9c0 3.5 2.5 6 6 6"></path></svg>
+          <a href="mailto:contato@seudominio.com.br" aria-label="E-mail da clínica">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
           </a>
+          <!-- PENDENTE: ative com o perfil oficial do Instagram
+          <a href="https://www.instagram.com/PERFIL" target="_blank" rel="noopener" aria-label="Instagram da clínica">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor" stroke="none"/></svg>
+          </a>
+          -->
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Contato</h4>
+      <nav class="footer-col" aria-labelledby="rodape-nav">
+        <h2 id="rodape-nav">Navegação</h2>
         <ul>
-          <li>contato@oliva.com.br</li>
-          <li>(11) 99999-9999</li>
-          <li>@oliva.roupas</li>
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#clinica">A clínica</a></li>
+          <li><a href="#primeira-consulta">Primeira consulta</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="politica-de-privacidade.html">Política de privacidade</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/5511900000000" target="_blank" rel="noopener" data-whatsapp>WhatsApp (11) 90000-0000</a></li>
+          <li><a href="tel:+551130000000">Telefone (11) 3000-0000</a></li>
+          <li><a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></li>
+          <li>Rua Exemplo, 000, sala 00<br>Bairro, São Paulo – SP</li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Horário</h4>
+        <h2>Horários</h2>
         <ul>
-          <li>Seg a sex — 10h às 19h</li>
-          <li>Sábado — 10h às 16h</li>
-          <li>Domingo — fechado</li>
+          <li>Segunda a sexta, 8h às 19h</li>
+          <li>Sábado, 8h às 13h</li>
+          <li>Domingo e feriados, fechado</li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <span>© 2026 OLIVA. Todos os direitos reservados.</span>
-      <span>Rua Oscar Freire, 000 — Jardins, São Paulo</span>
+    <!-- PENDENTE: dados obrigatórios de publicidade médica (responsável técnico, CRM, RQE) e CNPJ. -->
+    <div class="footer-legal">
+      <p>Responsável técnica: Dra. Nome Sobrenome, CRM-UF 000000, RQE 00000.</p>
+      <p>Razão social da clínica, CNPJ 00.000.000/0001-00.</p>
+      <p>As informações deste site têm caráter informativo e não substituem a consulta médica.</p>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Alba Dermatologia. Todos os direitos reservados.</span>
+        <a href="politica-de-privacidade.html">Política de privacidade</a>
+      </div>
     </div>
   </div>
 </footer>
 
-<script>
-  (function(){
-    var busca = document.getElementById('busca-peca');
-    var tabs = document.querySelectorAll('.cat-tab');
-    var produtos = document.querySelectorAll('.produto');
-    var semResultado = document.getElementById('sem-resultado');
-    var categoriaAtiva = 'todos';
+<a class="float-wa" href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Conversar com a clínica no WhatsApp" data-whatsapp>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1Z"/><path d="M9.2 8.6c-.2 3 3.2 6.4 6.2 6.2l.4-1.6-1.8-.8-1 1.2c-1.4-.5-2.3-1.4-2.8-2.8l1.2-1-.8-1.8Z"/></svg>
+</a>
 
-    function normalizar(texto){
-      return texto.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    }
-
-    function aplicarFiltros(){
-      var termo = normalizar(busca.value.trim());
-      var visiveis = 0;
-
-      produtos.forEach(function(produto){
-        var categoria = produto.dataset.categoria;
-        var nome = normalizar(produto.dataset.nome);
-        var combinaCategoria = categoriaAtiva === 'todos' || categoria === categoriaAtiva;
-        var combinaBusca = termo === '' || nome.indexOf(termo) !== -1;
-        var visivel = combinaCategoria && combinaBusca;
-        produto.hidden = !visivel;
-        if (visivel) visiveis++;
-      });
-
-      semResultado.classList.toggle('ativo', visiveis === 0);
-    }
-
-    tabs.forEach(function(tab){
-      tab.addEventListener('click', function(){
-        tabs.forEach(function(t){ t.classList.remove('active'); });
-        tab.classList.add('active');
-        categoriaAtiva = tab.dataset.categoria;
-        aplicarFiltros();
-      });
-    });
-
-    busca.addEventListener('input', aplicarFiltros);
-
-    document.querySelectorAll('.produto-cta').forEach(function(botao){
-      botao.addEventListener('click', function(){
-        var mensagem = 'Olá! Tenho interesse na peça: ' + botao.dataset.nome;
-        window.open('https://wa.me/5511999999999?text=' + encodeURIComponent(mensagem), '_blank');
-      });
-    });
-  })();
-</script>
-
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

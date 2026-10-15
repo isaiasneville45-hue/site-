@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Ilustração temporária: recepção com sofá e luminária">
+  <rect width="900" height="1100" fill="#DDD2C6"/>
+  <rect y="760" width="900" height="340" fill="#C5B3A2"/>
+  <rect x="120" y="140" width="300" height="400" rx="150" fill="#F8F6F3" opacity=".7"/>
+  <path d="M640 120v260" stroke="#3D3630" stroke-width="4"/>
+  <path d="M580 380h120l-30-70h-60z" fill="#675D50"/>
+  <rect x="140" y="560" width="620" height="140" rx="40" fill="#ACA195"/>
+  <rect x="110" y="600" width="80" height="160" rx="30" fill="#ACA195"/>
+  <rect x="710" y="600" width="80" height="160" rx="30" fill="#ACA195"/>
+  <rect x="160" y="660" width="580" height="100" rx="20" fill="#F8F6F3"/>
+  <rect x="200" y="590" width="150" height="80" rx="24" fill="#DDD2C6"/>
+  <path d="M190 760v40M710 760v40" stroke="#3D3630" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="450" cy="880" rx="260" ry="30" fill="#F8F6F3" opacity=".5"/>
+</svg>

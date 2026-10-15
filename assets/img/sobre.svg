@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Ilustração temporária: consultório com mesa, cadeira e janela">
+  <rect width="800" height="1000" fill="#F8F6F3"/>
+  <rect x="0" y="0" width="800" height="640" fill="#DDD2C6"/>
+  <rect x="470" y="110" width="220" height="330" rx="110" fill="#F8F6F3"/>
+  <path d="M580 110v330" stroke="#C5B3A2" stroke-width="3"/>
+  <rect x="0" y="640" width="800" height="360" fill="#C5B3A2" opacity=".55"/>
+  <rect x="110" y="560" width="440" height="22" rx="4" fill="#675D50"/>
+  <rect x="130" y="582" width="16" height="230" fill="#675D50"/>
+  <rect x="514" y="582" width="16" height="230" fill="#675D50"/>
+  <rect x="180" y="500" width="120" height="60" rx="6" fill="#F8F6F3" stroke="#ACA195" stroke-width="3"/>
+  <rect x="340" y="520" width="80" height="40" rx="4" fill="#ACA195"/>
+  <circle cx="470" cy="532" r="26" fill="#ACA195"/>
+  <path d="M470 506c-6-40 10-70 30-90M470 506c-20-30-50-40-70-40" fill="none" stroke="#3D3630" stroke-width="3" stroke-linecap="round"/>
+  <path d="M590 640h120v40H590z" fill="#3D3630" opacity=".8"/>
+  <path d="M600 520h100v120H600z" fill="#ACA195"/>
+  <path d="M610 680v150M690 680v150" stroke="#3D3630" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="400" cy="830" rx="300" ry="18" fill="#675D50" opacity=".12"/>
+</svg>

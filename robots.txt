@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PENDENTE: troque pelo domínio definitivo
+Sitemap: https://www.seudominio.com.br/sitemap.xml
