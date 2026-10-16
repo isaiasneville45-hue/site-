@@ -13,7 +13,7 @@ favicon.svg
 robots.txt / sitemap.xml
 assets/css/styles.css         Estilos. Paleta, fontes e medidas no bloco :root
 assets/js/main.js             Menu, filtro de tratamentos, formulário, mapa
-assets/img/                   Ilustrações temporárias (*.svg) e imagem de compartilhamento
+assets/img/fotos/             Fotografias otimizadas (WebP); assets/img/og-image.png para redes sociais
 ```
 
 Para testar localmente: `npx http-server .` e abra `http://localhost:8080`.
@@ -75,14 +75,37 @@ código. Para localizar todos: `grep -rn "PENDENTE" --include=*.html --include=*
 - [ ] Razão social e CNPJ (rodapé e política de privacidade)
 - [ ] Encarregado de dados (DPO) e revisão jurídica da política de privacidade
 
-**Imagens** (fotografias reais e autorizadas; hoje há ilustrações marcadas como "Imagem ilustrativa")
-- [ ] Hero: foto da clínica ou da médica responsável, vertical 4:5, ~1200×1500 px
-- [ ] A clínica: foto do consultório ou da equipe, vertical 4:5
-- [ ] Galeria: recepção e detalhe (verticais) e consultório e sala de procedimentos (horizontais, ~1200×900 px)
-- [ ] Fotos dos profissionais, 4:5
+**Imagens**
 
-Ao trocar uma imagem, exporte em WebP ou AVIF, mantenha `width`/`height` no `<img>`, escreva um
-`alt` que descreva a foto e remova o selo `.placeholder-tag` ou a `figcaption` correspondente.
+O site usa hoje fotografias de banco do Pexels (licença Pexels: uso comercial gratuito, sem
+atribuição obrigatória), otimizadas em WebP em `assets/img/fotos/`. Todas aparecem com o selo
+"Imagem ilustrativa" e não representam pacientes, equipe ou instalações da clínica. Substitua-as
+por fotos reais assim que existirem, começando pelas que mostram ambientes:
+
+| Arquivo | Uso | Origem |
+| --- | --- | --- |
+| `hero-tratamento-facial-*` | Banner | [Pexels 5069612](https://www.pexels.com/photo/specialist-making-face-skin-procedure-with-modern-equipment-5069612/), Anna Shvets |
+| `clinica-consulta-anatomia-*` | A clínica | [Pexels 8076181](https://www.pexels.com/photo/woman-showing-a-picture-of-the-anatomy-of-face-muscles-8076181/) |
+| `ambiente-poltrona-*` | Galeria | [Pexels 27522843](https://www.pexels.com/photo/studio-with-limewash-textured-walls-and-wood-armchair-27522843/) |
+| `ambiente-sala-*` | Galeria | [Pexels 5997975](https://www.pexels.com/photo/cozy-room-with-armchair-and-cabinet-5997975/) |
+| `ambiente-sala-procedimentos-*` | Galeria | [Pexels 263201](https://www.pexels.com/photo/empty-white-bed-near-window-263201/) |
+| `ambiente-detalhes-*` | Galeria | [Pexels 6621357](https://www.pexels.com/photo/spa-supplies-for-skincare-procedures-placed-on-marble-table-6621357/) |
+| `trat-consulta-*` | Consulta dermatológica | [Pexels 7088494](https://www.pexels.com/photo/people-woman-sitting-doctor-7088494/), MART PRODUCTION |
+| `trat-pintas-*` | Mapeamento de pintas | [Pexels 4046561](https://www.pexels.com/photo/close-up-view-of-a-person-s-skin-4046561/) |
+| `trat-acne-*` | Acne e rosácea | [Pexels 12115041](https://www.pexels.com/photo/beautician-removing-clay-cosmetic-mask-from-woman-face-12115041/), Denys Mikhalevych |
+| `trat-melasma-*` | Melasma e manchas | [Pexels 14438367](https://www.pexels.com/photo/aesthetic-procedure-on-a-face-14438367/), ANVA Marketing |
+| `trat-toxina-*` | Toxina botulínica | [Pexels 3985311](https://www.pexels.com/photo/woman-getting-a-face-botox-3985311/), Gustavo Fring |
+| `trat-preenchimento-*` | Preenchimento | [Pexels 7582560](https://www.pexels.com/photo/hands-wearing-medical-gloves-injecting-syringe-on-client-s-face-7582560/), cottonbro studio |
+| `trat-bioestimuladores-*` | Bioestimuladores | [Pexels 7582568](https://www.pexels.com/photo/botox-injection-treatment-7582568/), cottonbro studio |
+| `trat-lasers-*` | Lasers e luz pulsada | [Pexels 4586739](https://www.pexels.com/photo/woman-in-white-shirt-lying-on-bed-in-the-clinic-4586739/) |
+| `trat-peelings-*` | Peelings químicos | [Pexels 3985329](https://www.pexels.com/photo/woman-getting-a-facial-treatment-3985329/) |
+
+- [ ] Fotos reais e autorizadas: fachada ou recepção, consultório, sala de procedimentos e equipe
+- [ ] Fotos dos profissionais, 4:5 (os cartões do corpo clínico ainda mostram iniciais)
+
+Para trocar uma imagem, exporte em WebP nas mesmas proporções (4:5 no banner e na seção
+"A clínica", 4:3 nos cartões), mantenha `width`/`height` no `<img>` e escreva um `alt` que
+descreva a foto. Retire o selo "Imagem ilustrativa" apenas quando a foto for da própria clínica.
 
 **Depoimentos**
 - [ ] A seção de depoimentos existe em `index.html`, mas está oculta (`hidden`). Publique somente

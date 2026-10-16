@@ -345,6 +345,11 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
   background: var(--c-bege);
 }
 .figure img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Fotografias de banco: leve aquecimento para conversar com a paleta bege
+   (suaviza, por exemplo, luvas rosa e paredes frias). */
+.figure img,
+.treatment-media img { filter: saturate(.82) sepia(.1); }
 .figure--portrait { aspect-ratio: 4 / 5; }
 
 /* Selo exibido somente enquanto a imagem é temporária */
@@ -435,6 +440,20 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
 }
 .treatment:hover { border-color: var(--border-strong); box-shadow: var(--shadow-soft); }
 .treatment[hidden] { display: none; }
+.treatment { overflow: hidden; }
+.treatment-media {
+  margin: -2rem -2rem 1.5rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--c-bege);
+}
+.treatment-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s var(--ease);
+}
+.treatment:hover .treatment-media img { transform: scale(1.03); }
 .treatment-area {
   font-size: var(--fs-xs);
   color: var(--text-soft);
